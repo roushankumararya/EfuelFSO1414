@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_img"
+    tools:context="com.developtech.efuelfo.ui.adapters.stationOwner.CashTransactionActivity">
+
+    <include layout="@layout/layout_app_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:orientation="vertical">
+
+
+                <com.developtech.efuelfo.customs.CustomTextView
+                    style="@style/TextViewNormal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="@string/vehicle_number_txt" />
+
+                <com.developtech.efuelfo.customs.CustomEditText
+                    android:id="@+id/etVehicleNumber"
+                    style="@style/EditTextMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/vehicle_number"
+                    android:inputType="number" />
+
+                <com.developtech.efuelfo.customs.CustomTextView
+                    style="@style/TextViewNormal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/enter_mobile_number"
+                    android:textAllCaps="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <com.developtech.efuelfo.customs.CustomEditText
+                        android:id="@+id/etMobileCode"
+                        style="@style/EditTextMedium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.5"
+                        android:inputType="number" />
+
+                    <com.developtech.efuelfo.customs.CustomEditText
+                        android:id="@+id/etMobileNumber"
+                        style="@style/EditTextMedium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:hint="@string/enter_mobile_number"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+
+                <com.developtech.efuelfo.customs.CustomTextView
+                    style="@style/TextViewNormal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/fuel_type_txt" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/sendbuttonheight"
+                    android:layout_marginTop="5dp">
+
+                    <Spinner
+                        android:id="@+id/vS_nrf_fueltype"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sendbuttonheight"
+                        android:background="@drawable/corner_background" />
+
+                    <ImageView
+                        android:layout_width="9dp"
+                        android:layout_height="7dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="25dp"
+                        android:contentDescription="@string/drop_down"
+                        android:src="@drawable/dropdown" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <com.developtech.efuelfo.customs.CustomTextView
+                        style="@style/TextViewNormal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="@string/fuel_quantity_txt" />
+
+                    <com.developtech.efuelfo.customs.CustomTextView
+                        style="@style/TextViewNormal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="@string/fuel_amount_txt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sendbuttonheight"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.95"
+                        android:background="@drawable/corner_background"
+                        android:orientation="horizontal">
+
+                        <com.developtech.efuelfo.customs.CustomEditText
+                            android:id="@+id/vE_nrf_fuel_quantity"
+                            style="@style/TextViewLarge"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:background="@drawable/corner_background"
+                            android:gravity="center"
+                            android:hint="@string/edit_value"
+                            android:inputType="numberDecimal"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="0dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/textsize16" />
+
+                        <com.developtech.efuelfo.customs.CustomTextView
+                            android:id="@+id/vT_nfr_units"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/ltrs_txt"
+                            app:fontName="@string/font_light" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.95"
+                        android:background="@drawable/corner_background"
+                        android:orientation="horizontal">
+
+                        <com.developtech.efuelfo.customs.CustomTextView
+                            android:id="@+id/vT_nfr_amtcurrency"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:text="@string/rs"
+                            app:fontName="@string/font_light" />
+
+                        <com.developtech.efuelfo.customs.CustomEditText
+                            android:id="@+id/vE_nrf_fuel_totalamount"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:background="@drawable/corner_background"
+                            android:gravity="center"
+                            android:hint="@string/edit_value"
+                            android:inputType="numberDecimal"
+                            android:maxLines="1"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="0dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/textsize16"
+                            app:fontName="@string/font_semi_bold" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.developtech.efuelfo.customs.CustomTextView
+                    style="@style/TextViewNormal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="start|bottom"
+                    android:text="@string/total_cost_txt" />
+
+                <com.developtech.efuelfo.customs.CustomTextView
+                    style="@style/TextViewLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="start|bottom"
+                    android:text="0,0" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <com.developtech.efuelfo.customs.CustomButton
+            android:id="@+id/btnDispense"
+            style="@style/buttonGeenStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:text="@string/dispense" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

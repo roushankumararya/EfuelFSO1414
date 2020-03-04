@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_fuel_station"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/adapter_fuelprices_back"
+    android:orientation="horizontal">
+
+    <com.developtech.efuelfo.customs.RoundedImageView
+        android:id="@+id/ivStationLogo"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_margin="3dp"
+        android:src="@drawable/fuel_info"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.6"
+        android:gravity="start|center"
+        android:orientation="vertical">
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:id="@+id/tvStationName"
+            style="@style/TextViewSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/adapter_text" />
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:id="@+id/tvStationAddress"
+            style="@style/TextViewNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <Switch
+                android:id="@+id/switchCreditAgreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:padding="5dp" />
+
+            <com.developtech.efuelfo.customs.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accept Credit Agreement"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/vI_driverimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+</LinearLayout>
+

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@android:color/darker_gray"
+    app:cardBackgroundColor="@color/black_blurd"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <com.developtech.efuelfo.customs.RoundedImageView
+            android:id="@+id/ivImg"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_margin="8dp"
+            android:layout_weight="2"
+            android:scaleType="fitCenter"
+            android:src="@drawable/place_holder" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.developtech.efuelfo.customs.CustomTextView
+                android:id="@+id/tvPhoneNumber"
+                style="@style/TextViewNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9876543210" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <com.developtech.efuelfo.customs.CustomTextView
+                android:id="@+id/tvName"
+                style="@style/TextViewMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ashok Kumar" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLoc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/white_marker" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameArrow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

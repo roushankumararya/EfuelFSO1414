@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#202021</color>
+    <color name="colorPrimaryDark">#202021</color>
+    <color name="colorAccent">#04B79A</color>
+
+    <color name="line_light_accent">#b4f2e9</color>
+
+    <color name="black">#000000</color>
+    <color name="black_marker">#3A3A39</color>
+    <color name="white">#ffffff</color>
+    <color name="blackBlur">#44000000</color>
+    <color name="trans">#80000000</color>
+    <color name="blackBlur2">#bb000000</color>
+    <color name="blackDarker">#2e2e2e</color>
+    <color name="blackstaff">#222222</color>
+    <color name="black_blurd">#99000000</color>
+
+    <color name="bg_color">#262626</color>
+    <color name="bg_apapter">#2fff</color>
+    <color name="bg_totalsale_color">#12ffffff</color>
+    <color name="bg_color_for_list">#11ffffff</color>
+
+    <color name="grey_text">#BfBfBf</color>
+    <color name="grey_text_partial">#747474</color>
+    <!--  unique color-->
+    <!--<color name="app_theme_color">#1CB855</color>-->
+    <color name="app_theme_color">#04B79A</color>
+
+    <color name="green">#04B79A</color>
+    <color name="light_green">#808080</color>
+    <color name="grey_bg">#bfbfbf</color>
+    <color name="view">#2E2E2E</color>
+
+    <color name="indicator_foreground">#04B79A</color>
+    <color name="indicator_background">#BDBDBD</color>
+    <color name="indicator_transparent">#0000ffff</color>
+
+    <color name="light_white">#A19A8F</color>
+    <color name="onclick_green">#04B79A</color>
+
+    <color name="view_color">#ababab</color>
+    <color name="red">#ff5100</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="blackBlurPartial">#55000000</color>
+    <color name="blackBlurPartial2">#aa000000</color>
+    <color name="black_less">#343434</color>
+    <color name="blackLessText">#7F7F7F</color>
+    <color name="light_grey">#444444</color>
+    <color name="popup_bg">#323337</color>
+
+    <color name="grey_bg_pop">#4B4C4E</color>
+    <color name="orange">#EE6E73</color>
+    <color name="black_with_alpha">#44000000</color>
+    <color name="black_with_alpha2">#22000000</color>
+    <color name="black_blur">#99000000</color>
+    <color name="hint_color">#808080</color>
+    <color name="snackbar_color">#9c25e8</color>
+    <color name="complete_red">#FF0000</color>
+
+    <!--Yellow Theme-->
+
+    <color name="yellow">#FCB819</color>
+    <color name="backBlue">#354056</color>
+    <color name="white_bg_opacity10">#E5E5E5</color>
+    <color name="white_bg_opacity5">#05ffffff</color>
+
+
+    <color name="actionbar_opacity">#33000000</color>
+    <color name="toolbarTransparent">#00FFFFFF</color>
+    <color name="text_login">#404040</color>
+    <color name="adapter_text">#d9d9d9</color>
+
+
+
+    <!-- citrus payment-->
+
+    <color name="persian_green_primary">#0DAC8F</color>
+    <color name="persian_green_dark">#0A927A</color>
+    <color name="persian_green_accent">#0A927A</color>
+
+
+    <color name="white_transparent">#c5ffffff</color>
+    <color name="selectDateBgOn">#0affffff</color>
+    <color name="selectDateBgOff">#17f7f7f7</color>
+
+    <color name="scannerColor">#80000000</color>
+
+    <color name="filterTextDisabled">#1cffffff</color>
+    <color name="filterTextEnabled">#83ffffff</color>
+    <color name="filterDateDisabled">#20ffffff</color>
+    <color name="filterDateEnabled">#91ffffff</color>
+
+    <color name="headerBackground">#f2f2f2</color>
+
+    <color name="default_line_indicator_unselected_color">#FFBBBBBB</color>
+
+</resources>

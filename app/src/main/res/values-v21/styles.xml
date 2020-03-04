@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ActionBarPopupTheme" parent="android:ThemeOverlay.Material.Light">
+
+    </style>
+</resources>

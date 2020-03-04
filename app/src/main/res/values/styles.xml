@@ -1,0 +1,227 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:windowDisablePreview">true</item>-->
+        <!--<item name="android:textAppearanceLargePopupMenu">@style/myPopupMenuTextAppearanceLarge</item>-->
+        <!--<item name="android:textAppearanceSmallPopupMenu">@style/myPopupMenuTextAppearanceSmall</item>-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:gravity">center</item>
+        <item name="android:actionBarPopupTheme" tools:ignore="NewApi">@style/ActionBarPopupTheme</item>
+       
+    </style>
+    
+    <style name="ActionBarPopupTheme" parent="android:ThemeOverlay.Material.Light" tools:ignore="NewApi">
+        <item name="android:colorBackground">@android:color/black</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    
+    <style name="Base.Widget.AppCompat.CompoundButton.CheckBox.custom">
+        <!--<item name="android:colorAccent">@color/white</item>-->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="android:textColor">@color/black</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="buttonGeenStyle">
+        <item name="android:background">@drawable/corner_green_background</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textsize16</item>
+        <item name="fontName">@string/font_bold</item>
+        <item name="android:minHeight">40dp</item>
+    </style>
+
+    <style name="buttonWhiteStyle">
+        <item name="android:background">@drawable/corner_white_background</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/textsize16</item>
+        <item name="fontName">@string/font_bold</item>
+        <item name="android:minHeight">35dp</item>
+    </style>
+
+    <style name="TextViewOtp">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:textSize">@dimen/textsize18</item>
+        <item name="fontName">@string/font_bold</item>
+    </style>
+
+    <style name="TextViewLarge">//18
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">@dimen/textsize18</item>
+        <item name="fontName">@string/font_semi_bold</item>
+    </style>
+
+
+    <style name="TextViewNormal">//14
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textsize14</item>
+        <item name="fontName">@string/font_semi_bold</item>
+    </style>
+
+    <style name="TextViewMedium">//16
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">@dimen/textsize16</item>
+        <item name="fontName">@string/font_semi_bold</item>
+    </style>
+
+    <style name="EditTextMedium">//16
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textsize16</item>
+        <item name="fontName">@string/font_semi_bold</item>
+        <item name="android:background">@drawable/corner_background</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColorHint">@color/hint_color</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="EditTextNormal">//14
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textsize14</item>
+        <item name="fontName">@string/font_semi_bold</item>
+        <item name="android:background">@drawable/corner_background</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColorHint">@color/hint_color</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <style name="TextViewSmall">//12
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">@dimen/textsize12</item>
+        <item name="fontName">@string/font_semi_bold</item>
+    </style>
+
+    <style name="viewStyle">
+        <item name="android:height">@dimen/view_height</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@color/green</item>
+    </style>
+
+
+    <style name="TabTextAppearance" parent="TextAppearance.AppCompat.Caption">
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">@dimen/textsize14</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <!--<style name="animations_popup">-->
+    <!--<item name="@android:windowEnterAnimation">@anim/slide_up_bottom</item>-->
+    <!--<item name="@android:windowExitAnimation">@anim/slide_down_bottom</item>-->
+    <!--</style>-->
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MenuTextApearance" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:actionMenuTextColor">@color/black</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+
+    <style name="myPopupMenuTextAppearanceSmall" parent="@android:style/TextAppearance.DeviceDefault.Widget.PopupMenu.Small">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textsize14</item>
+    </style>
+
+
+    <style name="myPopupMenuTextAppearanceLarge" parent="@android:style/TextAppearance.DeviceDefault.Widget.PopupMenu.Large">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textsize16</item>
+    </style>
+
+    <style name="checkBoxStyle" parent="Base.Theme.AppCompat">
+        <item name="colorAccent">@color/app_theme_color</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <style name="radioStyle" parent="Base.Theme.AppCompat">
+        <item name="colorAccent">@color/app_theme_color</item>
+        <item name="android:textColorSecondary">@color/app_theme_color</item>
+    </style>
+
+    <style name="orangeTheme">
+        <item name="android:background">@color/orange</item>
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="navigationdrawerTextAppearance" parent="@android:style/TextAppearance.DeviceDefault.Widget.PopupMenu.Large">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textsize16</item>
+
+    </style>
+
+    <style name="TransparentToolbar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+
+    <style name="dateTvReport">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/round_corner_white_background</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginStart">15dp</item>
+    </style>
+
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!--<style name="AppTheme.Green" parent="CitrusAppTheme">-->
+    <!--<item name="colorPrimary">@color/persian_green_primary</item>-->
+    <!--<item name="colorPrimaryDark">@color/persian_green_dark</item>-->
+    <!--<item name="colorAccent">@color/persian_green_accent</item>-->
+    <!--<item name="colorButtonNormal">@color/persian_green_primary</item>-->
+    <!--<item name="alertDialogTheme">@color/persian_green_primary</item>-->
+    <!--</style>-->
+</resources>

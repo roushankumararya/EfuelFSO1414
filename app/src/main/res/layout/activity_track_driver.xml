@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_img"
+    tools:context="com.developtech.efuelfo.ui.activities.vehicleOwner.TrackDriverActivity">
+
+    <!--<include layout="@layout/layout_app_bar" />-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rootLayout">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleTrackDriver"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include layout="@layout/layout_progress" />
+
+        <fragment
+            android:id="@+id/fragmentMap"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/maplist"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="10dp"
+            android:id="@+id/ivMapList"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

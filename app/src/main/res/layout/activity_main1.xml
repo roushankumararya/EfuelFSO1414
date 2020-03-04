@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stationimg"
+    android:id="@+id/firstrelative"
+    tools:context=".HomePage"
+    >
+
+    <RelativeLayout
+        android:id="@+id/logo_png"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        tools:layout_editor_absoluteY="30dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/app_logo"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="65dp"
+            android:textSize="8dp"
+            android:text="EFUEL STATION"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginBottom="30dp"
+        android:id="@+id/textrelative"
+       android:layout_above="@+id/continuewithnextnumber"
+        android:layout_marginLeft="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt1"
+            android:text="The Smart Way To "
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:layout_below="@id/logo_png"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt2"
+            android:text="Manage Fuel "
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:layout_below="@id/logo_png"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+    <!--<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt2linearlayout"
+        android:layout_below="@id/textrelative"
+        android:layout_marginLeft="20dp"
+        >
+        &lt;!&ndash;<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt2"
+            android:text="Manage Fuel "
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:layout_below="@id/logo_png"
+            android:textColor="@color/white"
+            />&ndash;&gt;
+    </LinearLayout>-->
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/continuewithnextnumber"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/backwhitecontinuephone"
+        android:text="Continue with Mobile Number"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16dp"/>
+
+
+</RelativeLayout>

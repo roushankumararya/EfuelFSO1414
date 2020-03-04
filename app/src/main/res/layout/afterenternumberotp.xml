@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundblackphonenumber"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/firsttxtnumber"
+        android:layout_marginLeft="30dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login using the OTP sent to"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:id="@+id/logintxtnumber"
+        android:layout_below="@+id/firsttxtnumber"
+        android:layout_marginLeft="30dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#Mobile No#"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/enterphonenumbelayout"
+        android:layout_below="@+id/logintxtnumber"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        >
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/firestotpdigit"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/edittext_bottom_border_otp"
+            android:inputType="number"/>
+        <view
+            android:layout_width="3dp"
+            android:background="#747474"
+            android:id="@+id/viewdigitone"
+            android:layout_marginLeft="20dp"
+            android:baseline="@+id/firestotpdigit"
+            android:layout_height="match_parent"
+            >
+        </view>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/twootpdigit"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/edittext_bottom_border_otp"
+            android:inputType="number"/>
+
+        <view
+            android:layout_width="3dp"
+            android:background="#747474"
+            android:id="@+id/viewdigittwo"
+            android:layout_marginLeft="60dp"
+            android:baseline="@+id/twootpdigit"
+            android:layout_height="match_parent"
+            >
+        </view>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/threeotpdigit"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/edittext_bottom_border_otp"
+            android:inputType="number"/>
+        <view
+            android:layout_width="3dp"
+            android:background="#747474"
+            android:id="@+id/viewdigitthree"
+            android:layout_marginLeft="60dp"
+            android:baseline="@+id/twootpdigit"
+            android:layout_height="match_parent"
+            >
+        </view>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fourotpdigit"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/edittext_bottom_border_otp"
+            android:inputType="number"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewlinebelowphonenumber"
+        android:layout_below="@+id/enterphonenumbelayout"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal">
+        <view
+            android:layout_width="310dp"
+            android:layout_height="3dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/didnotgetotp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/viewlinebelowphonenumber">
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Didn't get the OTP ?"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnnext"
+        android:paddingBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+       >
+        <Button
+            android:layout_width="310dp"
+            android:layout_height="60dp"
+            android:id="@+id/otpsendnumber"
+            android:onClick="otpsendnumber"
+            android:text="Verify"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:background="@drawable/btnnumbernext"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

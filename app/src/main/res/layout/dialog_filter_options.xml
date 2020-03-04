@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    android:minWidth="250dp"
+    android:gravity="center">
+
+    <com.developtech.efuelfo.customs.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tvTitle"
+        android:gravity="center"
+        android:text="Select Filter Type"
+        style="@style/TextViewLarge"
+        android:layout_marginTop="5dp"
+        app:fontName="@string/font_bold"
+        android:layout_margin="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/line_light_accent"/>
+
+    <com.developtech.efuelfo.customs.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tvFilterVehicle"
+        android:gravity="center"
+        android:text="Filter By Vehicle"
+        style="@style/TextViewMedium"
+        android:layout_marginTop="5dp"
+        app:fontName="@string/font_semi_bold"
+        android:padding="10dp"/>
+
+    <com.developtech.efuelfo.customs.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tvFilterDriver"
+        android:gravity="center"
+        android:text="Filter By Driver"
+        style="@style/TextViewMedium"
+        android:layout_marginTop="5dp"
+        app:fontName="@string/font_semi_bold"
+        android:padding="10dp"
+        android:layout_marginBottom="5dp"/>
+
+</LinearLayout>

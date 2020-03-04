@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/popup_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragmentMap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/vR_nfs_searchlayout1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/corner_background"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/vL_auto_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/actvSearch"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight=".9"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textSize="14sp"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/search_by_locality"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp"/>
+
+                    <ImageView
+                        android:id="@+id/ivCancel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/cancel"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/vR_nfs_searchaddresslayout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:visibility="gone"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/vI_nfs_search"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:src="@drawable/search" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+            <ListView
+                android:id="@+id/vL_nfs_searchresultlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/vR_nfs_searchlayout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/corner_background"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+
+
+                >
+
+                <com.developtech.efuelfo.customs.CustomTextView
+                    android:id="@+id/tvSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/search_by"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"/>
+
+                <ImageView
+                    android:id="@+id/vI_nfs_cancel"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+
+                    android:src="@drawable/cancel"
+                    android:visibility="gone" />
+
+                <!-- <RelativeLayout
+                     android:id="@+id/vR_nfs_searchaddresslayout"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+
+                     android:gravity="center">
+
+                     <ImageView
+                         android:id="@+id/vI_nfs_search"
+                         android:layout_width="25dp"
+                         android:layout_height="25dp"
+                         android:gravity="center"
+                         android:visibility="gone"
+                         android:src="@drawable/search" />
+
+                 </RelativeLayout>-->
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.developtech.efuelfo.customs.CustomButton
+            android:id="@+id/btnAddLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_location"
+            android:textSize="@dimen/textsize16"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            style="@style/buttonGeenStyle" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:src="@drawable/pin"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ivPin"
+            android:visibility="gone"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

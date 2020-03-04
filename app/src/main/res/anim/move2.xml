@@ -1,0 +1,32 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/linear_interpolator"
+    android:layout_height="50dp"
+    android:layout_width="50dp"
+    android:fillAfter="true">
+
+    <translate
+        android:fromXDelta="100%p"
+        android:toXDelta="20%p"
+        android:startOffset="0"
+        android:fillAfter="true"
+        android:duration="600" />
+    <translate
+        android:fromXDelta="20%p"
+        android:fillAfter="true"
+        android:toXDelta="-20%p"
+        android:startOffset="300"
+        android:duration="600" />
+    <translate
+        android:fromXDelta="-20%p"
+        android:fillAfter="true"
+        android:toXDelta="0%p"
+        android:startOffset="1000"
+        android:duration="600" />
+    <!--<translate
+        android:fromXDelta="0%p"
+        android:fillAfter="true"
+        android:toXDelta="20%p"
+        android:startOffset="3000"
+        android:duration="1000" />-->
+
+</set>

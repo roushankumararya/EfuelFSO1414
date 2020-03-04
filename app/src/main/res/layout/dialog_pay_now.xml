@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minWidth="340dp"
+    android:orientation="vertical"
+    android:background="@color/view"
+    android:padding="15dp"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content">
+
+    <com.developtech.efuelfo.customs.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        style="@style/TextViewLarge"
+        android:text="@string/total_price"
+        android:gravity="center"
+        app:fontName="@string/font_bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/TextViewMedium"
+            app:fontName="@string/font_semi_bold"
+            android:text="Amount :"/>
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="@dimen/weight_pay_now_values"
+            android:gravity="start"
+            app:fontName="@string/font_semi_bold"
+            style="@style/TextViewMedium"
+            android:id="@+id/tvAmount"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/TextViewMedium"
+            app:fontName="@string/font_semi_bold"
+            android:text="Fuel Quantity :"/>
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="@dimen/weight_pay_now_values"
+            android:gravity="start"
+            app:fontName="@string/font_semi_bold"
+            style="@style/TextViewMedium"
+            android:id="@+id/tvFuelQty"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/TextViewMedium"
+            app:fontName="@string/font_semi_bold"
+            android:text="Fuel Price :"/>
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="@dimen/weight_pay_now_values"
+            android:gravity="start"
+            app:fontName="@string/font_semi_bold"
+            style="@style/TextViewMedium"
+            android:id="@+id/tvFuelPrice"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/TextViewMedium"
+            app:fontName="@string/font_semi_bold"
+            android:text="Convenience Fee :"/>
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="@dimen/weight_pay_now_values"
+            android:gravity="start"
+            app:fontName="@string/font_semi_bold"
+            style="@style/TextViewMedium"
+            android:id="@+id/tvConvenienceFee"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/TextViewMedium"
+            app:fontName="@string/font_semi_bold"
+            android:text="GST(@18%) :"/>
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="@dimen/weight_pay_now_values"
+            android:gravity="start"
+            app:fontName="@string/font_semi_bold"
+            style="@style/TextViewMedium"
+            android:id="@+id/tvGST"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/TextViewMedium"
+            app:fontName="@string/font_semi_bold"
+            android:text="Total Amount To Pay :"/>
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="@dimen/weight_pay_now_values"
+            android:gravity="start"
+            app:fontName="@string/font_semi_bold"
+            style="@style/TextViewMedium"
+            android:id="@+id/tvTotalAmount"/>
+
+    </LinearLayout>
+
+</LinearLayout>

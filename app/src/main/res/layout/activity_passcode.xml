@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_img">
+
+    <LinearLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/otp" />
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            style="@style/TextViewNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/change_password"
+            />
+
+        <View
+            style="@style/viewStyle"
+            android:layout_width="100dp"
+            android:layout_height="2.5dp"
+            android:layout_margin="5dp" />
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            style="@style/TextViewNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/description2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/corner_background_less_radius"
+            android:orientation="vertical">
+
+            <com.developtech.efuelfo.customs.CustomTextView
+                style="@style/TextViewSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="@string/current_password"
+                android:textColor="@color/grey_text" />
+
+            <com.developtech.efuelfo.customs.CustomEditText
+                android:id="@+id/etOldPasscode"
+                style="@style/TextViewNormal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:maxLength="16"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint_color" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey_text" />
+
+            <com.developtech.efuelfo.customs.CustomTextView
+                style="@style/TextViewSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="@string/new_password"
+                android:textColor="@color/grey_text" />
+
+            <com.developtech.efuelfo.customs.CustomEditText
+                android:id="@+id/etNewPasscode"
+                style="@style/TextViewNormal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey_text" />
+
+            <com.developtech.efuelfo.customs.CustomTextView
+                style="@style/TextViewSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text="@string/confirm_password"
+                android:textColor="@color/grey_text" />
+
+            <com.developtech.efuelfo.customs.CustomEditText
+                android:id="@+id/etConfirmPassocode"
+                style="@style/TextViewNormal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint_color" />
+        </LinearLayout>
+
+
+        <com.developtech.efuelfo.customs.CustomButton
+            android:id="@+id/btnContinue"
+            style="@style/buttonGeenStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/Continue" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_progress" />
+
+</android.support.design.widget.CoordinatorLayout>
+

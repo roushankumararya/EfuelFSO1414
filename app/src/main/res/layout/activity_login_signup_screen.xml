@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_img"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:id="@+id/lytLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/register" />
+
+                    <com.developtech.efuelfo.customs.CustomTextView
+                        android:id="@+id/tvTitle"
+                        style="@style/TextViewNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/login_description" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/top_margin"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/layLogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.developtech.efuelfo.customs.CustomTextView
+                                android:id="@+id/tvLogin"
+                                style="@style/TextViewNormal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/login"
+                                android:textAllCaps="true" />
+
+                            <View
+                                android:id="@+id/viewLogin"
+                                style="@style/viewStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/view_height"
+                                android:layout_marginTop="@dimen/top_margin" />
+                        </LinearLayout>
+
+                        <com.developtech.efuelfo.customs.CustomTextView
+                            android:id="@+id/tvOr"
+                            style="@style/TextViewNormal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/activity_vertical_margin"
+                            android:layout_marginRight="@dimen/activity_vertical_margin"
+                            android:text="@string/or"
+                            android:textAllCaps="true" />
+
+                        <LinearLayout
+                            android:id="@+id/layRegister"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.developtech.efuelfo.customs.CustomTextView
+                                style="@style/TextViewNormal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/register"
+                                android:textAllCaps="true" />
+
+                            <View
+                                android:id="@+id/viewRegister"
+                                style="@style/viewStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/view_height"
+                                android:layout_marginTop="@dimen/top_margin"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <com.developtech.efuelfo.customs.CustomTextView
+                        android:id="@+id/tvTitleBottom"
+                        style="@style/TextViewNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/login_description"
+                        android:visibility="gone"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/top_margin">
+
+                        <include layout="@layout/fragment_login" />
+
+                        <include layout="@layout/fragment_signup_screen" />
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layForget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/top_margin">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <CheckBox
+                                android:id="@+id/cbLogIn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:checked="true"
+                                android:textSize="@dimen/textsize14"
+                                android:theme="@style/checkBoxStyle" />
+
+                            <com.developtech.efuelfo.customs.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/keep_me_in"
+                                android:padding="5dp"
+                                style="@style/TextViewMedium"
+                                android:id="@+id/tvTermsCond"/>
+
+                        </LinearLayout>
+                        <com.developtech.efuelfo.customs.CustomTextView
+                            android:id="@+id/tvForgetPass"
+                            style="@style/TextViewNormal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="end|center_vertical"
+                            android:text="@string/forgot_password" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/laySocialLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/top_margin"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.8"
+                                android:background="@color/white" />
+
+                            <com.developtech.efuelfo.customs.CustomTextView
+                                style="@style/TextViewSmall"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".7"
+                                android:gravity="center"
+                                android:text="@string/or_signin_via"
+                                android:textAllCaps="true" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.8"
+                                android:background="@color/white" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <com.developtech.efuelfo.customs.CustomButton
+                                android:id="@+id/btnFacebook"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/fb" />
+
+                            <com.developtech.efuelfo.customs.CustomButton
+                                android:id="@+id/btnGoogle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/gplus" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <com.developtech.efuelfo.customs.CustomButton
+                android:id="@+id/btnLogin"
+                style="@style/buttonGeenStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonSize"
+                android:layout_marginTop="50dp"
+                android:text="@string/login"
+                android:textColor="@color/black"
+                android:background="@android:color/white"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/layout_progress" />
+
+</android.support.design.widget.CoordinatorLayout>

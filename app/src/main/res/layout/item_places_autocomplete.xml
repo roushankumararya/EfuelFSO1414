@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <com.developtech.efuelfo.customs.CustomTextView
+          android:layout_width="match_parent"
+          android:id="@+id/tvPlacesAutoComplete"
+          android:layout_margin="10dp"
+        style="@style/TextViewMedium"
+        android:textColor="@color/text_login"
+          android:layout_height="wrap_content" />
+
+</LinearLayout>

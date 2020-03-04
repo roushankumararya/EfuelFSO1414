@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:id="@+id/tvDate"
+            style="@style/TextViewMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:background="@drawable/adapter_fuelprices_back"
+            android:drawableRight="@drawable/ic_arrow_drop_down_white"
+            android:padding="5dp"
+            android:text="@string/select_date" />
+
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:id="@+id/tvTime"
+            style="@style/TextViewMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:background="@drawable/adapter_fuelprices_back"
+            android:drawableRight="@drawable/ic_arrow_drop_down_white"
+            android:padding="5dp"
+            android:text="@string/select_time" />
+
+        <FrameLayout
+            android:id="@+id/frameRefresh"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:padding="5dp"
+                android:contentDescription="@string/drop_down"
+                android:src="@drawable/history_refresh" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:id="@+id/vT_auf_lastupdatetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/last_updated_on"
+            android:textColor="@color/white" />
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:id="@+id/vT_auf_lastupdatetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:text=""
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:weightSum="2">
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:id="@+id/tvFuelType"
+            style="@style/TextViewMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1.2"
+            android:text="@string/fuel_type"
+            android:textAllCaps="true" />
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:id="@+id/tvFuelPrice"
+            style="@style/TextViewMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="@string/price"
+            android:textAllCaps="true" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvFuelPrices"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabAddSchdule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_add_black_24dp"
+        app:backgroundTint="@color/indicator_foreground" />
+
+    <LinearLayout
+        android:id="@+id/layButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.developtech.efuelfo.customs.CustomButton
+            style="@style/buttonGeenStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:minHeight="40dp"
+            android:text="@string/update" />
+
+        <com.developtech.efuelfo.customs.CustomButton
+            style="@style/buttonGeenStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1"
+            android:minHeight="40dp"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+    <com.developtech.efuelfo.customs.CustomButton
+        android:id="@+id/btnOk"
+        style="@style/buttonGeenStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:minHeight="40dp"
+        android:text="@string/view_schedule" />
+
+</LinearLayout>

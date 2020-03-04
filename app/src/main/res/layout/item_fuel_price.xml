@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:padding="5dp">
+
+    <com.developtech.efuelfo.customs.CustomTextView
+        android:id="@+id/tvFuelName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingEnd="0dp"
+        android:paddingStart="20dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="HP Oil"
+        android:layout_weight="1"/>
+
+    <com.developtech.efuelfo.customs.CustomTextView
+        android:id="@+id/tvFuelPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="start"
+        android:text="0.90"
+        android:paddingEnd="0dp"
+        android:paddingStart="60dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

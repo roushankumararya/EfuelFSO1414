@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:id="@+id/rootLayout"
+    tools:context="com.developtech.efuelfo.ui.fragments.fuelOwner.VerifyTransactionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            style="@style/TextViewMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/Entervehicalno" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/margintop_staffrefuel"
+            android:background="@drawable/editstaffrefuelshape"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.developtech.efuelfo.customs.CustomEditText
+                android:id="@+id/etVerifyTransSearch"
+                style="@style/TextViewMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.75"
+                android:background="@null"
+                android:ellipsize="end"
+                android:textAllCaps="true"
+                android:inputType="textCapCharacters"
+                android:textColor="@color/black"
+                android:hint="@string/enter_vehical_number"
+                android:maxLength="15"
+                android:padding="8dp"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/view" />
+
+            <ImageView
+                android:id="@+id/ivSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".12"
+                android:padding="10dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/search" />
+
+
+            <ImageView
+                android:id="@+id/ivQrCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".12"
+                android:padding="10dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/qr" />
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rvVerifyTrans"/>
+    </LinearLayout>
+
+    <include layout="@layout/layout_progress"/>
+    <include layout="@layout/lyt_no_records"/>
+
+</FrameLayout>

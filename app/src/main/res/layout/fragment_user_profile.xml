@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_margin"
+            android:text="@string/add_image"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            app:fontFamily="@string/font_semi_bold" />
+
+        <RelativeLayout
+            android:id="@+id/relSelectImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <com.developtech.efuelfo.customs.RoundedImageView
+                android:id="@+id/ivProfilePic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/place_holder" />
+
+
+            <com.developtech.efuelfo.customs.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/edit"
+                android:textAllCaps="true"
+                android:textColor="@color/light_white"
+                app:fontFamily="@string/font_bold" />
+        </RelativeLayout>
+
+        <include layout="@layout/content_profile" />
+
+    </LinearLayout>
+
+</ScrollView>

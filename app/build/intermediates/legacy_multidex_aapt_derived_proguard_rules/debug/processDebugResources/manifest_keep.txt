@@ -1,0 +1,4 @@
+# Referenced at D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:35
+-keep class android.support.v4.app.CoreComponentFactory { <init>(); }
+# Referenced at D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:35
+-keep class com.developtech.efuelfo.app.MyApplication { <init>(); }

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/personaldetailinfo"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+   <!-- <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/personaldetailinfo1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/personalview1"
+            android:text="Account Details"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/account"
+           android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/enterfirstname"
+        android:layout_below="@+id/personaldetailinfo1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:inputType="textPersonName"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:maxLength="16"
+            android:textColor="@color/white"
+            android:id="@+id/useraccountname"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/enterfirstnametxtview"
+        android:layout_below="@+id/enterfirstname"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="29dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Name"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/enterlastname"
+        android:layout_below="@+id/enterfirstnametxtview"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:maxLength="16"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:id="@+id/useraccountholder"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/enterlastnametxtview"
+        android:layout_below="@+id/enterlastname"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="29dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Number"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/enteremailaddress"
+        android:layout_below="@+id/enterlastnametxtview"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:inputType="textPersonName"
+            android:maxLength="16"
+            android:textColor="@color/white"
+            android:id="@+id/userbankname"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/enteremailaddresstxtview"
+        android:layout_below="@+id/enteremailaddress"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="29dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank Name"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radiobtn"
+        android:layout_below="@+id/enteremailaddresstxtview"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="30dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:maxLength="16"
+            android:textColor="@color/white"
+            android:id="@+id/userifccode"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/enteraddressline2txtview"
+        android:layout_below="@+id/radiobtn"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="29dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IFSC Code"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            />
+    </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/wanaskipthisanddone">-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/skipthispage"
+                android:textColor="@android:color/darker_gray"
+                android:layout_gravity="right"
+                android:text="Wanna Skip This  Done ?"/>
+       <!-- </RelativeLayout>-->
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:id="@+id/savedatanext"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:id="@+id/btnbackaccountdetail"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:background="@drawable/personaldetailbtnback"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:layout_alignParentRight="true"
+            android:textSize="16dp"
+            android:id="@+id/accountdetail"
+            android:layout_marginLeft="95dp"
+            android:background="@drawable/personaldetailbtnback"
+            />
+    </RelativeLayout>
+    </RelativeLayout>
+   <!-- </android.support.v4.widget.NestedScrollView>-->
+
+</RelativeLayout>

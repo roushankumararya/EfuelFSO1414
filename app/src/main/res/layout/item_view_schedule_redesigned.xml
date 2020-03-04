@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    android:background="@drawable/adapter_fuelprices_back"
+    android:gravity="center_vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.developtech.efuelfo.customs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextViewNormal"
+                android:textColor="@color/grey_bg"
+                android:text="@string/schedule_date_time"
+                app:fontName="@string/font_semi_bold"
+                android:drawableLeft="@drawable/ellipse_green"
+                android:drawablePadding="10dp"/>
+
+            <com.developtech.efuelfo.customs.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextViewNormal"
+                app:fontName="@string/font_semi_bold"
+                android:layout_marginStart="15dp"
+                android:id="@+id/tvScheduleDateTime"
+                android:layout_marginTop="3dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="5">
+
+                <com.developtech.efuelfo.customs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextViewNormal"
+                    android:textColor="@color/grey_bg"
+                    android:text="@string/created_on"
+                    app:fontName="@string/font_semi_bold"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ellipse_green"
+                    android:drawablePadding="10dp"/>
+
+                <com.developtech.efuelfo.customs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextViewNormal"
+                    app:fontName="@string/font_semi_bold"
+                    android:id="@+id/tvCreatedOn"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="5">
+
+                <com.developtech.efuelfo.customs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextViewNormal"
+                    android:textColor="@color/grey_bg"
+                    android:text="@string/created_by"
+                    app:fontName="@string/font_semi_bold"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ellipse_green"
+                    android:drawablePadding="10dp"/>
+
+                <com.developtech.efuelfo.customs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextViewNormal"
+                    app:fontName="@string/font_semi_bold"
+                    android:id="@+id/tvCreatedBy"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="3dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical">
+
+                <com.developtech.efuelfo.customs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextViewNormal"
+                    android:textColor="@color/grey_bg"
+                    android:text="@string/modified"
+                    app:fontName="@string/font_semi_bold"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ellipse_green"
+                    android:drawablePadding="10dp"/>
+
+                <com.developtech.efuelfo.customs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextViewNormal"
+                    app:fontName="@string/font_semi_bold"
+                    android:id="@+id/tvModified"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <com.developtech.efuelfo.customs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextViewNormal"
+                    android:textColor="@color/grey_bg"
+                    android:text="@string/modified_by"
+                    app:fontName="@string/font_semi_bold"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ellipse_green"
+                    android:drawablePadding="10dp"/>
+
+                <com.developtech.efuelfo.customs.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextViewNormal"
+                    app:fontName="@string/font_semi_bold"
+                    android:id="@+id/tvModifiedBy"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="3dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="0.7"
+        android:layout_height="wrap_content"
+        android:src="@drawable/right_arrow"/>
+
+</LinearLayout>

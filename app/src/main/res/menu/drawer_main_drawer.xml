@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/home_caps" />
+        <item
+            android:id="@+id/nav_refuel"
+            android:title="@string/refuel_caps" />
+
+        <item
+            android:id="@+id/nav_driver_vehicle"
+            android:title="@string/my_drivers_vehicles" />
+        <item
+            android:id="@+id/nav_track_driver"
+            android:title="@string/TrackDriver1" />
+
+        <item
+            android:id="@+id/nav_near_by_fuel_station"
+            android:title="@string/Nearbyfuelpump1" />
+        <item
+            android:id="@+id/nav_payment_history"
+            android:title="@string/PaymentHistoryandInvoicesCaps" />
+
+        <item
+            android:id="@+id/nav_credit_agreements"
+            android:title="@string/MyCalist_txt" />
+        <item
+            android:id="@+id/nav_pay4pal"
+            android:title="@string/pay4pal_caps" />
+
+        <item
+            android:id="@+id/nav_favourites"
+            android:title="@string/myfvrts" />
+
+        <item
+            android:id="@+id/nav_expense"
+            android:title="@string/expense" />
+        <item
+            android:id="@+id/nav_service"
+            android:title="@string/service" />
+    </group>
+
+
+</menu>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:minHeight="100dp"
+    android:gravity="center"
+    android:layout_margin="5dp"
+    android:background="@drawable/adapter_fuelprices_back"
+    android:layout_height="wrap_content">
+
+    <com.developtech.efuelfo.customs.CustomTextView
+        android:id="@+id/tvFuelType"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextViewNormal" />
+
+    <com.developtech.efuelfo.customs.CustomTextView
+        android:id="@+id/tvFuelPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextViewNormal"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:minWidth="340dp"
+    android:background="@color/black_marker"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSettings"
+            android:layout_margin="15dp"
+            style="@style/TextViewNormal"/>
+
+    </ScrollView>
+
+    <com.developtech.efuelfo.customs.CustomButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/buttonGeenStyle"
+        android:text="@string/ok"
+        android:layout_margin="8dp"
+        android:id="@+id/btnOk"/>
+</LinearLayout>

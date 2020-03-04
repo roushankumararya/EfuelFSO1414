@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.developtech.efuelfo"
+    android:targetSandboxVersion="2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="28" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name="com.developtech.efuelfo.app.MyApplication"
+        android:allowBackup="false"
+        android:allowClearUserData="true"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:fullBackupContent="false"
+        android:fullBackupOnly="false"
+        android:icon="@mipmap/efuelapp"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity android:name="com.developtech.efuelfo.HomeDashboard" />
+        <activity android:name="com.developtech.efuelfo.GoogleMapPage" />
+        <activity android:name="com.developtech.efuelfo.EndPageDashboard" />
+        <activity android:name="com.developtech.efuelfo.UserAccountDetail" />
+        <activity android:name="com.developtech.efuelfo.EfuelStationDteail" />
+        <activity android:name="com.developtech.efuelfo.UserPersonalDeatil" />
+        <activity android:name="com.developtech.efuelfo.OtpVerifyNumber" />
+        <activity android:name="com.developtech.efuelfo.UserMobileNumber" />
+        <activity android:name="com.developtech.efuelfo.HomePage" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.developtech.efuelfo.ui.activities.vehicleOwner.RegistrationActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity>
+        <activity
+            android:name="com.developtech.efuelfo.ui.activities.common.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.developtech.efuelfo.ui.activities.common.SplashActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.developtech.efuelfo.ui.activities.vehicleOwner.QRScanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.developtech.efuelfo.ui.activities.common.ForgotPassword"
+            android:parentActivityName="com.developtech.efuelfo.ui.activities.common.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.developtech.efuelfo.ui.activities.common.SelectAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.developtech.efuelfo.ui.activities.common.TutorialAcitvity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.developtech.efuelfo.ui.activities.common.OtpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name="com.developtech.efuelfo.ui.activities.common.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.developtech.efuelfo.ui.activities.fuelStation.StationRegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.developtech.efuelfo.ui.activities.common.HomeActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="TRANS" />
+                <action android:name="CREDIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.developtech.efuelfo.ui.activities.vehicleOwner.UserProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.developtech.efuelfo.ui.activities.stationOwner.FuelPriceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.developtech.efuelfo.ui.activities.stationOwner.ViewScheduleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.developtech.efuelfo.ui.activities.stationOwner.RequestPendingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.developtech.efuelfo.ui.activities.stationOwner.TransactionDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.developtech.efuelfo.ui.activities.stationOwner.VerifyTransactionDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.developtech.efuelfo.ui.adapters.stationOwner.CashTransactionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.developtech.efuelfo.ui.fragments.fuelStaff.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.developtech.efuelfo.ui.activities.common.ResetPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.developtech.efuelfo.ui.activities.vehicleOwner.FuelStationDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.developtech.efuelfo.ui.activities.common.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@style/com_facebook_activity_theme" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.developtech.efuelfo.util.SMSReceiver"
+            android:exported="true"
+            android:permission="android.permission.BROADCAST_SMS" >
+            <intent-filter android:priority="999" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.developtech.efuelfo.ui.activities.vehicleOwner.AddExpenseActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.developtech.efuelfo.ui.activities.vehicleOwner.ExpenseTypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.developtech.efuelfo.ui.activities.vehicleOwner.ExpenseDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/notification_white_app_icon" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <service android:name="com.developtech.efuelfo.notifications.MyFirebaseMessagingService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.developtech.efuelfo.notifications.MyFirebaseInstanceIDService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.developtech.efuelfo.ui.activities.common.ContactUsActivity" />
+        <activity android:name="com.facebook.CustomTabMainActivity" />
+        <!--
+             FirebaseMessagingService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+            Service handling Google Sign-In user revocation. For apps that do not integrate with
+            Google Sign-In, this service will never be started.
+        -->
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <!--
+             FirebaseInstanceIdService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.developtech.efuelfo.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!--
+         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+         with the application context. This config is merged in with the host app's manifest,
+         but there can only be one provider with the same authority activated at any given
+         point; so if the end user has two or more different apps that use Facebook SDK, only the
+         first one will be able to use the provider. To work around this problem, we use the
+         following placeholder in the authority to identify each host application as if it was
+         a completely different provider.
+        -->
+        <provider
+            android:name="com.facebook.internal.FacebookInitProvider"
+            android:authorities="com.developtech.efuelfo.FacebookInitProvider"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

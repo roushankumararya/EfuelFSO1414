@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_img"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/otp" />
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            style="@style/TextViewNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/otp1"
+            android:textAllCaps="true" />
+
+        <View
+            style="@style/viewStyle"
+            android:layout_width="70dp"
+            android:layout_height="@dimen/view_height"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/top_margin"
+            android:gravity="center">
+
+            <com.developtech.efuelfo.customs.CustomTextView
+                style="@style/TextViewNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/otpdesc" />
+
+            <com.developtech.efuelfo.customs.CustomTextView
+                style="@style/TextViewNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginStart="5dp"
+                android:id="@+id/tvMobileNumber"/>
+
+        </LinearLayout>
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            style="@style/TextViewNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/top_margin"
+            android:gravity="center"
+            android:text="@string/otpdesc2" />
+
+        <LinearLayout
+            android:id="@+id/layOtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="40dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etOtp"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:focusable="true"
+                android:inputType="number"
+                android:maxLength="6" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="15dp"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <com.developtech.efuelfo.customs.CustomTextView
+                    android:id="@+id/tv"
+                    style="@style/TextViewOtp"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize20" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="20dp"
+                    android:layout_height="@dimen/view_height"
+                    android:layout_centerInParent="true"
+                    android:background="@color/view_color"
+                    android:visibility="visible"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <com.developtech.efuelfo.customs.CustomTextView
+                    android:id="@+id/tv1"
+                    style="@style/TextViewOtp"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize20" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="20dp"
+                    android:layout_height="@dimen/view_height"
+                    android:layout_centerInParent="true"
+                    android:background="@color/view_color"
+                    android:visibility="visible"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <com.developtech.efuelfo.customs.CustomTextView
+                    android:id="@+id/tv2"
+                    style="@style/TextViewOtp"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize20" />
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="20dp"
+                    android:layout_height="@dimen/view_height"
+                    android:layout_centerInParent="true"
+                    android:background="@color/view_color"
+                    android:visibility="visible"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <com.developtech.efuelfo.customs.CustomTextView
+                    android:id="@+id/tv3"
+                    style="@style/TextViewOtp"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize20" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="20dp"
+                    android:layout_height="@dimen/view_height"
+                    android:layout_centerInParent="true"
+                    android:background="@color/view_color"
+                    android:visibility="visible"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:layout_weight="1">
+
+
+                <com.developtech.efuelfo.customs.CustomTextView
+                    android:id="@+id/tv4"
+                    style="@style/TextViewOtp"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize20" />
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="20dp"
+                    android:layout_height="@dimen/view_height"
+                    android:layout_centerInParent="true"
+                    android:background="@color/view_color"
+                    android:visibility="visible"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <com.developtech.efuelfo.customs.CustomTextView
+                    android:id="@+id/tv5"
+                    style="@style/TextViewOtp"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize20" />
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="20dp"
+                    android:layout_height="@dimen/view_height"
+                    android:layout_centerInParent="true"
+                    android:background="@color/view_color"
+                    android:visibility="visible"
+                    android:layout_marginTop="5dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/textsize20"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.developtech.efuelfo.customs.CustomTextView
+                style="@style/TextViewNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Didn't receive SMS? " />
+
+            <com.developtech.efuelfo.customs.CustomTextView
+                android:id="@+id/tvResend"
+                style="@style/TextViewNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/resendotp"
+                android:padding="5dp"
+                android:textColor="@color/colorAccent"
+                android:textAllCaps="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.developtech.efuelfo.customs.CustomButton
+        android:id="@+id/btnVerify"
+        style="@style/buttonGeenStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonSize"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:text="@string/verify" />
+
+    <include layout="@layout/layout_progress" />
+</RelativeLayout>

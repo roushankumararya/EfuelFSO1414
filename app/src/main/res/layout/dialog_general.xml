@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/request_popup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/colorAccent"
+    android:gravity="center"
+    android:minWidth="350dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.developtech.efuelfo.customs.CustomTextView
+        android:id="@+id/tvTitle"
+        style="@style/TextViewLarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textAllCaps="true"
+        app:fontName="@string/font_bold" />
+
+    <View
+        android:layout_width="60dp"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/viewLine"
+        android:background="@color/line_light_accent" />
+
+    <com.developtech.efuelfo.customs.CustomTextView
+        android:id="@+id/tvDesc"
+        style="@style/TextViewMedium"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:fontFamily="@font/roboto_semi_bold" />
+
+    <com.developtech.efuelfo.customs.CustomEditText
+        android:id="@+id/etEmail"
+        style="@style/TextViewMedium"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+
+        android:backgroundTint="@android:color/transparent"
+        app:fontName="@string/font_semi_bold"
+        android:textCursorDrawable="@null"
+        android:inputType="textEmailAddress"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <com.developtech.efuelfo.customs.CustomButton
+            android:id="@+id/btnNo"
+            style="@style/buttonWhiteStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="No" />
+
+        <com.developtech.efuelfo.customs.CustomButton
+            android:id="@+id/btnYes"
+            style="@style/buttonWhiteStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Yes" />
+    </LinearLayout>
+
+</LinearLayout>

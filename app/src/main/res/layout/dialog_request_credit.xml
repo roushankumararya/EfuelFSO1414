@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_popcredit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/popup_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <com.developtech.efuelfo.customs.CustomTextView
+                style="@style/TextViewMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/credit_limit"
+                android:textAllCaps="true"
+                android:textColor="@color/grey_text" />
+
+            <com.developtech.efuelfo.customs.CustomEditText
+                android:id="@+id/etCreditLimit"
+                style="@style/EditTextNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:hint="@string/credit_limit_rs"
+                android:inputType="numberDecimal"
+                android:maxLength="7"
+                android:textColor="@color/white"
+                android:textColorHint="@color/hint_color" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <com.developtech.efuelfo.customs.CustomTextView
+                style="@style/TextViewMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/duration"
+                android:textAllCaps="true"
+                android:textColor="@color/grey_text" />
+
+            <com.developtech.efuelfo.customs.CustomEditText
+                android:id="@+id/etDuration"
+                style="@style/EditTextNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:hint="@string/days"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/white"
+                android:textColorHint="@color/hint_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/checkBoxStyle" />
+
+            <com.developtech.efuelfo.customs.CustomTextView
+                style="@style/TextViewSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:linksClickable="true"
+                android:text="@string/accept_terms" />
+        </LinearLayout>
+
+        <com.developtech.efuelfo.customs.CustomButton
+            android:id="@+id/btnSendRequest"
+            style="@style/buttonGeenStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttonSize"
+            android:layout_margin="10dp"
+            android:text="@string/send_request" />
+
+    </LinearLayout>
+</FrameLayout>

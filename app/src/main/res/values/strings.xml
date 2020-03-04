@@ -1,0 +1,1860 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EFUEL STATION</string>
+
+
+    <string name="gmap_api_key">AIzaSyCTeaXx0cL2T6aEIbyMhRHkqQ1NsYZ10ms</string>
+
+    <string name="facebook_app_id">2019456584964950</string>
+    <string name="fb_login_protocol_scheme">fb2019456584964950</string>
+    <!--<string name="facebook_app_id">263173554051442</string>-->
+    <!--<string name="fb_login_protocol_scheme">fb263173554051442</string>-->
+    <!--  <string name="google_app_id">e-fuel-1349</string>-->
+
+    <!-- <string name="google_app_id">efuel-177311</string>-->
+    <!-- <string name="gmap_API_KEY">AIzaSyAqK0bU3qzogd5bTiRlNnnSZM2uQl0u2Dc</string>-->
+
+    <!-- <string name="gmap_API_KEY">AIzaSyAqK0bU3qzogd5bTiRlNnnSZM2uQl0u2Dc</string>-->
+    <string name="gmap_API_KEY">AIzaSyAqK0bU3qzogd5bTiRlNnnSZM2uQl0u2Dc</string>
+    <!-- <string name="facebook_app_id">122755525037852</string>
+
+    <string name="fb_login_protocol_scheme">fb122755525037852</string>-->
+
+    <!--Debug SHA-->
+    <!--C0:B8:1A:FE:FA:38:2D:70:12:D8:38:E0:BB:B6:1C:2A:AB:9C:CA:55-->
+
+
+    <!--Release SHA -->
+    <!-- 36:68:52:39:92:9E:28:35:F7:47:A0:1B:90:3D:65:BB:10:2C:DE:22-->
+
+
+    <!-- <string name="gmap_API_KEY">AIzaSyCmSfDzfyj8Xa3D7rjc12Hi3VYaP49u7QM</string>-->
+
+
+    <string name="mainURL">http://azsqldevsrv.cloudapp.net/Efuel/</string>
+
+
+    <!-- <string name="CreditAgreementUrl">http://efuel.southeastasia.cloudapp.azure.com/eFuel_Service_Dev/S/CAagreement.aspx</string>
+    <string name="DisclaimerUrl">http://efuel.southeastasia.cloudapp.azure.com/eFuel_Service_Dev/S/Disclaimer.aspx</string>
+    <string name="EULAUrl">http://efuel.southeastasia.cloudapp.azure.com/eFuel_Service_Dev/S/EULA.aspx</string>
+    <string name="FAQSUrl">http://efuel.southeastasia.cloudapp.azure.com/eFuel_Service_Dev/S/FAQ.aspx</string>
+    <string name="PaymentAgreementUrl">http://efuel.southeastasia.cloudapp.azure.com/eFuel_Service_Dev/S/PaymentAgreement.aspx</string>
+    <string name="PrivacyPolicyUrl">http://efuel.southeastasia.cloudapp.azure.com/eFuel_Service_Dev/S/privacypolicy.aspx</string>
+    <string name="TermsUrl">http://efuel.southeastasia.cloudapp.azure.com/eFuel_Service_Dev/S/terms.aspx</string>
+    <string name="HelpUrl">http://efuel.southeastasia.cloudapp.azure.com/eFuel_Service_Dev/Help/</string>-->
+
+    <!-- <string name="CreditAgreementUrl">S/CAagreement.aspx</string>
+    <string name="DisclaimerUrl">S/Disclaimer.aspx</string>
+    <string name="EULAUrl">S/EULA.aspx</string>
+    <string name="FAQSUrl">S/FAQ.aspx</string>
+    <string name="PaymentAgreementUrl">S/PaymentAgreement.aspx</string>
+    <string name="PrivacyPolicyUrl">S/privacypolicy.aspx</string>
+    <string name="TermsUrl">S/terms.aspx</string>-->
+
+    <!-- <string name="CreditAgreementUrl">S/CAagreement.aspx</string>
+    <string name="DisclaimerUrl">S/Disclaimer.aspx</string>
+    <string name="EULAUrl">S/EULA.aspx</string>
+    <string name="FAQSUrl">S/FAQ.aspx</string>
+    <string name="PaymentAgreementUrl">S/PaymentAgreement.aspx</string>
+    <string name="PrivacyPolicyUrl">S/privacypolicy.aspx</string>
+    <string name="TermsUrl">S/terms.aspx</string>
+    <string name="HelpUrl">Help/</string>-->
+
+
+    <string name="font_light">light.ttf</string>
+    <string name="font_regular">regular.ttf</string>
+    <string name="font_bold">bold.ttf</string>
+    <string name="font_semi_bold">semiBold.ttf</string>
+
+    <string name="CreditAgreementUrl">CreditAgremment</string>
+    <string name="DisclaimerUrl">Disclaimer</string>
+    <string name="EULAUrl">LicenseAgremment</string>
+    <string name="FAQSUrl">FAQs</string>
+    <string name="PaymentAgreementUrl">PaymentAgremment</string>
+    <string name="PrivacyPolicyUrl">PrivacyPolicies</string>
+    <string name="TermsUrl">TermsandCondition</string>
+    <string name="HelpUrl">Help/</string>
+
+
+    <string name="selectpersonalabel">Please Select Account Type</string>
+    <string name="selfdriven">SELF DRIVEN</string>
+    <string name="Continue">Continue</string>
+    <string name="vehicledriver">Vehicle Driver</string>
+    <string name="vehicleowner">Vehicle Owner</string>
+    <string name="gasstaff">Gas Station Staff</string>
+    <string name="gasowner">Gas Station Owner</string>
+    <string name="Rs">\u20B9</string>
+
+    <!-- Vehicle Owner Home Page-->
+
+    <string name="rupee_symbol">₹ </string>
+    <string name="refuel">Refuel</string>
+    <string name="addfuelstation">Add And Edit Fuelstations</string>
+    <string name="Pay4pal">Pay4pal</string>
+    <string name="pay4pal_request_added">Pay4pal request has been added</string>
+    <string name="MyDriversandVehicles">Drivers &amp; Vehicles</string>
+
+    <string name="MyDriversandVehicles1">DRIVERS &amp; VEHICLES</string>
+    <string name="TrackDriver1">TRACK DRIVER</string>
+    <string name="Nearbyfuelpump">NearBy Fuel Station</string>
+    <string name="fuel_station_detail">Fuel Station Details</string>
+    <string name="Nearbyfuelpump1">NEARBY FUEL STATION</string>
+    <string name="PaymentHistoryandInvoicesCaps">PAYMENT HISTORY &amp; INVOICES</string>
+    <string name="PaymentHistoryandInvoices">Payment History &amp; Invoices</string>
+
+    <string name="service">SERVICE</string>
+    <string name="MyProfile">My Profile</string>
+    <string name="StaffRefuel">Staff Refuel</string>
+    <string name="Myoperators">OPERATORS</string>
+    <string name="UpdateFuelprice">Update Fuel Price</string>
+    <string name="NearbyDrivers">NearBy Drivers</string>
+    <string name="AddDrivers"> Add Drivers</string>
+    <string name="myvehicleanddrivers">Drivers &amp; Vehicles</string>
+    <string name="saleinitiation">Sale Initiation</string>
+    <string name="tanktypes">Tank Types</string>
+    <string name="totalsales">Total Sales</string>
+    <string name="home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation Drawer</string>
+    <string name="navigation_drawer_close">Close navigation Drawer</string>
+
+    <!--Expenses screens-->
+
+    <string name="date">date</string>
+    <string name="time">time</string>
+    <string name="typeofexpense">Type of Expense</string>
+    <string name="typeofservice">Type of Service</string>
+    <string name="expense_type">Expense Type</string>
+    <string name="service_type">Service Type</string>
+    <string name="enter_price">Enter price of selected type</string>
+    <string name="enter_date">Enter date</string>
+    <string name="enter_time">Enter time</string>
+    <string name="enter_odometer">Enter odometer(km)</string>
+    <string name="add_expense_type_validation">Add expense type</string>
+    <string name="add_service_type_validation">Add service type</string>
+    <string name="enter_notes">Enter notes</string>
+    <string name="enter_reason">Enter reason</string>
+    <string name="enter_dispense_code">Enter Dispense Code to Verify Transaction</string>
+
+    <string name="reason">reason</string>
+    <string name="notes">notes</string>
+    <string name="add_price">Add Price</string>
+    <string name="add_type_of_expense">Add Type of Expense</string>
+    <string name="add_type_of_service">Add Type of Service</string>
+    <string name="expense_name">Expense Name</string>
+    <string name="service_name">Service Name</string>
+    <string name="add_expense_type">+ Add Expense Type</string>
+    <string name="add_service_type">+ Add Service Type</string>
+    <string name="add_expense_type_dialog">ADD TYPE OF EXPENSE</string>
+    <string name="add_service_type_dialog">ADD TYPE OF SERVICE</string>
+
+    <string name="odometer">ODOMETER(km)</string>
+    <string name="odometer_label">Odometer - </string>
+    <string name="total_label">Total - </string>
+    <string name="date_label">Date - </string>
+    <string name="time_label">Time - </string>
+    <string name="expense_added_msg">Your expense has been added</string>
+    <string name="expense_update_msg">Your expense has been updated</string>
+    <string name="expense_deleted_msg">Your expense has been deleted</string>
+    <string name="service_added_msg">Your service has been added</string>
+    <string name="service_updated_msg">Your service has been updated</string>
+    <string name="service_deleted_msg">Your service has been deleted</string>
+
+
+    <!--Popup Alert Messages-->
+
+    <string name="entername">Please Enter Name</string>
+    <string name="entermobilenumber">Please Enter Mobile Number</string>
+    <string name="enteremailid">Please Enter Email Id</string>
+    <string name="selectvehiclemodel">Please Select Vehicle Model</string>
+    <string name="selectvehiclenumber">Please Enter Vehicle Number</string>
+    <string name="selectvehiclecolor">Please Enter Vehicle Color</string>
+    <string name="enterFuelcapacity">Please Enter Fuel Capacity</string>
+    <string name="selectfuel">Please Select Fuel Category</string>
+    <string name="enterusername">Please Enter Username</string>
+    <string name="enterpassword">Please Enter Password</string>
+    <string name="invaliduser">Invalid User</string>
+    <string name="enterfname">Please Enter Name</string>
+    <string name="enterlastname">Please Enter LastName</string>
+    <string name="enterotp">Please Enter OTP</string>
+    <string name="invalidotp">Invalid OTP</string>
+    <string name="add_image">Profile Image</string>
+    <string name="edit">Edit</string>
+    <string name="name">Name</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="email">Email</string>
+    <string name="country">Country</string>
+    <string name="description">We need Some Sign Up Details</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="or">(or)</string>
+    <string name="login_details">Login Details</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="enter_last_name">Enter Last Name</string>
+
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_passcode">Enter Passcode</string>
+    <string name="enter_login_id">Enter Login ID</string>
+    <string name="language">Language</string>
+    <string name="additional_information">Additional Information</string>
+    <string name="company_name_additional">Company Name (Additional)</string>
+    <string name="address_additional">ADDRESS (Additional)</string>
+    <string name="alternate_number_additional">Alternate Phone Number (Additional)</string>
+    <string name="alternate_email_additional">ALTERNATE EMAIL (Additional)</string>
+    <string name="or_signin_via">Or Sign In Via</string>
+    <string name="personal_details">Personal Details</string>
+
+    <string name="addvehicle">Add Vehicle</string>
+    <string name="adddriver">Add Driver</string>
+    <string name="profile">Profile</string>
+    <string name="registration">REGISTRATION</string>
+    <string name="vehiclemodel">Vehicle Model</string>
+    <string name="vehiclecolor">Vehicle Color</string>
+    <string name="aliasname">Alias (Nick Name)</string>
+    <string name="vehiclenumber">Vehicle Number</string>
+    <string name="vehnum">KA 17 RB 143</string>
+    <string name="FuelCapacity">Fuel Capacity</string>
+    <string name="add">Add</string>
+    <string name="fueltype">Fuel Type</string>
+    <string name="addvehiclemodel">Add Vehicle Model</string>
+    <string name="samplenum">80</string>
+    <string name="model">Model</string>
+    <string name="view_schedule">View Schedule</string>
+    <string name="schedule_date_time">Scheduel Date Time</string>
+    <string name="created_on">Created On</string>
+    <string name="modified">Modified On</string>
+    <string name="created_by">Created By</string>
+    <string name="modified_by">Modified By</string>
+
+
+    <!--Staff Refuel-->
+
+    <string name="Staffrefuel">STAFF REFUEL</string>
+    <string name="fuelstationid">Fuel Station ID</string>
+    <string name="Entervehicalno">Enter Vehicle Number</string>
+    <string name="choose_pic">Choose Image</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+
+    <string name="fueltypes">PETROL Normal</string>
+    <string name="delivery">DISPENSED</string>
+    <string name="dispense">DISPENSE</string>
+    <string name="sendername">SENDER NAME</string>
+    <string name="timedate">TIME/DATE</string>
+    <string name="paymentstatus">PAYMENT STATUS</string>
+    <string name="cost">COST</string>
+    <string name="lter">ltr</string>
+    <string name="sendernameres">JOE</string>
+    <string name="dateaproval">14:53pm 29/3/2016</string>
+    <string name="deliveryres">APPROVED</string>
+
+    <string name="otp1">Login using the OTP sent to</string>
+    <string name="otp">OTP</string>
+    <string name="sampleotp">123456</string>
+    <string name="resendotp">Resend</string>
+    <string name="verify">Verify</string>
+    <string name="myvehicle">Vehicles</string>
+    <string name="mydriver">Drivers</string>
+    <string name="add_fuel">Add Fuel</string>
+    <string name="update">update</string>
+    <string name="passcode">Passcode</string>
+    <string name="confirmpasscode">Confirm Passcode</string>
+    <string name="samplepasscode">1234</string>
+    <string name="hint_passcode">Enter minimum 4 digits passcode</string>
+    <string name="hint_password">Enter minimum 6 character password</string>
+
+
+    <!--      Pay4pal Activity  -->
+    <string name="details">Details</string>
+    <string name="vehicle_number_txt">Vehicle Number</string>
+    <string name="vehicle_number">Vehicle number</string>
+    <string name="email_or_mobile_txt">MOBILE NUMBER</string>
+    <string name="email_or_mobile">Enter Mobile number</string>
+    <string name="fuelstation_id_txt">Fuel Station </string>
+    <string name="fuelstation_id">Enter The Fuel Station ID</string>
+    <string name="fuel_type_txt">Fuel Type</string>
+    <string name="fuel_quantity_txt">Quantity</string>
+    <string name="fuel_amount_txt">Amount</string>
+    <string name="fuel_quantity">10</string>
+    <string name="fuel_quatity_less">-</string>
+    <string name="fuel_quatity_more">&#43;</string>
+    <string name="total_cost_txt">Amount</string>
+    <string name="total_quantity">Total Quantity</string>
+    <string name="pay_btn">PAY</string>
+    <string name="trsn_btn">COMPLETE TRANSACTION</string>
+    <string name="pay4pal">Pay4Pal</string>
+    <string name="currency">&#x20B9;</string>
+    <string name="ltrs_txt"> </string>
+    <string name="zero_value">00.00</string>
+    <string name="rs"> </string>
+    <string name="edit_value">00.00</string>
+    <string name="map">map</string>
+    <string name="drop_down">drop Down</string>
+
+
+    <!--          Refuel Activity String Variables-->
+
+    <string name="fuel_station_txt">FUEL STATION ID</string>
+    <string name="select_number_txt">SELECT VEHICLE</string>
+    <string name="Refuel">Refuel</string>
+    <string name="fuel_station_id">Enter Fuel Station Id</string>
+    <string name="fuel_station_id_label">Fuel Station Id</string>
+
+    <string name="account_number">Account Number</string>
+    <string name="bank_name">Bank Name</string>
+
+    <string name="get_started">Get Started</string>
+
+    <!--          Sale Initiation By Petrol Station Owner -->
+    <string name="name_txt">Name &amp; Mobile </string>
+    <string name="send_btn">SEND</string>
+    <string name="saleinitiation_header">SALE INITIATION</string>
+
+    <!--          Near By Fuels Stations   -->
+    <string name="near_by">NEARBY FUEL PUMPS</string>
+
+    <!--         Sale Initiation By Driver  -->
+    <string name="send_request">SEND REQUEST</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="saveAndSend">Save &amp; Send</string>
+    <string name="pending">Pending</string>
+    <string name="history">History</string>
+    <string name="lmv_tr">LMV.TR</string>
+    <string name="ka_hk_1234">ka Hk 1234</string>
+    <string name="quantity_q">Qty - </string>
+    <string name="_10_ltrs">10</string>
+    <string name="_700">700</string>
+    <string name="notification">Notification</string>
+    <string name="choose_your_fstation">Select Fuel Station</string>
+    <string name="select">Select</string>
+    <string name="schedule_date_should_greater_current_date">Schedule date &amp; time should be greater than current date &amp; time</string>
+
+    <string name="fuel_station_address">(6th Floor), Vakil Square, 56/3, Bannerghatta Main Rd, KEB Colony, New Gurappana Palya, Stage 1, BTM Layout 1, Bengaluru, Karnataka 560029</string>
+    <string name="add_stn_ownr">Fuel Station</string>
+    <string name="add_operator">Operator</string>
+    <string name="add_profile">Profile</string>
+    <string name="ltrs">Litres</string>
+    <string name="approve">Approve</string>
+    <string name="reject">reject</string>
+    <string name="fuelprice">Fuel Price</string>
+    <string name="color">Color</string>
+    <string name="pleaseaddvehicle">Please Add Atleast One Vehicle</string>
+    <string name="pleaseadddriver">Please Add Atleast One Driver</string>
+    <string name="fuel_station_name">Fuel Station Name</string>
+    <string name="enter">Enter</string>
+    <string name="enter_the_fuel_station_name">Enter The Fuel Station Name</string>
+    <string name="enter_the_fuel_station_id">Enter The Fuel Station ID</string>
+    <string name="fuel_supplier">Fuel Company</string>
+    <string name="enter_the_bank_name">Enter Bank Name</string>
+    <string name="bank_account_number">Bank Account Number</string>
+    <string name="enter_the_bank_account_number">Enter The Bank Account Number</string>
+    <string name="address">Address</string>
+    <string name="enter_the_address">Enter Address</string>
+    <string name="latlong">LATLONG</string>
+    <string name="create">CREATE</string>
+    <string name="create_schdule">Create Schedule </string>
+    <string name="add_fuelstation">Add FuelStation</string>
+    <string name="fuel_station_name_">Fuel Station Name :</string>
+    <string name="unique_identity_number_">Unique Identity Number :</string>
+    <string name="fuel_supplier_">Fuel Supplier :</string>
+    <string name="select_address_from_map_">Select Address From Map :</string>
+    <string name="address_">Address :</string>
+    <string name="state_">State :</string>
+    <string name="country_">Country :</string>
+    <string name="latlongs_">Latlongs :</string>
+    <string name="add_station">Add Station</string>
+    <string name="latlongs_of_fuel_station">Latlongs Of Fuel Station :</string>
+    <string name="edit_station">Edit Station</string>
+    <string name="fuel_station_address_label">FUEL STATION ADDRESS</string>
+    <string name="petrol_station_name">Fuel Station Name</string>
+    <string name="bgkj_fjgfjdgjdh_lhgfhdl">bgkj Fjgfjdgjdh Lhgfhdl</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="_0_52_km">0.52 KM</string>
+    <string name="search_here">Search Here</string>
+    <string name="username">UserName</string>
+    <string name="staff_refuel">STAFF REFUEL</string>
+    <string name="enter_vehical_number">Enter Vehicle no.</string>
+    <string name="quantity_unit">QUANTITY(UNIT)</string>
+    <string name="fuel_type">Fuel Type</string>
+    <string name="price">Price</string>
+    <string name="fuel_prices_created">Fuel Prices Created</string>
+    <string name="cash_transaction_created">Cash Transaction Created</string>
+    <string name="capacity">Capacity</string>
+    <string name="number">Number</string>
+    <string name="name_">Name:</string>
+    <string name="price_">Price</string>
+    <string name="quick_fill">Quick Fill</string>
+    <string name="lorum_ipsum_dolor_sit_lorum_ipsum_dolor_sit_lorum_ipsum_dolor_sit_lorum_ipsum_dolor_sit_lorum_ipsum_dolor_sit">Lorum Ipsum Dolor Sit ,Lorum Ipsum Dolor Sit ,Lorum Ipsum Dolor Sit ,Lorum Ipsum Dolor Sit ,Lorum Ipsum Dolor Sit</string>
+    <string name="cheers">Cheers</string>
+    <string name="payment_apzproved">Payment Sucessful</string>
+    <string name="driver_name">Driver Name</string>
+    <string name="enter_driver_name">Enter Driver Name</string>
+    <string name="driver_number">DRIVER Mobile NUMBER</string>
+    <string name="enter_driver_number">Enter Driver Number</string>
+    <string name="enter_email">Enter Email Id</string>
+    <string name="pre_approved_limit_for_the_calender_month">PRE APPROVED LIMIT (calender-month)</string>
+    <string name="approvedlimt">approvedlimt</string>
+    <string name="aleternative_contact">ALETERNATE CONTACT</string>
+    <string name="enter_alternative_number">Enter Alternative Number</string>
+    <string name="operator_name">Operator Name</string>
+    <string name="email_id">EMAIL ID</string>
+    <string name="buy">BUY</string>
+
+    <string name="complete">COMPLETED</string>
+    <string name="continue_caps">CONTINUE</string>
+    <string name="fuel_prices_caps">FUEL PRICES</string>
+    <string name="approved_caps">APPROVED</string>
+    <string name="pending_caps">PENDING</string>
+    <string name="profile_caps">PROFILE</string>
+    <string name="stations">STATIONS</string>
+    <string name="operators_caps">OPERATORS</string>
+    <string name="operators">Operators</string>
+    <string name="drivers">DRIVERS</string>
+    <string name="vehicles">VEHICLES</string>
+    <!--Toasts-->
+    <string name="please_select_vehicle">Please Select Vehicle</string>
+    <string name="please_select_vehicle_owner">Select Vehicle Owner</string>
+    <string name="please_check_internet">Please Check Internet Connection</string>
+    <string name="empty">empty</string>
+    <string name="please_enter_driver_name">Please Enter Driver Name</string>
+    <string name="please_enter_mobile_number">Please Enter Driver Mobile Number</string>
+    <string name="please_enter_approved_limit">Please Enter Approved Limit</string>
+    <string name="please_select_model_category">Please Select Model Category</string>
+    <string name="please_enter_station_name">Please Enter The Station Name</string>
+    <string name="please_enter_the_station_id">Please Enter Fuel Station ID</string>
+    <string name="please_select_the_fuel_supplier">Please Select The Fuel Supplier</string>
+    <string name="please_enter_the_bank_name">Please Enter Bank Name</string>
+    <string name="please_enter_the_bank_account_number">Please Enter Bank Account Number</string>
+    <string name="please_select_your_address">Please Enter Your Address</string>
+    <string name="fuel_station_added_successfuly">Fuel Station Added Successfully</string>
+    <string name="please_enter_unique_identity_key">Please Enter Unique Identity Key</string>
+    <string name="no_fuel_stations_for_this_id">No Fuelstations For This Id</string>
+    <string name="please_signup_first">Please Signup First</string>
+    <string name="please_enter_fuel_price">Please Enter Fuel Price</string>
+    <string name="please_add_fuel">Please Add Fuel</string>
+    <string name="service_error">Service Error</string>
+    <string name="please_turn_on_gps">Please Turn On GPS To Retrieve Location</string>
+    <string name="please_add_atleast_one_fuel_station">Please Add Atleast One Fuel Station</string>
+    <string name="please_enter_operator_name">Please Enter Operator Name</string>
+    <string name="please_enter_operator_mobile_number">Please Enter Operator Mobile Number</string>
+    <string name="please_enter_valid_mobile_number">Please Enter Valid Mobile Number</string>
+    <string name="please_enter_operator_email_id">Please Enter Operator Email Id</string>
+    <string name="please_enter_valid_email_id">Please Enter Valid Email Id</string>
+    <string name="please_select_fuel_station_name">Please Select Fuel Station Name</string>
+    <string name="give_valid_name">Please Enter Valid Name</string>
+    <string name="give_valid_email_id">Please Enter Valid EmailId</string>
+    <string name="give_valid_add_email_id">Please Enter Valid Additional Email Id</string>
+    <string name="internet_available">Internet Connection Available</string>
+    <string name="internet_not_available">Internet Connection NOT Available</string>
+    <string name="profile_updated">Profile Updated!!!</string>
+    <string name="please_confirm_passcode">Please Confirm Passcode</string>
+    <string name="pass_words_should_be_same">New Passcode And Confirm Passcode Should Be Same</string>
+    <string name="passcode_should_be_min_four">Passcode Should Be Minimum 4 Characters</string>
+    <string name="password_should_be_min_six">Password Should Be Minimum 6 Characters</string>
+    <string name="network_error">Network Error Please Try Again</string>
+    <string name="please_enter_vehicle_number">Please Enter Vehicle Number</string>
+    <string name="please_select_fuel_type">Please Select Fuel Type</string>
+    <string name="fuel_type_not_available">Fuel types are not available for this fuel station</string>
+    <string name="no_fuel_available">No Fuel Available</string>
+    <string name="no_owner_details_found_for_this_vehicle">No Owner Details Found For This Vehicle</string>
+    <string name="please_enter_mobile_number_and_passcode">Please Enter Mobile Number And Passcode</string>
+    <string name="please_enter_valid_vehicle_number">Please Enter Valid Vehicle Number</string>
+    <string name="alert">Alert!!!</string>
+    <string name="are_you_sure_to_delete">Are You Sure To Delete Record</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="please_wait">Please Wait…</string>
+    <string name="plese_enter_vehicle_number">Please Enter Vehicle Number</string>
+    <string name="please_enter_fuel_quatity">Please Enter Fuel Quantity</string>
+    <string name="your_vehicle_fuel_capacity_is">"Your Vehicle Fuel Capacity Is "</string>
+    <string name="_only">" Only"</string>
+    <string name="please_enter_total_amount">Please Enter Total Amount</string>
+    <string name="create_fuel_station">ADD FUEL STATION</string>
+    <string name="change_passcode">CHANGE PASSCODE</string>
+    <string name="new_passcode">NEW PASSCODE</string>
+    <string name="change_password">Change Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="old_passcode">OLD PASSCODE</string>
+    <string name="samplepasscode1">123456</string>
+    <string name="old_password">OLD PASSWORD</string>
+    <string name="current_password">Current Password</string>
+    <string name="viewprofile">View Profile </string>
+    <string name="log_out_text">Log Out</string>
+    <string name="are_you_sure_to_logout">Do You Want To Log Out?</string>
+    <string name="please_select_date">Please Select Date</string>
+    <string name="add_vehicle_type">Add Vehicle Type</string>
+    <string name="MyCalist">Credit Agreements</string>
+    <string name="Accepted">Accepted</string>
+    <string name="Declined">Declined</string>
+    <string name="Pending">Pending</string>
+    <string name="Terminate">Terminate</string>1
+    <string name="Terminated">Terminated</string>
+    <!--  <string name="delivered">Delivered</string>-->
+    <string name="delivered">COMPLETED</string>
+    <string name="delivered_caps">DELIVERED</string>
+    <string name="terminating_txt">Want To Terminate Credit Agreement ?</string>
+    <string name="credit_agreement_txt">CREDIT AGREEMENTS</string>
+    <string name="Mytrans">Transactions</string>
+    <string name="reject_pop">CONFIRMATION</string>
+    <string name="aresure">Are You Sure You Want To Reject ?</string>
+    <string name="above_acg_pop">AMOUNT ABOVE CREDIT LIMIT</string>
+    <string name="above_amount">Do You Want To Pay Now ?</string>
+    <string name="above_pay_success">CHEERS</string>
+    <string name="pay_amount">Payment Successful</string>
+    <string name="near_refuel">NEARBY REFUEL</string>
+    <string name="mileage_hint">0</string>
+    <string name="invoice">EMAIL INVOICE</string>
+    <string name="received">RECEIVED</string>
+    <string name="receive">Recieve</string>
+    <string name="email_invoice">Email Invoice</string>
+    <string name="myfvrts">FAVOURITES</string>
+    <string name="ter_credit">Terminate Credit</string>
+    <string name="vehicle_type">VEHICLE TYPE</string>
+    <string name="payment_mode">Payment Type</string>
+    <string name="fuel_type_cap">FUEL TYPE</string>
+    <string name="quantity_only">Quantity</string>
+    <string name="saleinitiationbyoperator">Sale Initiation</string>
+    <string name="park_tns">PARK </string>
+    <string name="ParkTrans">PARK TRANSACTIONS </string>
+    <string name="approved">APPROVED</string>
+    <string name="enterotp1">Please Enter Complete OTP</string>
+    <string name="switchstation">Click To Switch Fuel Station</string>
+    <string name="switchprofile">Switch Profile </string>
+    <string name="deletedriver">Delete Driver</string>
+    <string name="cancel">Cancel</string>
+    <string name="savechanges">Save Changes</string>
+    <string name="deletevehicle">Delete Vehicle</string>
+
+    <string name="ok">OK</string>
+    <string name="amountabove">Amount Above Credit Agreement</string>
+    <string name="douwant">Do You Want To Request?</string>
+    <string name="about">About</string>
+    <string name="phone_num">Phone Number</string>
+    <string name="distance">Distance</string>
+    <string name="prices">Prices</string>
+    <string name="buynow">Buy Now</string>
+    <string name="req_credit">Request Credit</string>
+    <string name="give_valid_mobile_number">Give Valid Mobile Number</string>
+    <string name="home_caps">HOME</string>
+    <string name="refuel_caps">REFUEL</string>
+    <string name="pay4pal_caps">PAY4PAL</string>
+    <string name="gas_station_caps">FUEL STATION</string>
+    <string name="payment_history_caps">PAYMENT HISTORY</string>
+    <string name="change_password_caps">CHANGE PASSWORD</string>
+    <string name="language_caps">Language</string>
+    <string name="help_caps">HELP</string>
+    <string name="select_your_language">Select Your Language</string>
+    <string name="english">English</string>
+    <string name="hindi">Hindi</string>
+    <string name="punjabi">Punjabi</string>
+    <string name="fuel_history_caps">FUEL HISTORY</string>
+    <string name="near_by_drivers_caps">NEARBY DRIVERS</string>
+    <string name="change_passcode_caps">CHANGE PASSCODE</string>
+    <string name="staff_refuel_caps">STAFF REFUEL</string>
+    <string name="settings_caps">SETTINGS</string>
+    <string name="sale_initiation_caps">SALE INITIATION</string>
+    <string name="tank_types_caps">TANK TYPES</string>
+    <string name="total_sale_caps">TOTAL SALE</string>
+    <string name="my_fuel_station_caps">FUEL STATION</string>
+    <string name="my_drivers_vehicles"><![CDATA[DRIVERS & VEHICLES]]></string>
+    <string name="password_validation">Password Should Contain Minimum 8 Characters and Maximum 12 Characters</string>
+    <string name="buy1">BUY  ></string>
+    <string name="Nearbyfuelpumpcaps">NEARBY FUEL PUMP</string>
+
+
+    <string name="confirmation">Are You Sure That You Want To Approve.</string>
+    <string name="selectvehicletype">Please Select Vehicle Make</string>
+    <string name="enterFuelcategory">Please Select Fuel</string>
+    <string name="credit_remain">Credit Remaining</string>
+    <string name="amount">Amount</string>
+    <string name="duration">Duration</string>
+    <string name="days">Number Of Days</string>
+    <string name="termsandcond"><![CDATA[Terms & Conditions]]></string>
+    <string name="termination">Are You Sure That You Want To Terminate.</string>
+    <string name="mileage">Mileage</string>
+    <string name="enter_mileage">Enter mileage.</string>
+    <string name="info">info</string>
+    <string name="transdetails">Transaction Details</string>
+    <string name="quickfill_desc">Quickly Fill Up Fuel For Your Vehicle</string>
+    <string name="near_by_st">Nearby Fuel Station</string>
+    <string name="nearby_desc">Find Nearby Fuel Stations To Know Fuel Prices</string>
+    <string name="pay4_frnd">Pay For Your Friend</string>
+    <string name="pay4_desc">Pay For Your Friend In Emergency Situations </string>
+    <string name="track_driver">Track Your Drivers</string>
+    <string name="track_driver_desc">Keep Tracking Your Drivers Location</string>
+    <string name="credit_agree">Credit Agreements</string>
+    <string name="credit_agree_desc">Check The Credit Balance From Station Owners</string>
+
+    <string name="otpdesc">#Mobile No# </string>
+    <string name="otpdesc2"> Please Enter It Below</string>
+    <string name="please_add_fuelprice">Please Add Fuel Price</string>
+    <string name="accept_terms">I Accept EFUEL Terms And Conditions</string>
+    <string name="accept_terms_underline"><u>I Accept EFUEL Terms And Conditions</u></string>
+    <string name="please_accept">Please Accept Terms And Conditions</string>
+
+
+    <string name="SenderId">163320985621</string>
+    <!-- <string name="SenderId">196813587781</string>-->
+    <string name="connectionString">Endpoint=sb://efuelapp.servicebus.windows.net/;SharedAccessKeyName=DefaultListenSharedAccessSignature;SharedAccessKey=UV67hfISt7gZMBkv8n4hfpHQLUl4KWFA67LBOHoyPko=</string>
+    <!-- <string name="connectionString">Endpoint=sb://efuel-dev.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=uQURTBPw+Eii6hHtFfiIgpq79iigQJ6akBBSgKw6raA=</string>-->
+    <string name="please_enter_and_search">Enter Vehicle Number &amp; Click On Search</string>
+    <string name="enter_address_search">Enter Address And Click On Search</string>
+    <string name="app_walkthrough">App WalkThrough</string>
+    <string name="userGuide">User Guide</string>
+    <string name="terms_conditions">Terms &amp; Conditions </string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+
+    <string name="are_you_sure_want_to_exit">Please Click Yes To Exit?</string>
+    <string name="are_you_sure_want_to_logout">Do You Want To Log Out?</string>
+    <string name="fuel_price_not_added">Fuel Price Is Not Added</string>
+    <string name="company_name">Company Name</string>
+    <string name="station_country">COUNTRY</string>
+    <string name="createedon">TRANSACTION DATE</string>
+    <string name="qrcode">QRCode</string>
+    <string name="theme">Theme</string>
+    <string name="select_theme">Select Your Theme</string>
+    <string name="defaults">Default</string>
+    <string name="yellow_theme">Yellow Theme</string>
+    <string name="manager">Manager</string>
+    <string name="enter_station_code">Please Enter Fuel Station Id</string>
+    <string name="fuel_station_is">Fuel Station Id</string>
+    <string name="no_details_found">No Details Found</string>
+    <string name="Fuelprices">Fuel Prices</string>
+    <string name="verifytransaction_caps">VERIFY TRANSACTIONS</string>
+    <string name="verifytransaction">Verify Transactions</string>
+    <string name="transid">Transaction Id</string>
+    <string name="saleshistory">SALES HISTORY</string>
+    <string name="please_select_any_transaction">Please Select Atleast One Transaction</string>
+    <string name="select_owner"> OWNER</string>
+    <string name="description2">Create A New Password For Your Account</string>
+    <!--New Alerts-->
+    <string name="driver_added">Driver Added</string>
+    <string name="driver_details_saved">Driver Details Saved</string>
+    <string name="driver_deleted">Driver Deleted</string>
+    <string name="vehicle_added_successfully">Vehicle Added Successfully</string>
+    <string name="vehicle_details_saved">Vehicle Details Saved</string>
+    <string name="vehicle_deleted_successfully">Vehicle Deleted Successfully</string>
+    <string name="request_deleted">Request has been deleted</string>
+    <string name="driver_is_now_manager">Added As Manager</string>
+    <string name="driver_is_not_manager"> Manager Access Removed</string>
+    <string name="fuel_station_saved">Fuel Station Saved</string>
+    <string name="operator_added_successfully">Operator Added Successfully</string>
+    <string name="operator_deleted_successfully">Operator Deleted Successfully</string>
+    <string name="operator_details_saved">Operator Details Saved</string>
+    <string name="fuel_tank_created">Action Performed Successfully</string>
+    <string name="fuel_tank_deleted">Fuel Tank has been Deleted</string>
+    <string name="fuel_prices_updated">Fuel Prices Updated</string>
+    <string name="profile_edited">Profile Edited Successfully</string>
+    <string name="update_fuel_request">Updated Successfully</string>
+    <string name="please_enter_fuel_station_id">Please Enter Fuel Station Id</string>
+    <string name="ltrs_only">Litres Only</string>
+    <string name="ownername">Owner Name</string>
+    <string name="my_manager">MANAGERS</string>
+    <string name="enter_vehiclecolor">Enter Vehicle Color</string>
+    <string name="enter_aliasname">Enter Alias Name</string>
+    <string name="enter_vehnum">Enter Vehicle Number</string>
+    <string name="please_fuel_station_name">Enter Fuel Station Name</string>
+    <string name="enter_fuelstation_id">Enter Fuel Station Id</string>
+    <string name="enter_dealer_code">Enter Dealer code</string>
+    <string name="please_enter_valid_login">Please Enter Valid Login Details</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_passcode">Forgot Passcode?</string>
+    <string name="forgot_pass">Forgot Password</string>
+    <string name="forgot_passc">Forgot Passcode</string>
+    <string name="description3">Please Enter Your Registered Phone Number</string>
+    <string name="send">Send</string>
+    <string name="invoice_sending_failed"> Invoice Sending Failed</string>
+    <string name="invoice_sent_successfully">Invoice has been sent to your given email ID</string>
+    <string name="updated_successfully">Updated Successfully</string>
+    <string name="sucess">Success</string>
+    <string name="invaliduser_login">Invalid User Login</string>
+    <string name="invalid_password">Invalid Password</string>
+    <string name="emailsent">Password has been sent to </string>
+    <string name="login_description">Login To Your Account</string>
+    <string name="parked_sale_details">The Sale Initiation Has Been Parked</string>
+    <string name="search_by">"Search Fuel Stations</string>
+    <string name="TrackDriver">Track Driver</string>
+    <string name="low_balance">Low Credit Balance </string>
+    <string name="transaction_log">Transactions </string>
+    <string name="expense_detail">EXPENSE DETAIL</string>
+    <string name="expense_edit">EDIT EXPENSE</string>
+    <string name="service_detail">SERVICE DETAIL</string>
+    <string name="service_edit">EDIT SERVICE</string>
+    <string name="expense">EXPENSE</string>
+    <string name="transaction_details">Transaction Details</string>
+    <string name="approved_limit">Your Approved Limit Is</string>
+    <string name="only">Only</string>
+    <string name="vehicle">Vehicle</string>
+    <string name="driver">Driver</string>
+    <string name="owner">Owner</string>
+    <string name="staff">Staff</string>
+    <string name="transaction_id">Trans ID 00000</string>
+    <string name="requested_successfully">Sale Initiated Successfully</string>
+    <string name="payment_successfull">Payment Successful</string>
+    <string name="please_enter_amount">Please Enter Credit Amount</string>
+    <string name="please_enter_duration">Please Enter Duration Of Agreement</string>
+    <string name="request_sent_successfully">Request Sent Successfully</string>
+    <string name="transaction_dispensed">Transactions has been dispensed</string>
+    <string name="successfully_added_favarite">Successfully Added As Your Favourite Fuel Station</string>
+    <string name="favarites">Favourites</string>
+    <string name="successfully_removed">Successfully Removed As Your Favourite Fuel Station</string>
+    <string name="terminated_successfully">Terminated Successfully</string>
+    <string name="credit_request_added">Your Credit Request has been Added</string>
+    <string name="vehicle_not_available">Vehicle not available</string>
+    <string name="vehicle_capacity">Fuel quantity must be equal or less than Vehicle Fuel Tank Capacity.</string>
+    <string name="Approved">Approved</string>
+    <string name="Invoiced">Invoiced</string>
+    <string name="Payment_Received">Payment Received</string>
+    <string name="duration_">Duration -  </string>
+    <string name="amount_">Amount -  </string>
+    <string name="days_"> Days</string>
+    <string name="terminate">Terminate</string>
+    <string name="Accept">Accept</string>
+    <string name="Decline">Decline</string>
+    <string name="accepted_successfully">Accepted Successfully</string>
+    <string name="decline_success">Declined Successfully</string>
+    <string name="payment_done">Payment Done For Selected Transactions</string>
+    <string name="send_invoice"> Email Send Invoice</string>
+    <string name="Received">Received</string>
+    <string name="Registration">REGISTRATION</string>
+    <string name="vehicle_fuel_capacity">Your Vehicle Fuel Capacity Is </string>
+    <string name="request">request</string>
+    <string name="transaction_successfull">Transaction Successful</string>
+    <string name="settings">Settings</string>
+    <string name="transactions_caps">TRANSACTIONS</string>
+
+
+    <string name="otp_confirm">OTP Sent To Registered Mobile Number</string>
+    <string name="mytransaction">Transaction</string>
+
+
+    <string name="keep_me_in">Keep Me Logged In</string>
+    <string name="enter_mobile_number_for_station">Please Enter Mobile Number With Isd Code</string>
+    <string name="please_locate_map">Please Locate Your Address On Map</string>
+    <string name="fuel_prices_not_updated">Fuel Prices Not Updated</string>
+    <string name="park_transaction_caps">PARK TRANSACTION</string>
+    <string name="park_transaction">Park Transaction</string>
+    <string name="payment_received_successfully">Payment Received Successfully</string>
+    <string name="payment_settled">Paid</string>
+    <string name="status">Payment Status</string>
+    <string name="total_cost">Amount-</string>
+    <string name="total_cost_caps">Amount</string>
+    <string name="quantity">Quantity </string>
+    <string name="add_vehicle">Add Vehicle</string>
+    <string name="totalsales_operator">TOTAL SALES</string>
+
+
+    <string name="please_enter_search_text">Please Enter Address To Search</string>
+    <string name="please_select_operator">Please Select Operator</string>
+    <string name="please_select_fromdate">Please Select From Date</string>
+    <string name="please_select_todate">Please Select To Date</string>
+    <string name="select_date">Select Date</string>
+    <string name="mytransaction_filter">my Transaction Filter</string>
+    <string name="totalsale_filter">Total Sales Filter</string>
+    <string name="please_select_customer">Please Select Customer</string>
+    <string name="from_date_sholud_not_be_future_date">From Date Should Not Be A Future Date</string>
+    <string name="from_date_sholud_less_than_to_date">From Date Should Less Than To Date</string>
+    <string name="please_enter_10_digits_mobile_number">Please Enter Valid Mobile Number</string>
+    <string name="my_operators">Operators</string>
+    <string name="fuel_station_code">Fuel Station Code</string>
+    <string name="please_select_vehicle_number">Please Select Vehicle Number</string>
+    <string name="please_select_owner">Please Select Vehicle Owner</string>
+    <string name="please_select_fuel_type_and_price">Please Select The Fuel Type And Price</string>
+    <string name="MyCalist_txt">CREDIT AGREEMENTS</string>
+    <string name="total_sale">Total Sale -</string>
+    <string name="enter_email_or_mobile">Enter Email Address</string>
+    <string name="UpdatedFailed">Update Failed</string>
+    <string name="action_sucess">Action Performed Successfully</string>
+    <string name="fuel_tank_fuelname">Please Enter Fuel Tank Name</string>
+    <string name="fuel_tank_capacity">Please Enter The Fuel Tank Capacity</string>
+    <string name="fuel_available">Fuel Type Already Available</string>
+    <string name="please_add_tanktype">Please Add Tank Type</string>
+    <string name="logout">Logout</string>
+    <string name="density">Density</string>
+    <string name="density_caps">DENSITY</string>
+    <string name="temperature">Temperature</string>
+    <string name="temperature_caps">TEMPERATURE</string>
+    <string name="logout_text">Are you sure you want to logout</string>
+
+
+    <!--new Strings With Out Localized-->
+    <string name="Faqs">FAQs</string>
+    <string name="disclaimer">Disclaimer</string>
+    <string name="Licenseagreement">License Agreement</string>
+    <string name="creditagreement">Credit Agreement</string>
+    <string name="token_expire">Session Expire</string>
+    <string name="token_expire_text">Your session has expired. Please log in again to continue</string>
+    <string name="paymentagreement">Payment Agreement</string>
+    <string name="complete_trans">Complete Transaction</string>
+    <string name="send_rqst">Send Request</string>
+    <string name="please_enter_address_and_search">Please Enter Address And Click On Search</string>
+    <string name="please_enter_tank_name">Please Enter Tank Name</string>
+    <string name="please_enter_fuel_capacity">Please Enter Tank Fuel Capacity</string>
+    <string name="please_enter_density">Please Enter Tank Density</string>
+    <string name="please_enter_temperature">Please Enter Tank Temperature</string>
+    <string name="selected_fuel_type_alredy_added">Selected Fuel Type Already Added To Tank</string>
+    <string name="fuel_type_occur_more_than_once">Fuel Type occurring more than one time</string>
+
+    <string name="please_add_atleast_priceandtype">Please Add Atleast One Fuel Type And Price</string>
+    <string name="please_enter_valid_amount">Please Enter Valid Amount</string>
+    <string name="PasscodeChangedSuccessfully">Passcode Changed Successfully</string>
+    <string name="no_fuel_station_are_available">No Fuel Stations Available</string>
+    <string name="clicktoswitchtravel">Click To Switch Travels</string>
+    <string name="clicktoswitchfuel">Click To Switch Fuel Station</string>
+    <string name="insifficiant_credit_balance">Insufficient Credit Balance</string>
+    <string name="no_pending_details">No Pending Details Available</string>
+    <string name="no_approved_details">No Approved Details Available</string>
+    <string name="please_enter_valid_address">Please Enter Valid Address</string>
+    <string name="no_history_transaction_details_found">No History Transaction Details Available</string>
+    <string name="no_pending_transactions_available">No Pending Transactions Available</string>
+    <string name="cmp_name">COMPANY NAME</string>
+    <string name="transaction_id_forstaff">transaction Id</string>
+    <string name="transaction_type">Transaction Type</string>
+    <string name="all">All</string>
+    <string name="ca">Credit Agreement</string>
+    <string name="pg">Paid</string>
+    <string name="fromdate">From Date :</string>
+    <string name="todate">To Date :</string>
+    <string name="apply">Apply Filter</string>
+    <string name="clear">Clear Filter</string>
+    <string name="credit_customers">Customers With \n\n Credit</string>
+    <string name="no_fuels">No Fuel Details !!!</string>
+    <string name="no_fuels_updated">Fuel Types Are not Available For This Fuel Station</string>
+    <string name="no_records_available">No Records Available</string>
+    <string name="pay_by_cash">Pay Cash</string>
+    <string name="location">LOCATION</string>
+    <string name="create_fuelstation">Create Fuel Station</string>
+
+
+    <string name="addoperator">ADD OPERATOR</string>
+    <string name="delete_operator">DELETE OPERATOR</string>
+    <string name="block_operator">BLOCK OPERATOR</string>
+    <string name="un_block_operator">UnBLOCK OPERATOR</string>
+    <string name="enter_old_passcode">Please Enter Old Passcode</string>
+    <string name="enter_old_password">Please Enter Old Password</string>
+    <string name="enter_correct_oldpasscode">Please Enter The Correct Old Passcode</string>
+    <string name="old_new_shouldnot">Old Passcode And New Passcode Cannot Be Same</string>
+    <string name="enter_oldpassword">Please Enter The Old Password</string>
+    <string name="enter_correct_oldpassword">Please Enter The Correct Old Password</string>
+    <string name="enter_passwords">Please Enter Password</string>
+    <string name="enter_confirmpassword">Please Enter Confirm Password</string>
+    <string name="new_confirm_password">New Password And Confirm Password Should Be Same</string>
+    <string name="tank_name">Tank Name</string>
+    <string name="o_f_qty">O.F Qty</string>
+    <string name="c_f_qty">C.F Qty</string>
+    <string name="opening_closing_tank">Opening Fuel Quantity Should Not Be Greater Than Tank Capacity For</string>
+    <string name="closing_opening_fueltank">Closing Fuel Quantity Should Not Be Greater Than Opening Fuel Quantity For </string>
+    <string name="add_tank">ADD TANK</string>
+    <string name="my_fuel_station">Fuel Stations</string>
+    <string name="apply_filter">Apply Filter</string>
+    <string name="clear_filter">Clear Filter</string>
+    <string name="from_date">From Date :</string>
+    <string name="to_date">To Date :</string>
+    <string name="payment_unsuccessfull">Unfortunately, Your Transaction Cannot Be Completed At This Time. Please Try Again Later</string>
+    <string name="vehicalno">Vehicle Number</string>
+    <string name="fuel_station_caps">FUEL STATION</string>
+    <string name="fuel_station">Fuel Station</string>
+    <string name="fuel_price">Fuel Prices</string>
+    <string name="edit_driver">Edit Drivers</string>
+    <string name="delete_driver">Delete Drivers</string>
+    <string name="fuel_stn_on_map">Fuel Station On Map</string>
+    <string name="send_mail">Send Email</string>
+    <string name="delete_tank">DELETE  TANK</string>
+    <string name="confirm">Confirmation</string>
+
+    <string name="enter_vnum">Enter Vehicle Number</string>
+    <string name="fuel_prices">FUEL PRICES</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="default_time">00:00:00</string>
+    <string name="default_time_fuel">12:00 AM</string>
+
+    <string name="working_hours">Working Hours</string>
+    <string name="cash_transaction_caps">CASH TRANSACTIONS</string>
+    <string name="cash_transaction">Cash Transactions</string>
+    <string name="online">Online</string>
+    <string name="offline_status">Fuel Station Is Offline</string>
+    <string name="online_status">Fuel Station Is Online</string>
+    <string name="last_updated_on">Last Updated On</string>
+    <string name="please_select_time">Please Select Time</string>
+    <string name="off">OFF</string>
+    <string name="fuel_offline">Fuel Station Is Closed !!</string>
+    <string name="offline_fuelstation">Fuel Station Is Closed, Would You Like To Proceed With The Transaction?</string>
+
+
+    //------------------- Transaliteration ------------------------
+
+
+    <string name="minus">&#45;</string>
+
+    <string name="selectpersonalabel1">Please Select Account Type</string>
+    <string name="selectpersonalabel2"> Of Account</string>
+    <string name="cash">CASH</string>
+    <string name="my_subscriptions">SUBSCRIPTIONS</string>
+    <string name="title_activity_add_vehiclesto_subscription">AddVehiclestoSubscriptionActivity</string>
+    <string name="plan">Plan</string>
+    <string name="select_vehicle">Select Vehicle</string>
+    <string name="renew">Renew</string>
+    <string name="purchase_new_subscription">Purchase New Subscription</string>
+    <string name="title_activity_psopricing">Psopricing</string>
+    <string name="vehicle_unsubscribed">Unsubscribed Vehicle !!</string>
+    <string name="unsubscribed_description">This Vehicle Is Unsubscribed Or Subscription Expired Please Contact Your Vehicle Owner</string>
+    <string name="subscription">Subscription</string>
+    <string name="monthly">Monthly</string>
+    <string name="quarterly">Quarterly</string>
+    <string name="half_yearly">Half Yearly</string>
+    <string name="yearly">Yearly</string>
+    <string name="total">Total</string>
+    <string name="no_of_vehicles">No. Of Vehicles</string>
+    <string name="select_time">Select Time</string>
+    <string name="pincode">Pincode</string>
+    <string name="please_enter_account_name">Please Enter Account Name</string>
+    <string name="account_name">Account Name</string>
+    <string name="please_enter_account_number">Please Enter Account Number</string>
+    <string name="ifsc_code">IFSC Code</string>
+    <string name="please_enter_ifsc_code">Please Enter IFSC Code</string>
+    <string name="add_location">Add Location</string>
+
+    <string name="delivered_success">Dispensed Successfully</string>
+    <string name="dateandtime">DATE / TIME</string>
+    <string name="closed">Closed</string>
+    <string name="email_id_optional">Email Id (Optional)</string>
+    <string name="enter_valid_qty">Please Enter Valid Quantity</string>
+    <string name="please_enter_address">Please Enter Valid Address</string>
+    <string name="please_enter_pincode">Please Enter Valid Pincode</string>
+    <string name="pincode_length">Pincode should 6 digits long</string>
+    <string name="invalid_request">Invalid Request</string>
+    <string name="ca_expired">CA Got Expired</string>
+    <string name="mobilesent">An SMS Has Been Sent To Your Registered Mobile Number Which Will Allow You To Reset Your Password.</string>
+    <string name="not_associated">User Is not Associated With Any Employer</string>
+    <string name="landline">LandLine Number (Optional)</string>
+    <string name="please_enter_landline">Please Enter Landline Number</string>
+    <string name="click_on_map">Click On Map Icon To Locate Address</string>
+    <string name="no_packages">No Packages Found For This Duration</string>
+    <string name="please_select_plan">Please Select The Plan</string>
+    <string name="successfully_subscribed">Subscribed Successfully</string>
+    <string name="subscribed">Subscribed</string>
+    <string name="expired">Expired</string>
+    <string name="unsubscribed">Unsubscribed</string>
+    <string name="online_trans">ONLINE TRANSACTIONS</string>
+    <string name="added_to_subscription">Vehicles Added To Subscription Sucessfully</string>
+    <string name="pls_sel_veh">Please Select Vehicle</string>
+    <string name="something_wrong">Something Went Wrong! Please Try Again</string>
+    <string name="title_activity_mytransactionslist">Transactionslist</string>
+
+
+    <string name="invalid_login">Please Enter Valid Login Id Or Password</string>
+    <string name="PasswordChangedSuccessfully">Password Changed Successfully</string>
+    <string name="pls_enter_correct_old_pass">Please Enter The Correct Old Password</string>
+    <string name="old_new_cant_same">Old Password And New Password Cannot Be The Same</string>
+    <string name="enter_new_passw">Enter new Password</string>
+    <string name="password_mismatch">Password does not match</string>
+    <string name="enter_c_pwd">Enter Confirm Password</string>
+    <string name="enter_o_pwd">Enter Old Password</string>
+    <string name="enter_fuel_qty">Enter Fuel Quantity</string>
+
+    //------------------after Meeting With AJ String Values-------------------------
+
+
+    <string name="saleHistoryandInvoices_caps">SALE HISTORY &amp; INVOICES</string>
+    <string name="saleHistoryandInvoices">Sale History &amp; Invoices</string>
+    <string name="choose_your_employer">Select Vehicle Owner</string>
+    <string name="Is_fuelstation_available">Fuel Station Available</string>
+    <string name="onlytrackdrivers">Track Drivers Will Show Only Drivers Location not Vehicle Location</string>
+    <string name="vehicletype">Vehicle Make</string>
+    <string name="filterbyvehicleno">Filter By Vehicle</string>
+    <string name="selectVehicles">Select Vehicle</string>
+    <string name="selectStation">Select Fuel Station</string>
+    <string name="please_select_driver">Please Select Driver</string>
+    <string name="totalsales_by_operator">Total Sale By Operators</string>
+    <string name="totalsales_by_fuel">Total Sale By Fuel Type</string>
+    <string name="selectdriver">Select Driver</string>
+    <string name="selectfuelstn">Select Fuel Station</string>
+    <string name="tnxdeleted">Transaction Deleted Successfully</string>
+    <string name="tnxgotexp">Transaction Expired</string>
+    <string name="filterbydriver">FILTER BY DRIVER</string>
+    <string name="please_select_fuelstation">Please Select Fuel Station</string>
+    <string name="choose_your_fuelstnowner">Select Fuel Station</string>
+    <string name="emailorloginid">Email / Login Id</string>
+    <!--New-->
+    <string name="vehicle_subscription_expired">Your Vehicle Subscription Is Expired Please Renew Your Subscription</string>
+    <string name="vehicle_not_suscribed">Your Vehicle Is not Subscribed Please Subscribe Your Vehicle</string>
+    <string name="total_price">Total Price </string>
+    <string name="basic_price">Basic Price :</string>
+    <string name="fuel_quantity_with_colon">Fuel Quantity :</string>
+    <string name="fleet_owner_commision">Fleet Owner Commision :</string>
+    <string name="efuel_charges">Fuel Station Fee :</string>
+    <string name="pg_charges">PG Charges :</string>
+    <string name="service_tax">Service Tax :</string>
+    <string name="total_amount_to_pay">Total Amount To Pay :</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="add_phote">Add Photo(Less than 1 MB)</string>
+    <string name="choose_from_gallery">Select From Gallery</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="size_not_enough">Size Is not Enough</string>
+    <string name="track_my_drivers">Track My Drivers</string>
+    <string name="select_filter_type">Select Filter Type</string>
+    <string name="filter_by_vehicle_no">Filter By Vehicle No.</string>
+    <string name="filter_by_driver">Filter By Driver</string>
+    <string name="open">Open</string>
+    <string name="warning_text">\tPlease use this app when the vehicle is stationary and the engine switched off.\t</string>
+
+
+    <string name="vehicle_make">Select Vehicle Make</string>
+    <string name="vehicle_model">Select Vehicle Model</string>
+    <string name="no_driver">No Driver</string>
+    <string name="select_fuel">Select fuel</string>
+    <string name="no_vehicle_present">No Vehicle Present</string>
+    <string name="conveniance">Convenience Fee :</string>
+    <string name="Paid">PAID</string>
+    <string name="amount_p">Amount :</string>
+    <string name="gst">GST(@18%) :</string>
+    <string name="fuel_price_with_colon">Fuel Price :</string>
+    <string name="ca_amount">C/A Amount</string>
+    <string name="dealer_code">Dealer Code</string>
+    <string name="f_station_id">Fuel Station Id</string>
+    <string name="credit_limit">Credit Limit</string>
+    <string name="enter_credit_limit">Enter Credit Limit</string>
+    <string name="enter_credit_dur">Enter Credit Duration</string>
+    <string name="fuel_station_updated">Fuel Station has been updated</string>
+
+
+    <string name="youAreNotUpdatedTitle">Update Available</string>
+    <string name="youAreNotUpdatedMessage">A new version of YOUR_APP_NAME is available. Please update to version\s</string>
+    <string name="youAreNotUpdatedMessage1">\s now</string>
+    <string name="update1">Update</string>
+    <string name="credit_limit_rs">Credit Limit Rs</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="add_service">Add Service</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="unsubscribe">Unsubscribe</string>
+    <string name="add_subscription">Please add your vehicle to subscription to iniciate the transaction.</string>
+    <string name="suggestion">Please add your vehicle to subscription to initiate the transaction.</string>
+    <string name="subscribe_plan">Subscribe Plan</string>
+    <string name="would_you_like">Would you like to do it NOW !</string>
+    <string name="buy_subscription">Buy Subscription</string>
+    <string name="renew_subscription">Renew Subscription</string>
+    <string name="renew_suggestion">Please Renew/Buy subscription to continue</string>
+    <string name="unable_trans">Unable to initiate transaction. Please contact your owner to buy subscription before you can proceed.</string>
+    <string name="please_inform">Please infrom your vehicle owner to make add vechicle SUBSCRIPTION.</string>
+    <string name="tin_number">Tin Number</string>
+    <string name="suggestion_add_vehicle">Please subscribe your vehicle, after you have added the vehicle.</string>
+    <string name="suggestion_tap_on">Please tap on \"Buy Subscription\" button to buy subscription.</string>
+    <string name="search_by_locality">Search for landmark, locality or city</string>
+    <string name="send_qr">Send QR</string>
+    <string name="operator_name_hint">Operator Name</string>
+    <string name="email_id_hint">Email Id</string>
+    <string name="sent_qr_tomail">QR sent to your registerd mail id.</string>
+    <string name="filter_by_station">Filter By Station</string>
+    <string name="contatct_us">Contact Us</string>
+    <string name="submited">SUBMIT</string>
+    <string name="sentpasscode">Passcode has been sent to</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_fuel_station">SEARCH FUEL STATION</string>
+    <string name="request_accepted">Request has been accepted</string>
+    <string name="desc_decline_request">Are you sure you want to decline this request</string>
+    <string name="desc_payment_received">Are you sure?</string>
+
+    <string name="filter">Filter</string>
+    <string name="search_by_date">Search By Date</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="offers">OFFERS</string>
+    <string name="other_notification">OTHER NOTIFICATION</string>
+    <string name="station_available">Fuel station is available</string>
+    <string name="station_unavailable">Fuel station is unavailable</string>
+    <string name="login_id">Login ID</string>
+    <string name="confirmpassword">Enter confirm password</string>
+    <string name="trans_recieved">Transaction has been recieved</string>
+    <string name="ltrs_notation">ltrs</string>
+    <string name="kms">kms</string>
+    <string name="desc_terminate">Are you sure you want to terminate this agreement?</string>
+    <string name="request_declined">Your request has been declined</string>
+
+
+    <string name="contact_us">For any query or information email us at : \n\nEmail Id : support@efuelapp.in</string>
+    <string name="contact_us_title">Contact Us</string>
+    <string name="send_email">Send Email</string>
+    <string name="select_model">Select Vehicle Model</string>
+    <string name="total_cost_label">Total Cost</string>
+    <string name="total_volume">Total Volume</string>
+    <string name="volume">Volume</string>
+    <string name="refueling">Refueling</string>
+    <string name="reports">Reports</string>
+    <string name="end_date_should_greater_than_start_date">End date should be greater or equal to start date</string>
+    <string name="search_by_date_range">Search By Date Range</string>
+    <string name="select_trans_msg">Select any transaction</string>
+    <string name="driver_not_assigned">Driver is not assigned to this vehicle</string>
+    <string name="sending_qr">Sending QR ...</string>
+    <string name="request_parked">Request has been parked successfully</string>
+    <string name="tank_type_updated">Tank types has been updated</string>
+    <string name="fill_all_values">Please enter all quantities before update</string>
+    <string name="rupee_ltrs">₹/ltrs</string>
+    <string name="transactions">Transactions</string>
+    <string name="creditagreements">Credit Agreements</string>
+    <string name="mobile_number_length_check">Mobile number should be of 10 digits</string>
+    <string name="enter_valid_acc_number">Please enter valid account number</string>
+    <string name="enter_valid_ifsc">Please enter valid IFSC code</string>
+    <string name="enter_valid_landline">Please enter valid landline number</string>
+    <string name="validation_acc_number">Account number should be greater or equal to 14 digits></string>
+    <string name="validation_ifsc">IFSC code should be minimum 11 characters long</string>
+    <string name="enter_valid_dealer_code">Please enter valid dealer code</string>
+    <string name="password_length_check">Password should be minimum 6 characters long</string>
+    <string name="password_number_check">Password should contain atleast one number</string>
+    <string name="password_alphabet_check">Password should contain alteast on alphanet</string>
+    <string name="alphabetsOnly">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="alphabetsSpace">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ </string>
+    <string name="numberOnly">1234567890</string>
+    <string name="allAlphaNumericSpace">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890</string>
+    <string name="new_password_length_check">New password should be 6 characters long</string>
+    <string name="old_password_length_check">Current password should be 6 characters long</string>
+    <string name="cnf_password_length_check">Confirm password should be 6 characters long</string>
+    <string name="login_id_number_length_check">Login ID should be equal to 10 digits</string>
+    <string name="password_space_check">Password should not contain any space</string>
+    <string name="alphaNumericOnly">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890</string>
+    <string name="addressCharacters">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 .,#</string>
+    <string name="trans_id">Trans ID </string>
+    <string name="status_only">Status</string>
+    <string name="c_a_amount">C/A Amount</string>
+    <string name="label_transaction_id">Transaction ID</string>
+    <string name="please_enter_fuel_density">Please Enter Tank Density</string>
+    <string name="please_enter_otp">Please enter OTP</string>
+    <string name="fuel_prices_schedule_created">Fuel prices schedule has been created</string>
+    <string name="schedule_exist_of_date_time"><![CDATA[A schedule already exist with the selected date & time. Please try with different date & time]]></string>
+    <string name="credit_agreement">Credit Agreement</string>
+    <string name="station_not_verified">Fuel Station not verified</string>
+
+    <string-array name="country_code">
+        <!--<item>-->
+        <!--+93-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+355-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+213-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1684-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+376-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+244-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1264-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+672-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1268-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+54-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+374-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+297-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+61-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+43-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+994-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1242-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+973-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+880-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1246-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+375-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+32-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+501-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+229-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1441-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+975-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+591-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+387-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+267-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+55-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+246-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1284-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+673-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+359-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+226-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+257-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+855-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+237-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+238-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1345-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+236-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+235-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+56-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+86-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+61-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+61-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+57-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+269-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+682-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+506-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+385-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+53-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+599-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+357-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+420-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+243-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+45-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+253-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1767-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1809-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+670-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+593-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+20-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+503-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+240-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+291-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+372-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+251-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+500-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+298-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+679-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+358-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+33-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+689-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+241-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+220-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+995-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+49-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+233-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+350-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+30-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+299-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1473-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1671-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+502-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+441481-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+224-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+245-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+592-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+509-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+504-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+852-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+36-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+354-->
+        <!--</item>-->
+        <item>+91</item>
+        <!--<item>-->
+        <!--+62-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+98-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+964-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+53-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+441624-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+972-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+39-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+225-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1876-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+81-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+441534-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+962-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+7-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+254-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+686-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+383-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+965-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+996-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+856-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+371-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+961-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+266-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+231-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+218-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+423-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+370-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+352-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+853-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+389-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+261-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+265-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+60-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+960-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+223-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+356-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+692-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+222-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+230-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+262-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+52-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+691-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+373-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+377-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+976-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+382-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1664-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+212-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+258-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+95-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+264-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+674-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+977-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+31-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+599-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+687-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+64-->
+
+        <!--</item>-->
+        <!--<item>-->
+        <!--+505-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+227-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+234-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+683-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+850-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1670-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+47-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+968-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+92-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+680-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+970-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+507-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+675-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+595-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+51-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+63-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+64-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+48-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+351-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1787-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+974-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+242-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+262-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+40-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+7-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+250-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+590-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+290-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1869-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1758-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+590-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+508-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1784-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+685-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+378-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+239-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+966-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+221-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+381-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+248-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+232-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+65-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1721-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+421-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+386-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+677-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+252-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+27-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+82-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+211-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+34-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+94-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+249-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+597-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+47-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+268-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+46-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+41-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+963-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+886-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+992-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+255-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+66-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+228-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+690-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+676-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1868-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+216-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+90-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+993-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1649-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+688-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1340-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+256-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+380-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+971-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+44-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+1-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+598-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+998-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+678-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+379-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+58-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+84-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+681-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--+212-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--967-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--260-->
+        <!--</item>-->
+        <!--<item>-->
+        <!--263-->
+        <!--</item>-->
+    </string-array>
+</resources>

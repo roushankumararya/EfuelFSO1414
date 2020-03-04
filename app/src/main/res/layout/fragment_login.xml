@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutLogin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <com.developtech.efuelfo.customs.CustomTextView
+        style="@style/TextViewNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_details"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/corner_background_less_radius"
+        android:orientation="vertical">
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            style="@style/TextViewSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/login"
+            android:textColor="@color/grey_text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerCode1"
+                android:layout_width="30dp"
+                android:layout_height="@dimen/signupedittext_height"
+                android:background="@null"
+                android:spinnerMode="dialog" />
+
+            <com.developtech.efuelfo.customs.CustomEditText
+                android:id="@+id/etLoginId"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/signupedittext_height"
+                android:background="@null"
+                android:hint="@string/enter_login_id"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/text_login"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/textsize15"
+                app:fontName="@string/font_semi_bold" />
+        </LinearLayout>
+
+
+        <View
+            style="@style/viewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            style="@style/TextViewSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/password"
+            android:textColor="@color/grey_text" />
+
+        <com.developtech.efuelfo.customs.CustomTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/default_line_indicator_unselected_color">
+
+            <com.developtech.efuelfo.customs.CustomEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/signupedittext_height"
+                android:background="@null"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:singleLine="true"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/text_login"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/textsize15"
+                app:fontName="@string/font_semi_bold" />
+
+        </com.developtech.efuelfo.customs.CustomTextInputLayout>
+    </LinearLayout>
+</LinearLayout>

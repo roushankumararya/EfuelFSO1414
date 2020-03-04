@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_img"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_app_bar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/corner_background_black_less_radius"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.developtech.efuelfo.customs.CustomTextView
+                                android:id="@+id/tvName"
+                                style="@style/TextViewMedium"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight=".9"
+                                android:text="@string/fuel_station_code"
+                                android:textAllCaps="true" />
+
+                            <ImageView
+                                android:id="@+id/favoriteImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/favorite_unselected" />
+                        </LinearLayout>
+
+                        <com.developtech.efuelfo.customs.CustomTextView
+                            android:id="@+id/tvStationAddress"
+                            style="@style/TextViewSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/grey_text" />
+
+                        <com.developtech.efuelfo.customs.CustomTextView
+                            android:id="@+id/tvPhoneNumber"
+                            style="@style/TextViewNormal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:drawableLeft="@drawable/phone"
+                            android:drawablePadding="5dp"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/grey_bg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.developtech.efuelfo.customs.CustomTextView
+                                style="@style/TextViewMedium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/f_station_id"
+                                android:textAllCaps="true"/>
+
+                            <com.developtech.efuelfo.customs.CustomTextView
+                                android:id="@+id/tvStationCode"
+                                style="@style/TextViewNormal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/grey_bg" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.developtech.efuelfo.customs.CustomTextView
+                                style="@style/TextViewMedium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/distance"
+                                android:textAllCaps="true" />
+
+                            <com.developtech.efuelfo.customs.CustomTextView
+                                android:id="@+id/tvDistance"
+                                style="@style/TextViewNormal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.developtech.efuelfo.customs.CustomTextView
+                    style="@style/TextViewMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/working_hours"
+                    android:textAllCaps="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/corner_background_black_less_radius"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.developtech.efuelfo.customs.CustomTextView
+                            style="@style/TextViewNormal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/start_time" />
+
+                        <com.developtech.efuelfo.customs.CustomTextView
+                            android:id="@+id/tvStartTime"
+                            style="@style/TextViewNormal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/grey_bg" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.developtech.efuelfo.customs.CustomTextView
+                            style="@style/TextViewNormal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/end_time" />
+
+                        <com.developtech.efuelfo.customs.CustomTextView
+                            android:id="@+id/tvEndTime"
+                            style="@style/TextViewNormal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="bottom"
+                            android:text="" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.developtech.efuelfo.customs.CustomTextView
+                    android:id="@+id/tvFuelPrice"
+                    style="@style/TextViewMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/prices"
+                    android:textAllCaps="true" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rvFuelPrices"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_marginTop="10dp"/>
+
+                <com.developtech.efuelfo.customs.CustomTextView
+                    style="@style/TextViewMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/map"
+                    android:textAllCaps="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/corner_background_black_less_radius"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <fragment
+                        android:id="@+id/fragmentMap"
+                        class="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="2" />
+
+                </LinearLayout>
+
+                <com.developtech.efuelfo.customs.CustomTextView
+                    style="@style/TextViewMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/qrcode"
+                    android:textAllCaps="true" />
+
+
+                <ImageView
+                    android:id="@+id/ivQrCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:src="@drawable/app_logo" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.developtech.efuelfo.customs.CustomButton
+                android:id="@+id/btnBuyNow"
+                style="@style/buttonGeenStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/buttonSize"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="@string/buynow" />
+
+            <com.developtech.efuelfo.customs.CustomButton
+                android:id="@+id/btnRequestCredit"
+                style="@style/buttonGeenStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/buttonSize"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/corner_grey_transparent_background"
+                android:text="@string/req_credit" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/layout_progress" />
+</FrameLayout>

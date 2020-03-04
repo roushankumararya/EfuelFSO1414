@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/adapter_fuelprices_back">
+
+    <com.developtech.efuelfo.customs.CustomTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        style="@style/TextViewMedium"
+        android:layout_marginStart="10dp"
+        android:id="@+id/tvTankName"
+        android:textColor="@color/grey_text"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.developtech.efuelfo.customs.CustomEditText
+            android:id="@+id/etOFQty"
+            android:layout_width="80dp"
+            android:layout_height="@dimen/sendbuttonheight"
+            android:inputType="number"
+            android:gravity="center"
+            android:maxLength="6"
+            android:hint="Qty"
+            android:background="@drawable/corner_background" />
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ltrs_notation"
+            style="@style/TextViewNormal"
+            android:layout_marginStart="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.developtech.efuelfo.customs.CustomEditText
+            android:id="@+id/etCFQty"
+            android:layout_width="80dp"
+            android:layout_height="@dimen/sendbuttonheight"
+            android:inputType="number"
+            android:maxLength="6"
+            android:hint="Qty"
+            android:gravity="center"
+            android:background="@drawable/corner_background" />
+
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ltrs_notation"
+            style="@style/TextViewNormal"
+            android:layout_marginStart="5dp" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="0.1"
+        android:id="@+id/ivEditTankType"
+        android:background="@drawable/edit"/>
+
+</LinearLayout>

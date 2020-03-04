@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:visible="true">
+        <item
+            android:id="@+id/nav_station_ow_home"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/nav_station_ow_fuel_prices"
+            android:title="@string/fuel_price" />
+
+
+        <item
+            android:id="@+id/nav_station_ow_sale_init"
+            android:title="@string/saleinitiation" />
+        <item
+            android:id="@+id/nav_station_ow_operator"
+            android:title="@string/operators" />
+
+        <item
+            android:id="@+id/nav_station_ow_sale_history"
+            android:title="@string/saleHistoryandInvoices" />
+        <item
+            android:id="@+id/nav_station_ow_credit_agreement_list"
+            android:title="@string/creditagreement" />
+
+        <item
+            android:id="@+id/nav_station_ow_park_trans"
+            android:title="@string/park_transaction" />
+        <item
+            android:id="@+id/nav_station_ow_verify_transaction"
+            android:title="@string/verifytransaction" />
+        <item
+            android:id="@+id/nav_station_ow_tank_types"
+            android:title="@string/tanktypes" />
+        <item
+            android:id="@+id/nav_station_ow_total_sale_by_fuel_type"
+            android:title="@string/totalsales_by_fuel" />
+        <!--<item-->
+            <!--android:id="@+id/nav_station_ow_total_sale"-->
+            <!--android:title="@string/totalsales_by_operator" />-->
+        <item
+            android:id="@+id/nav_station_ow_fuel_station"
+            android:title="@string/my_fuel_station" />
+
+      <item
+            android:id="@+id/nav_station_ow_cash_transaction"
+            android:title="@string/cash_transaction" />
+
+        <item
+            android:id="@+id/nav_station_ow_reports"
+            android:title="@string/reports" />
+      <!--&lt;!&ndash;  <item-->
+            <!--android:id="@+id/nav_sto_mymanagers"-->
+            <!--android:title="@string/my_manager" />&ndash;&gt;-->
+
+    </group>
+
+
+</menu>

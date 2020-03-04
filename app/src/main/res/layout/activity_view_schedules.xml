@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_img"
+    android:orientation="vertical"
+    tools:context="com.developtech.efuelfo.ui.activities.stationOwner.ViewScheduleActivity">
+
+    <include layout="@layout/layout_app_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvSchedules"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnCreateSchdule" />
+
+        <com.developtech.efuelfo.customs.CustomButton
+            android:id="@+id/btnCreateSchdule"
+            style="@style/buttonGeenStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:text="@string/create_schdule" />
+    </RelativeLayout>
+
+    <include layout="@layout/layout_progress"/>
+    <include layout="@layout/lyt_no_records"/>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

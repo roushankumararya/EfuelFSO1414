@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_driver_refuel"
+            android:title="@string/refuel_caps" />
+        <item
+            android:id="@+id/nav_driver_nearbyfuel"
+            android:title="@string/Nearbyfuelpump1" />
+        <item
+            android:id="@+id/nav_driver_payment_history"
+            android:title="@string/PaymentHistoryandInvoicesCaps" />
+        
+
+    </group>
+
+
+</menu>
