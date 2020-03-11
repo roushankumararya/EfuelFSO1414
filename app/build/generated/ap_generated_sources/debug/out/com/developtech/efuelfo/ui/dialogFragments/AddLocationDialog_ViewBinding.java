@@ -20,7 +20,7 @@ public class AddLocationDialog_ViewBinding implements Unbinder {
 
   private View view2131361872;
 
-  private View view2131362130;
+  private View view2131362129;
 
   @UiThread
   public AddLocationDialog_ViewBinding(final AddLocationDialog target, View source) {
@@ -40,7 +40,7 @@ public class AddLocationDialog_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.ivCancel, "method 'onClick'");
-    view2131362130 = view;
+    view2131362129 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -63,7 +63,7 @@ public class AddLocationDialog_ViewBinding implements Unbinder {
 
     view2131361872.setOnClickListener(null);
     view2131361872 = null;
-    view2131362130.setOnClickListener(null);
-    view2131362130 = null;
+    view2131362129.setOnClickListener(null);
+    view2131362129 = null;
   }
 }

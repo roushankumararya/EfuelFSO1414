@@ -20,9 +20,9 @@ public class SelectAccountActivity_ViewBinding implements Unbinder {
 
   private View view2131361880;
 
-  private View view2131362362;
+  private View view2131362359;
 
-  private View view2131362361;
+  private View view2131362358;
 
   @UiThread
   public SelectAccountActivity_ViewBinding(SelectAccountActivity target) {
@@ -45,7 +45,7 @@ public class SelectAccountActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.relFuelStaff, "field 'relFuelStaff' and method 'onClick'");
     target.relFuelStaff = Utils.castView(view, R.id.relFuelStaff, "field 'relFuelStaff'", RelativeLayout.class);
-    view2131362362 = view;
+    view2131362359 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -54,7 +54,7 @@ public class SelectAccountActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.relFuelOwner, "field 'relFuelOwner' and method 'onClick'");
     target.relFuelOwner = Utils.castView(view, R.id.relFuelOwner, "field 'relFuelOwner'", RelativeLayout.class);
-    view2131362361 = view;
+    view2131362358 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -82,9 +82,9 @@ public class SelectAccountActivity_ViewBinding implements Unbinder {
 
     view2131361880.setOnClickListener(null);
     view2131361880 = null;
-    view2131362362.setOnClickListener(null);
-    view2131362362 = null;
-    view2131362361.setOnClickListener(null);
-    view2131362361 = null;
+    view2131362359.setOnClickListener(null);
+    view2131362359 = null;
+    view2131362358.setOnClickListener(null);
+    view2131362358 = null;
   }
 }

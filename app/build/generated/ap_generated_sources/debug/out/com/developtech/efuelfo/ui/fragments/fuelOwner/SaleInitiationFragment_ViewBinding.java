@@ -23,7 +23,7 @@ public class SaleInitiationFragment_ViewBinding implements Unbinder {
 
   private View view2131361894;
 
-  private View view2131362159;
+  private View view2131362158;
 
   @UiThread
   public SaleInitiationFragment_ViewBinding(final SaleInitiationFragment target, View source) {
@@ -57,7 +57,7 @@ public class SaleInitiationFragment_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.ivSearch, "method 'onClick'");
-    view2131362159 = view;
+    view2131362158 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -88,7 +88,7 @@ public class SaleInitiationFragment_ViewBinding implements Unbinder {
     view2131361900 = null;
     view2131361894.setOnClickListener(null);
     view2131361894 = null;
-    view2131362159.setOnClickListener(null);
-    view2131362159 = null;
+    view2131362158.setOnClickListener(null);
+    view2131362158 = null;
   }
 }

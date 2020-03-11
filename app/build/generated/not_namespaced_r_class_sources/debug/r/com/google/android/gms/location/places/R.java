@@ -44,14 +44,14 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int place_autocomplete_clear_button = 0x7f0a021a;
-        public static final int place_autocomplete_powered_by_google = 0x7f0a021b;
-        public static final int place_autocomplete_prediction_primary_text = 0x7f0a021c;
-        public static final int place_autocomplete_prediction_secondary_text = 0x7f0a021d;
-        public static final int place_autocomplete_progress = 0x7f0a021e;
-        public static final int place_autocomplete_search_button = 0x7f0a021f;
-        public static final int place_autocomplete_search_input = 0x7f0a0220;
-        public static final int place_autocomplete_separator = 0x7f0a0221;
+        public static final int place_autocomplete_clear_button = 0x7f0a0217;
+        public static final int place_autocomplete_powered_by_google = 0x7f0a0218;
+        public static final int place_autocomplete_prediction_primary_text = 0x7f0a0219;
+        public static final int place_autocomplete_prediction_secondary_text = 0x7f0a021a;
+        public static final int place_autocomplete_progress = 0x7f0a021b;
+        public static final int place_autocomplete_search_button = 0x7f0a021c;
+        public static final int place_autocomplete_search_input = 0x7f0a021d;
+        public static final int place_autocomplete_separator = 0x7f0a021e;
     }
     public static final class layout {
         private layout() {}

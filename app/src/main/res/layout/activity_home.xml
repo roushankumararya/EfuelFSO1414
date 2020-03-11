@@ -6,12 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.activities.common.HomeActivity">
-
         <include
             layout="@layout/app_bar_drawer"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
-
         <android.support.design.widget.NavigationView
             android:id="@+id/navigation"
             android:layout_width="300dp"
@@ -21,7 +19,6 @@
             app:headerLayout="@layout/nav_header_drawer_owner"
             app:itemTextColor="@color/white"
             app:menu="@menu/drawer_main_drawer" />
-
         <include layout="@layout/layout_progress"/>
 
 </android.support.v4.widget.DrawerLayout>

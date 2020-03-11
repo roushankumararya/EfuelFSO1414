@@ -19,7 +19,7 @@ import java.lang.Override;
 public class FuelStationDetail_ViewBinding implements Unbinder {
   private FuelStationDetail target;
 
-  private View view2131362067;
+  private View view2131362066;
 
   private View view2131361877;
 
@@ -37,7 +37,7 @@ public class FuelStationDetail_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.favoriteImage, "field 'favoriteImage' and method 'onClick'");
     target.favoriteImage = Utils.castView(view, R.id.favoriteImage, "field 'favoriteImage'", ImageView.class);
-    view2131362067 = view;
+    view2131362066 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -97,8 +97,8 @@ public class FuelStationDetail_ViewBinding implements Unbinder {
     target.rootLayout = null;
     target.rvFuelPrices = null;
 
-    view2131362067.setOnClickListener(null);
-    view2131362067 = null;
+    view2131362066.setOnClickListener(null);
+    view2131362066 = null;
     view2131361877.setOnClickListener(null);
     view2131361877 = null;
     view2131361897.setOnClickListener(null);

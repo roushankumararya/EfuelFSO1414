@@ -24,11 +24,11 @@ import java.lang.Override;
 public class AddVehicleDialog_ViewBinding implements Unbinder {
   private AddVehicleDialog target;
 
-  private View view2131362670;
+  private View view2131362664;
 
   private View view2131361875;
 
-  private View view2131362163;
+  private View view2131362162;
 
   private View view2131361899;
 
@@ -44,7 +44,7 @@ public class AddVehicleDialog_ViewBinding implements Unbinder {
     target.spinnerVehicleMake = Utils.findRequiredViewAsType(source, R.id.spinnerVehicleMake, "field 'spinnerVehicleMake'", Spinner.class);
     view = Utils.findRequiredView(source, R.id.tvVehicleModel, "field 'tvVehicleModel' and method 'onClick'");
     target.tvVehicleModel = Utils.castView(view, R.id.tvVehicleModel, "field 'tvVehicleModel'", TextView.class);
-    view2131362670 = view;
+    view2131362664 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -68,7 +68,7 @@ public class AddVehicleDialog_ViewBinding implements Unbinder {
     target.lytDeleteBuy = Utils.findRequiredViewAsType(source, R.id.lytDeleteBuy, "field 'lytDeleteBuy'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.ivVehicle, "field 'ivVehicle' and method 'onClick'");
     target.ivVehicle = Utils.castView(view, R.id.ivVehicle, "field 'ivVehicle'", RoundedImageView.class);
-    view2131362163 = view;
+    view2131362162 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -135,12 +135,12 @@ public class AddVehicleDialog_ViewBinding implements Unbinder {
     target.lytDriverName = null;
     target.tvFuelType = null;
 
-    view2131362670.setOnClickListener(null);
-    view2131362670 = null;
+    view2131362664.setOnClickListener(null);
+    view2131362664 = null;
     view2131361875.setOnClickListener(null);
     view2131361875 = null;
-    view2131362163.setOnClickListener(null);
-    view2131362163 = null;
+    view2131362162.setOnClickListener(null);
+    view2131362162 = null;
     view2131361899.setOnClickListener(null);
     view2131361899 = null;
     view2131361879.setOnClickListener(null);

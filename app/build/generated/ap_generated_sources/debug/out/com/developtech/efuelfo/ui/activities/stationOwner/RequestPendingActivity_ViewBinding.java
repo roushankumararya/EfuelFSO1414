@@ -21,7 +21,7 @@ public class RequestPendingActivity_ViewBinding implements Unbinder {
 
   private View view2131361904;
 
-  private View view2131362624;
+  private View view2131362618;
 
   private View view2131361868;
 
@@ -56,7 +56,7 @@ public class RequestPendingActivity_ViewBinding implements Unbinder {
     target.tvAmount = Utils.findRequiredViewAsType(source, R.id.tvAmount, "field 'tvAmount'", TextView.class);
     view = Utils.findRequiredView(source, R.id.tvProfileInfo, "field 'tvProfileInfo' and method 'onClick'");
     target.tvProfileInfo = Utils.castView(view, R.id.tvProfileInfo, "field 'tvProfileInfo'", TextView.class);
-    view2131362624 = view;
+    view2131362618 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -103,8 +103,8 @@ public class RequestPendingActivity_ViewBinding implements Unbinder {
 
     view2131361904.setOnClickListener(null);
     view2131361904 = null;
-    view2131362624.setOnClickListener(null);
-    view2131362624 = null;
+    view2131362618.setOnClickListener(null);
+    view2131362618 = null;
     view2131361868.setOnClickListener(null);
     view2131361868 = null;
     view2131361882.setOnClickListener(null);

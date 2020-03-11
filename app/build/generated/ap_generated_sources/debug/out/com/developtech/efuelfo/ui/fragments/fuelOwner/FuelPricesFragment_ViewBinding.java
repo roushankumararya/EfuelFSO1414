@@ -21,17 +21,17 @@ import java.lang.Override;
 public class FuelPricesFragment_ViewBinding implements Unbinder {
   private FuelPricesFragment target;
 
-  private View view2131362543;
+  private View view2131362538;
 
-  private View view2131362646;
+  private View view2131362640;
 
-  private View view2131362086;
+  private View view2131362085;
 
   private View view2131361893;
 
-  private View view2131362127;
+  private View view2131362126;
 
-  private View view2131362128;
+  private View view2131362127;
 
   private View view2131361881;
 
@@ -42,7 +42,7 @@ public class FuelPricesFragment_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.tvDate, "field 'tvDate' and method 'onClick'");
     target.tvDate = Utils.castView(view, R.id.tvDate, "field 'tvDate'", TextView.class);
-    view2131362543 = view;
+    view2131362538 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -51,7 +51,7 @@ public class FuelPricesFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.tvTime, "field 'tvTime' and method 'onClick'");
     target.tvTime = Utils.castView(view, R.id.tvTime, "field 'tvTime'", TextView.class);
-    view2131362646 = view;
+    view2131362640 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -60,7 +60,7 @@ public class FuelPricesFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.frameRefresh, "field 'frameRefresh' and method 'onClick'");
     target.frameRefresh = Utils.castView(view, R.id.frameRefresh, "field 'frameRefresh'", FrameLayout.class);
-    view2131362086 = view;
+    view2131362085 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -83,7 +83,7 @@ public class FuelPricesFragment_ViewBinding implements Unbinder {
     });
     target.appBarLayout = Utils.findRequiredViewAsType(source, R.id.appBarLayout, "field 'appBarLayout'", AppBarLayout.class);
     view = Utils.findRequiredView(source, R.id.ivArrowDate, "method 'onClick'");
-    view2131362127 = view;
+    view2131362126 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -91,7 +91,7 @@ public class FuelPricesFragment_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.ivArrowTime, "method 'onClick'");
-    view2131362128 = view;
+    view2131362127 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -126,18 +126,18 @@ public class FuelPricesFragment_ViewBinding implements Unbinder {
     target.btnViewSchedule = null;
     target.appBarLayout = null;
 
-    view2131362543.setOnClickListener(null);
-    view2131362543 = null;
-    view2131362646.setOnClickListener(null);
-    view2131362646 = null;
-    view2131362086.setOnClickListener(null);
-    view2131362086 = null;
+    view2131362538.setOnClickListener(null);
+    view2131362538 = null;
+    view2131362640.setOnClickListener(null);
+    view2131362640 = null;
+    view2131362085.setOnClickListener(null);
+    view2131362085 = null;
     view2131361893.setOnClickListener(null);
     view2131361893 = null;
+    view2131362126.setOnClickListener(null);
+    view2131362126 = null;
     view2131362127.setOnClickListener(null);
     view2131362127 = null;
-    view2131362128.setOnClickListener(null);
-    view2131362128 = null;
     view2131361881.setOnClickListener(null);
     view2131361881 = null;
   }

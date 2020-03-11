@@ -6,9 +6,7 @@ import android.support.annotation.UiThread;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import butterknife.Unbinder;
@@ -21,7 +19,7 @@ import java.lang.Override;
 public class ProfileFragment_ViewBinding implements Unbinder {
   private ProfileFragment target;
 
-  private View view2131362363;
+  private View view2131362360;
 
   @UiThread
   public ProfileFragment_ViewBinding(final ProfileFragment target, View source) {
@@ -30,7 +28,7 @@ public class ProfileFragment_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.relSelectImage, "field 'relSelectImage' and method 'onClick'");
     target.relSelectImage = Utils.castView(view, R.id.relSelectImage, "field 'relSelectImage'", RelativeLayout.class);
-    view2131362363 = view;
+    view2131362360 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -44,14 +42,9 @@ public class ProfileFragment_ViewBinding implements Unbinder {
     target.etEmail = Utils.findRequiredViewAsType(source, R.id.etEmail, "field 'etEmail'", EditText.class);
     target.etLoginId = Utils.findRequiredViewAsType(source, R.id.etLoginId, "field 'etLoginId'", EditText.class);
     target.etAddress = Utils.findRequiredViewAsType(source, R.id.etAddress, "field 'etAddress'", EditText.class);
-    target.etPincode = Utils.findRequiredViewAsType(source, R.id.etPincode, "field 'etPincode'", EditText.class);
-    target.spinnerLanguage = Utils.findRequiredViewAsType(source, R.id.spinnerLanguage, "field 'spinnerLanguage'", Spinner.class);
-    target.spinnerCountry = Utils.findRequiredViewAsType(source, R.id.spinnerCountry, "field 'spinnerCountry'", Spinner.class);
     target.cbAdditionalInfo = Utils.findRequiredViewAsType(source, R.id.cbAdditionalInfo, "field 'cbAdditionalInfo'", CheckBox.class);
     target.etAlternateMobile = Utils.findRequiredViewAsType(source, R.id.etAlternateMobile, "field 'etAlternateMobile'", EditText.class);
     target.ivProfilePic = Utils.findRequiredViewAsType(source, R.id.ivProfilePic, "field 'ivProfilePic'", ImageView.class);
-    target.lytAdditionalInfo = Utils.findRequiredViewAsType(source, R.id.lytAdditionalInfo, "field 'lytAdditionalInfo'", LinearLayout.class);
-    target.lytMobileLoginId = Utils.findRequiredViewAsType(source, R.id.lytMobileLoginId, "field 'lytMobileLoginId'", FrameLayout.class);
   }
 
   @Override
@@ -69,16 +62,11 @@ public class ProfileFragment_ViewBinding implements Unbinder {
     target.etEmail = null;
     target.etLoginId = null;
     target.etAddress = null;
-    target.etPincode = null;
-    target.spinnerLanguage = null;
-    target.spinnerCountry = null;
     target.cbAdditionalInfo = null;
     target.etAlternateMobile = null;
     target.ivProfilePic = null;
-    target.lytAdditionalInfo = null;
-    target.lytMobileLoginId = null;
 
-    view2131362363.setOnClickListener(null);
-    view2131362363 = null;
+    view2131362360.setOnClickListener(null);
+    view2131362360 = null;
   }
 }

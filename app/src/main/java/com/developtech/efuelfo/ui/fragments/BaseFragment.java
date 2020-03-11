@@ -47,7 +47,7 @@ public abstract class BaseFragment extends Fragment {
         }
         lytNoRecords = view.findViewById(R.id.lytNoRecords);
         if (lytNoRecords != null) {
-            lytNoRecords.setVisibility(View.GONE);
+            lytNoRecords.setVisibility(View.VISIBLE);
         }
         rootLayout = view.findViewById(R.id.rootlayout);
     }
@@ -90,7 +90,7 @@ public abstract class BaseFragment extends Fragment {
 
     public void hideNoRecords() {
         if (lytNoRecords != null) {
-            lytNoRecords.setVisibility(View.GONE);
+            lytNoRecords.setVisibility(View.VISIBLE);
         }
     }
 

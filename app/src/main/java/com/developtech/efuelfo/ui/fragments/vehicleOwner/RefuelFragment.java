@@ -1,7 +1,6 @@
 package com.developtech.efuelfo.ui.fragments.vehicleOwner;
 
 import android.app.Activity;
-import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -10,10 +9,10 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -44,8 +43,6 @@ import com.developtech.efuelfo.ui.adapters.vehicleOwner.ImageSpinnerAdapter;
 import com.developtech.efuelfo.ui.fragments.BaseFragment;
 import com.developtech.efuelfo.util.SPUtils;
 
-import java.io.Serializable;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -53,7 +50,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class RefuelFragment extends BaseFragment implements VehicleOwnerItemClick, AdapterView.OnItemSelectedListener {
+public class RefuelFragment extends BaseFragment implements VehicleOwnerItemClick,
+        AdapterView.OnItemSelectedListener {
 
     @BindView(R.id.spinnerVehicle)
     Spinner spinnerVehicle;
@@ -191,8 +189,10 @@ public class RefuelFragment extends BaseFragment implements VehicleOwnerItemClic
     NetworkListener addRefuelReq = new NetworkListener() {
         @Override
         public void onSuccess(ResultModel<?> responseBody) {
+            Log.e("kkk","addsucc"+ responseBody.getResutData());
             if (responseBody.getResultCode().equalsIgnoreCase(SPUtils.API_CODES.OK.toString())) {
-                AddFuelRequestResponseModel model = (AddFuelRequestResponseModel) responseBody.getResutData();
+                AddFuelRequestResponseModel model = (AddFuelRequestResponseModel)
+                        responseBody.getResutData();
                 showMsg(getResources().getString(R.string.request_sent_successfully));
             }
         }
@@ -221,7 +221,6 @@ public class RefuelFragment extends BaseFragment implements VehicleOwnerItemClic
                 });
             }
         }
-
         @Override
         public void onStart() {
             showProgress();
@@ -503,8 +502,10 @@ public class RefuelFragment extends BaseFragment implements VehicleOwnerItemClic
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 if(charSequence.length()==10)
                 {
-                    FindFuelStationManualRequestModel requestModel = new FindFuelStationManualRequestModel(charSequence.toString());
-                    appComponent.getServiceCaller().callService(appComponent.getAllApis().findManualStation(requestModel), findManualStationListener);
+                    FindFuelStationManualRequestModel requestModel = new FindFuelStationManualRequestModel
+                            (charSequence.toString());
+                    appComponent.getServiceCaller().callService(appComponent.getAllApis()
+                            .findManualStation(requestModel), findManualStationListener);
                 }
             }
 
@@ -517,12 +518,14 @@ public class RefuelFragment extends BaseFragment implements VehicleOwnerItemClic
     }
 
     void callApi() {
-        appComponent.getServiceCaller().callService(appComponent.getAllApis().getVehicleList(), getAllVehicleListener);
+        appComponent.getServiceCaller().callService(appComponent.getAllApis().getVehicleList(),
+                getAllVehicleListener);
         appComponent.getServiceCaller().callService(appComponent.getAllApis().getFuelType(), getFuelTypeListener);
         locationRequestModel = new LocationRequestModel();
         locationRequestModel.setLatitude(appComponent.getSpUtils().getLat());
         locationRequestModel.setLongitude(appComponent.getSpUtils().getLng());
-        appComponent.getServiceCaller().callService(appComponent.getAllApis().getNearByFuelStation(locationRequestModel), fuelStationListener);
+        appComponent.getServiceCaller().callService(appComponent.getAllApis()
+                .getNearByFuelStation(locationRequestModel), fuelStationListener);
     }
 
     @Override
@@ -607,8 +610,6 @@ public class RefuelFragment extends BaseFragment implements VehicleOwnerItemClic
         requestModel.setVehicle(vehicle);
         requestModel.setQuantity(quantity);
         requestModel.setSelfDriven(switchSelfDriven.isChecked());
-
-
         appComponent.getServiceCaller().callService(appComponent.getAllApis().addRefuelRequest(requestModel), addRefuelReq);
     }
 
@@ -663,7 +664,8 @@ public class RefuelFragment extends BaseFragment implements VehicleOwnerItemClic
                     return;
                 }
 
-                for (FuelTypeResponseModel model : fuelStationResponseModels.get(spinnerStationId.getSelectedItemPosition()-1).getFuelTypeResponseList()) {
+                for (FuelTypeResponseModel model : fuelStationResponseModels.get(spinnerStationId.getSelectedItemPosition()-1)
+                        .getFuelTypeResponseList()) {
                     fuelDetailList.addAll(model.getFuelDetail());
                 }
 

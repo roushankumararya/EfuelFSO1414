@@ -21,7 +21,7 @@ public class VerifyTransactionDetailActivity_ViewBinding implements Unbinder {
 
   private View view2131361886;
 
-  private View view2131362204;
+  private View view2131362202;
 
   @UiThread
   public VerifyTransactionDetailActivity_ViewBinding(VerifyTransactionDetailActivity target) {
@@ -55,7 +55,7 @@ public class VerifyTransactionDetailActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.lytCode, "field 'lytCode' and method 'onClick'");
     target.lytCode = Utils.castView(view, R.id.lytCode, "field 'lytCode'", LinearLayout.class);
-    view2131362204 = view;
+    view2131362202 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -106,7 +106,7 @@ public class VerifyTransactionDetailActivity_ViewBinding implements Unbinder {
 
     view2131361886.setOnClickListener(null);
     view2131361886 = null;
-    view2131362204.setOnClickListener(null);
-    view2131362204 = null;
+    view2131362202.setOnClickListener(null);
+    view2131362202 = null;
   }
 }

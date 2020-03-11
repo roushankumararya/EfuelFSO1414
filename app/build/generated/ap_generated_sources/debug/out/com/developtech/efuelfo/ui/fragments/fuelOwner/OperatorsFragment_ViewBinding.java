@@ -16,7 +16,7 @@ import java.lang.Override;
 public class OperatorsFragment_ViewBinding implements Unbinder {
   private OperatorsFragment target;
 
-  private View view2131362062;
+  private View view2131362061;
 
   @UiThread
   public OperatorsFragment_ViewBinding(final OperatorsFragment target, View source) {
@@ -26,7 +26,7 @@ public class OperatorsFragment_ViewBinding implements Unbinder {
     target.rvOperator = Utils.findRequiredViewAsType(source, R.id.rvOperator, "field 'rvOperator'", RecyclerView.class);
     target.rootLayout = Utils.findRequiredViewAsType(source, R.id.rootLayout, "field 'rootLayout'", CoordinatorLayout.class);
     view = Utils.findRequiredView(source, R.id.fabAddOperator, "method 'onClick'");
-    view2131362062 = view;
+    view2131362061 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -45,7 +45,7 @@ public class OperatorsFragment_ViewBinding implements Unbinder {
     target.rvOperator = null;
     target.rootLayout = null;
 
-    view2131362062.setOnClickListener(null);
-    view2131362062 = null;
+    view2131362061.setOnClickListener(null);
+    view2131362061 = null;
   }
 }

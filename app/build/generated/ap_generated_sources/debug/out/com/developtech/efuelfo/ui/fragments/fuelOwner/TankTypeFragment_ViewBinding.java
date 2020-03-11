@@ -20,7 +20,7 @@ public class TankTypeFragment_ViewBinding implements Unbinder {
 
   private View view2131361905;
 
-  private View view2131362064;
+  private View view2131362063;
 
   @UiThread
   public TankTypeFragment_ViewBinding(final TankTypeFragment target, View source) {
@@ -39,7 +39,7 @@ public class TankTypeFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.fabAddTankType, "field 'fabAddTankType' and method 'onClick'");
     target.fabAddTankType = Utils.castView(view, R.id.fabAddTankType, "field 'fabAddTankType'", FloatingActionButton.class);
-    view2131362064 = view;
+    view2131362063 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -63,7 +63,7 @@ public class TankTypeFragment_ViewBinding implements Unbinder {
 
     view2131361905.setOnClickListener(null);
     view2131361905 = null;
-    view2131362064.setOnClickListener(null);
-    view2131362064 = null;
+    view2131362063.setOnClickListener(null);
+    view2131362063 = null;
   }
 }

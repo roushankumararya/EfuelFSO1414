@@ -18,9 +18,9 @@ import java.lang.Override;
 public class ReportFragment_ViewBinding implements Unbinder {
   private ReportFragment target;
 
-  private View view2131362635;
+  private View view2131362629;
 
-  private View view2131362557;
+  private View view2131362552;
 
   @UiThread
   public ReportFragment_ViewBinding(final ReportFragment target, View source) {
@@ -29,7 +29,7 @@ public class ReportFragment_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.tvStartDate, "field 'tvStartDate' and method 'onClick'");
     target.tvStartDate = Utils.castView(view, R.id.tvStartDate, "field 'tvStartDate'", TextView.class);
-    view2131362635 = view;
+    view2131362629 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -38,7 +38,7 @@ public class ReportFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.tvEndDate, "field 'tvEndDate' and method 'onClick'");
     target.tvEndDate = Utils.castView(view, R.id.tvEndDate, "field 'tvEndDate'", TextView.class);
-    view2131362557 = view;
+    view2131362552 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -69,9 +69,9 @@ public class ReportFragment_ViewBinding implements Unbinder {
     target.tvDays = null;
     target.pieChart = null;
 
-    view2131362635.setOnClickListener(null);
-    view2131362635 = null;
-    view2131362557.setOnClickListener(null);
-    view2131362557 = null;
+    view2131362629.setOnClickListener(null);
+    view2131362629 = null;
+    view2131362552.setOnClickListener(null);
+    view2131362552 = null;
   }
 }

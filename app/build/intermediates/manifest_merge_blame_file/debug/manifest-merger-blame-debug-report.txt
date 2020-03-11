@@ -85,523 +85,524 @@
 45-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:31:9-48
 46        android:supportsRtl="true"
 46-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:32:9-35
-47        android:theme="@style/AppTheme"
-47-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:33:9-40
-48        android:usesCleartextTraffic="true" >
-48-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:34:9-44
-49        <activity android:name="com.developtech.efuelfo.HomeDashboard" />
-49-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:37:9-60
-49-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:37:19-48
-50        <activity android:name="com.developtech.efuelfo.GoogleMapPage" />
-50-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:38:9-51
-50-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:38:19-48
-51        <activity android:name="com.developtech.efuelfo.EndPageDashboard" />
-51-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:39:9-54
-51-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:39:19-51
-52        <activity android:name="com.developtech.efuelfo.UserAccountDetail" />
-52-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:40:9-55
-52-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:40:19-52
-53        <activity android:name="com.developtech.efuelfo.EfuelStationDteail" />
-53-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:41:9-56
-53-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:41:19-53
-54        <activity android:name="com.developtech.efuelfo.UserPersonalDeatil" />
-54-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:42:9-56
-54-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:42:19-53
-55        <activity android:name="com.developtech.efuelfo.OtpVerifyNumber" />
-55-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:43:9-53
-55-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:43:19-50
-56        <activity android:name="com.developtech.efuelfo.UserMobileNumber" />
-56-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:44:9-54
-56-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:44:19-51
-57        <activity android:name="com.developtech.efuelfo.HomePage" />
-57-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:45:9-46
-57-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:45:19-43
-58
-59        <uses-library
-59-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:47:9-49:40
-60            android:name="org.apache.http.legacy"
-60-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:48:13-50
-61            android:required="false" />
-61-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:49:13-37
-62
-63        <activity
-63-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:51:9-62:20
-64            android:name="com.developtech.efuelfo.ui.activities.vehicleOwner.RegistrationActivity"
-64-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:52:13-76
-65            android:screenOrientation="portrait" >
-65-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:53:13-49
-66
-67            <!-- <intent-filter> -->
-68            <!-- <action android:name="android.intent.action.MAIN" /> -->
-69
+47        android:testOnly="true"
+48        android:theme="@style/AppTheme"
+48-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:33:9-40
+49        android:usesCleartextTraffic="true" >
+49-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:34:9-44
+50        <activity android:name="com.developtech.efuelfo.HomeDashboard" />
+50-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:37:9-60
+50-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:37:19-48
+51        <activity android:name="com.developtech.efuelfo.GoogleMapPage" />
+51-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:38:9-51
+51-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:38:19-48
+52        <activity android:name="com.developtech.efuelfo.EndPageDashboard" />
+52-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:39:9-54
+52-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:39:19-51
+53        <activity android:name="com.developtech.efuelfo.UserAccountDetail" />
+53-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:40:9-55
+53-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:40:19-52
+54        <activity android:name="com.developtech.efuelfo.EfuelStationDteail" />
+54-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:41:9-56
+54-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:41:19-53
+55        <activity android:name="com.developtech.efuelfo.UserPersonalDeatil" />
+55-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:42:9-56
+55-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:42:19-53
+56        <activity android:name="com.developtech.efuelfo.OtpVerifyNumber" />
+56-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:43:9-53
+56-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:43:19-50
+57        <activity android:name="com.developtech.efuelfo.UserMobileNumber" />
+57-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:44:9-54
+57-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:44:19-51
+58        <activity android:name="com.developtech.efuelfo.HomePage" />
+58-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:45:9-46
+58-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:45:19-43
+59
+60        <uses-library
+60-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:47:9-49:40
+61            android:name="org.apache.http.legacy"
+61-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:48:13-50
+62            android:required="false" />
+62-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:49:13-37
+63
+64        <activity
+64-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:51:9-62:20
+65            android:name="com.developtech.efuelfo.ui.activities.vehicleOwner.RegistrationActivity"
+65-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:52:13-76
+66            android:screenOrientation="portrait" >
+66-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:53:13-49
+67
+68            <!-- <intent-filter> -->
+69            <!-- <action android:name="android.intent.action.MAIN" /> -->
 70
-71            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-72            <!-- </intent-filter> -->
-73
-74        </activity>
-75        <activity
-75-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:63:9-66:58
-76            android:name="com.developtech.efuelfo.ui.activities.common.LoginActivity"
-76-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:64:13-63
-77            android:screenOrientation="portrait"
-77-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:65:13-49
-78            android:windowSoftInputMode="adjustResize" />
-78-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:66:13-55
-79        <activity
-79-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:67:9-75:20
-80            android:name="com.developtech.efuelfo.ui.activities.common.SplashActivity"
-80-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:68:13-64
-81            android:screenOrientation="portrait" >
-81-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:69:13-49
-82            <intent-filter>
-82-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:70:13-74:29
-83                <action android:name="android.intent.action.MAIN" />
-83-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:71:17-69
-83-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:71:25-66
-84
-85                <category android:name="android.intent.category.LAUNCHER" />
-85-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:73:17-77
-85-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:73:27-74
-86            </intent-filter>
-87        </activity>
-88        <activity
-88-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:76:9-78:52
-89            android:name="com.developtech.efuelfo.ui.activities.vehicleOwner.QRScanActivity"
-89-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:77:13-70
-90            android:screenOrientation="portrait" />
-90-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:78:13-49
-91        <activity
-91-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:79:9-82:52
-92            android:name="com.developtech.efuelfo.ui.activities.common.ForgotPassword"
-92-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:80:13-64
-93            android:parentActivityName="com.developtech.efuelfo.ui.activities.common.LoginActivity"
-93-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:81:13-77
-94            android:screenOrientation="portrait" />
-94-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:82:13-49
-95        <activity
-95-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:83:9-85:52
-96            android:name="com.developtech.efuelfo.ui.activities.common.SelectAccountActivity"
-96-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:84:13-71
-97            android:screenOrientation="portrait" />
-97-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:85:13-49
-98        <activity
-98-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:86:9-88:52
-99            android:name="com.developtech.efuelfo.ui.activities.common.TutorialAcitvity"
-99-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:87:13-66
-100            android:screenOrientation="portrait" />
-100-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:88:13-49
-101        <activity
-101-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:89:9-92:58
-102            android:name="com.developtech.efuelfo.ui.activities.common.OtpActivity"
-102-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:90:13-61
-103            android:screenOrientation="portrait"
-103-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:91:13-49
-104            android:windowSoftInputMode="stateVisible" />
-104-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:92:13-55
-105        <activity
-105-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:93:9-95:52
-106            android:name="com.developtech.efuelfo.ui.activities.common.ChangePasswordActivity"
-106-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:94:13-72
-107            android:screenOrientation="portrait" />
-107-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:95:13-49
-108        <activity
-108-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:96:9-98:52
-109            android:name="com.developtech.efuelfo.ui.activities.fuelStation.StationRegistrationActivity"
-109-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:97:13-82
-110            android:screenOrientation="portrait" />
-110-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:98:13-49
-111        <activity
-111-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:99:9-108:20
-112            android:name="com.developtech.efuelfo.ui.activities.common.HomeActivity"
-112-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:100:13-62
-113            android:screenOrientation="portrait" >
-113-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:101:13-49
-114            <intent-filter>
-114-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:102:13-107:29
-115                <action android:name="TRANS" />
-115-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:103:17-48
-115-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:103:25-45
-116                <action android:name="CREDIT" />
-116-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:104:17-49
-116-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:104:25-46
-117
-118                <category android:name="android.intent.category.DEFAULT" />
-118-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:106:17-76
-118-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:106:27-73
-119            </intent-filter>
-120        </activity>
-121        <activity
-121-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:109:9-111:52
-122            android:name="com.developtech.efuelfo.ui.activities.vehicleOwner.UserProfileActivity"
-122-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:110:13-75
-123            android:screenOrientation="portrait" />
-123-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:111:13-49
-124        <activity
-124-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:112:9-115:57
-125            android:name="com.developtech.efuelfo.ui.activities.stationOwner.FuelPriceActivity"
-125-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:113:13-73
-126            android:screenOrientation="portrait"
-126-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:114:13-49
-127            android:windowSoftInputMode="stateHidden" />
-127-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:115:13-54
-128        <activity
-128-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:116:9-118:52
-129            android:name="com.developtech.efuelfo.ui.activities.stationOwner.ViewScheduleActivity"
-129-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:117:13-76
-130            android:screenOrientation="portrait" />
-130-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:118:13-49
-131        <activity
-131-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:119:9-121:52
-132            android:name="com.developtech.efuelfo.ui.activities.stationOwner.RequestPendingActivity"
-132-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:120:13-78
-133            android:screenOrientation="portrait" />
-133-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:121:13-49
-134        <activity
-134-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:122:9-124:52
-135            android:name="com.developtech.efuelfo.ui.activities.stationOwner.TransactionDetailsActivity"
-135-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:123:13-82
-136            android:screenOrientation="portrait" />
-136-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:124:13-49
-137        <activity
-137-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:125:9-127:52
-138            android:name="com.developtech.efuelfo.ui.activities.stationOwner.VerifyTransactionDetailActivity"
-138-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:126:13-87
-139            android:screenOrientation="portrait" />
-139-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:127:13-49
-140        <activity
-140-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:128:9-130:52
-141            android:name="com.developtech.efuelfo.ui.adapters.stationOwner.CashTransactionActivity"
-141-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:129:13-77
-142            android:screenOrientation="portrait" />
-142-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:130:13-49
-143        <activity
-143-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:131:9-133:52
-144            android:name="com.developtech.efuelfo.ui.fragments.fuelStaff.ProfileActivity"
-144-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:132:13-67
-145            android:screenOrientation="portrait" />
-145-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:133:13-49
-146        <activity
-146-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:134:9-136:52
-147            android:name="com.developtech.efuelfo.ui.activities.common.ResetPassword"
-147-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:135:13-63
-148            android:screenOrientation="portrait" />
-148-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:136:13-49
-149        <activity
-149-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:137:9-139:52
-150            android:name="com.developtech.efuelfo.ui.activities.vehicleOwner.FuelStationDetail"
-150-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:138:13-73
-151            android:screenOrientation="portrait" />
-151-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:139:13-49
-152        <activity
-152-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:140:9-142:52
-153            android:name="com.developtech.efuelfo.ui.activities.common.SettingActivity"
-153-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:141:13-65
-154            android:screenOrientation="portrait" />
-154-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:142:13-49
-155        <activity
-155-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:143:9-146:72
-156            android:name="com.yalantis.ucrop.UCropActivity"
-156-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:144:13-60
-157            android:screenOrientation="portrait"
-157-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:145:13-49
-158            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-158-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:146:13-69
-159
-160        <meta-data
-160-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:148:9-150:55
-161            android:name="com.facebook.sdk.ApplicationId"
-161-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:149:13-58
-162            android:value="@string/facebook_app_id" />
-162-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:150:13-52
-163
-164        <activity
-164-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:152:9-155:48
-165            android:name="com.facebook.FacebookActivity"
-165-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:153:13-57
-166            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-166-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:154:13-96
-167            android:label="@string/app_name"
-167-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:155:13-45
-168            android:theme="@style/com_facebook_activity_theme" />
-168-->[com.facebook.android:facebook-common:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\47da8e26a7ae5e4cab56b6801d87e2f4\facebook-common-4.42.0\AndroidManifest.xml:32:13-63
-169        <activity
-169-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:156:9-167:20
-170            android:name="com.facebook.CustomTabActivity"
-170-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:157:13-58
-171            android:exported="true" >
-171-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:158:13-36
-172            <intent-filter>
-172-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:159:13-166:29
-173                <action android:name="android.intent.action.VIEW" />
-173-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:160:17-69
-173-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:160:25-66
-174
-175                <category android:name="android.intent.category.DEFAULT" />
-175-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:106:17-76
-175-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:106:27-73
-176                <category android:name="android.intent.category.BROWSABLE" />
-176-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:163:17-78
-176-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:163:27-75
-177
-178                <data android:scheme="@string/fb_login_protocol_scheme" />
-178-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:165:17-75
-178-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:165:23-72
-179            </intent-filter>
-180        </activity>
-181
-182        <receiver
-182-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:169:9-176:20
-183            android:name="com.developtech.efuelfo.util.SMSReceiver"
-183-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:170:13-45
-184            android:exported="true"
-184-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:171:13-36
-185            android:permission="android.permission.BROADCAST_SMS" >
-185-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:172:13-66
-186            <intent-filter android:priority="999" >
-186-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:173:13-175:29
-186-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:173:28-50
-187                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
-187-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:174:17-82
-187-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:174:25-79
-188            </intent-filter>
-189        </receiver>
-190
-191        <meta-data
-191-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:178:9-180:55
-192            android:name="com.google.android.geo.API_KEY"
-192-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:179:13-58
-193            android:value="@string/google_maps_key" />
-193-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:180:13-52
-194
-195        <activity
-195-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:182:9-185:57
-196            android:name="com.developtech.efuelfo.ui.activities.vehicleOwner.AddExpenseActivity"
-196-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:183:13-74
-197            android:screenOrientation="portrait"
-197-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:184:13-49
-198            android:windowSoftInputMode="stateHidden" />
-198-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:185:13-54
-199        <activity
-199-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:186:9-188:52
-200            android:name="com.developtech.efuelfo.ui.activities.vehicleOwner.ExpenseTypeActivity"
-200-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:187:13-75
-201            android:screenOrientation="portrait" />
-201-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:188:13-49
-202        <activity
-202-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:189:9-192:57
-203            android:name="com.developtech.efuelfo.ui.activities.vehicleOwner.ExpenseDetailActivity"
-203-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:190:13-77
-204            android:screenOrientation="portrait"
-204-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:191:13-49
-205            android:windowSoftInputMode="stateHidden" />
-205-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:192:13-54
-206
-207        <meta-data
-207-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:194:9-196:72
-208            android:name="com.google.firebase.messaging.default_notification_icon"
-208-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:195:13-83
-209            android:resource="@drawable/notification_white_app_icon" />
-209-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:196:13-69
-210        <meta-data
-210-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:197:9-199:53
-211            android:name="com.google.firebase.messaging.default_notification_color"
-211-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:198:13-84
-212            android:resource="@color/colorAccent" />
-212-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:199:13-50
-213
-214        <service android:name="com.developtech.efuelfo.notifications.MyFirebaseMessagingService" >
-214-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:201:9-205:19
-214-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:201:18-74
-215            <intent-filter>
-215-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:202:13-204:29
-216                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-216-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:203:17-78
-216-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:203:25-75
-217            </intent-filter>
-218        </service>
-219        <service android:name="com.developtech.efuelfo.notifications.MyFirebaseInstanceIDService" >
-219-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:206:9-210:19
-219-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:206:18-75
-220            <intent-filter>
-220-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:207:13-209:29
-221                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
-221-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:208:17-80
-221-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:208:25-77
-222            </intent-filter>
-223        </service>
-224
-225        <activity android:name="com.developtech.efuelfo.ui.activities.common.ContactUsActivity" />
-225-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:212:9-76
-225-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:212:19-73
-226        <activity android:name="com.facebook.CustomTabMainActivity" />
-226-->[com.facebook.android:facebook-common:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\47da8e26a7ae5e4cab56b6801d87e2f4\facebook-common-4.42.0\AndroidManifest.xml:33:9-71
-226-->[com.facebook.android:facebook-common:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\47da8e26a7ae5e4cab56b6801d87e2f4\facebook-common-4.42.0\AndroidManifest.xml:33:19-68
-227        <!--
-228             FirebaseMessagingService performs security checks at runtime,
-229             no need for explicit permissions despite exported="true"
-230        -->
-231        <service
-231-->[com.google.firebase:firebase-messaging:17.3.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\c63d92c459c9df2bf794de3dcfe5b433\firebase-messaging-17.3.2\AndroidManifest.xml:28:9-34:19
-232            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-232-->[com.google.firebase:firebase-messaging:17.3.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\c63d92c459c9df2bf794de3dcfe5b433\firebase-messaging-17.3.2\AndroidManifest.xml:29:13-82
-233            android:exported="true" >
-233-->[com.google.firebase:firebase-messaging:17.3.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\c63d92c459c9df2bf794de3dcfe5b433\firebase-messaging-17.3.2\AndroidManifest.xml:30:13-36
-234            <intent-filter android:priority="-500" >
-234-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:202:13-204:29
-235                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-235-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:203:17-78
-235-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:203:25-75
-236            </intent-filter>
-237        </service>
-238
-239        <activity
-239-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\df5c5bb33600168aa9f232f03a507f0b\firebase-auth-16.0.3\AndroidManifest.xml:23:9-29:75
-240            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-240-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\df5c5bb33600168aa9f232f03a507f0b\firebase-auth-16.0.3\AndroidManifest.xml:24:13-85
-241            android:excludeFromRecents="true"
-241-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\df5c5bb33600168aa9f232f03a507f0b\firebase-auth-16.0.3\AndroidManifest.xml:25:13-46
-242            android:exported="true"
-242-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\df5c5bb33600168aa9f232f03a507f0b\firebase-auth-16.0.3\AndroidManifest.xml:26:13-36
-243            android:launchMode="singleInstance"
-243-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\df5c5bb33600168aa9f232f03a507f0b\firebase-auth-16.0.3\AndroidManifest.xml:27:13-48
-244            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-244-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\df5c5bb33600168aa9f232f03a507f0b\firebase-auth-16.0.3\AndroidManifest.xml:28:13-102
-245            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-245-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\df5c5bb33600168aa9f232f03a507f0b\firebase-auth-16.0.3\AndroidManifest.xml:29:13-72
-246
-247        <service
-247-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\df5c5bb33600168aa9f232f03a507f0b\firebase-auth-16.0.3\AndroidManifest.xml:31:9-35:19
-248            android:name="com.google.firebase.components.ComponentDiscoveryService"
-248-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\df5c5bb33600168aa9f232f03a507f0b\firebase-auth-16.0.3\AndroidManifest.xml:31:18-89
-249            android:exported="false" >
-249-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:31:13-37
-250            <meta-data
-250-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\df5c5bb33600168aa9f232f03a507f0b\firebase-auth-16.0.3\AndroidManifest.xml:32:13-34:85
-251                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-251-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\df5c5bb33600168aa9f232f03a507f0b\firebase-auth-16.0.3\AndroidManifest.xml:33:17-109
-252                android:value="com.google.firebase.components.ComponentRegistrar" />
-252-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\df5c5bb33600168aa9f232f03a507f0b\firebase-auth-16.0.3\AndroidManifest.xml:34:17-82
-253            <meta-data
-253-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:32:13-34:85
-254                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-254-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:33:17-96
-255                android:value="com.google.firebase.components.ComponentRegistrar" />
-255-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:34:17-82
-256        </service>
-257
-258        <activity
-258-->[com.google.android.gms:play-services-auth:16.0.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\b5152a7c087bc402dead9c585c687d19\play-services-auth-16.0.0\AndroidManifest.xml:23:9-27:75
-259            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-259-->[com.google.android.gms:play-services-auth:16.0.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\b5152a7c087bc402dead9c585c687d19\play-services-auth-16.0.0\AndroidManifest.xml:24:13-93
-260            android:excludeFromRecents="true"
-260-->[com.google.android.gms:play-services-auth:16.0.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\b5152a7c087bc402dead9c585c687d19\play-services-auth-16.0.0\AndroidManifest.xml:25:13-46
-261            android:exported="false"
-261-->[com.google.android.gms:play-services-auth:16.0.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\b5152a7c087bc402dead9c585c687d19\play-services-auth-16.0.0\AndroidManifest.xml:26:13-37
-262            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-262-->[com.google.android.gms:play-services-auth:16.0.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\b5152a7c087bc402dead9c585c687d19\play-services-auth-16.0.0\AndroidManifest.xml:27:13-72
-263        <!--
-264            Service handling Google Sign-In user revocation. For apps that do not integrate with
-265            Google Sign-In, this service will never be started.
-266        -->
-267        <service
-267-->[com.google.android.gms:play-services-auth:16.0.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\b5152a7c087bc402dead9c585c687d19\play-services-auth-16.0.0\AndroidManifest.xml:33:9-36:110
-268            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-268-->[com.google.android.gms:play-services-auth:16.0.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\b5152a7c087bc402dead9c585c687d19\play-services-auth-16.0.0\AndroidManifest.xml:34:13-89
-269            android:exported="true"
-269-->[com.google.android.gms:play-services-auth:16.0.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\b5152a7c087bc402dead9c585c687d19\play-services-auth-16.0.0\AndroidManifest.xml:35:13-36
-270            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
-270-->[com.google.android.gms:play-services-auth:16.0.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\b5152a7c087bc402dead9c585c687d19\play-services-auth-16.0.0\AndroidManifest.xml:36:13-107
-271
-272        <receiver
-272-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:37:9-44:20
-273            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-273-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:38:13-78
-274            android:exported="true"
-274-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:39:13-36
-275            android:permission="com.google.android.c2dm.permission.SEND" >
-275-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:40:13-73
-276            <intent-filter>
-276-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:41:13-43:29
-277                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-277-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:42:17-81
-277-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:42:25-78
-278            </intent-filter>
-279        </receiver>
-280        <!--
-281             FirebaseInstanceIdService performs security checks at runtime,
-282             no need for explicit permissions despite exported="true"
-283        -->
-284        <service
-284-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:50:9-56:19
-285            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
-285-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:51:13-77
-286            android:exported="true" >
-286-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:52:13-36
-287            <intent-filter android:priority="-500" >
-287-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:207:13-209:29
-288                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
-288-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:208:17-80
-288-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:208:25-77
-289            </intent-filter>
-290        </service>
-291
-292        <provider
-292-->[com.google.firebase:firebase-common:16.0.1] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5486bde939e100f407a2656fbdd592b7\firebase-common-16.0.1\AndroidManifest.xml:10:9-14:39
-293            android:name="com.google.firebase.provider.FirebaseInitProvider"
-293-->[com.google.firebase:firebase-common:16.0.1] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5486bde939e100f407a2656fbdd592b7\firebase-common-16.0.1\AndroidManifest.xml:11:13-77
-294            android:authorities="com.developtech.efuelfo.firebaseinitprovider"
-294-->[com.google.firebase:firebase-common:16.0.1] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5486bde939e100f407a2656fbdd592b7\firebase-common-16.0.1\AndroidManifest.xml:12:13-72
-295            android:exported="false"
-295-->[com.google.firebase:firebase-common:16.0.1] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5486bde939e100f407a2656fbdd592b7\firebase-common-16.0.1\AndroidManifest.xml:13:13-37
-296            android:initOrder="100" />
-296-->[com.google.firebase:firebase-common:16.0.1] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5486bde939e100f407a2656fbdd592b7\firebase-common-16.0.1\AndroidManifest.xml:14:13-36
-297
-298        <activity
-298-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\2f1d357d7b6978f12b00cfc2620637d4\play-services-base-15.0.1\AndroidManifest.xml:23:9-26:75
-299            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-299-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\2f1d357d7b6978f12b00cfc2620637d4\play-services-base-15.0.1\AndroidManifest.xml:24:13-79
-300            android:exported="false"
-300-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\2f1d357d7b6978f12b00cfc2620637d4\play-services-base-15.0.1\AndroidManifest.xml:25:13-37
-301            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-301-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\2f1d357d7b6978f12b00cfc2620637d4\play-services-base-15.0.1\AndroidManifest.xml:26:13-72
-302
-303        <meta-data
-303-->[com.google.android.gms:play-services-basement:15.0.1] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\c46664531bb08934992a7b90d5ed5015\play-services-basement-15.0.1\AndroidManifest.xml:23:9-25:69
-304            android:name="com.google.android.gms.version"
-304-->[com.google.android.gms:play-services-basement:15.0.1] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\c46664531bb08934992a7b90d5ed5015\play-services-basement-15.0.1\AndroidManifest.xml:24:13-58
-305            android:value="@integer/google_play_services_version" />
-305-->[com.google.android.gms:play-services-basement:15.0.1] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\c46664531bb08934992a7b90d5ed5015\play-services-basement-15.0.1\AndroidManifest.xml:25:13-66
-306        <!--
-307         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
-308         with the application context. This config is merged in with the host app's manifest,
-309         but there can only be one provider with the same authority activated at any given
-310         point; so if the end user has two or more different apps that use Facebook SDK, only the
-311         first one will be able to use the provider. To work around this problem, we use the
-312         following placeholder in the authority to identify each host application as if it was
-313         a completely different provider.
-314        -->
-315        <provider
-315-->[com.facebook.android:facebook-core:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\72c2d1d859406a4dfce2c6099b5586a5\facebook-core-4.42.0\AndroidManifest.xml:39:9-42:40
-316            android:name="com.facebook.internal.FacebookInitProvider"
-316-->[com.facebook.android:facebook-core:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\72c2d1d859406a4dfce2c6099b5586a5\facebook-core-4.42.0\AndroidManifest.xml:40:13-70
-317            android:authorities="com.developtech.efuelfo.FacebookInitProvider"
-317-->[com.facebook.android:facebook-core:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\72c2d1d859406a4dfce2c6099b5586a5\facebook-core-4.42.0\AndroidManifest.xml:41:13-72
-318            android:exported="false" />
-318-->[com.facebook.android:facebook-core:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\72c2d1d859406a4dfce2c6099b5586a5\facebook-core-4.42.0\AndroidManifest.xml:42:13-37
-319
-320        <receiver
-320-->[com.facebook.android:facebook-core:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\72c2d1d859406a4dfce2c6099b5586a5\facebook-core-4.42.0\AndroidManifest.xml:44:9-50:20
-321            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
-321-->[com.facebook.android:facebook-core:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\72c2d1d859406a4dfce2c6099b5586a5\facebook-core-4.42.0\AndroidManifest.xml:45:13-86
-322            android:exported="false" >
-322-->[com.facebook.android:facebook-core:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\72c2d1d859406a4dfce2c6099b5586a5\facebook-core-4.42.0\AndroidManifest.xml:46:13-37
-323            <intent-filter>
-323-->[com.facebook.android:facebook-core:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\72c2d1d859406a4dfce2c6099b5586a5\facebook-core-4.42.0\AndroidManifest.xml:47:13-49:29
-324                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
-324-->[com.facebook.android:facebook-core:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\72c2d1d859406a4dfce2c6099b5586a5\facebook-core-4.42.0\AndroidManifest.xml:48:17-95
-324-->[com.facebook.android:facebook-core:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\72c2d1d859406a4dfce2c6099b5586a5\facebook-core-4.42.0\AndroidManifest.xml:48:25-92
-325            </intent-filter>
-326        </receiver>
-327    </application>
-328
-329</manifest>
+71
+72            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+73            <!-- </intent-filter> -->
+74
+75        </activity>
+76        <activity
+76-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:63:9-66:58
+77            android:name="com.developtech.efuelfo.ui.activities.common.LoginActivity"
+77-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:64:13-63
+78            android:screenOrientation="portrait"
+78-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:65:13-49
+79            android:windowSoftInputMode="adjustResize" />
+79-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:66:13-55
+80        <activity
+80-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:67:9-75:20
+81            android:name="com.developtech.efuelfo.ui.activities.common.SplashActivity"
+81-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:68:13-64
+82            android:screenOrientation="portrait" >
+82-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:69:13-49
+83            <intent-filter>
+83-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:70:13-74:29
+84                <action android:name="android.intent.action.MAIN" />
+84-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:71:17-69
+84-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:71:25-66
+85
+86                <category android:name="android.intent.category.LAUNCHER" />
+86-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:73:17-77
+86-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:73:27-74
+87            </intent-filter>
+88        </activity>
+89        <activity
+89-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:76:9-78:52
+90            android:name="com.developtech.efuelfo.ui.activities.vehicleOwner.QRScanActivity"
+90-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:77:13-70
+91            android:screenOrientation="portrait" />
+91-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:78:13-49
+92        <activity
+92-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:79:9-82:52
+93            android:name="com.developtech.efuelfo.ui.activities.common.ForgotPassword"
+93-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:80:13-64
+94            android:parentActivityName="com.developtech.efuelfo.ui.activities.common.LoginActivity"
+94-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:81:13-77
+95            android:screenOrientation="portrait" />
+95-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:82:13-49
+96        <activity
+96-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:83:9-85:52
+97            android:name="com.developtech.efuelfo.ui.activities.common.SelectAccountActivity"
+97-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:84:13-71
+98            android:screenOrientation="portrait" />
+98-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:85:13-49
+99        <activity
+99-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:86:9-88:52
+100            android:name="com.developtech.efuelfo.ui.activities.common.TutorialAcitvity"
+100-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:87:13-66
+101            android:screenOrientation="portrait" />
+101-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:88:13-49
+102        <activity
+102-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:89:9-92:58
+103            android:name="com.developtech.efuelfo.ui.activities.common.OtpActivity"
+103-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:90:13-61
+104            android:screenOrientation="portrait"
+104-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:91:13-49
+105            android:windowSoftInputMode="stateVisible" />
+105-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:92:13-55
+106        <activity
+106-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:93:9-95:52
+107            android:name="com.developtech.efuelfo.ui.activities.common.ChangePasswordActivity"
+107-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:94:13-72
+108            android:screenOrientation="portrait" />
+108-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:95:13-49
+109        <activity
+109-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:96:9-98:52
+110            android:name="com.developtech.efuelfo.ui.activities.fuelStation.StationRegistrationActivity"
+110-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:97:13-82
+111            android:screenOrientation="portrait" />
+111-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:98:13-49
+112        <activity
+112-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:99:9-108:20
+113            android:name="com.developtech.efuelfo.ui.activities.common.HomeActivity"
+113-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:100:13-62
+114            android:screenOrientation="portrait" >
+114-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:101:13-49
+115            <intent-filter>
+115-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:102:13-107:29
+116                <action android:name="TRANS" />
+116-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:103:17-48
+116-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:103:25-45
+117                <action android:name="CREDIT" />
+117-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:104:17-49
+117-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:104:25-46
+118
+119                <category android:name="android.intent.category.DEFAULT" />
+119-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:106:17-76
+119-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:106:27-73
+120            </intent-filter>
+121        </activity>
+122        <activity
+122-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:109:9-111:52
+123            android:name="com.developtech.efuelfo.ui.activities.vehicleOwner.UserProfileActivity"
+123-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:110:13-75
+124            android:screenOrientation="portrait" />
+124-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:111:13-49
+125        <activity
+125-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:112:9-115:57
+126            android:name="com.developtech.efuelfo.ui.activities.stationOwner.FuelPriceActivity"
+126-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:113:13-73
+127            android:screenOrientation="portrait"
+127-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:114:13-49
+128            android:windowSoftInputMode="stateHidden" />
+128-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:115:13-54
+129        <activity
+129-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:116:9-118:52
+130            android:name="com.developtech.efuelfo.ui.activities.stationOwner.ViewScheduleActivity"
+130-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:117:13-76
+131            android:screenOrientation="portrait" />
+131-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:118:13-49
+132        <activity
+132-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:119:9-121:52
+133            android:name="com.developtech.efuelfo.ui.activities.stationOwner.RequestPendingActivity"
+133-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:120:13-78
+134            android:screenOrientation="portrait" />
+134-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:121:13-49
+135        <activity
+135-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:122:9-124:52
+136            android:name="com.developtech.efuelfo.ui.activities.stationOwner.TransactionDetailsActivity"
+136-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:123:13-82
+137            android:screenOrientation="portrait" />
+137-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:124:13-49
+138        <activity
+138-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:125:9-127:52
+139            android:name="com.developtech.efuelfo.ui.activities.stationOwner.VerifyTransactionDetailActivity"
+139-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:126:13-87
+140            android:screenOrientation="portrait" />
+140-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:127:13-49
+141        <activity
+141-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:128:9-130:52
+142            android:name="com.developtech.efuelfo.ui.adapters.stationOwner.CashTransactionActivity"
+142-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:129:13-77
+143            android:screenOrientation="portrait" />
+143-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:130:13-49
+144        <activity
+144-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:131:9-133:52
+145            android:name="com.developtech.efuelfo.ui.fragments.fuelStaff.ProfileActivity"
+145-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:132:13-67
+146            android:screenOrientation="portrait" />
+146-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:133:13-49
+147        <activity
+147-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:134:9-136:52
+148            android:name="com.developtech.efuelfo.ui.activities.common.ResetPassword"
+148-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:135:13-63
+149            android:screenOrientation="portrait" />
+149-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:136:13-49
+150        <activity
+150-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:137:9-139:52
+151            android:name="com.developtech.efuelfo.ui.activities.vehicleOwner.FuelStationDetail"
+151-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:138:13-73
+152            android:screenOrientation="portrait" />
+152-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:139:13-49
+153        <activity
+153-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:140:9-142:52
+154            android:name="com.developtech.efuelfo.ui.activities.common.SettingActivity"
+154-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:141:13-65
+155            android:screenOrientation="portrait" />
+155-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:142:13-49
+156        <activity
+156-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:143:9-146:72
+157            android:name="com.yalantis.ucrop.UCropActivity"
+157-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:144:13-60
+158            android:screenOrientation="portrait"
+158-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:145:13-49
+159            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+159-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:146:13-69
+160
+161        <meta-data
+161-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:148:9-150:55
+162            android:name="com.facebook.sdk.ApplicationId"
+162-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:149:13-58
+163            android:value="@string/facebook_app_id" />
+163-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:150:13-52
+164
+165        <activity
+165-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:152:9-155:48
+166            android:name="com.facebook.FacebookActivity"
+166-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:153:13-57
+167            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+167-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:154:13-96
+168            android:label="@string/app_name"
+168-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:155:13-45
+169            android:theme="@style/com_facebook_activity_theme" />
+169-->[com.facebook.android:facebook-common:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\47da8e26a7ae5e4cab56b6801d87e2f4\facebook-common-4.42.0\AndroidManifest.xml:32:13-63
+170        <activity
+170-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:156:9-167:20
+171            android:name="com.facebook.CustomTabActivity"
+171-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:157:13-58
+172            android:exported="true" >
+172-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:158:13-36
+173            <intent-filter>
+173-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:159:13-166:29
+174                <action android:name="android.intent.action.VIEW" />
+174-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:160:17-69
+174-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:160:25-66
+175
+176                <category android:name="android.intent.category.DEFAULT" />
+176-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:106:17-76
+176-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:106:27-73
+177                <category android:name="android.intent.category.BROWSABLE" />
+177-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:163:17-78
+177-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:163:27-75
+178
+179                <data android:scheme="@string/fb_login_protocol_scheme" />
+179-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:165:17-75
+179-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:165:23-72
+180            </intent-filter>
+181        </activity>
+182
+183        <receiver
+183-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:169:9-176:20
+184            android:name="com.developtech.efuelfo.util.SMSReceiver"
+184-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:170:13-45
+185            android:exported="true"
+185-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:171:13-36
+186            android:permission="android.permission.BROADCAST_SMS" >
+186-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:172:13-66
+187            <intent-filter android:priority="999" >
+187-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:173:13-175:29
+187-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:173:28-50
+188                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+188-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:174:17-82
+188-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:174:25-79
+189            </intent-filter>
+190        </receiver>
+191
+192        <meta-data
+192-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:178:9-180:55
+193            android:name="com.google.android.geo.API_KEY"
+193-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:179:13-58
+194            android:value="@string/google_maps_key" />
+194-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:180:13-52
+195
+196        <activity
+196-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:182:9-185:57
+197            android:name="com.developtech.efuelfo.ui.activities.vehicleOwner.AddExpenseActivity"
+197-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:183:13-74
+198            android:screenOrientation="portrait"
+198-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:184:13-49
+199            android:windowSoftInputMode="stateHidden" />
+199-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:185:13-54
+200        <activity
+200-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:186:9-188:52
+201            android:name="com.developtech.efuelfo.ui.activities.vehicleOwner.ExpenseTypeActivity"
+201-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:187:13-75
+202            android:screenOrientation="portrait" />
+202-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:188:13-49
+203        <activity
+203-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:189:9-192:57
+204            android:name="com.developtech.efuelfo.ui.activities.vehicleOwner.ExpenseDetailActivity"
+204-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:190:13-77
+205            android:screenOrientation="portrait"
+205-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:191:13-49
+206            android:windowSoftInputMode="stateHidden" />
+206-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:192:13-54
+207
+208        <meta-data
+208-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:194:9-196:72
+209            android:name="com.google.firebase.messaging.default_notification_icon"
+209-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:195:13-83
+210            android:resource="@drawable/notification_white_app_icon" />
+210-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:196:13-69
+211        <meta-data
+211-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:197:9-199:53
+212            android:name="com.google.firebase.messaging.default_notification_color"
+212-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:198:13-84
+213            android:resource="@color/colorAccent" />
+213-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:199:13-50
+214
+215        <service android:name="com.developtech.efuelfo.notifications.MyFirebaseMessagingService" >
+215-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:201:9-205:19
+215-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:201:18-74
+216            <intent-filter>
+216-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:202:13-204:29
+217                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+217-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:203:17-78
+217-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:203:25-75
+218            </intent-filter>
+219        </service>
+220        <service android:name="com.developtech.efuelfo.notifications.MyFirebaseInstanceIDService" >
+220-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:206:9-210:19
+220-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:206:18-75
+221            <intent-filter>
+221-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:207:13-209:29
+222                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+222-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:208:17-80
+222-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:208:25-77
+223            </intent-filter>
+224        </service>
+225
+226        <activity android:name="com.developtech.efuelfo.ui.activities.common.ContactUsActivity" />
+226-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:212:9-76
+226-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:212:19-73
+227        <activity android:name="com.facebook.CustomTabMainActivity" />
+227-->[com.facebook.android:facebook-common:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\47da8e26a7ae5e4cab56b6801d87e2f4\facebook-common-4.42.0\AndroidManifest.xml:33:9-71
+227-->[com.facebook.android:facebook-common:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\47da8e26a7ae5e4cab56b6801d87e2f4\facebook-common-4.42.0\AndroidManifest.xml:33:19-68
+228        <!--
+229             FirebaseMessagingService performs security checks at runtime,
+230             no need for explicit permissions despite exported="true"
+231        -->
+232        <service
+232-->[com.google.firebase:firebase-messaging:17.3.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\c63d92c459c9df2bf794de3dcfe5b433\firebase-messaging-17.3.2\AndroidManifest.xml:28:9-34:19
+233            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+233-->[com.google.firebase:firebase-messaging:17.3.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\c63d92c459c9df2bf794de3dcfe5b433\firebase-messaging-17.3.2\AndroidManifest.xml:29:13-82
+234            android:exported="true" >
+234-->[com.google.firebase:firebase-messaging:17.3.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\c63d92c459c9df2bf794de3dcfe5b433\firebase-messaging-17.3.2\AndroidManifest.xml:30:13-36
+235            <intent-filter android:priority="-500" >
+235-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:202:13-204:29
+236                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+236-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:203:17-78
+236-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:203:25-75
+237            </intent-filter>
+238        </service>
+239
+240        <activity
+240-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\df5c5bb33600168aa9f232f03a507f0b\firebase-auth-16.0.3\AndroidManifest.xml:23:9-29:75
+241            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+241-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\df5c5bb33600168aa9f232f03a507f0b\firebase-auth-16.0.3\AndroidManifest.xml:24:13-85
+242            android:excludeFromRecents="true"
+242-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\df5c5bb33600168aa9f232f03a507f0b\firebase-auth-16.0.3\AndroidManifest.xml:25:13-46
+243            android:exported="true"
+243-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\df5c5bb33600168aa9f232f03a507f0b\firebase-auth-16.0.3\AndroidManifest.xml:26:13-36
+244            android:launchMode="singleInstance"
+244-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\df5c5bb33600168aa9f232f03a507f0b\firebase-auth-16.0.3\AndroidManifest.xml:27:13-48
+245            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+245-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\df5c5bb33600168aa9f232f03a507f0b\firebase-auth-16.0.3\AndroidManifest.xml:28:13-102
+246            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+246-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\df5c5bb33600168aa9f232f03a507f0b\firebase-auth-16.0.3\AndroidManifest.xml:29:13-72
+247
+248        <service
+248-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\df5c5bb33600168aa9f232f03a507f0b\firebase-auth-16.0.3\AndroidManifest.xml:31:9-35:19
+249            android:name="com.google.firebase.components.ComponentDiscoveryService"
+249-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\df5c5bb33600168aa9f232f03a507f0b\firebase-auth-16.0.3\AndroidManifest.xml:31:18-89
+250            android:exported="false" >
+250-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:31:13-37
+251            <meta-data
+251-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\df5c5bb33600168aa9f232f03a507f0b\firebase-auth-16.0.3\AndroidManifest.xml:32:13-34:85
+252                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+252-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\df5c5bb33600168aa9f232f03a507f0b\firebase-auth-16.0.3\AndroidManifest.xml:33:17-109
+253                android:value="com.google.firebase.components.ComponentRegistrar" />
+253-->[com.google.firebase:firebase-auth:16.0.3] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\df5c5bb33600168aa9f232f03a507f0b\firebase-auth-16.0.3\AndroidManifest.xml:34:17-82
+254            <meta-data
+254-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:32:13-34:85
+255                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+255-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:33:17-96
+256                android:value="com.google.firebase.components.ComponentRegistrar" />
+256-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:34:17-82
+257        </service>
+258
+259        <activity
+259-->[com.google.android.gms:play-services-auth:16.0.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\b5152a7c087bc402dead9c585c687d19\play-services-auth-16.0.0\AndroidManifest.xml:23:9-27:75
+260            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+260-->[com.google.android.gms:play-services-auth:16.0.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\b5152a7c087bc402dead9c585c687d19\play-services-auth-16.0.0\AndroidManifest.xml:24:13-93
+261            android:excludeFromRecents="true"
+261-->[com.google.android.gms:play-services-auth:16.0.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\b5152a7c087bc402dead9c585c687d19\play-services-auth-16.0.0\AndroidManifest.xml:25:13-46
+262            android:exported="false"
+262-->[com.google.android.gms:play-services-auth:16.0.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\b5152a7c087bc402dead9c585c687d19\play-services-auth-16.0.0\AndroidManifest.xml:26:13-37
+263            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+263-->[com.google.android.gms:play-services-auth:16.0.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\b5152a7c087bc402dead9c585c687d19\play-services-auth-16.0.0\AndroidManifest.xml:27:13-72
+264        <!--
+265            Service handling Google Sign-In user revocation. For apps that do not integrate with
+266            Google Sign-In, this service will never be started.
+267        -->
+268        <service
+268-->[com.google.android.gms:play-services-auth:16.0.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\b5152a7c087bc402dead9c585c687d19\play-services-auth-16.0.0\AndroidManifest.xml:33:9-36:110
+269            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+269-->[com.google.android.gms:play-services-auth:16.0.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\b5152a7c087bc402dead9c585c687d19\play-services-auth-16.0.0\AndroidManifest.xml:34:13-89
+270            android:exported="true"
+270-->[com.google.android.gms:play-services-auth:16.0.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\b5152a7c087bc402dead9c585c687d19\play-services-auth-16.0.0\AndroidManifest.xml:35:13-36
+271            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+271-->[com.google.android.gms:play-services-auth:16.0.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\b5152a7c087bc402dead9c585c687d19\play-services-auth-16.0.0\AndroidManifest.xml:36:13-107
+272
+273        <receiver
+273-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:37:9-44:20
+274            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+274-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:38:13-78
+275            android:exported="true"
+275-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:39:13-36
+276            android:permission="com.google.android.c2dm.permission.SEND" >
+276-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:40:13-73
+277            <intent-filter>
+277-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:41:13-43:29
+278                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+278-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:42:17-81
+278-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:42:25-78
+279            </intent-filter>
+280        </receiver>
+281        <!--
+282             FirebaseInstanceIdService performs security checks at runtime,
+283             no need for explicit permissions despite exported="true"
+284        -->
+285        <service
+285-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:50:9-56:19
+286            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+286-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:51:13-77
+287            android:exported="true" >
+287-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5065a3d3f2882b9b5c2f507698743aef\firebase-iid-17.0.2\AndroidManifest.xml:52:13-36
+288            <intent-filter android:priority="-500" >
+288-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:207:13-209:29
+289                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+289-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:208:17-80
+289-->D:\00_SVN_roushan\EfuelFSO\EfuelFSO\app\src\main\AndroidManifest.xml:208:25-77
+290            </intent-filter>
+291        </service>
+292
+293        <provider
+293-->[com.google.firebase:firebase-common:16.0.1] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5486bde939e100f407a2656fbdd592b7\firebase-common-16.0.1\AndroidManifest.xml:10:9-14:39
+294            android:name="com.google.firebase.provider.FirebaseInitProvider"
+294-->[com.google.firebase:firebase-common:16.0.1] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5486bde939e100f407a2656fbdd592b7\firebase-common-16.0.1\AndroidManifest.xml:11:13-77
+295            android:authorities="com.developtech.efuelfo.firebaseinitprovider"
+295-->[com.google.firebase:firebase-common:16.0.1] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5486bde939e100f407a2656fbdd592b7\firebase-common-16.0.1\AndroidManifest.xml:12:13-72
+296            android:exported="false"
+296-->[com.google.firebase:firebase-common:16.0.1] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5486bde939e100f407a2656fbdd592b7\firebase-common-16.0.1\AndroidManifest.xml:13:13-37
+297            android:initOrder="100" />
+297-->[com.google.firebase:firebase-common:16.0.1] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\5486bde939e100f407a2656fbdd592b7\firebase-common-16.0.1\AndroidManifest.xml:14:13-36
+298
+299        <activity
+299-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\2f1d357d7b6978f12b00cfc2620637d4\play-services-base-15.0.1\AndroidManifest.xml:23:9-26:75
+300            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+300-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\2f1d357d7b6978f12b00cfc2620637d4\play-services-base-15.0.1\AndroidManifest.xml:24:13-79
+301            android:exported="false"
+301-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\2f1d357d7b6978f12b00cfc2620637d4\play-services-base-15.0.1\AndroidManifest.xml:25:13-37
+302            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+302-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\2f1d357d7b6978f12b00cfc2620637d4\play-services-base-15.0.1\AndroidManifest.xml:26:13-72
+303
+304        <meta-data
+304-->[com.google.android.gms:play-services-basement:15.0.1] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\c46664531bb08934992a7b90d5ed5015\play-services-basement-15.0.1\AndroidManifest.xml:23:9-25:69
+305            android:name="com.google.android.gms.version"
+305-->[com.google.android.gms:play-services-basement:15.0.1] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\c46664531bb08934992a7b90d5ed5015\play-services-basement-15.0.1\AndroidManifest.xml:24:13-58
+306            android:value="@integer/google_play_services_version" />
+306-->[com.google.android.gms:play-services-basement:15.0.1] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\c46664531bb08934992a7b90d5ed5015\play-services-basement-15.0.1\AndroidManifest.xml:25:13-66
+307        <!--
+308         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+309         with the application context. This config is merged in with the host app's manifest,
+310         but there can only be one provider with the same authority activated at any given
+311         point; so if the end user has two or more different apps that use Facebook SDK, only the
+312         first one will be able to use the provider. To work around this problem, we use the
+313         following placeholder in the authority to identify each host application as if it was
+314         a completely different provider.
+315        -->
+316        <provider
+316-->[com.facebook.android:facebook-core:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\72c2d1d859406a4dfce2c6099b5586a5\facebook-core-4.42.0\AndroidManifest.xml:39:9-42:40
+317            android:name="com.facebook.internal.FacebookInitProvider"
+317-->[com.facebook.android:facebook-core:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\72c2d1d859406a4dfce2c6099b5586a5\facebook-core-4.42.0\AndroidManifest.xml:40:13-70
+318            android:authorities="com.developtech.efuelfo.FacebookInitProvider"
+318-->[com.facebook.android:facebook-core:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\72c2d1d859406a4dfce2c6099b5586a5\facebook-core-4.42.0\AndroidManifest.xml:41:13-72
+319            android:exported="false" />
+319-->[com.facebook.android:facebook-core:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\72c2d1d859406a4dfce2c6099b5586a5\facebook-core-4.42.0\AndroidManifest.xml:42:13-37
+320
+321        <receiver
+321-->[com.facebook.android:facebook-core:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\72c2d1d859406a4dfce2c6099b5586a5\facebook-core-4.42.0\AndroidManifest.xml:44:9-50:20
+322            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+322-->[com.facebook.android:facebook-core:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\72c2d1d859406a4dfce2c6099b5586a5\facebook-core-4.42.0\AndroidManifest.xml:45:13-86
+323            android:exported="false" >
+323-->[com.facebook.android:facebook-core:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\72c2d1d859406a4dfce2c6099b5586a5\facebook-core-4.42.0\AndroidManifest.xml:46:13-37
+324            <intent-filter>
+324-->[com.facebook.android:facebook-core:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\72c2d1d859406a4dfce2c6099b5586a5\facebook-core-4.42.0\AndroidManifest.xml:47:13-49:29
+325                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+325-->[com.facebook.android:facebook-core:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\72c2d1d859406a4dfce2c6099b5586a5\facebook-core-4.42.0\AndroidManifest.xml:48:17-95
+325-->[com.facebook.android:facebook-core:4.42.0] C:\Users\matrid43\.gradle\caches\transforms-2\files-2.1\72c2d1d859406a4dfce2c6099b5586a5\facebook-core-4.42.0\AndroidManifest.xml:48:25-92
+326            </intent-filter>
+327        </receiver>
+328    </application>
+329
+330</manifest>

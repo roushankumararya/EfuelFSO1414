@@ -76,13 +76,13 @@ public class ProfileFragment extends BaseFragment implements AdapterView.OnItemS
     @BindView(R.id.etAddress)
     EditText etAddress;
 
-    @BindView(R.id.etPincode)
+   // @BindView(R.id.etPincode)
     EditText etPincode;
 
-    @BindView(R.id.spinnerLanguage)
+   // @BindView(R.id.spinnerLanguage)
     Spinner spinnerLanguage;
 
-    @BindView(R.id.spinnerCountry)
+  //  @BindView(R.id.spinnerCountry)
     Spinner spinnerCountry;
 
     @BindView(R.id.cbAdditionalInfo)
@@ -94,10 +94,10 @@ public class ProfileFragment extends BaseFragment implements AdapterView.OnItemS
     @BindView(R.id.ivProfilePic)
     ImageView ivProfilePic;
 
-    @BindView(R.id.lytAdditionalInfo)
+  //  @BindView(R.id.lytAdditionalInfo)
     LinearLayout lytAdditionalInfo;
 
-    @BindView(R.id.lytMobileLoginId)
+//    @BindView(R.id.lytMobileLoginId)
     FrameLayout lytMobileLoginId;
 
 

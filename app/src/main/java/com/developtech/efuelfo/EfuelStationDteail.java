@@ -24,6 +24,7 @@ import com.developtech.efuelfo.model.requestModel.AddFuelStationRequestModel;
 import com.developtech.efuelfo.model.responseModel.GetFuelStationResponseModel;
 import com.developtech.efuelfo.model.responseModel.SignInResponseModel;
 import com.developtech.efuelfo.network.NetworkListener;
+import com.developtech.efuelfo.ui.activities.common.HomeActivity;
 import com.developtech.efuelfo.ui.activities.fuelStation.StationRegistrationActivity;
 import com.developtech.efuelfo.ui.adapters.stationOwner.FuelStationAdapter;
 import com.developtech.efuelfo.ui.dialogFragments.AddLocationDialog;
@@ -70,8 +71,8 @@ public class EfuelStationDteail extends AppCompatActivity implements OnItemClick
          getoption=intent.getStringExtra("GetOption");
         registeranme=(EditText)findViewById(R.id.registrationnamefuelstation);
         dealercodenumber=(EditText)findViewById(R.id.dealercodefuelstation);
-        addressline1 = (EditText) findViewById(R.id.addresslineonefuelstation);
-        addressline2 = (EditText) findViewById(R.id.addresslinetwofuelstation);
+        addressline2 = (EditText) findViewById(R.id.addresslineonefuelstation);
+        addressline1 = (EditText) findViewById(R.id.addresslinetwofuelstation);
         state = (EditText) findViewById(R.id.userstatefuelstation);
         city = (EditText) findViewById(R.id.usercityfuelstation);
         usergstin = (EditText) findViewById(R.id.usergstinfuelstation);
@@ -138,22 +139,7 @@ public class EfuelStationDteail extends AppCompatActivity implements OnItemClick
 
 
 
-                    /*final RequestBody Country = RequestBody.create(MediaType.parse("multipart/form-data"), spinnerCountry.getSelectedItem().toString());
-                    final RequestBody Language = RequestBody.create(MediaType.parse("multipart/form-data"), spinnerLanguage.getSelectedItem().toString());
 
-                    final RequestBody CountryCode = RequestBody.create(MediaType.parse("multipart/form-data"), spCountryCode.getSelectedItem().toString());
-
-                    final RequestBody AlterMobile = RequestBody.create(MediaType.parse("multipart/form-data"), cbAdditionalInfo.isChecked() ?
-                            etAlternateMobile.getText().toString() : "");*/
-
-
-                    /*intent.putExtra("rgname",regname);
-                    intent.putExtra("dcode",dealcode);
-                    intent.putExtra("adlineone",addone);
-                    intent.putExtra("adlinetwo",addtwo);
-                    intent.putExtra("stt",stat);
-                    intent.putExtra("ct",cty);
-                    intent.putExtra("gsnumber",usegstn);*/
                     appComponent.getServiceCaller().callService(appComponent.getAllApis().
                             updateProfile(fstname,dc,ad,st,ct,ugst,usnm,uslsnm,usem,usdb,null), listener);
 
@@ -204,40 +190,18 @@ public class EfuelStationDteail extends AppCompatActivity implements OnItemClick
 
                 Intent intent=new Intent(getApplicationContext(),UserAccountDetail.class);
                 startActivity(intent);
-                /*finish();*/
-               // showMsg("Profile has been updated");
-//                SignInResponseModel model = appComponent.getSpUtils().getUserData();
-//                model.setFirstName(firstName);
-//                model.setLastName(lastName);
-//                model.setEmail(email);
-//                model.setImage(responseModel.getImage());
-//                model.setCountry(country);
-//                model.setLanguage(language);
-//                model.setCountryCode(spCountryCode.getSelectedItem().toString());
-//                model.setPincode(pinCode);
-//                if (appComponent.getSpUtils().getAccountType()== SPUtils.ACCOUNT_TYPES.FSO)
-//                {
-//                    model.setAddress(address);
-//                }
-//                if(cbAdditionalInfo.isChecked())
-//                {
-//                    model.setAltMobile(etAlternateMobile.getText().toString());
-//                }
-//                else
-//                {
-//                    model.setAltMobile("");
-//                }
-//                appComponent.getSpUtils().saveUserData(model);
 
-              //  isEdit = false;
-                //changeView();
-                //setResult(RESULT_OK);
             }
         }
 
         @Override
         public void onError(String msg) {
-            Log.e(EfuelStationDteail.class.getSimpleName(),"onError "+msg);
+            //
+            if (msg.contains("Unauthorized")){
+                Intent dashBoard=new Intent(getApplicationContext(), HomeActivity.class);
+                startActivity(dashBoard);
+            }
+            //Log.e(EfuelStationDteail.class.getSimpleName(),"onError "+msg);
 
         }
 
@@ -402,14 +366,23 @@ public class EfuelStationDteail extends AppCompatActivity implements OnItemClick
              Log.e("uuu","str2"+str2+" "+ss[i]);
                 if (i==0) {
                     adressline2= adressline2+""+ss[i];
+                 //   adressline1= adressline1+""+ss[i];
                 }else if (i==1) {
                     adressline2=adressline2+" "+ss[i];
+                  //  adressline1=adressline1+" "+ss[i];
                 }else {
                     addresline1=addresline1+""+ss[i];
+                 //   addresline2=addresline2+""+ss[i];
                 }
             }
-        addresline1=addresline1.replace(str1," ").replace(str2," ");
+        if (!addresline1.isEmpty()) {
+       // if (!addresline2.isEmpty()) {
+            addresline1 = addresline1.replace(str1, " ").replace(str2, " ");
+           // addresline2 = addresline2.replace(str1, " ").replace(str2, " ");
+        }
             addressline1.setText("" + addresline1);
-           addressline2.setText("" + adressline2);
+            addressline2.setText("" + adressline2);
+
+
         }
 }

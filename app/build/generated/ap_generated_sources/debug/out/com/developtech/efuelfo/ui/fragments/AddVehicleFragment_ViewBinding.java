@@ -16,7 +16,7 @@ import java.lang.Override;
 public class AddVehicleFragment_ViewBinding implements Unbinder {
   private AddVehicleFragment target;
 
-  private View view2131362065;
+  private View view2131362064;
 
   @UiThread
   public AddVehicleFragment_ViewBinding(final AddVehicleFragment target, View source) {
@@ -25,7 +25,7 @@ public class AddVehicleFragment_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.fabAddVehicle, "field 'fabAddVehicle' and method 'onClick'");
     target.fabAddVehicle = Utils.castView(view, R.id.fabAddVehicle, "field 'fabAddVehicle'", FloatingActionButton.class);
-    view2131362065 = view;
+    view2131362064 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -45,7 +45,7 @@ public class AddVehicleFragment_ViewBinding implements Unbinder {
     target.fabAddVehicle = null;
     target.recycleVehicle = null;
 
-    view2131362065.setOnClickListener(null);
-    view2131362065 = null;
+    view2131362064.setOnClickListener(null);
+    view2131362064 = null;
   }
 }

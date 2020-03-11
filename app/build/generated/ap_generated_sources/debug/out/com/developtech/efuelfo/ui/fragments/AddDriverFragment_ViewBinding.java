@@ -16,7 +16,7 @@ import java.lang.Override;
 public class AddDriverFragment_ViewBinding implements Unbinder {
   private AddDriverFragment target;
 
-  private View view2131362058;
+  private View view2131362057;
 
   @UiThread
   public AddDriverFragment_ViewBinding(final AddDriverFragment target, View source) {
@@ -25,7 +25,7 @@ public class AddDriverFragment_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.fabAddDriver, "field 'fabAddDriver' and method 'onClick'");
     target.fabAddDriver = Utils.castView(view, R.id.fabAddDriver, "field 'fabAddDriver'", FloatingActionButton.class);
-    view2131362058 = view;
+    view2131362057 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -45,7 +45,7 @@ public class AddDriverFragment_ViewBinding implements Unbinder {
     target.fabAddDriver = null;
     target.recyclerDriver = null;
 
-    view2131362058.setOnClickListener(null);
-    view2131362058 = null;
+    view2131362057.setOnClickListener(null);
+    view2131362057 = null;
   }
 }

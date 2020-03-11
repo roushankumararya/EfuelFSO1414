@@ -149,8 +149,10 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
         @Override
         public void onSuccess(ResultModel<?> responseBody) {
             if (responseBody.getResultCode().equalsIgnoreCase(SPUtils.API_CODES.OK.toString())) {
-                List<GetFuelStationResponseModel> allFuelStationsList = (List<GetFuelStationResponseModel>) responseBody.getResutData();
+                List<GetFuelStationResponseModel> allFuelStationsList = (List<GetFuelStationResponseModel>)
+                        responseBody.getResutData();
                 if (allFuelStationsList.size() == 1) {
+                    Log.e("ss","addfff"+appComponent.getSpUtils());
                     appComponent.getSpUtils().saveFuelStationsList(allFuelStationsList);
                     appComponent.getSpUtils().saveFuelStation(allFuelStationsList.get(0));
                     newIntentClear(HomeActivity.class, null, true);
@@ -190,7 +192,7 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
     TextView tvCount;
 
 
-   SPUtils.ACCOUNT_TYPES account_types;
+    SPUtils.ACCOUNT_TYPES account_types;
     View.OnClickListener headerClick = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -201,7 +203,6 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
                     break;
                 }
                 case R.id.laySwitchOwner: {
-
                     switch (appComponent.getSpUtils().getAccountType()) {
                         case DRV: {
                             List<VehicleOwnerResponseModel> list = appComponent.getSpUtils().getVehicleOwnerResponse();
@@ -211,17 +212,16 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
                             break;
                         }
                         case FSO: {
-
                             closeDrawer();
-
-                            appComponent.getServiceCaller().callService(appComponent.getAllApis().getFuelStations(), getFuelStationListener);
-
+                            appComponent.getServiceCaller().callService(appComponent.getAllApis().getFuelStations(),
+                                    getFuelStationListener);
                             break;
                         }
                         case OPR: {
                             drawer_layout.closeDrawer(Gravity.START, true);
                             showProgress();
-                            appComponent.getServiceCaller().callService(appComponent.getAllApis().getFuelStationOwners(), getOwnersListener);
+                            appComponent.getServiceCaller().callService(appComponent.getAllApis().getFuelStationOwners(),
+                                    getOwnersListener);
                         }
                     }
                     break;
@@ -253,9 +253,13 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
     @Override
     public void initComponents() {
         navigationView = (NavigationView) findViewById(R.id.navigation);
-        navigationView.getMenu().clear();
+
+        // navigationView.getMenu().clear();
+
+         account_types=SPUtils.ACCOUNT_TYPES.FSO;
         if (appComponent.getSpUtils().getAccountType() != null) {
             account_types = appComponent.getSpUtils().getAccountType();
+            account_types = SPUtils.ACCOUNT_TYPES.FSO;
             if (account_types != null) {
                 if (account_types == SPUtils.ACCOUNT_TYPES.VCO) {
                     navigationView.inflateMenu(R.menu.drawer_main_drawer);
@@ -272,6 +276,7 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
         tvUserName = headerView.findViewById(R.id.tvUserName);
         txtOpenClose = headerView.findViewById(R.id.txtOpenClose);
         tvOwnerName = headerView.findViewById(R.id.tvOwnerName);
+       // tvOwnerName = headerView.findViewById(R.id.tvOwnerNamename);
         ivProfilePic = headerView.findViewById(R.id.ivProfilePic);
         layHeader = headerView.findViewById(R.id.layHeader);
         laySwitchOwner = headerView.findViewById(R.id.laySwitchOwner);
@@ -280,7 +285,6 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
         awesomeToggle = headerView.findViewById(R.id.awsmToggle);
         layHeader.setOnClickListener(headerClick);
         laySwitchOwner.setOnClickListener(headerClick);
-
         awesomeToggle.setOnCheckedChangeListner(this);
 
 //        if (appComponent.getSpUtils().getAccountType() != null) {
@@ -301,9 +305,12 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
 
         setHomeFrag();
 
-        if (appComponent.getSpUtils().getUserData() != null && appComponent.getSpUtils().getUserData().getImage() != null
+        if (appComponent.getSpUtils().getUserData() != null && appComponent.getSpUtils()
+                .getUserData().getImage() != null
                 && !appComponent.getSpUtils().getUserData().getImage().trim().isEmpty()) {
-            Picasso.with(this).load(appComponent.getAllUrls().BASE_IMAGE_URL + appComponent.getSpUtils().getUserData().getImage()).placeholder(R.drawable.place_holder).into(ivProfilePic);
+            Picasso.with(this).load(appComponent.getAllUrls().BASE_IMAGE_URL +
+                    appComponent.getSpUtils().getUserData().getImage()).placeholder(R.drawable.place_holder)
+                    .into(ivProfilePic);
         }
 
         tvUserName.setText(appComponent.getSpUtils().getName());
@@ -323,7 +330,8 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
 
 
         navigationView.setNavigationItemSelectedListener(this);
-        mDrawerToggle = new ActionBarDrawerToggle(this, drawer_layout, R.drawable.drawer_icon, R.string.navigation_drawer_open, R.string.navigation_drawer_close) {
+        mDrawerToggle = new ActionBarDrawerToggle(this, drawer_layout,
+                R.drawable.drawer_icon, R.string.navigation_drawer_open, R.string.navigation_drawer_close){
             @Override
             public void onDrawerSlide(View drawerView, float slideOffset) {
                 super.onDrawerSlide(drawerView, slideOffset);
@@ -394,7 +402,8 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
         }
     }
 
-    final String TRANS = "TRANS", CREDIT = "CREDIT", VERIFY = "VERIFY", DELETED = "DELETED", MANAGER_TRUE = "MANAGER_TRUE", MANAGER_FALSE = "MANAGER_FALSE";
+    final String TRANS = "TRANS", CREDIT = "CREDIT", VERIFY = "VERIFY", DELETED = "DELETED", MANAGER_TRUE = "MANAGER_TRUE",
+            MANAGER_FALSE = "MANAGER_FALSE";
 
     public void handleNoti() {
         if (bundle != null && bundle.getString("type") != null) {
@@ -490,12 +499,15 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
     }
 
     void setHomeFrag() {
-account_types= SPUtils.ACCOUNT_TYPES.VCO;
+       // account_types = SPUtils.ACCOUNT_TYPES.VCO;
+
+        account_types = SPUtils.ACCOUNT_TYPES.FSO;
         switch (account_types) {
             case FSO: {
                 laySwitchOwner.setVisibility(View.VISIBLE);
                 lytToggle.setVisibility(View.VISIBLE);
                 tvClickToSwitch.setText(getResources().getString(R.string.clicktoswitchfuel));
+                Log.e("fff","mmm:-"+appComponent.getSpUtils().getFuelStationModel());
                 tvOwnerName.setText(appComponent.getSpUtils().getFuelStationModel().getName());
                 awesomeToggle.setIsChecked(appComponent.getSpUtils().getFuelStationModel().getIsOpen());
                 if (appComponent.getSpUtils().getFuelStationModel().getIsOpen()) {
@@ -588,7 +600,6 @@ account_types= SPUtils.ACCOUNT_TYPES.VCO;
                 }
             }
         }
-
     }
 
     Fragment getHomeFragment() {
@@ -610,8 +621,6 @@ account_types= SPUtils.ACCOUNT_TYPES.VCO;
         }
         return null;
     }
-
-
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         Fragment fragment = null;
@@ -767,7 +776,8 @@ account_types= SPUtils.ACCOUNT_TYPES.VCO;
             case R.id.nav_operator_home: {
                 StaffHomeFragment homeFragment = new StaffHomeFragment();
                 FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.add(R.id.content_frame, homeFragment, homeFragment.getClass().getName()).addToBackStack(homeFragment.getClass().getName()).commit();
+                fragmentTransaction.add(R.id.content_frame, homeFragment, homeFragment.getClass().getName())
+                        .addToBackStack(homeFragment.getClass().getName()).commit();
                 break;
             }
             case R.id.nav_operator_fuelprice: {
@@ -874,7 +884,8 @@ account_types= SPUtils.ACCOUNT_TYPES.VCO;
     public void pushFragment(Fragment fragment) {
         if (fragment != null) {
             if (fragment.getClass().getName().equals((String) getHomeClassName())) {
-                getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, fragment, fragment.getClass().getName()).addToBackStack(fragment.getClass().getName()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, fragment,
+                        fragment.getClass().getName()).addToBackStack(fragment.getClass().getName()).commit();
             } else {
                 getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, fragment).commit();
             }
@@ -904,11 +915,13 @@ account_types= SPUtils.ACCOUNT_TYPES.VCO;
         if (drawer_layout.isDrawerOpen(Gravity.START)) {
             closeDrawer();
         } else {
-            if (baseFragment instanceof TrackDriverFragment && ((TrackDriverFragment) baseFragment).ivMapList.getVisibility() == View.VISIBLE) {
+            if (baseFragment instanceof TrackDriverFragment && ((TrackDriverFragment) baseFragment)
+                    .ivMapList.getVisibility() == View.VISIBLE) {
                 ((TrackDriverFragment) baseFragment).ivMapList.performClick();
                 return;
             }
-            if (baseFragment instanceof NearByFuelStationFragment && ((NearByFuelStationFragment) baseFragment).recycleStationList.getVisibility() == View.GONE) {
+            if (baseFragment instanceof NearByFuelStationFragment && ((NearByFuelStationFragment) baseFragment)
+                    .recycleStationList.getVisibility() == View.GONE) {
                 ((NearByFuelStationFragment) baseFragment).ivMap.performClick();
                 return;
             }
@@ -969,7 +982,8 @@ account_types= SPUtils.ACCOUNT_TYPES.VCO;
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == SelectImage.IMAGE_REQUEST_GALLERY_CODE || requestCode == SelectImage.IMAGE_REQUEST_CAMERA_CODE || requestCode == UCrop.REQUEST_CROP)
+        if (requestCode == SelectImage.IMAGE_REQUEST_GALLERY_CODE || requestCode == SelectImage
+                .IMAGE_REQUEST_CAMERA_CODE || requestCode == UCrop.REQUEST_CROP)
             selectImage.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_CHECK_SETTINGS) {
             if (resultCode == RESULT_OK) {
@@ -1032,7 +1046,8 @@ account_types= SPUtils.ACCOUNT_TYPES.VCO;
     @SuppressWarnings("MissingPermission")
     public void getLocation() {
         if (locationManager != null) {
-            locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, UPDATE_INTERVAL, 100, locationListener);
+            locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, UPDATE_INTERVAL,
+                    100, locationListener);
         }
     }
 
@@ -1040,9 +1055,11 @@ account_types= SPUtils.ACCOUNT_TYPES.VCO;
         if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
             getLocation();
         } else {
-            LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder().addLocationRequest(locationRequest);
+            LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder()
+                    .addLocationRequest(locationRequest);
             builder.setAlwaysShow(true);
-            PendingResult<LocationSettingsResult> result = LocationServices.SettingsApi.checkLocationSettings(gac, builder.build());
+            PendingResult<LocationSettingsResult> result = LocationServices.SettingsApi
+                    .checkLocationSettings(gac, builder.build());
             result.setResultCallback(new ResultCallback<LocationSettingsResult>() {
                 @Override
                 public void onResult(@NonNull LocationSettingsResult locationSettingsResult) {
@@ -1190,7 +1207,8 @@ account_types= SPUtils.ACCOUNT_TYPES.VCO;
         if (ivProfilePic != null) {
             if (appComponent.getSpUtils().getUserData() != null && appComponent.getSpUtils().getUserData().getImage() != null
                     && !appComponent.getSpUtils().getUserData().getImage().trim().isEmpty()) {
-                Picasso.with(this).load(appComponent.getAllUrls().BASE_IMAGE_URL + appComponent.getSpUtils().getUserData().getImage()).placeholder(R.drawable.place_holder).into(ivProfilePic);
+                Picasso.with(this).load(appComponent.getAllUrls().BASE_IMAGE_URL + appComponent.getSpUtils()
+                        .getUserData().getImage()).placeholder(R.drawable.place_holder).into(ivProfilePic);
             }
         }
     }
@@ -1211,7 +1229,8 @@ account_types= SPUtils.ACCOUNT_TYPES.VCO;
         isAvailable = isChecked;
 
         requestModel.setFuelStationId(appComponent.getSpUtils().getFuelStationModel().getId());
-        appComponent.getServiceCaller().callService(appComponent.getAllApis().setStationAvailability(requestModel), stationAvailabilityListener);
+        appComponent.getServiceCaller().callService(appComponent.getAllApis().setStationAvailability(requestModel),
+                stationAvailabilityListener);
     }
 
     NetworkListener stationAvailabilityListener = new NetworkListener() {
@@ -1250,7 +1269,9 @@ account_types= SPUtils.ACCOUNT_TYPES.VCO;
         @Override
         public void onSuccess(ResultModel<?> responseBody) {
             if (responseBody.getResultCode().equalsIgnoreCase(SPUtils.API_CODES.OK.toString())) {
-                List<GetFuelStationResponseModel> allFuelStationsList = (List<GetFuelStationResponseModel>) responseBody.getResutData();
+                List<GetFuelStationResponseModel> allFuelStationsList = (List<GetFuelStationResponseModel>)
+                        responseBody
+                        .getResutData();
                 SelectFuelStation dialogFragment = new SelectFuelStation();
                 dialogFragment.setData(appComponent, allFuelStationsList, HomeActivity.this);
                 dialogFragment.show(getSupportFragmentManager(), "select_owner");

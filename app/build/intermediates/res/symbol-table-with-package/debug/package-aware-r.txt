@@ -2155,7 +2155,6 @@ id etPassword
 id etPasswordSignUp
 id etPhone
 id etPinCode
-id etPincode
 id etPrice
 id etQuantity
 id etReason
@@ -2316,7 +2315,6 @@ id logintxtnumber
 id logo_png
 id logoimagedashboard
 id lyt
-id lytAdditionalInfo
 id lytAddress
 id lytAmount
 id lytCode
@@ -2332,7 +2330,6 @@ id lytFuelStatinId
 id lytInvoiceRecieve
 id lytLogin
 id lytManager
-id lytMobileLoginId
 id lytNoRecords
 id lytOverlayBottom
 id lytOverlayMobile
@@ -2555,14 +2552,12 @@ id spLanguage
 id spacer
 id spinnerCode
 id spinnerCode1
-id spinnerCountry
 id spinnerDriver
 id spinnerFuelCompany
 id spinnerFuelType
 id spinnerGender
 id spinnerId
 id spinnerImg
-id spinnerLanguage
 id spinnerStationId
 id spinnerVehicle
 id spinnerVehicleCategory
@@ -2727,7 +2722,6 @@ id tvOr
 id tvOwnerInfo
 id tvOwnerName
 id tvOwnerNameLabel
-id tvOwnerNamedash
 id tvOwnerNumber
 id tvParkTransFuelType
 id tvParkTransNumber
@@ -2863,7 +2857,6 @@ id vT_acpw_passcodetext
 id vT_asp_selectLabel
 id vT_auf_lastupdatetext
 id vT_auf_lastupdatetime
-id vT_fup_companyadd_text
 id vT_fvn_fromdate
 id vT_fvn_todate
 id vT_nfr_amtcurrency

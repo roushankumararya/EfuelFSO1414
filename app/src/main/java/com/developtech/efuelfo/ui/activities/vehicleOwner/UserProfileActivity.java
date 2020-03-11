@@ -9,7 +9,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.widget.NestedScrollView;
 import android.util.Log;
-import android.util.Patterns;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.CheckBox;
@@ -26,7 +25,6 @@ import com.developtech.efuelfo.customs.CustomTextView;
 import com.developtech.efuelfo.model.ResultModel;
 import com.developtech.efuelfo.model.requestModel.FindOperatorRequestModel;
 import com.developtech.efuelfo.model.requestModel.OperatorsResponseModel;
-import com.developtech.efuelfo.model.responseModel.AddFuelStationResponseModel;
 import com.developtech.efuelfo.model.responseModel.CountriesResponseModel;
 import com.developtech.efuelfo.model.responseModel.LanguageResponseModel;
 import com.developtech.efuelfo.model.responseModel.SignInResponseModel;
@@ -381,9 +379,9 @@ public class UserProfileActivity extends MyActionBar implements AdapterView.OnIt
         if (model != null) {
             if (model.getImage() != null && !model.getImage().isEmpty()) {
 
-                Picasso.with(this).load(appComponent.getAllUrls().BASE_IMAGE_URL + model.getImage()).placeholder(R.drawable.place_holder).into(ivProfilePic);
+                Picasso.with(this).load(appComponent.getAllUrls().BASE_IMAGE_URL + model.getImage())
+                        .placeholder(R.drawable.place_holder).into(ivProfilePic);
             }
-
             etFirstName.setText(model.getFirstName());
             etLastName.setText(model.getLastName());
 
@@ -425,9 +423,11 @@ public class UserProfileActivity extends MyActionBar implements AdapterView.OnIt
 
         }
 
+
         switch (appComponent.getSpUtils().getAccountType()) {
+
             case DRV: {
-                cbAdditionalInfo.setVisibility(View.GONE);
+                cbAdditionalInfo.setVisibility(View.VISIBLE);
                 break;
             }
             case FSO: {
@@ -520,7 +520,6 @@ public class UserProfileActivity extends MyActionBar implements AdapterView.OnIt
             etAddress.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
             etPinCode.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
             etLoginId.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
-
             etFirstName.setTextColor(getResources().getColor(R.color.blackDarker));
             etLastName.setTextColor(getResources().getColor(R.color.blackDarker));
             etPhone.setTextColor(getResources().getColor(R.color.blackDarker));

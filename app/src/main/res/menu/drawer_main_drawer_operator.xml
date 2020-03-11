@@ -5,54 +5,71 @@
 
         <item
             android:id="@+id/nav_operator_home"
-            android:title="@string/home" />
+            android:title="@string/home"
+            android:visible="true"
+            />
         <item
             android:id="@+id/nav_operator_fuelprice"
-            android:title="@string/fuel_price" />
+            android:title="@string/fuel_price"
+            android:visible="true"
+            />
 
         <item
             android:id="@+id/nav_operator_initiatesale"
-            android:title="@string/saleinitiation" />
+            android:title="@string/saleinitiation"
+            android:visible="true"
+            />
 
         <item
             android:id="@+id/nav_operator"
             android:title="@string/operators"
-            android:visible="false"/>
+            android:visible="true"/>
 
         <item
             android:id="@+id/nav_operator_saleshistory"
-            android:title="@string/saleHistoryandInvoices" />
+            android:title="@string/saleHistoryandInvoices"
+            android:visible="true"
+            />
 
         <item
             android:id="@+id/nav_operator_credit_agreement_list"
             android:title="@string/creditagreement"
-            android:visible="false"/>
+            android:visible="true"/>
 
         <item
             android:id="@+id/nav_operator_park_trans"
-            android:title="@string/park_transaction" />
+            android:title="@string/park_transaction"
+            android:visible="true"
+            />
 
         <item
             android:id="@+id/nav_operator_verify_trans"
-            android:title="@string/verifytransaction" />
+            android:title="@string/verifytransaction"
+            android:visible="true"
+            />
 
         <item
             android:id="@+id/nav_operator_tank_types"
             android:title="@string/tanktypes"
-            android:visible="false"/>
+            android:visible="true"/>
 
         <item
             android:id="@+id/nav_operator_totalsale"
-            android:title="@string/totalsales" />
+            android:title="@string/totalsales"
+            android:visible="true"
+            />
 
         <item
             android:id="@+id/nav_operator_fuel_station"
             android:title="@string/my_fuel_station"
-            android:visible="false"/>
+            android:visible="true"
+            />
 
         <item
             android:id="@+id/nav_operator_cashtransaction"
-            android:title="@string/cash_transaction" />
+            android:title="@string/cash_transaction"
+            android:visible="true"
+            />
     </group>
 
 

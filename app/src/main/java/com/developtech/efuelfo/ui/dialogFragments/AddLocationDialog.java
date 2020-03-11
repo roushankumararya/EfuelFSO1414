@@ -39,6 +39,7 @@ import android.widget.TextView;
 
 import com.developtech.efuelfo.R;
 import com.developtech.efuelfo.app.AppComponent;
+import com.developtech.efuelfo.customs.CustomButton;
 import com.developtech.efuelfo.listeners.CallbackListener;
 import com.developtech.efuelfo.model.requestModel.AddFuelStationRequestModel;
 import com.developtech.efuelfo.model.requestModel.LocationRequestModel;
@@ -120,13 +121,15 @@ public class AddLocationDialog extends DialogFragment implements GoogleApiClient
     LocationRequest locationRequest;
     SupportMapFragment supportMapFragment;
     GoogleMap map;
+    String  mMap;
+    GoogleMap gMap;
     CallbackListener callbackListener;
     CountDownTimer countDownTimer;
     LatToAddressTask latToAddressTask = null;
     private AlertDialog alertDialog;
     private CameraPosition cameraLoc;
     FuelStationFragment fuelStationFragment;
-
+    CustomButton addlocationbtn;
     String city, state, country;
     private FusedLocationProviderClient mFusedLocationClient;
 
@@ -166,12 +169,14 @@ public class AddLocationDialog extends DialogFragment implements GoogleApiClient
         this.appComponent = appComponent;
         this.callbackListener = callbackListener;
         this.activity = activity;
-        this.fuelStationFragment = fuelStationFragment;
+        //this.fuelStationFragment = fuelStationFragment;
     }
 
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
+
+
         if (view != null) {
             ViewGroup parent = (ViewGroup) view.getParent();
             if (parent != null)
@@ -182,6 +187,7 @@ public class AddLocationDialog extends DialogFragment implements GoogleApiClient
         } catch (InflateException e) {
             /* map is already there, just return view as it is */
         }
+        addlocationbtn=(CustomButton) view.findViewById(R.id.btnAddLocation);
         ButterKnife.bind(this, view);
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setView(view);
@@ -277,8 +283,12 @@ public class AddLocationDialog extends DialogFragment implements GoogleApiClient
     @OnClick({R.id.btnAddLocation, R.id.ivCancel})
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.btnAddLocation: {
+             case R.id.btnAddLocation: {
                 if (!actvSearch.getText().toString().trim().isEmpty()) {
+                    if (cameraLoc==null){
+
+                        cameraLoc = map.getCameraPosition();
+                    }
                     AddFuelStationRequestModel address = new AddFuelStationRequestModel();
                     address.setCity(city);
                     address.setState(state);
@@ -489,6 +499,7 @@ public class AddLocationDialog extends DialogFragment implements GoogleApiClient
     @Override
     public void onMapReady(GoogleMap googleMap) {
         map = googleMap;
+
         countDown();
     }
 
@@ -507,6 +518,7 @@ public class AddLocationDialog extends DialogFragment implements GoogleApiClient
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
+            addlocationbtn.setClickable(false);
         }
 
         @Override
@@ -551,6 +563,7 @@ public class AddLocationDialog extends DialogFragment implements GoogleApiClient
             } else {
                 Snackbar.make(getView(), R.string.please_check_internet, Snackbar.LENGTH_SHORT).show();
             }
+            addlocationbtn.setClickable(true);
             progressBar.setVisibility(View.GONE);
         }
     }
@@ -622,13 +635,29 @@ public class AddLocationDialog extends DialogFragment implements GoogleApiClient
                 requestModel.setLatitude(placelatLng.latitude + "");
                 requestModel.setLongitude(placelatLng.longitude + "");
 
-                CameraPosition position =
-                        new CameraPosition.Builder().target(new LatLng(placelatLng.latitude, placelatLng.longitude))
+                CameraPosition position = new CameraPosition.Builder().
+                        target(new LatLng(placelatLng.latitude, placelatLng.longitude))
                                 .zoom(15f)
                                 .build();
+
+                /*CameraPosition position = new CameraPosition.Builder()
+                      //
+                        // .target(new LatLng(51.50550, -0.07520))
+                        .target(new LatLng(placelatLng.latitude, placelatLng.longitude))
+                        .zoom(10)
+                        .tilt(20)
+                        .build();*/
+
+               /* CameraPosition currentCameraPosition = mapboxMap.getCameraPosition();
+                double currentZoom = currentCameraPosition.zoom;
+                double currentTilt = currentCameraPosition.tilt;*/
+
                 map.moveCamera(CameraUpdateFactory.newCameraPosition(position));
 
             }
+
+
+
 
             @Override
             public void onFailure(@NonNull Status status) {

@@ -6,6 +6,7 @@ import android.os.Handler;
 
 import com.developtech.efuelfo.HomePage;
 import com.developtech.efuelfo.R;
+import com.developtech.efuelfo.app.UserPreference;
 import com.developtech.efuelfo.model.responseModel.SignInResponseModel;
 import com.developtech.efuelfo.util.SPUtils;
 
@@ -20,13 +21,18 @@ public class SplashActivity extends MyActionBar {
         final Bundle bundle = getIntent().getExtras();
         System.out.println("here in falut==>"+bundle);
 
-
+        final UserPreference share=new UserPreference(getApplicationContext()).getInstance(getApplicationContext());
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent;
-                intent=new Intent(getApplicationContext(), HomePage.class);
-                startActivity(intent);
+                if (share.isLogin()){
+                    Intent dashBoard=new Intent(getApplicationContext(), HomeActivity.class);
+                    startActivity(dashBoard);
+                }else {
+                    Intent intent;
+                    intent = new Intent(getApplicationContext(), HomePage.class);
+                    startActivity(intent);
+                }
 //                if (appComponent.getSpUtils().getUserData()==null || appComponent.getSpUtils().getUserId()==null ||
 //                        appComponent.getSpUtils().getUserId().isEmpty() || !appComponent.getSpUtils().isKeepMeLogin()) {
 //                    intent = new Intent(SplashActivity.this, SelectAccountActivity.class);

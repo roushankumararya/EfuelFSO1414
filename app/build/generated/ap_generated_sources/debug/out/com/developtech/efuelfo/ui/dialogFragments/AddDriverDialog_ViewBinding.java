@@ -20,7 +20,7 @@ import java.lang.Override;
 public class AddDriverDialog_ViewBinding implements Unbinder {
   private AddDriverDialog target;
 
-  private View view2131362157;
+  private View view2131362156;
 
   private View view2131361883;
 
@@ -38,7 +38,7 @@ public class AddDriverDialog_ViewBinding implements Unbinder {
     target.tvEdit = Utils.findRequiredViewAsType(source, R.id.tvEdit, "field 'tvEdit'", TextView.class);
     view = Utils.findRequiredView(source, R.id.ivProfilePic, "field 'ivProfilePic' and method 'onClick'");
     target.ivProfilePic = Utils.castView(view, R.id.ivProfilePic, "field 'ivProfilePic'", ImageView.class);
-    view2131362157 = view;
+    view2131362156 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -111,8 +111,8 @@ public class AddDriverDialog_ViewBinding implements Unbinder {
     target.spinnerGender = null;
     target.spinnerVehicleNumber = null;
 
-    view2131362157.setOnClickListener(null);
-    view2131362157 = null;
+    view2131362156.setOnClickListener(null);
+    view2131362156 = null;
     view2131361883.setOnClickListener(null);
     view2131361883 = null;
     view2131361870.setOnClickListener(null);

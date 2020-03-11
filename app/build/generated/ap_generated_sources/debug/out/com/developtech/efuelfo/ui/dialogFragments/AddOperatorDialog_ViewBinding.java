@@ -25,9 +25,9 @@ public class AddOperatorDialog_ViewBinding implements Unbinder {
 
   private View view2131361873;
 
-  private View view2131362154;
+  private View view2131362153;
 
-  private View view2131362131;
+  private View view2131362130;
 
   private View view2131361876;
 
@@ -58,7 +58,7 @@ public class AddOperatorDialog_ViewBinding implements Unbinder {
     target.rootLayout = Utils.findRequiredViewAsType(source, R.id.addoperatormenu, "field 'rootLayout'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.ivOperatorProfile, "field 'ivOperatorProfile' and method 'onClick'");
     target.ivOperatorProfile = Utils.castView(view, R.id.ivOperatorProfile, "field 'ivOperatorProfile'", RoundedImageView.class);
-    view2131362154 = view;
+    view2131362153 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -74,7 +74,7 @@ public class AddOperatorDialog_ViewBinding implements Unbinder {
     target.lytManager = Utils.findRequiredViewAsType(source, R.id.lytManager, "field 'lytManager'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.ivDelete, "field 'ivDelete' and method 'onClick'");
     target.ivDelete = Utils.castView(view, R.id.ivDelete, "field 'ivDelete'", ImageView.class);
-    view2131362131 = view;
+    view2131362130 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -138,10 +138,10 @@ public class AddOperatorDialog_ViewBinding implements Unbinder {
 
     view2131361873.setOnClickListener(null);
     view2131361873 = null;
-    view2131362154.setOnClickListener(null);
-    view2131362154 = null;
-    view2131362131.setOnClickListener(null);
-    view2131362131 = null;
+    view2131362153.setOnClickListener(null);
+    view2131362153 = null;
+    view2131362130.setOnClickListener(null);
+    view2131362130 = null;
     view2131361876.setOnClickListener(null);
     view2131361876 = null;
     view2131361899.setOnClickListener(null);

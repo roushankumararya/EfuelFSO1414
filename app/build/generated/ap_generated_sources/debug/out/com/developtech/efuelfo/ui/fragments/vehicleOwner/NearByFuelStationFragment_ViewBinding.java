@@ -18,11 +18,11 @@ import java.lang.Override;
 public class NearByFuelStationFragment_ViewBinding implements Unbinder {
   private NearByFuelStationFragment target;
 
-  private View view2131362082;
+  private View view2131362081;
 
-  private View view2131362087;
+  private View view2131362086;
 
-  private View view2131362149;
+  private View view2131362148;
 
   @UiThread
   public NearByFuelStationFragment_ViewBinding(final NearByFuelStationFragment target,
@@ -33,7 +33,7 @@ public class NearByFuelStationFragment_ViewBinding implements Unbinder {
     target.recycleStationList = Utils.findRequiredViewAsType(source, R.id.recycleStationList, "field 'recycleStationList'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.frameCancel, "field 'frameCancel' and method 'onCLick'");
     target.frameCancel = Utils.castView(view, R.id.frameCancel, "field 'frameCancel'", FrameLayout.class);
-    view2131362082 = view;
+    view2131362081 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -42,7 +42,7 @@ public class NearByFuelStationFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.frameSearch, "field 'frameSearch' and method 'onCLick'");
     target.frameSearch = Utils.castView(view, R.id.frameSearch, "field 'frameSearch'", FrameLayout.class);
-    view2131362087 = view;
+    view2131362086 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -52,7 +52,7 @@ public class NearByFuelStationFragment_ViewBinding implements Unbinder {
     target.etSearch = Utils.findRequiredViewAsType(source, R.id.etSearch, "field 'etSearch'", EditText.class);
     view = Utils.findRequiredView(source, R.id.ivMap, "field 'ivMap' and method 'onCLick'");
     target.ivMap = Utils.castView(view, R.id.ivMap, "field 'ivMap'", ImageView.class);
-    view2131362149 = view;
+    view2131362148 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -74,11 +74,11 @@ public class NearByFuelStationFragment_ViewBinding implements Unbinder {
     target.etSearch = null;
     target.ivMap = null;
 
-    view2131362082.setOnClickListener(null);
-    view2131362082 = null;
-    view2131362087.setOnClickListener(null);
-    view2131362087 = null;
-    view2131362149.setOnClickListener(null);
-    view2131362149 = null;
+    view2131362081.setOnClickListener(null);
+    view2131362081 = null;
+    view2131362086.setOnClickListener(null);
+    view2131362086 = null;
+    view2131362148.setOnClickListener(null);
+    view2131362148 = null;
   }
 }

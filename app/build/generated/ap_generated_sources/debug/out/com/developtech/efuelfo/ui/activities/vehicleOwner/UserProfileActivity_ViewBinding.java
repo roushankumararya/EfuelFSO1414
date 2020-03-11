@@ -23,9 +23,9 @@ import java.lang.Override;
 public class UserProfileActivity_ViewBinding implements Unbinder {
   private UserProfileActivity target;
 
-  private View view2131362157;
+  private View view2131362156;
 
-  private View view2131362134;
+  private View view2131362133;
 
   @UiThread
   public UserProfileActivity_ViewBinding(UserProfileActivity target) {
@@ -53,7 +53,7 @@ public class UserProfileActivity_ViewBinding implements Unbinder {
     target.cbAdditionalInfo = Utils.findRequiredViewAsType(source, R.id.cbAdditionalInfo, "field 'cbAdditionalInfo'", CheckBox.class);
     view = Utils.findRequiredView(source, R.id.ivProfilePic, "field 'ivProfilePic' and method 'onClick'");
     target.ivProfilePic = Utils.castView(view, R.id.ivProfilePic, "field 'ivProfilePic'", ImageView.class);
-    view2131362157 = view;
+    view2131362156 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -66,7 +66,7 @@ public class UserProfileActivity_ViewBinding implements Unbinder {
     target.viewToDiable = Utils.findRequiredView(source, R.id.viewToDiable, "field 'viewToDiable'");
     view = Utils.findRequiredView(source, R.id.ivEdit, "field 'ivEdit' and method 'onClick'");
     target.ivEdit = Utils.castView(view, R.id.ivEdit, "field 'ivEdit'", ImageView.class);
-    view2131362134 = view;
+    view2131362133 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -125,9 +125,9 @@ public class UserProfileActivity_ViewBinding implements Unbinder {
     target.tvLoginId = null;
     target.etLoginId = null;
 
-    view2131362157.setOnClickListener(null);
-    view2131362157 = null;
-    view2131362134.setOnClickListener(null);
-    view2131362134 = null;
+    view2131362156.setOnClickListener(null);
+    view2131362156 = null;
+    view2131362133.setOnClickListener(null);
+    view2131362133 = null;
   }
 }

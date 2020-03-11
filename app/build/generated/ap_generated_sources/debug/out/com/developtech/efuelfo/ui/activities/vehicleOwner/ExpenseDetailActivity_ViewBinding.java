@@ -20,11 +20,11 @@ import java.lang.Override;
 public class ExpenseDetailActivity_ViewBinding implements Unbinder {
   private ExpenseDetailActivity target;
 
-  private View view2131362543;
+  private View view2131362538;
 
-  private View view2131362646;
+  private View view2131362640;
 
-  private View view2131362520;
+  private View view2131362515;
 
   private View view2131361887;
 
@@ -46,7 +46,7 @@ public class ExpenseDetailActivity_ViewBinding implements Unbinder {
     target.tvTimeLabel = Utils.findRequiredViewAsType(source, R.id.tvTimeLabel, "field 'tvTimeLabel'", TextView.class);
     view = Utils.findRequiredView(source, R.id.tvDate, "field 'tvDate' and method 'onClick'");
     target.tvDate = Utils.castView(view, R.id.tvDate, "field 'tvDate'", TextView.class);
-    view2131362543 = view;
+    view2131362538 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -55,7 +55,7 @@ public class ExpenseDetailActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.tvTime, "field 'tvTime' and method 'onClick'");
     target.tvTime = Utils.castView(view, R.id.tvTime, "field 'tvTime'", TextView.class);
-    view2131362646 = view;
+    view2131362640 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -71,7 +71,7 @@ public class ExpenseDetailActivity_ViewBinding implements Unbinder {
     target.tvExpenseTotal = Utils.findRequiredViewAsType(source, R.id.tvExpenseTotal, "field 'tvExpenseTotal'", TextView.class);
     view = Utils.findRequiredView(source, R.id.tvAddExpenseType, "field 'tvAddExpenseType' and method 'onClick'");
     target.tvAddExpenseType = Utils.castView(view, R.id.tvAddExpenseType, "field 'tvAddExpenseType'", TextView.class);
-    view2131362520 = view;
+    view2131362515 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -138,12 +138,12 @@ public class ExpenseDetailActivity_ViewBinding implements Unbinder {
     target.viewlayer = null;
     target.rootLayout = null;
 
-    view2131362543.setOnClickListener(null);
-    view2131362543 = null;
-    view2131362646.setOnClickListener(null);
-    view2131362646 = null;
-    view2131362520.setOnClickListener(null);
-    view2131362520 = null;
+    view2131362538.setOnClickListener(null);
+    view2131362538 = null;
+    view2131362640.setOnClickListener(null);
+    view2131362640 = null;
+    view2131362515.setOnClickListener(null);
+    view2131362515 = null;
     view2131361887.setOnClickListener(null);
     view2131361887 = null;
     view2131361883.setOnClickListener(null);

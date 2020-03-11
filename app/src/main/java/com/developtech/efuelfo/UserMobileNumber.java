@@ -12,6 +12,7 @@ import android.widget.Spinner;
 
 import com.developtech.efuelfo.app.AppComponent;
 import com.developtech.efuelfo.app.MyApplication;
+import com.developtech.efuelfo.app.UserPreference;
 import com.developtech.efuelfo.model.ResultModel;
 import com.developtech.efuelfo.model.requestModel.SignInRequestModel;
 import com.developtech.efuelfo.model.requestModel.SignUpRequestModel;
@@ -36,7 +37,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import java.util.List;
 
 
-public  class UserMobileNumber extends   MyActionBar implements AdapterView.OnItemSelectedListener {
+public  class UserMobileNumber extends  MyActionBar implements AdapterView.OnItemSelectedListener {
 
     SignUpRequestModel requestModelmobile;
 
@@ -110,7 +111,8 @@ public  class UserMobileNumber extends   MyActionBar implements AdapterView.OnIt
     NetworkListener listener = new NetworkListener() {
         @Override
         public void onSuccess(ResultModel<?> responseBody) {
-            Log.e("kkk","success "+responseBody.getMessage()+" "+responseBody.getResutData());
+
+            Log.e("kkk","success "+responseBody.getMessage().toString().contains("")+" "+responseBody.getResutData());
              //  bundle=new Bundle();
             if (responseBody.getResultCode().equalsIgnoreCase(SPUtils.API_CODES.OK.toString())) {
                 SignUpResponseModel model = (SignUpResponseModel) responseBody.getResutData();
@@ -127,8 +129,18 @@ public  class UserMobileNumber extends   MyActionBar implements AdapterView.OnIt
             } else if (responseBody.getResultCode().equalsIgnoreCase(SPUtils.API_CODES.FAIL.toString())) {
                 showMsg(rootLayout, responseBody.getMessage());
                 appComponent.getSpUtils().setKeepMeLogin(true);
-
+                if (responseBody.getMessage().toString().contains("User with given mobile number is already exists")){
+                    UserPreference userPreference=new UserPreference(getApplicationContext())
+                            .getInstance(getApplicationContext());
+                    //shareprefer save boolean set tru, number
+                    userPreference.setNumber(etMobileNumber.getText().toString());
+                    userPreference.setIsLogin(true);
+                }else {
+                    //boolean set false,
+                }
                 goToNextPage(SPUtils.ACCOUNT_TYPES.FSO);
+
+              //  goToNextPage(SPUtils.ACCOUNT_TYPES.VCO);
                // newIntent(OtpVerifyNumber.class, bundle, false);
             }
         }
@@ -165,15 +177,16 @@ public  class UserMobileNumber extends   MyActionBar implements AdapterView.OnIt
             }
             case FSO: {
                 newIntent(HomeActivity.class, null, false);
-//                DialogFragment dialogFragment = new SelectVehicleOwnerDialog();
-//                dialogFragment.show(getSupportFragmentManager(), "select_owner");
+             //  DialogFragment dialogFragment = new SelectVehicleOwnerDialog();
+              //  dialogFragment.show(getSupportFragmentManager(), "select_owner");
                 break;
             }
             case OPR: {
+                //  newIntent(HomeActivity.class, null, false);
 //                newIntent(StationRegistrationActivity.class,null,false);
 //                newIntent(StationRegistrationActivity.class,null,false);
-                DialogFragment dialogFragment = new SelectVehicleOwnerDialog();
-                dialogFragment.show(getSupportFragmentManager(), "select_owner");
+               DialogFragment dialogFragment = new SelectVehicleOwnerDialog();
+               dialogFragment.show(getSupportFragmentManager(), "select_owner");
                 break;
             }
         }
@@ -343,7 +356,7 @@ public  class UserMobileNumber extends   MyActionBar implements AdapterView.OnIt
                 appComponent.getSpUtils().saveUserData(model);
                 MyApplication application = (MyApplication) getApplication();
                 application.initDagger();
-               appComponent.getSpUtils().setKeepMeLogin(true);
+                appComponent.getSpUtils().setKeepMeLogin(true);
                 goToNextPage(model);
 
             } else if (responseBody.getResultCode().equalsIgnoreCase(SPUtils.API_CODES.FAIL.toString())) {
@@ -380,6 +393,7 @@ public  class UserMobileNumber extends   MyActionBar implements AdapterView.OnIt
         requestModelmobile.setCountryCode("+91");
        // requestModelmobile.setUserType(appComponent.getSpUtils().getAccountType().toString());
         requestModelmobile.setUserType(SPUtils.ACCOUNT_TYPES.FSO.toString());
+      //  requestModelmobile.setUserType(SPUtils.ACCOUNT_TYPES.OPR.toString());
         appComponent.getServiceCaller().callService(appComponent.getAllApis().signUp(requestModelmobile), listener);
     }
 

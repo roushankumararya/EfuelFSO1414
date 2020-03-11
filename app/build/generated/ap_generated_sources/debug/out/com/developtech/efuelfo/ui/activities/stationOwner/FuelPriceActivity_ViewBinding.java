@@ -23,15 +23,15 @@ public class FuelPriceActivity_ViewBinding implements Unbinder {
 
   private View view2131361893;
 
-  private View view2131362205;
+  private View view2131362203;
 
-  private View view2131362228;
+  private View view2131362225;
 
   private View view2131361905;
 
   private View view2131361879;
 
-  private View view2131362063;
+  private View view2131362062;
 
   @UiThread
   public FuelPriceActivity_ViewBinding(FuelPriceActivity target) {
@@ -64,7 +64,7 @@ public class FuelPriceActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.lytDate, "field 'lytDate' and method 'onClick'");
     target.lytDate = Utils.castView(view, R.id.lytDate, "field 'lytDate'", LinearLayout.class);
-    view2131362205 = view;
+    view2131362203 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -73,7 +73,7 @@ public class FuelPriceActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.lytTime, "field 'lytTime' and method 'onClick'");
     target.lytTime = Utils.castView(view, R.id.lytTime, "field 'lytTime'", LinearLayout.class);
-    view2131362228 = view;
+    view2131362225 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -101,7 +101,7 @@ public class FuelPriceActivity_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.fabAddSchdule, "field 'fabAddSchedule' and method 'onClick'");
     target.fabAddSchedule = Utils.castView(view, R.id.fabAddSchdule, "field 'fabAddSchedule'", FloatingActionButton.class);
-    view2131362063 = view;
+    view2131362062 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -137,15 +137,15 @@ public class FuelPriceActivity_ViewBinding implements Unbinder {
 
     view2131361893.setOnClickListener(null);
     view2131361893 = null;
-    view2131362205.setOnClickListener(null);
-    view2131362205 = null;
-    view2131362228.setOnClickListener(null);
-    view2131362228 = null;
+    view2131362203.setOnClickListener(null);
+    view2131362203 = null;
+    view2131362225.setOnClickListener(null);
+    view2131362225 = null;
     view2131361905.setOnClickListener(null);
     view2131361905 = null;
     view2131361879.setOnClickListener(null);
     view2131361879 = null;
-    view2131362063.setOnClickListener(null);
-    view2131362063 = null;
+    view2131362062.setOnClickListener(null);
+    view2131362062 = null;
   }
 }

@@ -4,8 +4,17 @@
     android:layout_width="match_parent"
     android:id="@+id/rootlayout"
     android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
     android:background="@color/black"
     tools:context="com.developtech.efuelfo.ui.activities.common.SplashActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="220dp"
+        >
 
     <ImageView
         android:id="@+id/efuellogo"
@@ -19,6 +28,8 @@
         android:layout_below="@+id/efuellogo"
         android:layout_centerInParent="true"
         android:textColor="@color/white"
-        android:textSize="20sp"
-        android:text="Efuel App"/>
+        android:textSize="25sp"
+        android:text="Efuel Station"/>
+
+    </LinearLayout>
 </RelativeLayout>

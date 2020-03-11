@@ -15,7 +15,7 @@ import java.lang.Override;
 public class AddFuelStation_ViewBinding implements Unbinder {
   private AddFuelStation target;
 
-  private View view2131362061;
+  private View view2131362060;
 
   @UiThread
   public AddFuelStation_ViewBinding(final AddFuelStation target, View source) {
@@ -24,7 +24,7 @@ public class AddFuelStation_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.fabAddFuelStation, "field 'fabAddFuelStation' and method 'onClick'");
     target.fabAddFuelStation = Utils.castView(view, R.id.fabAddFuelStation, "field 'fabAddFuelStation'", FloatingActionButton.class);
-    view2131362061 = view;
+    view2131362060 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -42,7 +42,7 @@ public class AddFuelStation_ViewBinding implements Unbinder {
 
     target.fabAddFuelStation = null;
 
-    view2131362061.setOnClickListener(null);
-    view2131362061 = null;
+    view2131362060.setOnClickListener(null);
+    view2131362060 = null;
   }
 }

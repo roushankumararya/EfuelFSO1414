@@ -17,9 +17,9 @@ import java.lang.Override;
 public class VerifyTransactionFragment_ViewBinding implements Unbinder {
   private VerifyTransactionFragment target;
 
-  private View view2131362159;
-
   private View view2131362158;
+
+  private View view2131362157;
 
   @UiThread
   public VerifyTransactionFragment_ViewBinding(final VerifyTransactionFragment target,
@@ -31,7 +31,7 @@ public class VerifyTransactionFragment_ViewBinding implements Unbinder {
     target.etVerifyTransSearch = Utils.findRequiredViewAsType(source, R.id.etVerifyTransSearch, "field 'etVerifyTransSearch'", EditText.class);
     target.rvVerifyTrans = Utils.findRequiredViewAsType(source, R.id.rvVerifyTrans, "field 'rvVerifyTrans'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.ivSearch, "method 'onClick'");
-    view2131362159 = view;
+    view2131362158 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -39,7 +39,7 @@ public class VerifyTransactionFragment_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.ivQrCode, "method 'onClick'");
-    view2131362158 = view;
+    view2131362157 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -59,9 +59,9 @@ public class VerifyTransactionFragment_ViewBinding implements Unbinder {
     target.etVerifyTransSearch = null;
     target.rvVerifyTrans = null;
 
-    view2131362159.setOnClickListener(null);
-    view2131362159 = null;
     view2131362158.setOnClickListener(null);
     view2131362158 = null;
+    view2131362157.setOnClickListener(null);
+    view2131362157 = null;
   }
 }

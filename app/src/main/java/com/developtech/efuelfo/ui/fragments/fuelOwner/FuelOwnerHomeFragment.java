@@ -35,7 +35,6 @@ public class FuelOwnerHomeFragment extends BaseFragment implements VehicleOwnerI
     private List<VehicleOwnerHomeModel> list;
 
     private HomeActivity homeActivity;
-
     public FuelOwnerHomeFragment() {
 
     }
@@ -50,7 +49,6 @@ public class FuelOwnerHomeFragment extends BaseFragment implements VehicleOwnerI
     @Override
     public void onPause() {
         super.onPause();
-
         homeActivity.showNotification(false);
     }
 
@@ -143,7 +141,7 @@ public class FuelOwnerHomeFragment extends BaseFragment implements VehicleOwnerI
             case 1: {
 
 
-                if (!appComponent.getSpUtils().getFuelStationModel().getFuelStationVerified()) {
+               if (!appComponent.getSpUtils().getFuelStationModel().getFuelStationVerified()) {
                     showMsg(getString(R.string.station_not_verified));
                     return;
                 }

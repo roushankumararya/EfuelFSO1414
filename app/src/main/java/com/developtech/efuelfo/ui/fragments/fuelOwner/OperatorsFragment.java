@@ -65,7 +65,8 @@ public class OperatorsFragment extends BaseFragment implements OnItemClickListen
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.
+                VERTICAL, false);
         rvOperator.setLayoutManager(layoutManager);
         operatorsAdapter = new OperatorsAdapter(getContext(), this, operatorsList, appComponent);
         rvOperator.setAdapter(operatorsAdapter);
@@ -77,7 +78,8 @@ public class OperatorsFragment extends BaseFragment implements OnItemClickListen
     void callApi() {
         FindOperatorRequestModel requestModel = new FindOperatorRequestModel();
         requestModel.setFuelStationId(appComponent.getSpUtils().getFuelStationModel().getId());
-        appComponent.getServiceCaller().callService(appComponent.getAllApis().getOperators(requestModel), getOperatorsListener);
+        appComponent.getServiceCaller().callService(appComponent.getAllApis().getOperators(requestModel),
+                getOperatorsListener);
     }
 
 

@@ -16,7 +16,7 @@ import java.lang.Override;
 public class FuelStationFragment_ViewBinding implements Unbinder {
   private FuelStationFragment target;
 
-  private View view2131362057;
+  private View view2131362056;
 
   @UiThread
   public FuelStationFragment_ViewBinding(final FuelStationFragment target, View source) {
@@ -26,7 +26,7 @@ public class FuelStationFragment_ViewBinding implements Unbinder {
     target.rvFuelStaton = Utils.findRequiredViewAsType(source, R.id.rvFuelStation, "field 'rvFuelStaton'", RecyclerView.class);
     target.rootLayout = Utils.findRequiredViewAsType(source, R.id.rootLayout, "field 'rootLayout'", FrameLayout.class);
     view = Utils.findRequiredView(source, R.id.fabAdd, "method 'onClick'");
-    view2131362057 = view;
+    view2131362056 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -45,7 +45,7 @@ public class FuelStationFragment_ViewBinding implements Unbinder {
     target.rvFuelStaton = null;
     target.rootLayout = null;
 
-    view2131362057.setOnClickListener(null);
-    view2131362057 = null;
+    view2131362056.setOnClickListener(null);
+    view2131362056 = null;
   }
 }

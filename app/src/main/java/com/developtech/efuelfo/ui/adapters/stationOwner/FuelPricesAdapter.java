@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,11 +33,13 @@ public class FuelPricesAdapter extends RecyclerView.Adapter<FuelPricesVH> {
     List<String> fuelTypeList;
     boolean isDisabled;
 
-    public FuelPricesAdapter(List<FuelDetailModel> fuelDetailList, Context context, AppComponent appComponent, boolean isDisabled) {
+    public FuelPricesAdapter(List<FuelDetailModel> fuelDetailList, Context context, AppComponent appComponent,
+                             boolean isDisabled) {
         this.fuelDetailList = fuelDetailList;
         this.appComponent = appComponent;
         this.context = context;
         this.isDisabled = isDisabled;
+        Log.e("hhh","succx:-"+ appComponent.getSpUtils());
         fuelTypeList = appComponent.getSpUtils().getFuelStationModel().getFuelCompany().getFuelType();
         spFuelTypeAdapter = new SpinnerAdapter4(context, R.layout.item_spinner_fuel_price, fuelTypeList);
     }

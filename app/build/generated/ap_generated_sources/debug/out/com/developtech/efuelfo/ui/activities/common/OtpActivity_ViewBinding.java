@@ -22,9 +22,9 @@ public class OtpActivity_ViewBinding implements Unbinder {
 
   private View view2131361906;
 
-  private View view2131362176;
+  private View view2131362175;
 
-  private View view2131362629;
+  private View view2131362623;
 
   @UiThread
   public OtpActivity_ViewBinding(OtpActivity target) {
@@ -60,7 +60,7 @@ public class OtpActivity_ViewBinding implements Unbinder {
     target.view5 = Utils.findRequiredView(source, R.id.view5, "field 'view5'");
     view = Utils.findRequiredView(source, R.id.layOtp, "field 'layOtp' and method 'onClick'");
     target.layOtp = Utils.castView(view, R.id.layOtp, "field 'layOtp'", LinearLayout.class);
-    view2131362176 = view;
+    view2131362175 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -70,7 +70,7 @@ public class OtpActivity_ViewBinding implements Unbinder {
     target.tvMobileNumber = Utils.findRequiredViewAsType(source, R.id.tvMobileNumber, "field 'tvMobileNumber'", CustomTextView.class);
     target.rootLayout = Utils.findRequiredViewAsType(source, R.id.rootlayout, "field 'rootLayout'", RelativeLayout.class);
     view = Utils.findRequiredView(source, R.id.tvResend, "method 'onClick'");
-    view2131362629 = view;
+    view2131362623 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -106,9 +106,9 @@ public class OtpActivity_ViewBinding implements Unbinder {
 
     view2131361906.setOnClickListener(null);
     view2131361906 = null;
-    view2131362176.setOnClickListener(null);
-    view2131362176 = null;
-    view2131362629.setOnClickListener(null);
-    view2131362629 = null;
+    view2131362175.setOnClickListener(null);
+    view2131362175 = null;
+    view2131362623.setOnClickListener(null);
+    view2131362623 = null;
   }
 }

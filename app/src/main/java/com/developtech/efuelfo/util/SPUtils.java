@@ -107,8 +107,7 @@ public class SPUtils {
         String response = sharedPreferences.getString(FUEL_STATION_MODEL, "");
         if (response.isEmpty())
             return null;
-
-        return myObj.fromJson(response, GetFuelStationResponseModel.class);
+            return myObj.fromJson(response, GetFuelStationResponseModel.class);
     }
 
 

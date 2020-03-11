@@ -19,19 +19,19 @@ import java.lang.Override;
 public class TransactionDetailsActivity_ViewBinding implements Unbinder {
   private TransactionDetailsActivity target;
 
-  private View view2131362085;
-
-  private View view2131362089;
+  private View view2131362084;
 
   private View view2131362088;
+
+  private View view2131362087;
 
   private View view2131361888;
 
   private View view2131361896;
 
-  private View view2131362083;
+  private View view2131362082;
 
-  private View view2131362146;
+  private View view2131362145;
 
   @UiThread
   public TransactionDetailsActivity_ViewBinding(TransactionDetailsActivity target) {
@@ -49,7 +49,7 @@ public class TransactionDetailsActivity_ViewBinding implements Unbinder {
     target.tvOwnerName = Utils.findRequiredViewAsType(source, R.id.tvOwnerName, "field 'tvOwnerName'", TextView.class);
     view = Utils.findRequiredView(source, R.id.frameOwnerInfo, "field 'frameOwnerInfo' and method 'onClick'");
     target.frameOwnerInfo = Utils.castView(view, R.id.frameOwnerInfo, "field 'frameOwnerInfo'", FrameLayout.class);
-    view2131362085 = view;
+    view2131362084 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -59,7 +59,7 @@ public class TransactionDetailsActivity_ViewBinding implements Unbinder {
     target.tvVehicleNumber = Utils.findRequiredViewAsType(source, R.id.tvVehicleNumber, "field 'tvVehicleNumber'", TextView.class);
     view = Utils.findRequiredView(source, R.id.frameVehicleInfo, "field 'frameVehicleInfo' and method 'onClick'");
     target.frameVehicleInfo = Utils.castView(view, R.id.frameVehicleInfo, "field 'frameVehicleInfo'", FrameLayout.class);
-    view2131362089 = view;
+    view2131362088 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -69,7 +69,7 @@ public class TransactionDetailsActivity_ViewBinding implements Unbinder {
     target.tvFuelStation = Utils.findRequiredViewAsType(source, R.id.tvFuelStation, "field 'tvFuelStation'", TextView.class);
     view = Utils.findRequiredView(source, R.id.frameStationInfo, "field 'frameStationInfo' and method 'onClick'");
     target.frameStationInfo = Utils.castView(view, R.id.frameStationInfo, "field 'frameStationInfo'", FrameLayout.class);
-    view2131362088 = view;
+    view2131362087 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -103,7 +103,7 @@ public class TransactionDetailsActivity_ViewBinding implements Unbinder {
     target.tvDriverName = Utils.findRequiredViewAsType(source, R.id.tvDriverName, "field 'tvDriverName'", TextView.class);
     view = Utils.findRequiredView(source, R.id.frameDriverInfo, "field 'frameDriverInfo' and method 'onClick'");
     target.frameDriverInfo = Utils.castView(view, R.id.frameDriverInfo, "field 'frameDriverInfo'", FrameLayout.class);
-    view2131362083 = view;
+    view2131362082 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -117,7 +117,7 @@ public class TransactionDetailsActivity_ViewBinding implements Unbinder {
     target.lytOwner = Utils.findRequiredViewAsType(source, R.id.lytOwner, "field 'lytOwner'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.ivInfoWindow, "field 'ivInfoWindow' and method 'onClick'");
     target.ivInfoWindow = Utils.castView(view, R.id.ivInfoWindow, "field 'ivInfoWindow'", ImageView.class);
-    view2131362146 = view;
+    view2131362145 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -158,19 +158,19 @@ public class TransactionDetailsActivity_ViewBinding implements Unbinder {
     target.lytOwner = null;
     target.ivInfoWindow = null;
 
-    view2131362085.setOnClickListener(null);
-    view2131362085 = null;
-    view2131362089.setOnClickListener(null);
-    view2131362089 = null;
+    view2131362084.setOnClickListener(null);
+    view2131362084 = null;
     view2131362088.setOnClickListener(null);
     view2131362088 = null;
+    view2131362087.setOnClickListener(null);
+    view2131362087 = null;
     view2131361888.setOnClickListener(null);
     view2131361888 = null;
     view2131361896.setOnClickListener(null);
     view2131361896 = null;
-    view2131362083.setOnClickListener(null);
-    view2131362083 = null;
-    view2131362146.setOnClickListener(null);
-    view2131362146 = null;
+    view2131362082.setOnClickListener(null);
+    view2131362082 = null;
+    view2131362145.setOnClickListener(null);
+    view2131362145 = null;
   }
 }

@@ -16,13 +16,13 @@ import java.lang.Override;
 public class HomeDashboard_ViewBinding implements Unbinder {
   private HomeDashboard target;
 
-  private View view2131362132;
+  private View view2131362131;
 
-  private View view2131362129;
+  private View view2131362128;
 
-  private View view2131362136;
+  private View view2131362135;
 
-  private View view2131362152;
+  private View view2131362151;
 
   @UiThread
   public HomeDashboard_ViewBinding(HomeDashboard target) {
@@ -38,7 +38,7 @@ public class HomeDashboard_ViewBinding implements Unbinder {
     target.rootLayout = Utils.findRequiredViewAsType(source, R.id.rootlayout, "field 'rootLayout'", CoordinatorLayout.class);
     target.tvCount = Utils.findRequiredViewAsType(source, R.id.tvCount, "field 'tvCount'", TextView.class);
     view = Utils.findRequiredView(source, R.id.ivDrawer, "method 'onClick'");
-    view2131362132 = view;
+    view2131362131 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -46,7 +46,7 @@ public class HomeDashboard_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.ivBack, "method 'onClick'");
-    view2131362129 = view;
+    view2131362128 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -54,7 +54,7 @@ public class HomeDashboard_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.ivFilter, "method 'onClick'");
-    view2131362136 = view;
+    view2131362135 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -62,7 +62,7 @@ public class HomeDashboard_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.ivNotification, "method 'onClick'");
-    view2131362152 = view;
+    view2131362151 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -82,13 +82,13 @@ public class HomeDashboard_ViewBinding implements Unbinder {
     target.rootLayout = null;
     target.tvCount = null;
 
-    view2131362132.setOnClickListener(null);
-    view2131362132 = null;
-    view2131362129.setOnClickListener(null);
-    view2131362129 = null;
-    view2131362136.setOnClickListener(null);
-    view2131362136 = null;
-    view2131362152.setOnClickListener(null);
-    view2131362152 = null;
+    view2131362131.setOnClickListener(null);
+    view2131362131 = null;
+    view2131362128.setOnClickListener(null);
+    view2131362128 = null;
+    view2131362135.setOnClickListener(null);
+    view2131362135 = null;
+    view2131362151.setOnClickListener(null);
+    view2131362151 = null;
   }
 }

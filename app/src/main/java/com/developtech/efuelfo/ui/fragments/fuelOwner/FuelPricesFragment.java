@@ -24,7 +24,6 @@ import android.widget.TimePicker;
 
 import com.developtech.efuelfo.R;
 import com.developtech.efuelfo.model.ResultModel;
-import com.developtech.efuelfo.model.requestModel.AddFuelStationRequestModel;
 import com.developtech.efuelfo.model.requestModel.SearchScheduleRequestModel;
 import com.developtech.efuelfo.model.responseModel.FuelDetailModel;
 import com.developtech.efuelfo.model.responseModel.SchedulesResponseModel;
@@ -35,10 +34,8 @@ import com.developtech.efuelfo.ui.adapters.stationOwner.FuelPricesAdapter;
 import com.developtech.efuelfo.ui.fragments.BaseFragment;
 import com.developtech.efuelfo.util.SPUtils;
 
-import java.sql.Time;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 import butterknife.BindView;
@@ -117,18 +114,18 @@ public class FuelPricesFragment extends BaseFragment {
         btnViewSchedule.setText(getResources().getString(R.string.view_schedule));
 
         Calendar calendar = Calendar.getInstance();
-        tvDate.setText(calendar.get(Calendar.DAY_OF_MONTH)+"/"+(calendar.get(Calendar.MONTH)+1)+"/"+calendar.get(Calendar.YEAR));
+        tvDate.setText(calendar.get(Calendar.DAY_OF_MONTH)+"/"+(calendar.get(Calendar.MONTH)+1)+"/"+
+                calendar.get(Calendar.YEAR));
 
         tvTime.setText(get12HourTime(calendar.get(Calendar.HOUR_OF_DAY)+":"+calendar.get(Calendar.MINUTE)));
-
         rvFuelPrices.setLayoutManager(new LinearLayoutManager(getContext()));
         adapter = new FuelPricesAdapter(fuelDetailList, getContext(), appComponent, true);
         rvFuelPrices.setAdapter(adapter);
-
         String strDate = tvDate.getText().toString() + " " + get24HourTime(tvTime.getText().toString());
         requestModel.setDateTime(getFormatedDateUTC(strDate));
-        requestModel.setFuelStationId(appComponent.getSpUtils().getFuelStationModel().getId());
-        appComponent.getServiceCaller().callService(appComponent.getAllApis().searchSchedule(requestModel), scheduleListener);
+       requestModel.setFuelStationId(appComponent.getSpUtils().getFuelStationModel().getId());
+       appComponent.getServiceCaller().callService(appComponent.getAllApis().searchSchedule(requestModel),
+               scheduleListener);
     }
 
     @Override
@@ -142,7 +139,8 @@ public class FuelPricesFragment extends BaseFragment {
     }
 
 
-    @OnClick({R.id.btnOk, R.id.tvDate, R.id.tvTime, R.id.frameRefresh, R.id.ivArrowDate, R.id.ivArrowTime, R.id.btnCreateSchdule})
+    @OnClick({R.id.btnOk, R.id.tvDate, R.id.tvTime, R.id.frameRefresh, R.id.ivArrowDate, R.id.ivArrowTime,
+            R.id.btnCreateSchdule})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btnOk: {
@@ -185,14 +183,16 @@ public class FuelPricesFragment extends BaseFragment {
         requestModel.setDateTime(getFormatedDateUTC(strDate));
         requestModel.setFuelStationId(appComponent.getSpUtils().getFuelStationModel().getId());
 
-        appComponent.getServiceCaller().callService(appComponent.getAllApis().searchSchedule(requestModel), scheduleListener);
+        appComponent.getServiceCaller().callService(appComponent.getAllApis().searchSchedule(requestModel),
+                scheduleListener);
     }
 
     NetworkListener scheduleListener = new NetworkListener() {
         @Override
         public void onSuccess(ResultModel<?> responseBody) {
             if (responseBody.getResultCode().equalsIgnoreCase(SPUtils.API_CODES.OK.toString())) {
-                List<SchedulesResponseModel> schedulesList = (List<SchedulesResponseModel>) responseBody.getResutData();
+                List<SchedulesResponseModel> schedulesList = (List<SchedulesResponseModel>) responseBody
+                        .getResutData();
                 fuelDetailList.clear();
 
                 if (schedulesList.size()>0) {

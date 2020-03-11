@@ -14,7 +14,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 
 public class UserPersonalDeatil extends AppCompatActivity  implements View.OnClickListener {
 
@@ -36,9 +38,17 @@ public class UserPersonalDeatil extends AppCompatActivity  implements View.OnCli
         radiobtn2=(RadioButton)findViewById(R.id.female);
         radioGroup=(RadioGroup)findViewById(R.id.radiogroupbtn);
         dateofbirth = (EditText) findViewById(R.id.userdateofbirthfill);
+
         btnnext= (Button) findViewById(R.id.personaldetailfill);
         dateofbirth.setOnClickListener(this);
+        java.text.DateFormat sdf;
+        Date now = new Date();
+        sdf = new SimpleDateFormat("dd-MM-yyyy");
+        SimpleDateFormat sdftime = new SimpleDateFormat("HH:mm");
+        String strDate = sdf.format(now);
+        String strTime = sdftime.format(now);
 
+        dateofbirth.setText(""+strDate);
        /* Pattern ps=Pattern.compile("^[a-zA-Z ]+$");
         Matcher ms = ps.matcher( username.getText().toString());*/
 
@@ -95,8 +105,6 @@ public class UserPersonalDeatil extends AppCompatActivity  implements View.OnCli
                     dateofbirth.requestFocus();
                 }else{
 
-
-
                     Intent intent = new Intent(getApplicationContext(), EfuelStationDteail.class);
                     if ( ((RadioButton)findViewById(radioGroup.getCheckedRadioButtonId())).getText()!=null){
                          String value =((RadioButton)findViewById(radioGroup.getCheckedRadioButtonId()))
@@ -119,8 +127,6 @@ public class UserPersonalDeatil extends AppCompatActivity  implements View.OnCli
                      /* finish();*/
                       /*appComponent.getServiceCaller().callService(appComponent.getAllApis().
                               getFuelStations(),intent);*/
-
-
                 }
 
             }
@@ -129,12 +135,19 @@ public class UserPersonalDeatil extends AppCompatActivity  implements View.OnCli
      @Override
         public void onClick(View view) {
 
-            if (view.getId() ==R.id.userdateofbirthfill) {
+            if (view.getId() == R.id.userdateofbirthfill) {
                 final Calendar c = Calendar.getInstance();
                 mYear = c.get(Calendar.YEAR);
                 mMonth = c.get(Calendar.MONTH);
                 mDay = c.get(Calendar.DAY_OF_MONTH);
+              /*  java.text.DateFormat sdf;
+                Date now = new Date();
+                sdf = new SimpleDateFormat("dd-MM-yyyy");
+                SimpleDateFormat sdftime = new SimpleDateFormat("HH:mm");
+                String strDate = sdf.format(now);
+                String strTime = sdftime.format(now);
 
+                dateofbirth.setText(""+strDate);*/
 
                 DatePickerDialog datePickerDialog = new DatePickerDialog(this,
                         new DatePickerDialog.OnDateSetListener() {

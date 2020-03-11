@@ -21,6 +21,7 @@ public class FuelPricesStationDetailAdaper extends RecyclerView.Adapter<FuelPric
     List<FuelDetailModel> fuelDetailList;
     Context context;
 
+
     public FuelPricesStationDetailAdaper(List<FuelDetailModel> fuelDetailList, Context context) {
         this.fuelDetailList = fuelDetailList;
         this.context = context;

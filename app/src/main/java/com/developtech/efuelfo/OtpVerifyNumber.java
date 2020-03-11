@@ -17,6 +17,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.developtech.efuelfo.app.MyApplication;
+import com.developtech.efuelfo.app.UserPreference;
 import com.developtech.efuelfo.model.ResultModel;
 import com.developtech.efuelfo.model.requestModel.ResendOtpRequestModel;
 import com.developtech.efuelfo.model.requestModel.SignUpRequestModel;
@@ -29,23 +30,29 @@ import com.developtech.efuelfo.ui.dialogFragments.SelectVehicleOwnerDialog;
 import com.developtech.efuelfo.util.MessageDetail;
 import com.developtech.efuelfo.util.SPUtils;
 
-public class OtpVerifyNumber extends MyActionBar implements TextWatcher {
+public class OtpVerifyNumber extends MyActionBar implements TextWatcher,View.OnClickListener {
 
     Button btnotpverifypage;
+    UserPreference userPreference;
     EditText etotp1,etotp2,etotp3,etotp4,etotp5,etotp6;
     TextView resendotp,tvnumber,mobileNo;
     String contactnumber;
     NetworkListener otpListener = new NetworkListener() {
         @Override
         public void onSuccess(ResultModel<?> responseBody) {
+            userPreference.setNumber(nuber);
+            userPreference.setIsLogin(true);
             if (responseBody.getResultCode().equalsIgnoreCase(SPUtils.API_CODES.OK.toString())) {
                 SignInResponseModel responseModel = (SignInResponseModel) responseBody.getResutData();
-                Log.e("kkk","succ" + responseModel);
+              //  Log.e("kkk","succ" + responseModel);
                 appComponent.getSpUtils().saveUserData(responseModel);
                 MyApplication application = (MyApplication) getApplication();
                 application.initDagger();
                 appComponent.getSpUtils().setKeepMeLogin(true);
                 goToNextPage();
+
+                //shareprefer save boolean set tru, number
+
             } else if (responseBody.getResultCode().equalsIgnoreCase(SPUtils.API_CODES.FAIL.toString())) {
               //  showMsg(rootLayout, responseBody.getMessage());
                 appComponent.getSpUtils().setKeepMeLogin(true);
@@ -86,7 +93,7 @@ public class OtpVerifyNumber extends MyActionBar implements TextWatcher {
     private SignUpRequestModel signUpRequestModel;
     private String otp = "";
     private boolean isForget;
-
+  String nuber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,14 +107,15 @@ public class OtpVerifyNumber extends MyActionBar implements TextWatcher {
         etotp6=(EditText)findViewById(R.id.otp6);
        // tvnumber=(TextView)findViewById(R.id.getnumber);
         mobileNo=(TextView) findViewById(R.id.hashvie);
-
+        resendotp=(TextView) findViewById(R.id.resendotp);
         etotp1.addTextChangedListener(this);
         etotp2.addTextChangedListener(this);
         etotp3.addTextChangedListener(this);
         etotp4.addTextChangedListener(this);
         etotp5.addTextChangedListener(this);
         etotp6.addTextChangedListener(this);
-
+   resendotp.setOnClickListener(this);
+         userPreference=new UserPreference(getApplicationContext()).getInstance(getApplicationContext());
        // init();
         initComponents();
        /* Intent intent1=getIntent();
@@ -146,6 +154,7 @@ public class OtpVerifyNumber extends MyActionBar implements TextWatcher {
             otp_id = bundle.getString("otp_id");
             /*str=bundle.getString("MobileNo");
             mobileNo.setText("#"+str+"#");*/
+            nuber=bundle.getString("MobileNo");
             mobileNo.setText(""+bundle.getString("MobileNo")+"");
            // bundle.getString()
             //  if (!isForget) {
@@ -250,11 +259,13 @@ public class OtpVerifyNumber extends MyActionBar implements TextWatcher {
             }
             case R.id.resendotp: {
                 ResendOtpRequestModel model = new ResendOtpRequestModel();
+              //  Log.e("kkk","succ"+appComponent.getServiceCaller());
                 if(otp_id!=null)
                 {
                     model.setOtpId(otp_id);
                     model.setResendCase("SIGNUP");
                     hideKB();
+                    Log.e("hhh","success"+ appComponent.getServiceCaller());
                     appComponent.getServiceCaller().callService(appComponent.getAllApis().resendOtp(model),
                             resendListener);
                 }

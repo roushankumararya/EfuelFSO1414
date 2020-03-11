@@ -47,6 +47,7 @@ import com.developtech.efuelfo.model.responseModel.GetFuelStationResponseModel;
 import com.developtech.efuelfo.model.responseModel.SignInResponseModel;
 import com.developtech.efuelfo.model.responseModel.VehicleOwnerResponseModel;
 import com.developtech.efuelfo.network.NetworkListener;
+import com.developtech.efuelfo.ui.activities.common.HomeActivity;
 import com.developtech.efuelfo.ui.activities.common.MyActionBar;
 import com.developtech.efuelfo.ui.activities.stationOwner.RequestPendingActivity;
 import com.developtech.efuelfo.ui.activities.stationOwner.TransactionDetailsActivity;
@@ -107,7 +108,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class HomeDashboard extends MyActionBar implements NavigationView.OnNavigationItemSelectedListener,
+public class HomeDashboard extends MyActionBar implements
+        NavigationView.OnNavigationItemSelectedListener,
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener,
         ResultCallback<LocationSettingsResult>, AwesomeToggle.OnCheckedChangeListner {
@@ -115,6 +117,9 @@ public class HomeDashboard extends MyActionBar implements NavigationView.OnNavig
     static final int MY_PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 1;
     private static final String TAG = "DriverHome";
     private final static int REQUEST_CHECK_SETTINGS = 2222;
+
+    public HomeActivity homeActivity;
+
     public NavigationView navigationView;
     LocationManager locationManager;
     GoogleApiClient gac;
@@ -150,7 +155,8 @@ public class HomeDashboard extends MyActionBar implements NavigationView.OnNavig
         @Override
         public void onSuccess(ResultModel<?> responseBody) {
             if (responseBody.getResultCode().equalsIgnoreCase(SPUtils.API_CODES.OK.toString())) {
-                List<GetFuelStationResponseModel> allFuelStationsList = (List<GetFuelStationResponseModel>) responseBody.getResutData();
+                List<GetFuelStationResponseModel> allFuelStationsList = (List<GetFuelStationResponseModel>)
+                        responseBody.getResutData();
                 if (allFuelStationsList.size() == 1) {
                     appComponent.getSpUtils().saveFuelStationsList(allFuelStationsList);
                     appComponent.getSpUtils().saveFuelStation(allFuelStationsList.get(0));
@@ -246,7 +252,7 @@ public class HomeDashboard extends MyActionBar implements NavigationView.OnNavig
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main7);
+        setContentView(R.layout.activity_home);
         ButterKnife.bind(this);
         FirebaseApp.initializeApp(this);
         init();
@@ -257,9 +263,32 @@ public class HomeDashboard extends MyActionBar implements NavigationView.OnNavig
     @Override
     public void initComponents() {
         navigationView = (NavigationView) findViewById(R.id.navigation);
-        navigationView.getMenu().clear();
-        if (appComponent.getSpUtils().getAccountType() != null) {
-            account_types = appComponent.getSpUtils().getAccountType();
+
+
+
+
+        //navigationView.getMenu().clear();
+
+       // navigationView.getMenu();
+       // account_types =SPUtils.ACCOUNT_TYPES.FSO;
+        // if (appComponent.getSpUtils().getAccountType() != null) {
+             navigationView.inflateMenu(R.menu.drawer_main_drawer_stationowner);
+        if (account_types != null) {
+            // account_types = appComponent.getSpUtils().getAccountType();
+            // account_types =SPUtils.ACCOUNT_TYPES.FSO;
+            //if (account_types != null) {
+            if (account_types == SPUtils.ACCOUNT_TYPES.VCO) {
+                navigationView.inflateMenu(R.menu.drawer_main_drawer);
+            } else if (account_types == SPUtils.ACCOUNT_TYPES.DRV) {
+                navigationView.inflateMenu(R.menu.drawer_main_drawer_driver);
+            } else if (account_types == SPUtils.ACCOUNT_TYPES.FSO) {
+                navigationView.inflateMenu(R.menu.drawer_main_drawer_stationowner);
+            } else if (account_types == SPUtils.ACCOUNT_TYPES.OPR) {
+                navigationView.inflateMenu(R.menu.drawer_main_drawer_operator);
+            }
+            //  }
+        } else {
+           account_types = SPUtils.ACCOUNT_TYPES.FSO;
             if (account_types != null) {
                 if (account_types == SPUtils.ACCOUNT_TYPES.VCO) {
                     navigationView.inflateMenu(R.menu.drawer_main_drawer);
@@ -271,24 +300,13 @@ public class HomeDashboard extends MyActionBar implements NavigationView.OnNavig
                     navigationView.inflateMenu(R.menu.drawer_main_drawer_operator);
                 }
             }
-        }else {
-            account_types=SPUtils.ACCOUNT_TYPES.FSO;
-            if (account_types != null) {
-                if (account_types == SPUtils.ACCOUNT_TYPES.VCO) {
-                    navigationView.inflateMenu(R.menu.drawer_main_drawer);
-                } else if (account_types == SPUtils.ACCOUNT_TYPES.DRV) {
-                    navigationView.inflateMenu(R.menu.drawer_main_drawer_driver);
-                } else if (account_types == SPUtils.ACCOUNT_TYPES.FSO) {
-                    navigationView.inflateMenu(R.menu.drawer_main_drawer_stationowner);
-                } else if (account_types == SPUtils.ACCOUNT_TYPES.OPR) {
-                    navigationView.inflateMenu(R.menu.drawer_main_drawer_operator);
-                }
-            }
+
         }
+   // }
         View headerView = navigationView.getHeaderView(0);
         tvUserName = headerView.findViewById(R.id.tvUserName);
         txtOpenClose = headerView.findViewById(R.id.txtOpenClose);
-        tvOwnerName = headerView.findViewById(R.id.tvOwnerNamedash);
+        tvOwnerName = headerView.findViewById(R.id.tvOwnerName);
         ivProfilePic = headerView.findViewById(R.id.ivProfilePic);
         layHeader = headerView.findViewById(R.id.layHeader);
         laySwitchOwner = headerView.findViewById(R.id.laySwitchOwner);
@@ -297,7 +315,6 @@ public class HomeDashboard extends MyActionBar implements NavigationView.OnNavig
         awesomeToggle = headerView.findViewById(R.id.awsmToggle);
         layHeader.setOnClickListener(headerClick);
         laySwitchOwner.setOnClickListener(headerClick);
-
         awesomeToggle.setOnCheckedChangeListner(this);
 
 //        if (appComponent.getSpUtils().getAccountType() != null) {
@@ -316,7 +333,7 @@ public class HomeDashboard extends MyActionBar implements NavigationView.OnNavig
 //
 //        }
 
-        setHomeFrag();
+       setHomeFrag();
 
         if (appComponent.getSpUtils().getUserData() != null && appComponent.getSpUtils().getUserData().getImage() != null
                 && !appComponent.getSpUtils().getUserData().getImage().trim().isEmpty()) {
@@ -342,7 +359,8 @@ public class HomeDashboard extends MyActionBar implements NavigationView.OnNavig
 
 
         navigationView.setNavigationItemSelectedListener(this);
-        mDrawerToggle = new ActionBarDrawerToggle(this, drawer_layout, R.drawable.drawer_icon, R.string.navigation_drawer_open, R.string.navigation_drawer_close) {
+        mDrawerToggle = new ActionBarDrawerToggle(this, drawer_layout, R.drawable.drawer_icon,
+                R.string.navigation_drawer_open, R.string.navigation_drawer_close) {
             @Override
             public void onDrawerSlide(View drawerView, float slideOffset) {
                 super.onDrawerSlide(drawerView, slideOffset);
@@ -403,7 +421,35 @@ public class HomeDashboard extends MyActionBar implements NavigationView.OnNavig
                         }
                     });
         }
+        navigationView.getMenu().findItem(R.id.nav_operator_home).setVisible(true);
+        navigationView.getMenu().findItem(R.id.nav_operator_fuelprice).setVisible(true);
+        navigationView.getMenu().findItem(R.id.nav_operator_initiatesale).setVisible(true);
+        navigationView.getMenu().findItem(R.id.nav_operator).setVisible(true);
+        navigationView.getMenu().findItem(R.id.nav_operator_saleshistory).setVisible(true);
+        navigationView.getMenu().findItem(R.id.nav_operator_credit_agreement_list).setVisible(true);
+        navigationView.getMenu().findItem(R.id.nav_operator_park_trans).setVisible(true);
+        navigationView.getMenu().findItem(R.id.nav_operator_verify_trans).setVisible(true);
+        navigationView.getMenu().findItem(R.id.nav_operator_tank_types).setVisible(true);
+        navigationView.getMenu().findItem(R.id.nav_operator_totalsale).setVisible(true);
+        navigationView.getMenu().findItem(R.id.nav_operator_fuel_station).setVisible(true);
+        navigationView.getMenu().findItem(R.id.nav_operator_cashtransaction).setVisible(true);
 
+        // navigationView.getMenu().findItem(R.id.nav_operator_cashtransaction).setVisible(true);
+
+
+        navigationView.getMenu().findItem(R.id.nav_station_ow_home).setVisible(true);
+        navigationView.getMenu().findItem(R.id.nav_station_ow_fuel_prices).setVisible(true);
+        navigationView.getMenu().findItem(R.id.nav_station_ow_sale_init).setVisible(true);
+        navigationView.getMenu().findItem(R.id.nav_station_ow_operator).setVisible(true);
+        navigationView.getMenu().findItem(R.id.nav_station_ow_sale_history).setVisible(true);
+        navigationView.getMenu().findItem(R.id.nav_station_ow_credit_agreement_list).setVisible(true);
+        navigationView.getMenu().findItem(R.id.nav_station_ow_park_trans).setVisible(true);
+        navigationView.getMenu().findItem(R.id.nav_station_ow_verify_transaction).setVisible(true);
+        navigationView.getMenu().findItem(R.id.nav_station_ow_tank_types).setVisible(true);
+        navigationView.getMenu().findItem(R.id.nav_station_ow_total_sale_by_fuel_type).setVisible(true);
+        navigationView.getMenu().findItem(R.id.nav_station_ow_fuel_station).setVisible(true);
+        navigationView.getMenu().findItem(R.id.nav_station_ow_cash_transaction).setVisible(true);
+        navigationView.getMenu().findItem(R.id.nav_station_ow_reports).setVisible(true);
 
         if (appComponent.getSpUtils().isDeleted()) {
             showAccDeletedDialog(appComponent.getSpUtils().getNotiMsg(), "DELETED");
@@ -412,6 +458,7 @@ public class HomeDashboard extends MyActionBar implements NavigationView.OnNavig
         if (appComponent.getSpUtils().getIsManagerChanged()) {
             showAccDeletedDialog(appComponent.getSpUtils().getNotiMsg(), "MANAGER");
         }
+
     }
 
     final String TRANS = "TRANS", CREDIT = "CREDIT", VERIFY = "VERIFY", DELETED = "DELETED", MANAGER_TRUE = "MANAGER_TRUE", MANAGER_FALSE = "MANAGER_FALSE";
@@ -928,11 +975,13 @@ public class HomeDashboard extends MyActionBar implements NavigationView.OnNavig
         if (drawer_layout.isDrawerOpen(Gravity.START)) {
             closeDrawer();
         } else {
-            if (baseFragment instanceof TrackDriverFragment && ((TrackDriverFragment) baseFragment).ivMapList.getVisibility() == View.VISIBLE) {
+            if (baseFragment instanceof TrackDriverFragment && ((TrackDriverFragment) baseFragment)
+                    .ivMapList.getVisibility() == View.VISIBLE) {
                 ((TrackDriverFragment) baseFragment).ivMapList.performClick();
                 return;
             }
-            if (baseFragment instanceof NearByFuelStationFragment && ((NearByFuelStationFragment) baseFragment).recycleStationList.getVisibility() == View.GONE) {
+            if (baseFragment instanceof NearByFuelStationFragment && ((NearByFuelStationFragment) baseFragment)
+                    .recycleStationList.getVisibility() == View.GONE) {
                 ((NearByFuelStationFragment) baseFragment).ivMap.performClick();
                 return;
             }

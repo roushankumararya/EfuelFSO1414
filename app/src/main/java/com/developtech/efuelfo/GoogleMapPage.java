@@ -91,10 +91,6 @@ public class GoogleMapPage extends MyActionBar implements OnMapReadyCallback {
         callApi();
     }
 
-    /*@Override
-    protected void setSupportActionBar(Toolbar toolbar) {
-
-    }*/
 
     @Override
     public void initComponents() {

@@ -219,7 +219,7 @@
                 android:layout_marginRight="30dp">
 
                 <EditText
-                    android:id="@+id/userstatefuelstation"
+                    android:id="@+id/usercityfuelstation"
                     android:layout_width="match_parent"
                     android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
                     android:inputType="text"
@@ -239,7 +239,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="State"
+                    android:text="City"
                     android:textColor="@color/white"
                     android:textSize="12dp" />
             </LinearLayout>
@@ -254,7 +254,7 @@
                 android:layout_marginRight="30dp">
 
                 <EditText
-                    android:id="@+id/usercityfuelstation"
+                    android:id="@+id/userstatefuelstation"
                     android:layout_width="match_parent"
                     android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
                     android:layout_height="wrap_content"
@@ -274,7 +274,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="City"
+                    android:text="State"
                     android:textColor="@color/white"
                     android:textSize="12dp" />
             </LinearLayout>

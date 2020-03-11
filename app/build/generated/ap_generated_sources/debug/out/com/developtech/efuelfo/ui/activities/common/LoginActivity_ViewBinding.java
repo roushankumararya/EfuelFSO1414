@@ -20,15 +20,15 @@ import java.lang.Override;
 public class LoginActivity_ViewBinding implements Unbinder {
   private LoginActivity target;
 
-  private View view2131362174;
+  private View view2131362173;
 
-  private View view2131362177;
+  private View view2131362176;
 
-  private View view2131362568;
+  private View view2131362563;
 
   private View view2131361891;
 
-  private View view2131362644;
+  private View view2131362638;
 
   private View view2131361890;
 
@@ -46,7 +46,7 @@ public class LoginActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.layLogin, "field 'layLogin' and method 'onClick'");
     target.layLogin = Utils.castView(view, R.id.layLogin, "field 'layLogin'", LinearLayout.class);
-    view2131362174 = view;
+    view2131362173 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -56,7 +56,7 @@ public class LoginActivity_ViewBinding implements Unbinder {
     target.laySocialLogin = Utils.findRequiredViewAsType(source, R.id.laySocialLogin, "field 'laySocialLogin'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.layRegister, "field 'layRegister' and method 'onClick'");
     target.layRegister = Utils.castView(view, R.id.layRegister, "field 'layRegister'", LinearLayout.class);
-    view2131362177 = view;
+    view2131362176 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -68,7 +68,7 @@ public class LoginActivity_ViewBinding implements Unbinder {
     target.cbLogIn = Utils.findRequiredViewAsType(source, R.id.cbLogIn, "field 'cbLogIn'", CheckBox.class);
     view = Utils.findRequiredView(source, R.id.tvForgetPass, "field 'tvForgetPass' and method 'onClick'");
     target.tvForgetPass = Utils.castView(view, R.id.tvForgetPass, "field 'tvForgetPass'", TextView.class);
-    view2131362568 = view;
+    view2131362563 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -101,7 +101,7 @@ public class LoginActivity_ViewBinding implements Unbinder {
     target.spinnerCode1 = Utils.findRequiredViewAsType(source, R.id.spinnerCode1, "field 'spinnerCode1'", Spinner.class);
     view = Utils.findRequiredView(source, R.id.tvTermsCond, "field 'tvTermsCond' and method 'onClick'");
     target.tvTermsCond = Utils.castView(view, R.id.tvTermsCond, "field 'tvTermsCond'", TextView.class);
-    view2131362644 = view;
+    view2131362638 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -160,16 +160,16 @@ public class LoginActivity_ViewBinding implements Unbinder {
     target.tvTermsCond = null;
     target.tvTitleBottom = null;
 
-    view2131362174.setOnClickListener(null);
-    view2131362174 = null;
-    view2131362177.setOnClickListener(null);
-    view2131362177 = null;
-    view2131362568.setOnClickListener(null);
-    view2131362568 = null;
+    view2131362173.setOnClickListener(null);
+    view2131362173 = null;
+    view2131362176.setOnClickListener(null);
+    view2131362176 = null;
+    view2131362563.setOnClickListener(null);
+    view2131362563 = null;
     view2131361891.setOnClickListener(null);
     view2131361891 = null;
-    view2131362644.setOnClickListener(null);
-    view2131362644 = null;
+    view2131362638.setOnClickListener(null);
+    view2131362638 = null;
     view2131361890.setOnClickListener(null);
     view2131361890 = null;
     view2131361889.setOnClickListener(null);

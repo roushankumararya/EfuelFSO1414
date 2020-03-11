@@ -17,19 +17,19 @@ import java.lang.Override;
 public class FilterStationDialogFragment_ViewBinding implements Unbinder {
   private FilterStationDialogFragment target;
 
-  private View view2131362633;
+  private View view2131362627;
 
-  private View view2131362632;
+  private View view2131362626;
 
-  private View view2131362211;
+  private View view2131362209;
 
-  private View view2131362229;
+  private View view2131362226;
 
-  private View view2131362129;
+  private View view2131362128;
 
-  private View view2131362529;
+  private View view2131362524;
 
-  private View view2131362532;
+  private View view2131362527;
 
   @UiThread
   public FilterStationDialogFragment_ViewBinding(final FilterStationDialogFragment target,
@@ -40,7 +40,7 @@ public class FilterStationDialogFragment_ViewBinding implements Unbinder {
     target.tvTitle = Utils.findRequiredViewAsType(source, R.id.tvTitle, "field 'tvTitle'", CustomTextView.class);
     view = Utils.findRequiredView(source, R.id.tvSelectName, "field 'tvSelectName' and method 'onClick'");
     target.tvSelectName = Utils.castView(view, R.id.tvSelectName, "field 'tvSelectName'", CustomTextView.class);
-    view2131362633 = view;
+    view2131362627 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -49,7 +49,7 @@ public class FilterStationDialogFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.tvSelectDate, "field 'tvSelectDate' and method 'onClick'");
     target.tvSelectDate = Utils.castView(view, R.id.tvSelectDate, "field 'tvSelectDate'", CustomTextView.class);
-    view2131362632 = view;
+    view2131362626 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -60,7 +60,7 @@ public class FilterStationDialogFragment_ViewBinding implements Unbinder {
     target.lytDate = Utils.findRequiredViewAsType(source, R.id.lytDate, "field 'lytDate'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.lytFrom, "field 'lytForm' and method 'onClick'");
     target.lytForm = Utils.castView(view, R.id.lytFrom, "field 'lytForm'", LinearLayout.class);
-    view2131362211 = view;
+    view2131362209 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -69,7 +69,7 @@ public class FilterStationDialogFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.lytTo, "field 'lytTo' and method 'onClick'");
     target.lytTo = Utils.castView(view, R.id.lytTo, "field 'lytTo'", LinearLayout.class);
-    view2131362229 = view;
+    view2131362226 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -80,7 +80,7 @@ public class FilterStationDialogFragment_ViewBinding implements Unbinder {
     target.tvToDate = Utils.findRequiredViewAsType(source, R.id.tvToDate, "field 'tvToDate'", CustomTextView.class);
     target.rootLayout = Utils.findRequiredViewAsType(source, R.id.rootLayout, "field 'rootLayout'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.ivBack, "method 'onClick'");
-    view2131362129 = view;
+    view2131362128 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -88,7 +88,7 @@ public class FilterStationDialogFragment_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.tvApplyFilter, "method 'onClick'");
-    view2131362529 = view;
+    view2131362524 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -96,7 +96,7 @@ public class FilterStationDialogFragment_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.tvClearFilter, "method 'onClick'");
-    view2131362532 = view;
+    view2131362527 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -123,19 +123,19 @@ public class FilterStationDialogFragment_ViewBinding implements Unbinder {
     target.tvToDate = null;
     target.rootLayout = null;
 
-    view2131362633.setOnClickListener(null);
-    view2131362633 = null;
-    view2131362632.setOnClickListener(null);
-    view2131362632 = null;
-    view2131362211.setOnClickListener(null);
-    view2131362211 = null;
-    view2131362229.setOnClickListener(null);
-    view2131362229 = null;
-    view2131362129.setOnClickListener(null);
-    view2131362129 = null;
-    view2131362529.setOnClickListener(null);
-    view2131362529 = null;
-    view2131362532.setOnClickListener(null);
-    view2131362532 = null;
+    view2131362627.setOnClickListener(null);
+    view2131362627 = null;
+    view2131362626.setOnClickListener(null);
+    view2131362626 = null;
+    view2131362209.setOnClickListener(null);
+    view2131362209 = null;
+    view2131362226.setOnClickListener(null);
+    view2131362226 = null;
+    view2131362128.setOnClickListener(null);
+    view2131362128 = null;
+    view2131362524.setOnClickListener(null);
+    view2131362524 = null;
+    view2131362527.setOnClickListener(null);
+    view2131362527 = null;
   }
 }

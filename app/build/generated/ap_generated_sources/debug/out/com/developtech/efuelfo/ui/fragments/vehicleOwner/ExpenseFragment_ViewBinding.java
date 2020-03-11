@@ -15,7 +15,7 @@ import java.lang.Override;
 public class ExpenseFragment_ViewBinding implements Unbinder {
   private ExpenseFragment target;
 
-  private View view2131362059;
+  private View view2131362058;
 
   @UiThread
   public ExpenseFragment_ViewBinding(final ExpenseFragment target, View source) {
@@ -24,7 +24,7 @@ public class ExpenseFragment_ViewBinding implements Unbinder {
     View view;
     target.rvExpense = Utils.findRequiredViewAsType(source, R.id.rvExpense, "field 'rvExpense'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.fabAddExpense, "method 'onClick'");
-    view2131362059 = view;
+    view2131362058 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -42,7 +42,7 @@ public class ExpenseFragment_ViewBinding implements Unbinder {
 
     target.rvExpense = null;
 
-    view2131362059.setOnClickListener(null);
-    view2131362059 = null;
+    view2131362058.setOnClickListener(null);
+    view2131362058 = null;
   }
 }

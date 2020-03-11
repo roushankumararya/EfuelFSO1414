@@ -16,7 +16,7 @@ import java.lang.Override;
 public class TrackDriverFragment_ViewBinding implements Unbinder {
   private TrackDriverFragment target;
 
-  private View view2131362150;
+  private View view2131362149;
 
   @UiThread
   public TrackDriverFragment_ViewBinding(final TrackDriverFragment target, View source) {
@@ -26,7 +26,7 @@ public class TrackDriverFragment_ViewBinding implements Unbinder {
     target.recycleTrackDriver = Utils.findRequiredViewAsType(source, R.id.recycleTrackDriver, "field 'recycleTrackDriver'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.ivMapList, "field 'ivMapList' and method 'onClick'");
     target.ivMapList = Utils.castView(view, R.id.ivMapList, "field 'ivMapList'", ImageView.class);
-    view2131362150 = view;
+    view2131362149 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -45,7 +45,7 @@ public class TrackDriverFragment_ViewBinding implements Unbinder {
     target.recycleTrackDriver = null;
     target.ivMapList = null;
 
-    view2131362150.setOnClickListener(null);
-    view2131362150 = null;
+    view2131362149.setOnClickListener(null);
+    view2131362149 = null;
   }
 }
