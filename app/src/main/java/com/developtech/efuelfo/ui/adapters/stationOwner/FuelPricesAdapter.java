@@ -40,7 +40,7 @@ public class FuelPricesAdapter extends RecyclerView.Adapter<FuelPricesVH> {
         this.context = context;
         this.isDisabled = isDisabled;
         Log.e("hhh","succx:-"+ appComponent.getSpUtils());
-        fuelTypeList = appComponent.getSpUtils().getFuelStationModel().getFuelCompany().getFuelType();
+      //  fuelTypeList = appComponent.getSpUtils().getFuelStationModel().getFuelCompany().getFuelType();
         spFuelTypeAdapter = new SpinnerAdapter4(context, R.layout.item_spinner_fuel_price, fuelTypeList);
     }
 

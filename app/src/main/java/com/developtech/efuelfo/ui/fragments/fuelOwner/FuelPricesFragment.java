@@ -123,7 +123,7 @@ public class FuelPricesFragment extends BaseFragment {
         rvFuelPrices.setAdapter(adapter);
         String strDate = tvDate.getText().toString() + " " + get24HourTime(tvTime.getText().toString());
         requestModel.setDateTime(getFormatedDateUTC(strDate));
-       requestModel.setFuelStationId(appComponent.getSpUtils().getFuelStationModel().getId());
+//       requestModel.setFuelStationId(appComponent.getSpUtils().getFuelStationModel().getId());
        appComponent.getServiceCaller().callService(appComponent.getAllApis().searchSchedule(requestModel),
                scheduleListener);
     }

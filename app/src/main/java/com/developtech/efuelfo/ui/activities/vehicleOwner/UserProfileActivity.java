@@ -424,7 +424,9 @@ public class UserProfileActivity extends MyActionBar implements AdapterView.OnIt
         }
 
 
-        switch (appComponent.getSpUtils().getAccountType()) {
+        switch (/*appComponent.getSpUtils().getAccountType()*/
+                SPUtils.ACCOUNT_TYPES.FSO
+        ) {
 
             case DRV: {
                 cbAdditionalInfo.setVisibility(View.VISIBLE);

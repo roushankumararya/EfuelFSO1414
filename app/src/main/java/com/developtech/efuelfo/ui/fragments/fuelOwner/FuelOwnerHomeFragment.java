@@ -141,10 +141,10 @@ public class FuelOwnerHomeFragment extends BaseFragment implements VehicleOwnerI
             case 1: {
 
 
-               if (!appComponent.getSpUtils().getFuelStationModel().getFuelStationVerified()) {
+              /* if (!appComponent.getSpUtils().getFuelStationModel().getFuelStationVerified()) {
                     showMsg(getString(R.string.station_not_verified));
                     return;
-                }
+                }*/
                 fragment = new SaleInitiationFragment();
                 homeActivity.setHomeTitle(getString(R.string.sale_initiation_caps));
                 homeActivity.setHomeImage(true);
@@ -159,10 +159,10 @@ public class FuelOwnerHomeFragment extends BaseFragment implements VehicleOwnerI
                 break;
             }
             case 3: {
-                if (!appComponent.getSpUtils().getFuelStationModel().getFuelStationVerified()) {
+              /*  if (!appComponent.getSpUtils().getFuelStationModel().getFuelStationVerified()) {
                     showMsg(getString(R.string.station_not_verified));
                     return;
-                }
+                }*/
                 fragment = new VerifyTransactionFragment();
                 homeActivity.setHomeTitle(getString(R.string.verifytransaction_caps));
                 homeActivity.setHomeImage(true);

@@ -77,7 +77,7 @@ public class OperatorsFragment extends BaseFragment implements OnItemClickListen
 
     void callApi() {
         FindOperatorRequestModel requestModel = new FindOperatorRequestModel();
-        requestModel.setFuelStationId(appComponent.getSpUtils().getFuelStationModel().getId());
+//        requestModel.setFuelStationId(appComponent.getSpUtils().getFuelStationModel().getId());
         appComponent.getServiceCaller().callService(appComponent.getAllApis().getOperators(requestModel),
                 getOperatorsListener);
     }

@@ -203,7 +203,9 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
                     break;
                 }
                 case R.id.laySwitchOwner: {
-                    switch (appComponent.getSpUtils().getAccountType()) {
+                    switch (/*appComponent.getSpUtils().getAccountType()*/
+                    SPUtils.ACCOUNT_TYPES.FSO
+                    ) {
                         case DRV: {
                             List<VehicleOwnerResponseModel> list = appComponent.getSpUtils().getVehicleOwnerResponse();
                             SelectVehicleOwnerDialog dialogFragment = SelectVehicleOwnerDialog.newInstance("driver", list);
@@ -508,13 +510,13 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
                 lytToggle.setVisibility(View.VISIBLE);
                 tvClickToSwitch.setText(getResources().getString(R.string.clicktoswitchfuel));
                 Log.e("fff","mmm:-"+appComponent.getSpUtils().getFuelStationModel());
-                tvOwnerName.setText(appComponent.getSpUtils().getFuelStationModel().getName());
-                awesomeToggle.setIsChecked(appComponent.getSpUtils().getFuelStationModel().getIsOpen());
-                if (appComponent.getSpUtils().getFuelStationModel().getIsOpen()) {
+             //   tvOwnerName.setText(appComponent.getSpUtils().getFuelStationModel().getName());
+            //    awesomeToggle.setIsChecked(appComponent.getSpUtils().getFuelStationModel().getIsOpen());
+               /* if (appComponent.getSpUtils().getFuelStationModel().getIsOpen()) {
                     txtOpenClose.setText("Open");
                 } else {
                     txtOpenClose.setText("Closed");
-                }
+                }*/
                 pushFragment(new FuelOwnerHomeFragment());
                 navigationView.setCheckedItem(R.id.nav_station_ow_home);
                 break;
@@ -1228,7 +1230,7 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
 
         isAvailable = isChecked;
 
-        requestModel.setFuelStationId(appComponent.getSpUtils().getFuelStationModel().getId());
+//        requestModel.setFuelStationId(appComponent.getSpUtils().getFuelStationModel().getId());
         appComponent.getServiceCaller().callService(appComponent.getAllApis().setStationAvailability(requestModel),
                 stationAvailabilityListener);
     }
