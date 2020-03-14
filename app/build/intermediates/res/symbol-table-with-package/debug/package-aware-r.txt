@@ -1768,6 +1768,7 @@ drawable logofive
 drawable logofour
 drawable logologo
 drawable logoply
+drawable logosix
 drawable logothree
 drawable logotwo
 drawable map
@@ -4150,6 +4151,7 @@ string settings
 string settings_caps
 string size_not_enough
 string something_wrong
+string space
 string staff
 string staff_refuel
 string staff_refuel_caps

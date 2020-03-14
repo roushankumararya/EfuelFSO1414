@@ -15,11 +15,10 @@ import android.widget.LinearLayout;
 import com.developtech.efuelfo.R;
 import com.developtech.efuelfo.listeners.OnItemClickListener;
 import com.developtech.efuelfo.model.ResultModel;
-import com.developtech.efuelfo.model.requestModel.PaginationModel;
 import com.developtech.efuelfo.model.requestModel.SearchScheduleRequestModel;
 import com.developtech.efuelfo.model.responseModel.ViewCashTransactionResponseModel;
 import com.developtech.efuelfo.network.NetworkListener;
-import com.developtech.efuelfo.ui.activities.stationOwner.TransactionDetailsActivity;
+import com.developtech.efuelfo.ui.activities.common.TransactionDetailsActivity;
 import com.developtech.efuelfo.ui.adapters.stationOwner.ViewCashTransactionsAdapter;
 import com.developtech.efuelfo.ui.dialogFragments.FilterTransDialogFragment;
 import com.developtech.efuelfo.ui.fragments.BaseFragment;
@@ -30,6 +29,8 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+
+//import com.developtech.efuelfo.ui.activities.stationOwner.TransactionDetailsActivity;
 
 /**
  * A simple {@link Fragment} subclass.

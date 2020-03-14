@@ -79,16 +79,25 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_marginTop="4dp"
+                android:layout_height="45dp"
+
                 android:orientation="horizontal">
 
-                <Spinner
+                <!--<Spinner
                     android:id="@+id/spCountryCode"
                     android:layout_width="70dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/corner_background_less_radius_dark"
+                    android:spinnerMode="dialog"/>-->
+
+                <EditText
+                    android:id="@+id/spCountryCode"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
                     android:spinnerMode="dialog"/>
+
 
                 <com.developtech.efuelfo.customs.CustomEditText
                     android:id="@+id/etPhone"
@@ -227,13 +236,21 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
-                        <Spinner
+                        <!--<Spinner
                             android:id="@+id/spCountry"
                             android:layout_width="match_parent"
                             android:layout_height="35dp"
                             android:layout_marginTop="4dp"
                             android:background="@drawable/corner_background_less_radius_dark"
-                            android:gravity="center" />
+                            android:gravity="center" />-->
+
+                        <EditText
+                            android:id="@+id/spCountry"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="4dp"
+                           />
+
 
                         <ImageView
                             android:layout_width="9dp"
@@ -242,7 +259,7 @@
                             android:layout_centerInParent="true"
                             android:layout_marginEnd="25dp"
                             android:contentDescription="@string/drop_down"
-                            android:src="@drawable/dropdown" />
+                             />
                     </RelativeLayout>
 
                 </LinearLayout>
@@ -286,8 +303,6 @@
                 style="@style/TextViewNormal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/top_margin"
-                android:layout_marginTop="@dimen/top_margin"
                 android:text="@string/language"
                 android:textColor="@color/blackLessText"
                 android:id="@+id/tvLanguageLabel"/>
@@ -296,12 +311,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <Spinner
+                <!--<Spinner
                     android:id="@+id/spLanguage"
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:layout_marginTop="4dp"
-                    android:background="@drawable/corner_background_less_radius_dark" />
+                    android:background="@drawable/corner_background_less_radius_dark" />-->
+
+                <EditText
+                    android:id="@+id/spLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="4dp"
+                    />
+
 
                 <ImageView
                     android:layout_width="9dp"
@@ -310,7 +333,7 @@
                     android:layout_centerInParent="true"
                     android:layout_marginEnd="25dp"
                     android:contentDescription="@string/drop_down"
-                    android:src="@drawable/dropdown" />
+                     />
             </RelativeLayout>
 
             <CheckBox

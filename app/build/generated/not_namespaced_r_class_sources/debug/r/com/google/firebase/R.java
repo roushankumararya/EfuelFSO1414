@@ -65,18 +65,18 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int notification_action_background = 0x7f080207;
-        public static final int notification_bg = 0x7f080209;
-        public static final int notification_bg_low = 0x7f08020a;
-        public static final int notification_bg_low_normal = 0x7f08020b;
-        public static final int notification_bg_low_pressed = 0x7f08020c;
-        public static final int notification_bg_normal = 0x7f08020d;
-        public static final int notification_bg_normal_pressed = 0x7f08020e;
-        public static final int notification_icon_background = 0x7f08020f;
-        public static final int notification_template_icon_bg = 0x7f080211;
-        public static final int notification_template_icon_low_bg = 0x7f080212;
-        public static final int notification_tile_bg = 0x7f080213;
-        public static final int notify_panel_notification_icon_bg = 0x7f080216;
+        public static final int notification_action_background = 0x7f080208;
+        public static final int notification_bg = 0x7f08020a;
+        public static final int notification_bg_low = 0x7f08020b;
+        public static final int notification_bg_low_normal = 0x7f08020c;
+        public static final int notification_bg_low_pressed = 0x7f08020d;
+        public static final int notification_bg_normal = 0x7f08020e;
+        public static final int notification_bg_normal_pressed = 0x7f08020f;
+        public static final int notification_icon_background = 0x7f080210;
+        public static final int notification_template_icon_bg = 0x7f080212;
+        public static final int notification_template_icon_low_bg = 0x7f080213;
+        public static final int notification_tile_bg = 0x7f080214;
+        public static final int notify_panel_notification_icon_bg = 0x7f080217;
     }
     public static final class id {
         private id() {}
@@ -142,7 +142,7 @@ public final class R {
         private string() {}
 
         public static final int common_google_play_services_unknown_issue = 0x7f1100fa;
-        public static final int status_bar_notification_info_overflow = 0x7f1103c3;
+        public static final int status_bar_notification_info_overflow = 0x7f1103c4;
     }
     public static final class style {
         private style() {}

@@ -162,7 +162,7 @@ public class AddLocationDialog extends DialogFragment implements GoogleApiClient
                 locationManager.removeUpdates(locationListener);
         }
     };
-    private long UPDATE_INTERVAL = 1000;
+    private long UPDATE_INTERVAL = 100;
     Activity activity;
 
     public void setData(AppComponent appComponent, CallbackListener callbackListener, Activity activity) {
@@ -236,7 +236,7 @@ public class AddLocationDialog extends DialogFragment implements GoogleApiClient
             @Override
             public void onCameraChange(CameraPosition cameraPosition) {
                 cameraLoc = cameraPosition;
-                countDownTimer.cancel();
+               // countDownTimer.cancel();
                 countDownTimer.start();
             }
         });
@@ -244,11 +244,13 @@ public class AddLocationDialog extends DialogFragment implements GoogleApiClient
 
     void initComponents(View view) {
         if (isGooglePlayServicesAvailable()) {
-            supportMapFragment = (SupportMapFragment) getActivity().getSupportFragmentManager().findFragmentById(R.id.fragmentMap);
+            supportMapFragment = (SupportMapFragment) getActivity().getSupportFragmentManager()
+                    .findFragmentById(R.id.fragmentMap);
             supportMapFragment.getMapAsync(this);
         }
 
-        autocompleteAdapter = new GooglePlacesAutocompleteAdapter(getContext(), R.layout.item_places_autocomplete, R.id.tvPlacesAutoComplete, resultPlacesList, this);
+        autocompleteAdapter = new GooglePlacesAutocompleteAdapter(getContext(),
+                R.layout.item_places_autocomplete, R.id.tvPlacesAutoComplete, resultPlacesList, this);
         actvSearch.setAdapter(autocompleteAdapter);
 
         if (!isLocationEnabled())
@@ -266,9 +268,9 @@ public class AddLocationDialog extends DialogFragment implements GoogleApiClient
     public void onDestroyView() {
         System.out.println("cancel the shit");
         if (countDownTimer != null)
-            countDownTimer.cancel();
+           // countDownTimer.cancel();
         if (latToAddressTask != null) {
-            latToAddressTask.cancel(true);
+          //  latToAddressTask.cancel(true);
         }
         super.onDestroyView();
     }
@@ -309,25 +311,26 @@ public class AddLocationDialog extends DialogFragment implements GoogleApiClient
     }
 
     private void countDown() {
-        countDownTimer = new CountDownTimer(1000 * 2, 1000) {
+        countDownTimer = new CountDownTimer(2000, 1000) {
 
             public void onTick(long millisUntilFinished) {
+                addlocationbtn.setClickable(false);
                 //timer.setText("seconds remaining: " +new SimpleDateFormat("mm:ss").format(new Date( millisUntilFinished)));
                 //  Toast.makeText(CreateFuelStationDialogueFragment.this, "Getting Address....", Toast.LENGTH_SHORT).show();
                 long ms = millisUntilFinished;
                 String text = String.format("%02d : %02d",
-                        TimeUnit.MILLISECONDS.toMinutes(ms) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(ms)),
-                        TimeUnit.MILLISECONDS.toSeconds(ms) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(ms)));
-
+                        TimeUnit.MILLISECONDS.toMinutes(ms) - TimeUnit.HOURS
+                                .toMinutes(TimeUnit.MILLISECONDS.toHours(ms)),
+                        TimeUnit.MILLISECONDS.toSeconds(ms) - TimeUnit
+                                .MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(ms)));
             }
-
             public void onFinish() {
                 //Log.e("Timer","Finished");
                 progressBar.setVisibility(View.VISIBLE);
                 latToAddressTask = new LatToAddressTask();
                 latToAddressTask.execute();
             }
-        };
+        }.start();
     }
 
     public void setupGoogleClient() {
@@ -339,9 +342,9 @@ public class AddLocationDialog extends DialogFragment implements GoogleApiClient
                 .addOnConnectionFailedListener(this).build();
         gac.connect();
         locationRequest = LocationRequest.create();
-        locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
-        locationRequest.setInterval(30 * 1000);
-        locationRequest.setFastestInterval(5 * 1000);
+      //  locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+        locationRequest.setInterval(1000);
+        locationRequest.setFastestInterval(1000);
         locationManager = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
     }
 
@@ -367,12 +370,14 @@ public class AddLocationDialog extends DialogFragment implements GoogleApiClient
 
         if (locationManager!=null)
         {
-            if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER) || !locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
+            if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER) ||
+                    !locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
                 setUpRequest();
             }
-
-            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, UPDATE_INTERVAL, 100, locationListener);
-            locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, UPDATE_INTERVAL, 100, locationListener);
+            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, UPDATE_INTERVAL,
+                    2, locationListener);
+            locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, UPDATE_INTERVAL,
+                    2, locationListener);
         }
 
     }
@@ -384,9 +389,11 @@ public class AddLocationDialog extends DialogFragment implements GoogleApiClient
         if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
             getLocation();
         } else {
-            LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder().addLocationRequest(locationRequest);
+            LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder().addLocationRequest
+                    (locationRequest);
             builder.setAlwaysShow(true);
-            PendingResult<LocationSettingsResult> result = LocationServices.SettingsApi.checkLocationSettings(gac, builder.build());
+            PendingResult<LocationSettingsResult> result = LocationServices.SettingsApi.checkLocationSettings
+                    (gac, builder.build());
             result.setResultCallback(new ResultCallback<LocationSettingsResult>() {
                 @Override
                 public void onResult(@NonNull LocationSettingsResult locationSettingsResult) {
@@ -407,7 +414,7 @@ public class AddLocationDialog extends DialogFragment implements GoogleApiClient
                             break;
                         }
                         case LocationSettingsStatusCodes.SETTINGS_CHANGE_UNAVAILABLE: {
-//                        finish();
+//                       finish();
                             break;
                         }
                     }
@@ -433,10 +440,6 @@ public class AddLocationDialog extends DialogFragment implements GoogleApiClient
         }
     }
 
-
-
-
-
     private boolean isLocationEnabled() {
         LocationManager locationManager = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
         return locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER) ||
@@ -447,7 +450,8 @@ public class AddLocationDialog extends DialogFragment implements GoogleApiClient
         boolean permission = false;
         int hasLocationPerm = ContextCompat.checkSelfPermission(activity, Manifest.permission.ACCESS_COARSE_LOCATION);
         if (hasLocationPerm != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(activity, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION},
+            ActivityCompat.requestPermissions(activity, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION,
+                            Manifest.permission.ACCESS_FINE_LOCATION},
                     MY_PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION);
         } else {
             permission = true;
@@ -457,7 +461,7 @@ public class AddLocationDialog extends DialogFragment implements GoogleApiClient
 
     @Override
     public void onConnected(@Nullable Bundle bundle) {
-        if (locationManager!=null)
+        if (locationManager==null)
             setUpRequest();
     }
 
@@ -478,7 +482,8 @@ public class AddLocationDialog extends DialogFragment implements GoogleApiClient
 
     private void showAlert() {
         final AlertDialog.Builder dialog = new AlertDialog.Builder(getContext());
-        dialog.setTitle("Enable Location").setMessage("Your Locations Settings is set to 'Off'.\nPlease Enable Location to " +
+        dialog.setTitle("Enable Location").setMessage("Your Locations Settings is set to 'Off'." +
+                "\nPlease Enable Location to " +
                 "use this app")
                 .setPositiveButton("Location Settings", new DialogInterface.OnClickListener() {
                     @Override
@@ -500,13 +505,14 @@ public class AddLocationDialog extends DialogFragment implements GoogleApiClient
     public void onMapReady(GoogleMap googleMap) {
         map = googleMap;
 
-        countDown();
+       countDown();
     }
 
     public void show(FragmentManager fragmentManager, String name) {
     }
 
     private class LatToAddressTask extends AsyncTask<Void, Void, Void> {
+
         public String mLatitude = "0.0";
         public String mLongitude = "0.0";
         public String mAddress = "";
@@ -544,16 +550,21 @@ public class AddLocationDialog extends DialogFragment implements GoogleApiClient
             super.onPostExecute(aVoid);
             if (addresses != null) {
                 try {
-                    mAddress = (((((addresses.get(0).getAddressLine(0) == null) ? "" : (addresses.get(0).getAddressLine(0)))).equals("")) ? "" : "" + addresses.get(0).getAddressLine(0) + ",") + (((addresses.get(0).getLocality()) == null) ? "" : addresses.get(0).getLocality()); // If any additional address line present than only, check with max available address lines by getMaxAddressLineIndex()
+
+                    mAddress = (((((addresses.get(0).getAddressLine(0) == null) ? "" : (addresses.get(0)
+                            .getAddressLine(0)))).equals("")) ? "" : "" + addresses.get(0).getAddressLine(0)
+                            + ",") + (((addresses.get(0).getLocality()) == null) ? "" : addresses.get(0).getLocality()); // If any additional address line present than only, check with max available address lines by getMaxAddressLineIndex()
                     mCity = (((addresses.get(0).getLocality()) == null) ? "" : addresses.get(0).getLocality());
                     mState = (((addresses.get(0).getAdminArea()) == null) ? "" : addresses.get(0).getAdminArea());
                     mCountry = (((addresses.get(0).getCountryName()) == null) ? "" : addresses.get(0).getCountryName());
-                    String finalString = ((((mAddress).equals("")) ? "" : mAddress + ",") + (((mState).equals("")) ? "" : mState + ",") + mCountry).replaceAll("[\\,]{2,5}", ",");
+                    String finalString = ((((mAddress).equals("")) ? "" : mAddress + ",") + (((mState).equals("")) ? ""
+                            : mState + ",") + mCountry).replaceAll("[\\,]{2,5}", ",");
                     actvSearch.setText(finalString);
                     tvSearch.setText(finalString);
                     city = mCity;
                     state = mState;
                     country = mCountry;
+
                 } catch (IndexOutOfBoundsException e) {
                     actvSearch.setText("");
                 }
@@ -563,11 +574,11 @@ public class AddLocationDialog extends DialogFragment implements GoogleApiClient
             } else {
                 Snackbar.make(getView(), R.string.please_check_internet, Snackbar.LENGTH_SHORT).show();
             }
+          //  addlocationbtn.setClickable(true);
             addlocationbtn.setClickable(true);
             progressBar.setVisibility(View.GONE);
         }
     }
-
 
     List<Predictions> predictionsList = new ArrayList<>();
     private LocationRequestModel requestModel;

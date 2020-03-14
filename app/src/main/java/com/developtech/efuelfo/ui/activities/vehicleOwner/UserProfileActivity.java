@@ -16,10 +16,10 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.developtech.efuelfo.R;
+import com.developtech.efuelfo.app.UserPreference;
 import com.developtech.efuelfo.customs.CustomEditText;
 import com.developtech.efuelfo.customs.CustomTextView;
 import com.developtech.efuelfo.model.ResultModel;
@@ -84,13 +84,13 @@ public class UserProfileActivity extends MyActionBar implements AdapterView.OnIt
     CustomEditText etEmail;
 
     @BindView(R.id.spCountryCode)
-    Spinner spCountryCode;
+    EditText spCountryCode;
 
     @BindView(R.id.spCountry)
-    Spinner spinnerCountry;
+    EditText spinnerCountry;
 
     @BindView(R.id.spLanguage)
-    Spinner spinnerLanguage;
+    EditText spinnerLanguage;
 
     @BindView(R.id.cbAdditionalInfo)
     CheckBox cbAdditionalInfo;
@@ -149,7 +149,10 @@ public class UserProfileActivity extends MyActionBar implements AdapterView.OnIt
     boolean isEdit;
     SelectImage selectImage;
     Uri resultUri = null;
+    Bundle bundle;
     SignInResponseModel model;
+   // UserPreference modelone;
+   // String fnm,lnm,nmm,nmm1,fns,eem,adddddd,cont,lng,pinn;
 
     SpinnerAdapter spCountryAdapter, spLanguageAdapter;
     ArrayList<String> spCountryList = new ArrayList<>();
@@ -157,11 +160,17 @@ public class UserProfileActivity extends MyActionBar implements AdapterView.OnIt
     ArrayList<CountriesResponseModel> countriesList;
     ArrayList<LanguageResponseModel> languagesList;
     SpinnerAdapter spinnerAdapter;
+    UserPreference userPreference;
+    EditText editText;
+
 
     File imageFile;
     NetworkListener listener = new NetworkListener() {
+       // Intent intent=getIntent();
         @Override
         public void onSuccess(ResultModel<?> responseBody) {
+
+
             if (responseBody.getResultCode().equalsIgnoreCase(SPUtils.API_CODES.OK.toString())) {
 
                 SignInResponseModel responseModel = (SignInResponseModel) responseBody.getResutData();
@@ -231,14 +240,14 @@ public class UserProfileActivity extends MyActionBar implements AdapterView.OnIt
                 {
                     for (int i = 0; i < spCountryList.size(); i++) {
                         if (model.getCountry().equalsIgnoreCase(spCountryList.get(i))) {
-                            spinnerCountry.setSelection(i);
+                     //       spinnerCountry.setSelection(i);
                             break;
                         }
                     }
                 }
                 else
                 {
-                    spinnerCountry.setSelection(1);
+                //    spinnerCountry.setSelection(1);
                 }
 
                 if (isEdit) {
@@ -282,14 +291,14 @@ public class UserProfileActivity extends MyActionBar implements AdapterView.OnIt
             if(model.getLanguage()!=null && !model.getLanguage().isEmpty()) {
                 for (int i = 0; i < spLanguageList.size(); i++) {
                     if (model.getLanguage().equalsIgnoreCase(spLanguageList.get(i))) {
-                        spinnerLanguage.setSelection(i);
+                 //       spinnerLanguage.setSelection(i);
                         break;
                     }
                 }
             }
             else
             {
-                spinnerLanguage.setSelection(1);
+       //         spinnerLanguage.setSelection(1);
             }
 
             if (isEdit) {
@@ -297,8 +306,6 @@ public class UserProfileActivity extends MyActionBar implements AdapterView.OnIt
             } else {
                 spLanguageAdapter.setItemTextColor(getResources().getColor(R.color.white));
             }
-
-
         }
 
         @Override
@@ -324,6 +331,57 @@ public class UserProfileActivity extends MyActionBar implements AdapterView.OnIt
         ButterKnife.bind(this);
         init();
         initComponents();
+        userPreference=new UserPreference(getApplicationContext()).getInstance(getApplicationContext());
+
+        etFirstName.setText(""+userPreference.getFirsName());
+        etLastName.setText(""+userPreference.getLastName());
+      //  tvMobileLabel.setText(""+userPreference.getNumber());
+        etAddress.setText(/*""+userPreference.getAddress()+*/""+userPreference.getAddresstwo());
+        etLoginId.setText(""+userPreference.getNumber());
+        tvCountryLabel.setText("India");
+        etPinCode.setText(""+userPreference.getAddress());
+        etPhone.setText(""+userPreference.getNumber());
+        etEmail.setText(""+userPreference.getEmailId());
+        etFuelStationId.setText(""+userPreference.getNumber());
+
+       // etPinCode.setText(""+userPreference.get);
+        spinnerCountry.setText("India");
+        spCountryCode.setText("+91");
+        spinnerLanguage.setText("English");
+
+        tvEmailLabel.setTextColor(getResources().getColor(android.R.color.white));
+        tvCountryLabel.setTextColor(getResources().getColor(android.R.color.white));
+        tvLanguageLabel.setTextColor(getResources().getColor(android.R.color.white));
+        tvAlternateMobile.setTextColor(getResources().getColor(android.R.color.white));
+        tvFuelStationIdLabel.setTextColor(getResources().getColor(android.R.color.white));
+        tvAddressLabel.setTextColor(getResources().getColor(android.R.color.white));
+        tvPinCodeLabel.setTextColor(getResources().getColor(android.R.color.white));
+        tvLoginId.setTextColor(getResources().getColor(android.R.color.white));
+
+        etFirstName.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
+        etLastName.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
+        //spCountryCode.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
+        etPhone.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
+        etEmail.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
+      //  spinnerCountry.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
+      //  spinnerLanguage.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
+        etAlternateMobile.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
+        etFuelStationId.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
+        etAddress.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
+        etPinCode.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
+        etLoginId.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
+        etFirstName.setTextColor(getResources().getColor(R.color.blackDarker));
+        etLastName.setTextColor(getResources().getColor(R.color.blackDarker));
+        etPhone.setTextColor(getResources().getColor(R.color.blackDarker));
+        etEmail.setTextColor(getResources().getColor(R.color.blackDarker));
+        spCountryAdapter.setItemTextColor(getResources().getColor(R.color.blackDarker));
+        spLanguageAdapter.setItemTextColor(getResources().getColor(R.color.blackDarker));
+        spinnerAdapter.setItemTextColor(getResources().getColor(R.color.blackDarker));
+        etAlternateMobile.setTextColor(getResources().getColor(R.color.blackDarker));
+        etFuelStationId.setTextColor(getResources().getColor(R.color.blackDarker));
+        etAddress.setTextColor(getResources().getColor(R.color.blackDarker));
+        etPinCode.setTextColor(getResources().getColor(R.color.blackDarker));
+        etLoginId.setTextColor(getResources().getColor(R.color.blackDarker));
     }
 
     @Override
@@ -331,7 +389,7 @@ public class UserProfileActivity extends MyActionBar implements AdapterView.OnIt
 
         ArrayList<String> arrCode = new ArrayList<String>(Arrays.asList(getResources().getStringArray(R.array.country_code)));
         spinnerAdapter = new SpinnerAdapter(this, android.R.layout.simple_spinner_dropdown_item, arrCode);
-        spCountryCode.setAdapter(spinnerAdapter);
+      //  spCountryCode.setAdapter(spinnerAdapter);
 
         appComponent.getServiceCaller().callService(appComponent.getAllApis().getCountriesList(), getCountriesListener);
         appComponent.getServiceCaller().callService(appComponent.getAllApis().getLanguages(), getLanguagesListener);
@@ -340,26 +398,33 @@ public class UserProfileActivity extends MyActionBar implements AdapterView.OnIt
         {
             FindOperatorRequestModel requestModel = new FindOperatorRequestModel();
             requestModel.setFuelStationId(appComponent.getSpUtils().getFuelStationModel().getId());
-            appComponent.getServiceCaller().callService(appComponent.getAllApis().getOperators(requestModel), getOperatorsListener);
+            appComponent.getServiceCaller().callService(appComponent.getAllApis().getOperators(requestModel),
+                    getOperatorsListener);
             tvLabel.setText("Operators");
         }
 
         spCountryList.add("Select Country");
         spLanguageList.add("Select Language");
+        spCountryAdapter = new SpinnerAdapter(this, android.R.layout.simple_spinner_item,
+                spCountryList);
+        spLanguageAdapter = new SpinnerAdapter(this, android.R.layout.simple_spinner_item,
+                spLanguageList);
+    //    spinnerCountry.setAdapter(spCountryAdapter);
+      //  spinnerLanguage.setAdapter(spLanguageAdapter);
+       // spinnerLanguage.setOnItemSelectedListener(this);
+     //   spinnerCountry.setOnItemSelectedListener(this);
+     //   spCountryCode.setOnItemSelectedListener(this);
 
-        spCountryAdapter = new SpinnerAdapter(this, android.R.layout.simple_spinner_item, spCountryList);
-        spLanguageAdapter = new SpinnerAdapter(this, android.R.layout.simple_spinner_item, spLanguageList);
-        spinnerCountry.setAdapter(spCountryAdapter);
-        spinnerLanguage.setAdapter(spLanguageAdapter);
+       /* UserPreference userPreference=new UserPreference(getApplicationContext())
+                .getInstance(getApplicationContext());
+        //shareprefer save boolean set tru, number
+        userPreference.setNumber(etMobileNumber.getText().toString());
+        userPreference.setIsLogin(true);*/
 
-        spinnerLanguage.setOnItemSelectedListener(this);
-        spinnerCountry.setOnItemSelectedListener(this);
-        spCountryCode.setOnItemSelectedListener(this);
-
-        if (spCountryCode.getSelectedView()!=null) {
+       /* if (spCountryCode.getSelectedView()!=null) {
             spCountryCode.getSelectedView().setEnabled(false);
-        }
-        spCountryCode.setEnabled(false);
+        }*/
+     //   spCountryCode.setEnabled(false);
 
         viewToDiable.setVisibility(View.VISIBLE);
         cbAdditionalInfo.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -376,6 +441,7 @@ public class UserProfileActivity extends MyActionBar implements AdapterView.OnIt
         });
 
         model = appComponent.getSpUtils().getUserData();
+
         if (model != null) {
             if (model.getImage() != null && !model.getImage().isEmpty()) {
 
@@ -392,7 +458,7 @@ public class UserProfileActivity extends MyActionBar implements AdapterView.OnIt
                 for (int i = 0; i < Arrays.asList(getResources().getStringArray(R.array.country_code)).size(); i++) {
                     if(model.getCountryCode().equals(Arrays.asList(getResources().getStringArray(R.array.country_code)).get(i)))
                     {
-                        spCountryCode.setSelection(i);
+                   //     spCountryCode.setSelection(i);
                         break;
                     }
                 }
@@ -498,6 +564,22 @@ public class UserProfileActivity extends MyActionBar implements AdapterView.OnIt
     void changeView() {
         if (isEdit) {
             ivProfilePic.setClickable(true);
+
+
+           /* if(model.getId()==null){
+                final RequestBody LoginId = RequestBody.create(MediaType.parse("multipart/form-data"), model.getId());
+            }else {
+                 // final RequestBody LoginId = RequestBody.create(MediaType.parse("multipart/form-data"), model.getId());
+            }*/
+
+           /* Log.e("jjj","succ"+tvFirstNameLabel);
+            tvFirstNameLabel.setText(userPreference.getFirsName());
+            tvLastNameLabel.setText(userPreference.getLastName());
+            tvAddressLabel.setText(userPreference.getAddress());
+            tvEmailLabel.setText(userPreference.getEmailId());
+            tvMobileLabel.setText(userPreference.getNumber());*/
+
+
             tvFirstNameLabel.setTextColor(getResources().getColor(android.R.color.white));
             tvLastNameLabel.setTextColor(getResources().getColor(android.R.color.white));
             tvMobileLabel.setTextColor(getResources().getColor(android.R.color.white));
@@ -512,11 +594,11 @@ public class UserProfileActivity extends MyActionBar implements AdapterView.OnIt
 
             etFirstName.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
             etLastName.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
-            spCountryCode.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
+       //     spCountryCode.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
             etPhone.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
             etEmail.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
-            spinnerCountry.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
-            spinnerLanguage.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
+         //   spinnerCountry.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
+         //   spinnerLanguage.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
             etAlternateMobile.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
             etFuelStationId.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
             etAddress.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius));
@@ -535,20 +617,20 @@ public class UserProfileActivity extends MyActionBar implements AdapterView.OnIt
             etPinCode.setTextColor(getResources().getColor(R.color.blackDarker));
             etLoginId.setTextColor(getResources().getColor(R.color.blackDarker));
 
-            TextView view = (TextView) spCountryCode.getSelectedView();
-            view.setTextColor(getResources().getColor(R.color.blackDarker));
+           // TextView view = (TextView) spCountryCode.getSelectedView();
+          //  view.setTextColor(getResources().getColor(R.color.blackDarker));
 
-            TextView viewCountry = (TextView) spinnerCountry.getSelectedView();
-            if(viewCountry!=null)
+           // TextView viewCountry = (TextView) spinnerCountry.getSelectedView();
+           /* if(viewCountry!=null)
             {
                 viewCountry.setTextColor(getResources().getColor(R.color.blackDarker));
-            }
+            }*/
 
-            TextView viewLanguage = (TextView) spinnerLanguage.getSelectedView();
+           /* TextView viewLanguage = (TextView) spinnerLanguage.getSelectedView();
             if(viewLanguage!=null)
             {
                 viewLanguage.setTextColor(getResources().getColor(R.color.blackDarker));
-            }
+            }*/
             cbAdditionalInfo.setVisibility(View.VISIBLE);
             viewToDiable.setVisibility(View.GONE);
             etFirstName.setCursorVisible(true);
@@ -571,12 +653,12 @@ public class UserProfileActivity extends MyActionBar implements AdapterView.OnIt
 
             etFirstName.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius_dark));
             etLastName.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius_dark));
-            spCountryCode.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius_dark));
+          //  spCountryCode.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius_dark));
             etPhone.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius_dark));
             etEmail.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius_dark));
             etAlternateMobile.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius_dark));
-            spinnerCountry.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius_dark));
-            spinnerLanguage.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius_dark));
+         //   spinnerCountry.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius_dark));
+         //   spinnerLanguage.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius_dark));
             etFuelStationId.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius_dark));
             etAddress.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius_dark));
             etPinCode.setBackground(getResources().getDrawable(R.drawable.corner_background_less_radius_dark));
@@ -595,23 +677,23 @@ public class UserProfileActivity extends MyActionBar implements AdapterView.OnIt
             etPinCode.setTextColor(getResources().getColor(R.color.white));
             etLoginId.setTextColor(getResources().getColor(R.color.white));
 
-            TextView viewCountryCode = (TextView) spCountryCode.getSelectedView();
+           /* TextView viewCountryCode = (TextView) spCountryCode.getSelectedView();
             if(viewCountryCode!=null)
             {
                 viewCountryCode.setTextColor(Color.WHITE);
-            }
+            }*/
 
-            TextView viewCountry = (TextView) spinnerCountry.getSelectedView();
+            /*TextView viewCountry = (TextView) spinnerCountry.getSelectedView();
             if(viewCountry!=null)
             {
                 viewCountry.setTextColor(Color.WHITE);
-            }
+            }*/
 
-            TextView viewLanguage = (TextView) spinnerLanguage.getSelectedView();
+           /* TextView viewLanguage = (TextView) spinnerLanguage.getSelectedView();
             if(viewLanguage!=null)
             {
                 viewLanguage.setTextColor(Color.WHITE);
-            }
+            }*/
 
             if (!cbAdditionalInfo.isChecked())
             {
@@ -623,6 +705,9 @@ public class UserProfileActivity extends MyActionBar implements AdapterView.OnIt
             etPinCode.setCursorVisible(false);
             etAlternateMobile.setCursorVisible(false);
             ivEdit.setImageResource(R.drawable.edit);
+
+
+
         }
     }
 
@@ -632,6 +717,12 @@ public class UserProfileActivity extends MyActionBar implements AdapterView.OnIt
         String lname = etLastName.getText().toString().trim();
         String phone = etPhone.getText().toString().trim();
         String email = etEmail.getText().toString().trim();
+       // String fname;
+        etFirstName.setText(userPreference.getFirsName());
+        etLastName.setText(userPreference.getLastName());
+        etPhone.setText(userPreference.getNumber());
+        etEmail.setText(userPreference.getEmailId());
+
 
 
         if (fname.isEmpty()) {
@@ -676,10 +767,10 @@ public class UserProfileActivity extends MyActionBar implements AdapterView.OnIt
             return;
         }
 
-        if (spinnerCountry.getSelectedItemPosition() == 0) {
+       /* if (spinnerCountry.getSelectedItemPosition() == 0) {
             showMsg(rootLayout, "Please select country");
             return;
-        }
+        }*/
 
         MultipartBody.Part body = null;
         if (resultUri != null) {
@@ -711,42 +802,57 @@ public class UserProfileActivity extends MyActionBar implements AdapterView.OnIt
                 showMsg(rootLayout, getResources().getString(R.string.pincode_length));
                 return;
             }
-
-            Address = RequestBody.create(MediaType.parse("multipart/form-data"), etAddress.getText().toString());
-            Pincode = RequestBody.create(MediaType.parse("multipart/form-data"), etPinCode.getText().toString());
+            if(Address!=null && Pincode!=null){
+                Address = RequestBody.create(MediaType.parse("multipart/form-data"), etAddress.getText().toString());
+                Pincode = RequestBody.create(MediaType.parse("multipart/form-data"), etPinCode.getText().toString());
+            }
+          //  Address = RequestBody.create(MediaType.parse("multipart/form-data"), etAddress.getText().toString());
+          //  Pincode = RequestBody.create(MediaType.parse("multipart/form-data"), etPinCode.getText().toString());
         }
         else
         {
-            Address = RequestBody.create(MediaType.parse("multipart/form-data"), model.getAddress() == null ? "" : model.getAddress());
-            Pincode = RequestBody.create(MediaType.parse("multipart/form-data"), model.getPincode()==null ? "" : model.getPincode());
+            if(Address!=null && Pincode!=null ){
+                Address = RequestBody.create(MediaType.parse("multipart/form-data"), model.getAddress() == null ? "" : model.getAddress());
+                Pincode = RequestBody.create(MediaType.parse("multipart/form-data"), model.getPincode()==null ? "" : model.getPincode());
+            }
+           // Address = RequestBody.create(MediaType.parse("multipart/form-data"), model.getAddress() == null ? "" : model.getAddress());
+          //  Pincode = RequestBody.create(MediaType.parse("multipart/form-data"), model.getPincode()==null ? "" : model.getPincode());
         }
 
+       if(model.getId()!=null){
+           final RequestBody LoginId = RequestBody.create(MediaType.parse("multipart/form-data"), model.getId());
+       }else {
+         //  final RequestBody LoginId = RequestBody.create(MediaType.parse("multipart/form-data"), model.getId());
+       }
+     //   Log.e("kk","jjhjh"+ model.getId());
 
-        final RequestBody LoginId = RequestBody.create(MediaType.parse("multipart/form-data"), model.getId());
+//        final RequestBody LoginId = RequestBody.create(MediaType.parse("multipart/form-data"), model.getId());
         final RequestBody firstName = RequestBody.create(MediaType.parse("multipart/form-data"), fname);
         final RequestBody lastName = RequestBody.create(MediaType.parse("multipart/form-data"), lname);
         final RequestBody Email = RequestBody.create(MediaType.parse("multipart/form-data"), email);
         final RequestBody MobileNumber = RequestBody.create(MediaType.parse("multipart/form-data"), phone);
 
-        final RequestBody Country = RequestBody.create(MediaType.parse("multipart/form-data"), spinnerCountry.getSelectedItem().toString());
-        final RequestBody Language = RequestBody.create(MediaType.parse("multipart/form-data"), spinnerLanguage.getSelectedItem().toString());
+     //   final RequestBody Country = RequestBody.create(MediaType.parse("multipart/form-data"), spinnerCountry.getSelectedItem().toString());
+     //   final RequestBody Language = RequestBody.create(MediaType.parse("multipart/form-data"), spinnerLanguage.getSelectedItem().toString());
 
-        final RequestBody CountryCode = RequestBody.create(MediaType.parse("multipart/form-data"), spCountryCode.getSelectedItem().toString());
+     //   final RequestBody CountryCode = RequestBody.create(MediaType.parse("multipart/form-data"), spCountryCode.getSelectedItem().toString());
 
         final RequestBody AlterMobile = RequestBody.create(MediaType.parse("multipart/form-data"), cbAdditionalInfo.isChecked() ? etAlternateMobile.getText().toString() : "");
 
-        appComponent.getServiceCaller().callService(appComponent.getAllApis().updateProfile(firstName,lastName, Email, MobileNumber, Address,
-                Country,CountryCode, Language, Pincode, AlterMobile, body), listener);
+     /*   appComponent.getServiceCaller().callService(appComponent.getAllApis().updateProfile(firstName,lastName, Email, MobileNumber, Address,
+                Country,CountryCode, Language, Pincode, AlterMobile, body), listener);*/
 
         this.firstName = fname;
         this.lastName = lname;
         this.email = email;
-        this.country = spinnerCountry.getSelectedItem().toString();
-        this.language = spinnerLanguage.getSelectedItem().toString();
+      //  this.country = spinnerCountry.getSelectedItem().toString();
+    //    this.language = spinnerLanguage.getSelectedItem().toString();
         this.pinCode = etPinCode.getText().toString().trim();
         this.address = etAddress.getText().toString().trim();
 
     }
+
+
 
     String firstName, lastName, email, country, language, pinCode, address;
 

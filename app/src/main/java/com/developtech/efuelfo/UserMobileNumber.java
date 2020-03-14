@@ -77,7 +77,6 @@ public  class UserMobileNumber extends  MyActionBar implements AdapterView.OnIte
                     etMobileNumber.setError("Empty field not allowed!");
                     etMobileNumber.requestFocus();
                     return;
-
                 }else if(TextUtils.getTrimmedLength(etMobileNumber.getText().toString())!=10){
                     etMobileNumber.setError("Please enter 10 digit!");
                     etMobileNumber.requestFocus();
@@ -99,6 +98,8 @@ public  class UserMobileNumber extends  MyActionBar implements AdapterView.OnIte
                     startActivity(intent);
                     finish();*/
 
+                   /* Intent intent=new Intent(getApplicationContext(), OtpVerifyNumber.class);
+                    startActivity(intent);*/
 
 
                 }
@@ -319,20 +320,20 @@ public  class UserMobileNumber extends  MyActionBar implements AdapterView.OnIte
             showProgress();
         }
     };
-    public void onClick(View view) {
+    /*public void onClick(View view) {
         switch (view.getId()) {
 
             case R.id.btnLogin: {
                 hideKB();
                 checkValidationSignUp();
-               /* if (!isLogin) {
+               *//* if (!isLogin) {
                     checkValidationSignUp();
                 } else
-                    checkValidationLogin();*/
+                    checkValidationLogin();*//*
                 break;
             }
         }
-    }
+    }*/
 
 
 

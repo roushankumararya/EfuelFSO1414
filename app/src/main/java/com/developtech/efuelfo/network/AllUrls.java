@@ -11,10 +11,10 @@ public class AllUrls {
  //  public final String BASE_URL = "http://3.84.43.224:1337/";
 //    public final String BASE_IMAGE_URL = "http://3.84.43.224:1337/image/";
 
-  //   public final String BASE_URL = "https://api.efuelapp.in/";
-    // public final String BASE_IMAGE_URL = "https://api.efuelapp.in/image/";
+    public final String BASE_URL = "https://api.efuelapp.in/";
+    public final String BASE_IMAGE_URL = "https://api.efuelapp.in/image/";
 
-      public final String BASE_URL = "http://dev-server.efuelapp.in/";
-      public final String BASE_IMAGE_URL = "http://dev-server.efuelapp.in/image/";
+  //    public final String BASE_URL = "http://dev-server.efuelapp.in/";
+    //  public final String BASE_IMAGE_URL = "http://dev-server.efuelapp.in/image/";
 
 }

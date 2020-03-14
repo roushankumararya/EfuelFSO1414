@@ -56,8 +56,8 @@
                     android:id="@+id/registrationnamefuelstation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:maxLines="2"
-                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:maxLines="1"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
                     android:maxLength="16"
                     android:inputType="text"
                     android:textColor="@color/white" />
@@ -92,7 +92,8 @@
                     android:id="@+id/dealercodefuelstation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:maxLines="2"
+                    android:maxLines="1"
+                    android:inputType="text"
                     android:maxLength="10"
                     android:textColor="@color/white" />
             </LinearLayout>
@@ -134,7 +135,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:maxLines="2"
+                    android:maxLines="1"
                     android:textColor="@color/white" />
 
            <!-- </LinearLayout>-->
@@ -189,7 +190,7 @@
                     android:id="@+id/addresslinetwofuelstation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:maxLines="2"
+                    android:maxLines="1"
                     android:textColor="@color/white" />
             </LinearLayout>
 
@@ -221,10 +222,10 @@
                 <EditText
                     android:id="@+id/usercityfuelstation"
                     android:layout_width="match_parent"
-                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
                     android:inputType="text"
                     android:layout_height="wrap_content"
-                    android:maxLines="2"
+                    android:maxLines="1"
                     android:textColor="@color/white" />
             </LinearLayout>
 
@@ -256,10 +257,10 @@
                 <EditText
                     android:id="@+id/userstatefuelstation"
                     android:layout_width="match_parent"
-                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
                     android:layout_height="wrap_content"
                     android:inputType="text"
-                    android:maxLines="2"
+                    android:maxLines="1"
                     android:textColor="@color/white" />
             </LinearLayout>
 
@@ -292,7 +293,8 @@
                     android:id="@+id/usergstinfuelstation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:maxLines="2"
+                    android:maxLines="1"
+                    android:inputType="text"
                     android:textColor="@color/white" />
             </LinearLayout>
 

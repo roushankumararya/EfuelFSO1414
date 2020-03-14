@@ -21,8 +21,8 @@ import com.developtech.efuelfo.model.responseModel.NotificationResponseModel;
 import com.developtech.efuelfo.network.NetworkListener;
 import com.developtech.efuelfo.notifications.MyFirebaseMessagingService;
 import com.developtech.efuelfo.ui.activities.common.HomeActivity;
+import com.developtech.efuelfo.ui.activities.common.TransactionDetailsActivity;
 import com.developtech.efuelfo.ui.activities.stationOwner.RequestPendingActivity;
-import com.developtech.efuelfo.ui.activities.stationOwner.TransactionDetailsActivity;
 import com.developtech.efuelfo.ui.adapters.NotificationAdapter;
 import com.developtech.efuelfo.util.SPUtils;
 
@@ -31,6 +31,8 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+
+//import com.developtech.efuelfo.ui.activities.stationOwner.TransactionDetailsActivity;
 
 /**
  * A simple {@link Fragment} subclass.

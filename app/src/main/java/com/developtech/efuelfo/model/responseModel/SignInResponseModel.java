@@ -42,7 +42,7 @@ public class SignInResponseModel implements Serializable {
     @SerializedName("updatedAt")
     @Expose
     private String updatedAt;
-    @SerializedName("id")
+    @SerializedName("")
     @Expose
     private String id;
     @SerializedName("token")
@@ -229,7 +229,6 @@ public class SignInResponseModel implements Serializable {
     public String getId() {
         return id;
     }
-
     public void setId(String id) {
         this.id = id;
     }

@@ -584,30 +584,30 @@ public final class R {
         public static final int abc_textfield_search_default_mtrl_alpha = 0x7f080059;
         public static final int abc_textfield_search_material = 0x7f08005a;
         public static final int abc_vector_test = 0x7f08005b;
-        public static final int notification_action_background = 0x7f080207;
-        public static final int notification_bg = 0x7f080209;
-        public static final int notification_bg_low = 0x7f08020a;
-        public static final int notification_bg_low_normal = 0x7f08020b;
-        public static final int notification_bg_low_pressed = 0x7f08020c;
-        public static final int notification_bg_normal = 0x7f08020d;
-        public static final int notification_bg_normal_pressed = 0x7f08020e;
-        public static final int notification_icon_background = 0x7f08020f;
-        public static final int notification_template_icon_bg = 0x7f080211;
-        public static final int notification_template_icon_low_bg = 0x7f080212;
-        public static final int notification_tile_bg = 0x7f080213;
-        public static final int notify_panel_notification_icon_bg = 0x7f080216;
-        public static final int ucrop_ic_angle = 0x7f08025d;
-        public static final int ucrop_ic_crop = 0x7f08025e;
-        public static final int ucrop_ic_cross = 0x7f08025f;
-        public static final int ucrop_ic_done = 0x7f080260;
-        public static final int ucrop_ic_next = 0x7f080261;
-        public static final int ucrop_ic_reset = 0x7f080262;
-        public static final int ucrop_ic_rotate = 0x7f080263;
-        public static final int ucrop_ic_scale = 0x7f080264;
-        public static final int ucrop_shadow_upside = 0x7f080265;
-        public static final int ucrop_vector_ic_crop = 0x7f080266;
-        public static final int ucrop_vector_loader = 0x7f080267;
-        public static final int ucrop_vector_loader_animated = 0x7f080268;
+        public static final int notification_action_background = 0x7f080208;
+        public static final int notification_bg = 0x7f08020a;
+        public static final int notification_bg_low = 0x7f08020b;
+        public static final int notification_bg_low_normal = 0x7f08020c;
+        public static final int notification_bg_low_pressed = 0x7f08020d;
+        public static final int notification_bg_normal = 0x7f08020e;
+        public static final int notification_bg_normal_pressed = 0x7f08020f;
+        public static final int notification_icon_background = 0x7f080210;
+        public static final int notification_template_icon_bg = 0x7f080212;
+        public static final int notification_template_icon_low_bg = 0x7f080213;
+        public static final int notification_tile_bg = 0x7f080214;
+        public static final int notify_panel_notification_icon_bg = 0x7f080217;
+        public static final int ucrop_ic_angle = 0x7f08025e;
+        public static final int ucrop_ic_crop = 0x7f08025f;
+        public static final int ucrop_ic_cross = 0x7f080260;
+        public static final int ucrop_ic_done = 0x7f080261;
+        public static final int ucrop_ic_next = 0x7f080262;
+        public static final int ucrop_ic_reset = 0x7f080263;
+        public static final int ucrop_ic_rotate = 0x7f080264;
+        public static final int ucrop_ic_scale = 0x7f080265;
+        public static final int ucrop_shadow_upside = 0x7f080266;
+        public static final int ucrop_vector_ic_crop = 0x7f080267;
+        public static final int ucrop_vector_loader = 0x7f080268;
+        public static final int ucrop_vector_loader_animated = 0x7f080269;
     }
     public static final class id {
         private id() {}
@@ -851,12 +851,12 @@ public final class R {
         public static final int abc_shareactionprovider_share_with_application = 0x7f110060;
         public static final int abc_toolbar_collapse_description = 0x7f110061;
         public static final int search_menu_title = 0x7f110380;
-        public static final int status_bar_notification_info_overflow = 0x7f1103c3;
-        public static final int ucrop_error_input_data_is_absent = 0x7f110414;
-        public static final int ucrop_label_edit_photo = 0x7f110415;
-        public static final int ucrop_label_original = 0x7f110416;
-        public static final int ucrop_menu_crop = 0x7f110417;
-        public static final int ucrop_mutate_exception_hint = 0x7f110418;
+        public static final int status_bar_notification_info_overflow = 0x7f1103c4;
+        public static final int ucrop_error_input_data_is_absent = 0x7f110415;
+        public static final int ucrop_label_edit_photo = 0x7f110416;
+        public static final int ucrop_label_original = 0x7f110417;
+        public static final int ucrop_menu_crop = 0x7f110418;
+        public static final int ucrop_mutate_exception_hint = 0x7f110419;
     }
     public static final class style {
         private style() {}

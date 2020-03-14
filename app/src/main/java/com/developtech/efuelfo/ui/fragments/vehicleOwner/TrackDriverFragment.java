@@ -51,7 +51,7 @@ public class TrackDriverFragment extends BaseFragment implements VehicleOwnerIte
     @BindView(R.id.recycleTrackDriver)
     RecyclerView recycleTrackDriver;
     @BindView(R.id.ivMapList)
-   public ImageView ivMapList;
+    public ImageView ivMapList;
     SupportMapFragment supportMapFragment;
     GoogleMap map;
     boolean showMap;

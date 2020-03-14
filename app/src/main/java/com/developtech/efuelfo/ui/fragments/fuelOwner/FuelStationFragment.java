@@ -10,13 +10,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.FrameLayout;
-import android.widget.Switch;
 
 import com.developtech.efuelfo.R;
-import com.developtech.efuelfo.listeners.OnItemClickListener;
 import com.developtech.efuelfo.model.ResultModel;
-import com.developtech.efuelfo.model.requestModel.SwitchCreditAgreementReqModel;
 import com.developtech.efuelfo.model.responseModel.GetFuelStationResponseModel;
 import com.developtech.efuelfo.network.NetworkListener;
 import com.developtech.efuelfo.ui.activities.fuelStation.StationRegistrationActivity;
@@ -35,7 +33,7 @@ import butterknife.OnClick;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class FuelStationFragment extends BaseFragment implements OnItemClickListener {
+public class FuelStationFragment extends BaseFragment implements AdapterView.OnItemClickListener {
 
     @BindView(R.id.rvFuelStation)
     RecyclerView rvFuelStaton;
@@ -51,7 +49,6 @@ public class FuelStationFragment extends BaseFragment implements OnItemClickList
     public FuelStationAdapter adapter;
 
     NetworkListener addListener;
-
 
     public FuelStationFragment() {
         // Required empty public constructor
@@ -108,7 +105,7 @@ public class FuelStationFragment extends BaseFragment implements OnItemClickList
         }
     }
 
-    @Override
+   /* @Override
     public void onItemClick(View view, int position) {
         switch (view.getId())
         {
@@ -126,14 +123,12 @@ public class FuelStationFragment extends BaseFragment implements OnItemClickList
                 SwitchCreditAgreementReqModel reqModel = new SwitchCreditAgreementReqModel();
                 reqModel.setFuelStationId(fuelStationsList.get(position).getId());
                 reqModel.setCreditAgreement(sw.isChecked());
-                appComponent.getServiceCaller().callService(appComponent.getAllApis()
-                        .switchCreditAgreement(reqModel),
-                        switchCreditAgreementListener );
+                appComponent.getServiceCaller().callService(appComponent.getAllApis().switchCreditAgreement(reqModel), switchCreditAgreementListener);
             }
         }
 
     }
-
+*/
 
     @Override
     public void retry() {
@@ -292,25 +287,25 @@ public class FuelStationFragment extends BaseFragment implements OnItemClickList
     };
 
     private NetworkListener switchCreditAgreementListener = new NetworkListener() {
-            @Override
-            public void onSuccess(ResultModel<?> responseBody) {
-                if (responseBody.getResultCode().equalsIgnoreCase(SPUtils.API_CODES.OK.toString())) {
+        @Override
+        public void onSuccess(ResultModel<?> responseBody) {
+            if (responseBody.getResultCode().equalsIgnoreCase(SPUtils.API_CODES.OK.toString())) {
 
+            }
+        }
+
+        @Override
+        public void onError(String msg) {
+            if(getActivity()==null)
+                return;
+
+            getActivity().runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    hideProgress();
                 }
-            }
-
-            @Override
-            public void onError(String msg) {
-                if(getActivity()==null)
-                    return;
-
-                getActivity().runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        hideProgress();
-                    }
-                });
-            }
+            });
+        }
 
         @Override
         public void onComplete() {
@@ -325,12 +320,20 @@ public class FuelStationFragment extends BaseFragment implements OnItemClickList
             });
         }
 
-            @Override
-            public void onStart() {
-                showProgress();
-            }
-        };
+        @Override
+        public void onStart() {
+            showProgress();
+        }
+    };
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+    }
 
 
+    /*@Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
+    }*/
 }

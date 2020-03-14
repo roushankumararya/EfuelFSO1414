@@ -22,17 +22,14 @@ import android.widget.TextView;
 import com.developtech.efuelfo.R;
 import com.developtech.efuelfo.listeners.OnItemClickListener;
 import com.developtech.efuelfo.model.ResultModel;
-import com.developtech.efuelfo.model.requestModel.AddRefuelRequestModel;
 import com.developtech.efuelfo.model.requestModel.ChangePasswordRequestModel;
-import com.developtech.efuelfo.model.requestModel.DeleteDriverRequestModel;
 import com.developtech.efuelfo.model.requestModel.EmailInvoiceRequestModel;
 import com.developtech.efuelfo.model.requestModel.SearchScheduleRequestModel;
 import com.developtech.efuelfo.model.requestModel.TransRecievedRequestModel;
 import com.developtech.efuelfo.model.responseModel.OnlineTransactionsResponseModel;
 import com.developtech.efuelfo.network.NetworkListener;
-import com.developtech.efuelfo.ui.activities.stationOwner.TransactionDetailsActivity;
+import com.developtech.efuelfo.ui.activities.common.TransactionDetailsActivity;
 import com.developtech.efuelfo.ui.adapters.stationOwner.OnlineTransAdapter;
-import com.developtech.efuelfo.ui.adapters.stationOwner.PaymentHistoryAdapter;
 import com.developtech.efuelfo.ui.dialogFragments.FilterTransDialogFragment;
 import com.developtech.efuelfo.ui.fragments.BaseFragment;
 import com.developtech.efuelfo.util.SPUtils;
@@ -43,6 +40,8 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+
+//import com.developtech.efuelfo.ui.activities.stationOwner.TransactionDetailsActivity;
 
 public class OnlineTransactionFragment extends BaseFragment implements OnItemClickListener {
 

@@ -455,7 +455,7 @@ public class PayPalFragment extends BaseFragment implements VehicleOwnerItemClic
 
         requestModel = new AddRefuelRequestModel();
         requestModel.setAmount(amount);
-        requestModel.setCreatedById(appComponent.getSpUtils().getUserId());
+      //  requestModel.setCreatedById(appComponent.getSpUtils().getUserId());
         requestModel.setFuelStation(fuelStation);
         requestModel.setFuelType(fuelType);
         requestModel.setMialage(mialage);

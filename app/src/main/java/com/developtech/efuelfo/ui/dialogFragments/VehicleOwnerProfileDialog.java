@@ -18,7 +18,6 @@ import android.widget.Toast;
 import com.developtech.efuelfo.R;
 import com.developtech.efuelfo.app.AppComponent;
 import com.developtech.efuelfo.model.responseModel.CreditAgreementResponseModel;
-import com.developtech.efuelfo.model.responseModel.OnlineTransactionsResponseModel;
 import com.developtech.efuelfo.model.responseModel.VehicleOwnerResponseModel;
 import com.squareup.picasso.Picasso;
 

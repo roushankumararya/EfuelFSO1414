@@ -69,6 +69,7 @@ public class SPUtils {
         if (response.isEmpty())
             return null;
 
+
         return myObj.fromJson(response, new TypeToken<List<VehicleOwnerResponseModel>>() {
         }.getType());
     }
@@ -158,13 +159,13 @@ public class SPUtils {
         sharedPreferences.edit().putString(FUEL_STATIONS_RESPONSE_LIST, "").apply();
     }
 
-    public String getUserId() {
-        return getUserData() == null ? "" : getUserData().getId();
-    }
+   /* public String getUserId() {
+       // return getUserData() == null ? "" : getUserData().getId()==null;
+    }*/
 
-    public String getToken() {
-        return getUserData() == null ? "" : getUserData().getToken();
-    }
+   /* public String getToken() {
+       // return getUserData() == null ? "" : getUserData().getToken();
+    }*/
 
     public String getName() {
         return getUserData() == null ? "" : getUserData().getFirstName() + " " + getUserData().getLastName();

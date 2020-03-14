@@ -49,7 +49,6 @@ import com.developtech.efuelfo.model.responseModel.SignInResponseModel;
 import com.developtech.efuelfo.model.responseModel.VehicleOwnerResponseModel;
 import com.developtech.efuelfo.network.NetworkListener;
 import com.developtech.efuelfo.ui.activities.stationOwner.RequestPendingActivity;
-import com.developtech.efuelfo.ui.activities.stationOwner.TransactionDetailsActivity;
 import com.developtech.efuelfo.ui.activities.vehicleOwner.UserProfileActivity;
 import com.developtech.efuelfo.ui.dialogFragments.SelectFuelStation;
 import com.developtech.efuelfo.ui.dialogFragments.SelectVehicleOwnerDialog;
@@ -107,8 +106,10 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class HomeActivity extends MyActionBar implements NavigationView.OnNavigationItemSelectedListener, GoogleApiClient.ConnectionCallbacks,
-        GoogleApiClient.OnConnectionFailedListener, ResultCallback<LocationSettingsResult>, AwesomeToggle.OnCheckedChangeListner {
+public class HomeActivity extends MyActionBar implements NavigationView.OnNavigationItemSelectedListener,
+        GoogleApiClient.ConnectionCallbacks,
+        GoogleApiClient.OnConnectionFailedListener, ResultCallback<LocationSettingsResult>,
+        AwesomeToggle.OnCheckedChangeListner {
 
     static final int MY_PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 1;
     private static final String TAG = "DriverHome";
@@ -162,7 +163,6 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
                     dialogFragment.setData(appComponent, allFuelStationsList, HomeActivity.this);
                     dialogFragment.show(getSupportFragmentManager(), "select_owner");
                 }
-
             }
         }
 
@@ -203,11 +203,14 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
                     break;
                 }
                 case R.id.laySwitchOwner: {
+                 //   account_types=SPUtils.ACCOUNT_TYPES.FSO;
                     switch (/*appComponent.getSpUtils().getAccountType()*/
                     SPUtils.ACCOUNT_TYPES.FSO
+                            /*account_types*/
                     ) {
                         case DRV: {
-                            List<VehicleOwnerResponseModel> list = appComponent.getSpUtils().getVehicleOwnerResponse();
+                            List<VehicleOwnerResponseModel> list = appComponent.getSpUtils()
+                                    .getVehicleOwnerResponse();
                             SelectVehicleOwnerDialog dialogFragment = SelectVehicleOwnerDialog.newInstance("driver", list);
                             dialogFragment.setData(appComponent);
                             dialogFragment.show(getSupportFragmentManager(), "select_owner");
@@ -215,8 +218,8 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
                         }
                         case FSO: {
                             closeDrawer();
-                            appComponent.getServiceCaller().callService(appComponent.getAllApis().getFuelStations(),
-                                    getFuelStationListener);
+                            appComponent.getServiceCaller().callService(appComponent.getAllApis()
+                                            .getFuelStations(), getFuelStationListener);
                             break;
                         }
                         case OPR: {
@@ -256,12 +259,12 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
     public void initComponents() {
         navigationView = (NavigationView) findViewById(R.id.navigation);
 
-        // navigationView.getMenu().clear();
+        navigationView.getMenu().clear();
 
          account_types=SPUtils.ACCOUNT_TYPES.FSO;
-        if (appComponent.getSpUtils().getAccountType() != null) {
-            account_types = appComponent.getSpUtils().getAccountType();
-            account_types = SPUtils.ACCOUNT_TYPES.FSO;
+       // if (appComponent.getSpUtils().getAccountType() != null) {
+          //  account_types = appComponent.getSpUtils().getAccountType();
+          //  account_types = SPUtils.ACCOUNT_TYPES.FSO;
             if (account_types != null) {
                 if (account_types == SPUtils.ACCOUNT_TYPES.VCO) {
                     navigationView.inflateMenu(R.menu.drawer_main_drawer);
@@ -273,7 +276,7 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
                     navigationView.inflateMenu(R.menu.drawer_main_drawer_operator);
                 }
             }
-        }
+     //   }
         View headerView = navigationView.getHeaderView(0);
         tvUserName = headerView.findViewById(R.id.tvUserName);
         txtOpenClose = headerView.findViewById(R.id.txtOpenClose);
@@ -314,7 +317,6 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
                     appComponent.getSpUtils().getUserData().getImage()).placeholder(R.drawable.place_holder)
                     .into(ivProfilePic);
         }
-
         tvUserName.setText(appComponent.getSpUtils().getName());
 
 
@@ -329,7 +331,6 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
 
             }
         }
-
 
         navigationView.setNavigationItemSelectedListener(this);
         mDrawerToggle = new ActionBarDrawerToggle(this, drawer_layout,
@@ -347,7 +348,6 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
         drawer_layout.setDrawerListener(mDrawerToggle);
         bundle = getIntent().getExtras();
 
-
         if (bundle != null) {
             String page = bundle.getString("page");
             if (page != null && page.equalsIgnoreCase("refuel_page")) {
@@ -362,12 +362,14 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
         }
 
 
-        if (!appComponent.getSpUtils().isRegistered() && !appComponent.getSpUtils().getFirebaseToken().isEmpty()) {
+        if (!appComponent.getSpUtils().isRegistered() && !appComponent.getSpUtils().getFirebaseToken()
+                .isEmpty()) {
             RegisterRequest request = new RegisterRequest();
             request.deviceId = getDeviceId();
             request.setPushToken(appComponent.getSpUtils().getFirebaseToken());
             request.setDeviceType("ANDROID");
-            appComponent.getServiceCaller().callService(appComponent.getAllApis().registerDevice(request), new NetworkListener() {
+            appComponent.getServiceCaller().callService(appComponent.getAllApis().registerDevice(request),
+                    new NetworkListener() {
                 @Override
                 public void onSuccess(ResultModel<?> responseBody) {
                     if (!responseBody.getResultCode().equalsIgnoreCase("OK")) {
@@ -480,15 +482,21 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
                     if (model.isManager()) {
                         isOpratorManager = true;
                         navigationView.getMenu().findItem(R.id.nav_operator).setVisible(true);
-                        navigationView.getMenu().findItem(R.id.nav_operator_credit_agreement_list).setVisible(true);
-                        navigationView.getMenu().findItem(R.id.nav_operator_park_trans).setVisible(true);
-                        navigationView.getMenu().findItem(R.id.nav_operator_tank_types).setVisible(true);
+                        navigationView.getMenu().findItem(R.id.nav_operator_credit_agreement_list)
+                                .setVisible(true);
+                        navigationView.getMenu().findItem(R.id.nav_operator_park_trans)
+                                .setVisible(true);
+                        navigationView.getMenu().findItem(R.id.nav_operator_tank_types)
+                                .setVisible(true);
                     } else {
                         isOpratorManager = false;
                         navigationView.getMenu().findItem(R.id.nav_operator).setVisible(false);
-                        navigationView.getMenu().findItem(R.id.nav_operator_credit_agreement_list).setVisible(false);
-                        navigationView.getMenu().findItem(R.id.nav_operator_park_trans).setVisible(false);
-                        navigationView.getMenu().findItem(R.id.nav_operator_tank_types).setVisible(false);
+                        navigationView.getMenu().findItem(R.id.nav_operator_credit_agreement_list)
+                                .setVisible(false);
+                        navigationView.getMenu().findItem(R.id.nav_operator_park_trans)
+                                .setVisible(false);
+                        navigationView.getMenu().findItem(R.id.nav_operator_tank_types)
+                                .setVisible(false);
                     }
                 }
             }
@@ -502,14 +510,13 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
 
     void setHomeFrag() {
        // account_types = SPUtils.ACCOUNT_TYPES.VCO;
-
         account_types = SPUtils.ACCOUNT_TYPES.FSO;
         switch (account_types) {
             case FSO: {
                 laySwitchOwner.setVisibility(View.VISIBLE);
                 lytToggle.setVisibility(View.VISIBLE);
                 tvClickToSwitch.setText(getResources().getString(R.string.clicktoswitchfuel));
-                Log.e("fff","mmm:-"+appComponent.getSpUtils().getFuelStationModel());
+            //    Log.e("fff","mmm:-"+appComponent.getSpUtils().getFuelStationModel());
              //   tvOwnerName.setText(appComponent.getSpUtils().getFuelStationModel().getName());
             //    awesomeToggle.setIsChecked(appComponent.getSpUtils().getFuelStationModel().getIsOpen());
                /* if (appComponent.getSpUtils().getFuelStationModel().getIsOpen()) {
@@ -605,7 +612,8 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
     }
 
     Fragment getHomeFragment() {
-        switch (account_types) {
+        account_types = SPUtils.ACCOUNT_TYPES.FSO;
+        switch (account_types/*SPUtils.ACCOUNT_TYPES.FSO*/) {
             case DRV: {
                 return new DriverHomeFragment();
             }
@@ -623,6 +631,7 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
         }
         return null;
     }
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         Fragment fragment = null;
@@ -694,9 +703,11 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
                 break;
             }
             case R.id.nav_station_ow_sale_init: {
-                if (!appComponent.getSpUtils().getFuelStationModel().getFuelStationVerified()) {
-                    showMsg(getString(R.string.station_not_verified));
 
+                if (/*appComponent.getSpUtils().getFuelStationModel().getFuelStationVerified()*/
+                appComponent.getSpUtils()==null
+                ) {
+                    showMsg(getString(R.string.station_not_verified));
                 } else {
                     fragment = new SaleInitiationFragment();
                     setHomeTitle(getString(R.string.saleinitiation));
@@ -729,7 +740,9 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
                 break;
             }
             case R.id.nav_station_ow_verify_transaction: {
-                if (!appComponent.getSpUtils().getFuelStationModel().getFuelStationVerified()) {
+                if (/*appComponent.getSpUtils().getFuelStationModel().getFuelStationVerified()*/
+                appComponent.getSpUtils()==null
+                ) {
                     showMsg(getString(R.string.station_not_verified));
 
                 } else {
@@ -887,7 +900,7 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
         if (fragment != null) {
             if (fragment.getClass().getName().equals((String) getHomeClassName())) {
                 getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, fragment,
-                        fragment.getClass().getName()).addToBackStack(fragment.getClass().getName()).commit();
+                     fragment.getClass().getName()).addToBackStack(fragment.getClass().getName()).commit();
             } else {
                 getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, fragment).commit();
             }
@@ -895,6 +908,7 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
     }
 
     public Object getHomeClassName() {
+        account_types = SPUtils.ACCOUNT_TYPES.FSO;
         switch (account_types) {
             case DRV: {
                 return DriverHomeFragment.class.getName();
@@ -914,6 +928,9 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
 
     @Override
     public void onBackPressed() {
+
+        account_types = SPUtils.ACCOUNT_TYPES.FSO;
+
         if (drawer_layout.isDrawerOpen(Gravity.START)) {
             closeDrawer();
         } else {
@@ -936,11 +953,10 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
                 } else {
                     Fragment fragment = null;
                     FragmentTransaction ft = fm.beginTransaction();
-
+                   // account_types = SPUtils.ACCOUNT_TYPES.FSO;
                     switch (account_types) {
                         case DRV: {
                             fragment = new DriverHomeFragment();
-
                             break;
                         }
                         case VCO: {
@@ -1002,7 +1018,8 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
 //            ivProfilePic = headerView.findViewById(R.id.ivProfilePic);
             SignInResponseModel userResponseModel = appComponent.getSpUtils().getUserData();
             tvUserName.setText(userResponseModel.getFirstName() + " " + userResponseModel.getLastName());
-            Picasso.with(this).load(appComponent.getUtilFunctions().getImageFullUrl(userResponseModel.getImage())).placeholder(R.drawable.place_holder).into(ivProfilePic);
+            Picasso.with(this).load(appComponent.getUtilFunctions().getImageFullUrl(userResponseModel
+                    .getImage())).placeholder(R.drawable.place_holder).into(ivProfilePic);
         }
     }
 
@@ -1099,9 +1116,11 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
 
     public boolean checkLocationPermission(Activity activity) {
         boolean permission = false;
-        int hasLocationPerm = ContextCompat.checkSelfPermission(activity, Manifest.permission.ACCESS_COARSE_LOCATION);
+        int hasLocationPerm = ContextCompat.checkSelfPermission(activity, Manifest.permission.
+                ACCESS_COARSE_LOCATION);
         if (hasLocationPerm != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(activity, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION},
+            ActivityCompat.requestPermissions(activity, new String[]{Manifest.permission.
+                            ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION},
                     MY_PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION);
         } else {
             permission = true;
@@ -1171,7 +1190,8 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
         int resultCode = apiAvailability.isGooglePlayServicesAvailable(this);
         if (resultCode != ConnectionResult.SUCCESS) {
             if (apiAvailability.isUserResolvableError(resultCode)) {
-                apiAvailability.getErrorDialog(this, resultCode, PLAY_SERVICES_RESOLUTION_REQUEST).show();
+                apiAvailability.getErrorDialog(this, resultCode, PLAY_SERVICES_RESOLUTION_REQUEST)
+                        .show();
             } else {
                 Log.d(TAG, "This device is not supported.");
 //                getActivity().finish();
@@ -1181,10 +1201,10 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
         Log.d(TAG, "This device is supported.");
         return true;
     }
-
     private void showAlert() {
         final AlertDialog.Builder dialog = new AlertDialog.Builder(this);
-        dialog.setTitle("Enable Location").setMessage("Your Locations Settings is set to 'Off'.\nPlease Enable Location to " +
+        dialog.setTitle("Enable Location").setMessage("Your Locations Settings is set to 'Off'." +
+                "\nPlease Enable Location to " +
                 "use this app")
                 .setPositiveButton("Location Settings", new DialogInterface.OnClickListener() {
                     @Override
@@ -1201,22 +1221,21 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
                 });
         dialog.show();
     }
-
     @Override
     protected void onResume() {
         super.onResume();
-
         if (ivProfilePic != null) {
-            if (appComponent.getSpUtils().getUserData() != null && appComponent.getSpUtils().getUserData().getImage() != null
+            if (appComponent.getSpUtils().getUserData() != null && appComponent.getSpUtils().getUserData()
+                    .getImage() != null
                     && !appComponent.getSpUtils().getUserData().getImage().trim().isEmpty()) {
-                Picasso.with(this).load(appComponent.getAllUrls().BASE_IMAGE_URL + appComponent.getSpUtils()
-                        .getUserData().getImage()).placeholder(R.drawable.place_holder).into(ivProfilePic);
+                Picasso.with(this).load(appComponent.getAllUrls().BASE_IMAGE_URL +
+                        appComponent.getSpUtils()
+                        .getUserData().getImage()).placeholder(R.drawable.place_holder)
+                        .into(ivProfilePic);
             }
         }
     }
-
     boolean isAvailable;
-
     @Override
     public void onChecked(boolean isChecked) {
         FuelStationAvailabilityRequestModel requestModel = new FuelStationAvailabilityRequestModel();
@@ -1231,7 +1250,8 @@ public class HomeActivity extends MyActionBar implements NavigationView.OnNaviga
         isAvailable = isChecked;
 
 //        requestModel.setFuelStationId(appComponent.getSpUtils().getFuelStationModel().getId());
-        appComponent.getServiceCaller().callService(appComponent.getAllApis().setStationAvailability(requestModel),
+        appComponent.getServiceCaller().callService(appComponent.getAllApis()
+                        .setStationAvailability(requestModel),
                 stationAvailabilityListener);
     }
 

@@ -13,13 +13,11 @@ public class CustomTextView extends android.support.v7.widget.AppCompatTextView 
     public CustomTextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init(attrs);
-
     }
 
     public CustomTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(attrs);
-
     }
 
     public CustomTextView(Context context) {
@@ -45,5 +43,9 @@ public class CustomTextView extends android.support.v7.widget.AppCompatTextView 
 
         }
     }
+
+
+
+
 }
 

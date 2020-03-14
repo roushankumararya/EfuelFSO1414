@@ -36,10 +36,10 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int places_ic_clear = 0x7f08022a;
-        public static final int places_ic_search = 0x7f08022b;
-        public static final int powered_by_google_dark = 0x7f08022c;
-        public static final int powered_by_google_light = 0x7f08022d;
+        public static final int places_ic_clear = 0x7f08022b;
+        public static final int places_ic_search = 0x7f08022c;
+        public static final int powered_by_google_dark = 0x7f08022d;
+        public static final int powered_by_google_light = 0x7f08022e;
     }
     public static final class id {
         private id() {}

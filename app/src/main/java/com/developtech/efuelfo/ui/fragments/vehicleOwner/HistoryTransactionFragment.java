@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 import com.developtech.efuelfo.R;
 import com.developtech.efuelfo.listeners.OnItemClickListener;
 import com.developtech.efuelfo.model.responseModel.PaymentHistoryResponseModel;
-import com.developtech.efuelfo.ui.activities.stationOwner.TransactionDetailsActivity;
+import com.developtech.efuelfo.ui.activities.common.TransactionDetailsActivity;
 import com.developtech.efuelfo.ui.adapters.stationOwner.PaymentHistoryAdapter;
 import com.developtech.efuelfo.ui.fragments.BaseFragment;
 
@@ -23,6 +23,8 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+
+//import com.developtech.efuelfo.ui.activities.stationOwner.TransactionDetailsActivity;
 
 public class HistoryTransactionFragment extends BaseFragment implements OnItemClickListener {
 

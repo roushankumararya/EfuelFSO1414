@@ -561,18 +561,18 @@ public final class R {
         public static final int abc_vector_test = 0x7f08005b;
         public static final int fastscroll__default_bubble = 0x7f0800e7;
         public static final int fastscroll__default_handle = 0x7f0800e8;
-        public static final int notification_action_background = 0x7f080207;
-        public static final int notification_bg = 0x7f080209;
-        public static final int notification_bg_low = 0x7f08020a;
-        public static final int notification_bg_low_normal = 0x7f08020b;
-        public static final int notification_bg_low_pressed = 0x7f08020c;
-        public static final int notification_bg_normal = 0x7f08020d;
-        public static final int notification_bg_normal_pressed = 0x7f08020e;
-        public static final int notification_icon_background = 0x7f08020f;
-        public static final int notification_template_icon_bg = 0x7f080211;
-        public static final int notification_template_icon_low_bg = 0x7f080212;
-        public static final int notification_tile_bg = 0x7f080213;
-        public static final int notify_panel_notification_icon_bg = 0x7f080216;
+        public static final int notification_action_background = 0x7f080208;
+        public static final int notification_bg = 0x7f08020a;
+        public static final int notification_bg_low = 0x7f08020b;
+        public static final int notification_bg_low_normal = 0x7f08020c;
+        public static final int notification_bg_low_pressed = 0x7f08020d;
+        public static final int notification_bg_normal = 0x7f08020e;
+        public static final int notification_bg_normal_pressed = 0x7f08020f;
+        public static final int notification_icon_background = 0x7f080210;
+        public static final int notification_template_icon_bg = 0x7f080212;
+        public static final int notification_template_icon_low_bg = 0x7f080213;
+        public static final int notification_tile_bg = 0x7f080214;
+        public static final int notify_panel_notification_icon_bg = 0x7f080217;
     }
     public static final class id {
         private id() {}
@@ -780,7 +780,7 @@ public final class R {
         public static final int abc_toolbar_collapse_description = 0x7f110061;
         public static final int fastscroll__app_name = 0x7f1101bb;
         public static final int search_menu_title = 0x7f110380;
-        public static final int status_bar_notification_info_overflow = 0x7f1103c3;
+        public static final int status_bar_notification_info_overflow = 0x7f1103c4;
     }
     public static final class style {
         private style() {}

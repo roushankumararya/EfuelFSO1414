@@ -6,7 +6,7 @@
         <item
             android:id="@+id/nav_station_ow_home"
             android:title="@string/home"
-            android:visible="true"
+            android:visible="false"
             />
 
         <item
@@ -29,7 +29,7 @@
         <item
             android:id="@+id/nav_station_ow_sale_history"
             android:title="@string/saleHistoryandInvoices"
-            android:visible="true"
+            android:visible="false"
             />
         <item
             android:id="@+id/nav_station_ow_credit_agreement_list"
@@ -50,12 +50,12 @@
         <item
             android:id="@+id/nav_station_ow_tank_types"
             android:title="@string/tanktypes"
-            android:visible="true"
+            android:visible="false"
             />
         <item
             android:id="@+id/nav_station_ow_total_sale_by_fuel_type"
             android:title="@string/totalsales_by_fuel"
-            android:visible="true"
+            android:visible="false"
             />
         <!--<item-->
             <!--android:id="@+id/nav_station_ow_total_sale"-->
@@ -63,19 +63,19 @@
         <item
             android:id="@+id/nav_station_ow_fuel_station"
             android:title="@string/my_fuel_station"
-            android:visible="true"
+            android:visible="false"
             />
 
       <item
             android:id="@+id/nav_station_ow_cash_transaction"
             android:title="@string/cash_transaction"
-          android:visible="true"
+          android:visible="false"
           />
 
         <item
             android:id="@+id/nav_station_ow_reports"
             android:title="@string/reports"
-            android:visible="true"
+            android:visible="false"
             />
       <!--&lt;!&ndash;  <item-->
             <!--android:id="@+id/nav_sto_mymanagers"-->

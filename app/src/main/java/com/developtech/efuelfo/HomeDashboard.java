@@ -50,7 +50,7 @@ import com.developtech.efuelfo.network.NetworkListener;
 import com.developtech.efuelfo.ui.activities.common.HomeActivity;
 import com.developtech.efuelfo.ui.activities.common.MyActionBar;
 import com.developtech.efuelfo.ui.activities.stationOwner.RequestPendingActivity;
-import com.developtech.efuelfo.ui.activities.stationOwner.TransactionDetailsActivity;
+// import com.developtech.efuelfo.ui.activities.stationOwner.TransactionDetailsActivity;
 import com.developtech.efuelfo.ui.activities.vehicleOwner.UserProfileActivity;
 import com.developtech.efuelfo.ui.dialogFragments.SelectFuelStation;
 import com.developtech.efuelfo.ui.dialogFragments.SelectVehicleOwnerDialog;
@@ -131,9 +131,11 @@ public class HomeDashboard extends MyActionBar implements
 
         public void onLocationChanged(Location location) {
             if (location != null) {
-                appComponent.getSpUtils().saveCurrentLatLng(location.getLatitude() + "", location.getLongitude() + "");
+                appComponent.getSpUtils().saveCurrentLatLng(location.getLatitude() + "",
+                        location.getLongitude() + "");
                 updateLocApi(location);
-                Log.d("LocationIssue", "latitude: " + location.getLatitude() + ", lng: " + location.getLongitude());
+                Log.d("LocationIssue", "latitude: " + location.getLatitude() + ", lng: "
+                        + location.getLongitude());
             }
         }
 
@@ -212,7 +214,8 @@ public class HomeDashboard extends MyActionBar implements
                     switch (appComponent.getSpUtils().getAccountType()) {
                         case DRV: {
                             List<VehicleOwnerResponseModel> list = appComponent.getSpUtils().getVehicleOwnerResponse();
-                            SelectVehicleOwnerDialog dialogFragment = SelectVehicleOwnerDialog.newInstance("driver", list);
+                            SelectVehicleOwnerDialog dialogFragment = SelectVehicleOwnerDialog.newInstance
+                                    ("driver", list);
                             dialogFragment.setData(appComponent);
                             dialogFragment.show(getSupportFragmentManager(), "select_owner");
                             break;
@@ -221,7 +224,8 @@ public class HomeDashboard extends MyActionBar implements
 
                             closeDrawer();
 
-                            appComponent.getServiceCaller().callService(appComponent.getAllApis().getFuelStations(),
+                            appComponent.getServiceCaller().callService(appComponent.getAllApis()
+                                            .getFuelStations(),
                                     getFuelStationListener);
 
                             break;
@@ -229,7 +233,8 @@ public class HomeDashboard extends MyActionBar implements
                         case OPR: {
                             drawer_layout.closeDrawer(Gravity.START, true);
                             showProgress();
-                            appComponent.getServiceCaller().callService(appComponent.getAllApis().getFuelStationOwners(), getOwnersListener);
+                            appComponent.getServiceCaller().callService(appComponent.getAllApis()
+                                    .getFuelStationOwners(), getOwnersListener);
                         }
                     }
 
@@ -475,7 +480,7 @@ public class HomeDashboard extends MyActionBar implements
             }
             if (type.equalsIgnoreCase(appComponent.getSpUtils().getAccountType().toString())) {
                 if (action.equalsIgnoreCase(TRANS)) {
-                    newIntent(TransactionDetailsActivity.class, b, false);
+                 //   newIntent(TransactionDetailsActivity.class, b, false);
                 } else if (action.equalsIgnoreCase(CREDIT)) {
                     newIntent(RequestPendingActivity.class, b, false);
                 } else if (action.equalsIgnoreCase(VERIFY)) {
@@ -557,7 +562,8 @@ public class HomeDashboard extends MyActionBar implements
     }
 
     void setHomeFrag() {
-        switch (account_types) {
+        account_types = SPUtils.ACCOUNT_TYPES.FSO;
+        switch (account_types/*SPUtils.ACCOUNT_TYPES.FSO*/) {
             case FSO: {
                 laySwitchOwner.setVisibility(View.VISIBLE);
                 lytToggle.setVisibility(View.VISIBLE);
@@ -658,7 +664,8 @@ public class HomeDashboard extends MyActionBar implements
     }
 
     Fragment getHomeFragment() {
-        switch (account_types) {
+        account_types = SPUtils.ACCOUNT_TYPES.FSO;
+        switch (account_types/*SPUtils.ACCOUNT_TYPES.FSO*/) {
             case DRV: {
                 return new DriverHomeFragment();
             }
@@ -953,7 +960,8 @@ public class HomeDashboard extends MyActionBar implements
     }
 
     public Object getHomeClassName() {
-        switch (account_types) {
+        account_types = SPUtils.ACCOUNT_TYPES.FSO;
+        switch (account_types/* SPUtils.ACCOUNT_TYPES.FSO*/) {
             case DRV: {
                 return DriverHomeFragment.class.getName();
             }
@@ -994,8 +1002,8 @@ public class HomeDashboard extends MyActionBar implements
                 } else {
                     Fragment fragment = null;
                     FragmentTransaction ft = fm.beginTransaction();
-
-                    switch (account_types) {
+                    account_types = SPUtils.ACCOUNT_TYPES.FSO;
+                    switch (account_types /*SPUtils.ACCOUNT_TYPES.FSO*/) {
                         case DRV: {
                             fragment = new DriverHomeFragment();
 

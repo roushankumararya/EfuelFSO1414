@@ -11,20 +11,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.developtech.efuelfo.app.AppComponent;
 import com.developtech.efuelfo.app.MyApplication;
+import com.developtech.efuelfo.app.UserPreference;
 import com.developtech.efuelfo.listeners.CallbackListener;
-import com.developtech.efuelfo.listeners.OnItemClickListener;
 import com.developtech.efuelfo.model.ResultModel;
 import com.developtech.efuelfo.model.requestModel.AddFuelStationRequestModel;
 import com.developtech.efuelfo.model.responseModel.GetFuelStationResponseModel;
 import com.developtech.efuelfo.model.responseModel.SignInResponseModel;
 import com.developtech.efuelfo.network.NetworkListener;
-import com.developtech.efuelfo.ui.activities.common.HomeActivity;
 import com.developtech.efuelfo.ui.activities.fuelStation.StationRegistrationActivity;
 import com.developtech.efuelfo.ui.adapters.stationOwner.FuelStationAdapter;
 import com.developtech.efuelfo.ui.dialogFragments.AddLocationDialog;
@@ -36,10 +36,10 @@ import java.util.List;
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
 
-public class EfuelStationDteail extends AppCompatActivity implements OnItemClickListener, CallbackListener {
+public class EfuelStationDteail extends AppCompatActivity implements AdapterView.OnItemClickListener, CallbackListener {
     public AppComponent appComponent;
     EditText state, city, addressline1, addressline2, registeranme, dealercodenumber, usergstin;
-    Button btnnextpage,btnback;
+    Button btnnextpage, btnback;
     //AppComponent appComponent;
     ImageView gmap;
     NetworkListener addListener;
@@ -54,82 +54,69 @@ public class EfuelStationDteail extends AppCompatActivity implements OnItemClick
     String getoption;
 
 
-
-
-
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main5);
-        Intent intent=getIntent();
-        usename=intent.getStringExtra("UserName");
-        usealstname=intent.getStringExtra("UserLastNAme");
-        useemail=intent.getStringExtra("UserEmail");
-        usedatbirth=intent.getStringExtra("DateBirth");
-         getoption=intent.getStringExtra("GetOption");
-        registeranme=(EditText)findViewById(R.id.registrationnamefuelstation);
-        dealercodenumber=(EditText)findViewById(R.id.dealercodefuelstation);
+        Intent intent = getIntent();
+        usename = intent.getStringExtra("UserName");
+        usealstname = intent.getStringExtra("UserLastNAme");
+        useemail = intent.getStringExtra("UserEmail");
+        usedatbirth = intent.getStringExtra("DateBirth");
+        getoption = intent.getStringExtra("GetOption");
+        registeranme = (EditText) findViewById(R.id.registrationnamefuelstation);
+        dealercodenumber = (EditText) findViewById(R.id.dealercodefuelstation);
         addressline2 = (EditText) findViewById(R.id.addresslineonefuelstation);
         addressline1 = (EditText) findViewById(R.id.addresslinetwofuelstation);
         state = (EditText) findViewById(R.id.userstatefuelstation);
         city = (EditText) findViewById(R.id.usercityfuelstation);
         usergstin = (EditText) findViewById(R.id.usergstinfuelstation);
         gmap = (ImageView) findViewById(R.id.opengmapfuelstation);
-        btnback=(Button)findViewById(R.id.btn_fuel_back);
+        btnback = (Button) findViewById(R.id.btn_fuel_back);
         btnnextpage = (Button) findViewById(R.id.fuelstationnext);
         appComponent = ((MyApplication) getApplicationContext()).getAppComponent();
         btnnextpage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(TextUtils.isEmpty(registeranme.getText().toString())){
+                if (TextUtils.isEmpty(registeranme.getText().toString())) {
                     registeranme.setError("Empty field not allowed");
                     registeranme.requestFocus();
-                }else if(TextUtils.isEmpty(dealercodenumber.getText().toString())){
+                } else if (TextUtils.isEmpty(dealercodenumber.getText().toString())) {
                     dealercodenumber.setError("Empty field not allowed");
                     dealercodenumber.requestFocus();
-                }else if(TextUtils.isEmpty(addressline1.getText().toString())){
+                } else if (TextUtils.isEmpty(addressline1.getText().toString())) {
                     addressline1.setError("Empty field not allowed");
                     addressline1.requestFocus();
-                }
-                else if(TextUtils.isEmpty(addressline2.getText().toString())){
+                } else if (TextUtils.isEmpty(addressline2.getText().toString())) {
                     addressline2.setError("Empty field not allowed");
                     addressline2.requestFocus();
-                }
-                else if(TextUtils.isEmpty(state.getText().toString())){
+                } else if (TextUtils.isEmpty(state.getText().toString())) {
                     state.setError("Empty field not allowed");
                     state.requestFocus();
-                }
-                else if(TextUtils.isEmpty(city.getText().toString())){
+                } else if (TextUtils.isEmpty(city.getText().toString())) {
                     city.setError("Empty field not allowed");
                     city.requestFocus();
-                }
-                else if(TextUtils.isEmpty(usergstin.getText().toString())){
+                } else if (TextUtils.isEmpty(usergstin.getText().toString())) {
                     usergstin.setError("Empty field not allowed");
                     usergstin.requestFocus();
-                }else {
+                } else {
 
-                    String regname=registeranme.getText().toString();
-                    String dealcode=dealercodenumber.getText().toString();
-                    String addone=addressline1.getText().toString();
-                    String addtwo=addressline2.getText().toString();
-                    String stat=state.getText().toString();
-                    String cty=city.getText().toString();
-                    String usegstn=usergstin.getText().toString();
+                    String regname = registeranme.getText().toString();
+                    String dealcode = dealercodenumber.getText().toString();
+                    String addone = addressline1.getText().toString();
+                    String addtwo = addressline2.getText().toString();
+                    String stat = state.getText().toString();
+                    String cty = city.getText().toString();
+                    String usegstn = usergstin.getText().toString();
 
-
-                 //   final RequestBody LoginId = RequestBody.create(MediaType.parse("multipart/form-data"), model.getId());
+                    //   final RequestBody LoginId = RequestBody.create(MediaType.parse("multipart/form-data"), model.getId());
                     final RequestBody fstname = RequestBody.create(MediaType.parse("multipart/form-data"), regname);
                     final RequestBody dc = RequestBody.create(MediaType.parse("multipart/form-data"), dealcode);
-                    final RequestBody ad = RequestBody.create(MediaType.parse("multipart/form-data"),  addone+addtwo);
-                  // final RequestBody adtwo = RequestBody.create(MediaType.parse("multipart/form-data"), addtwo);
-                    final RequestBody st = RequestBody.create(MediaType.parse("multipart/form-data"),stat);
+                    final RequestBody ad = RequestBody.create(MediaType.parse("multipart/form-data"), addone + addtwo);
+                    // final RequestBody adtwo = RequestBody.create(MediaType.parse("multipart/form-data"), addtwo);
+                    final RequestBody st = RequestBody.create(MediaType.parse("multipart/form-data"), stat);
                     final RequestBody ct = RequestBody.create(MediaType.parse("multipart/form-data"), cty);
                     final RequestBody ugst = RequestBody.create(MediaType.parse("multipart/form-data"), usegstn);
-
-
-
 
                     final RequestBody usnm = RequestBody.create(MediaType.parse("multipart/form-data"), usename);
                     final RequestBody uslsnm = RequestBody.create(MediaType.parse("multipart/form-data"), usealstname);
@@ -138,10 +125,11 @@ public class EfuelStationDteail extends AppCompatActivity implements OnItemClick
                     final RequestBody usgtoption = RequestBody.create(MediaType.parse("multipart/form-data"), getoption);
 
 
-
-
+                    UserPreference userPreference=new UserPreference(getApplicationContext()).getInstance(getApplicationContext());
+                    userPreference.setAddress(addressline1.getText().toString());
+                    userPreference.setAddresstwo(addressline2.getText().toString());
                     appComponent.getServiceCaller().callService(appComponent.getAllApis().
-                            updateProfile(fstname,dc,ad,st,ct,ugst,usnm,uslsnm,usem,usdb,null), listener);
+                            updateProfile(fstname, dc, ad, st, ct, ugst, usnm, uslsnm, usem, usdb, null), listener);
 
                 }
             }
@@ -150,45 +138,57 @@ public class EfuelStationDteail extends AppCompatActivity implements OnItemClick
         btnback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),UserPersonalDeatil.class);
-                startActivity(intent);
-                /*finish();*/
 
+                try {
+                    //  onBackPressed();
+                    finish();
+
+                } catch (Exception ex) {
+                   /* Toast.makeText(getApplicationContext(), ex.toString(),
+                            Toast.LENGTH_LONG).show();*/
+                }
+               /* Intent intent=new Intent(getApplicationContext(),UserPersonalDeatil.class);
+                startActivity(intent);*/
+                /*finish();*/
             }
         });
-
         gmap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
                 switch (v.getId()) {
                     case R.id.opengmapfuelstation: {
                         checkLocationPermission(EfuelStationDteail.this);
 
-
-
                         break;
                     }
                 }
-
             }
         });
-
     }
+    @Override
+    public void onBackPressed() {
+        // Write your code here
+        super.onBackPressed();
+    }
+
+    public void Back(View v) {
+        onBackPressed();
+    }
+
+
     NetworkListener listener = new NetworkListener() {
         @Override
         public void onSuccess(ResultModel<?> responseBody) {
-            Log.e("kk/mklklmkl","jjj"+responseBody.getResutData()+"\n"+responseBody.getMessage());
+            Log.e("kk/mklklmkl", "jjj" + responseBody.getResutData() + "\n" + responseBody.getMessage());
             if (responseBody.getResultCode().equalsIgnoreCase(SPUtils.API_CODES.OK.toString())) {
 
                 SignInResponseModel responseModel = (SignInResponseModel) responseBody.getResutData();
 
-                String token = appComponent.getSpUtils().getUserData().getToken();
+              /*  String token = appComponent.getSpUtils().getUserData().getToken();
                 responseModel.setToken(token);
-                appComponent.getSpUtils().saveUserData(responseModel);
+                appComponent.getSpUtils().saveUserData(responseModel);*/
 
-                Intent intent=new Intent(getApplicationContext(),UserAccountDetail.class);
+                Intent intent = new Intent(getApplicationContext(), UserAccountDetail.class);
                 startActivity(intent);
 
             }
@@ -197,23 +197,21 @@ public class EfuelStationDteail extends AppCompatActivity implements OnItemClick
         @Override
         public void onError(String msg) {
             //
-            if (msg.contains("Unauthorized")){
-                Intent dashBoard=new Intent(getApplicationContext(), HomeActivity.class);
+            if (msg.contains("Unauthorized")) {
+                Intent dashBoard = new Intent(getApplicationContext(), UserAccountDetail.class);
                 startActivity(dashBoard);
             }
             //Log.e(EfuelStationDteail.class.getSimpleName(),"onError "+msg);
-
         }
-
         @Override
         public void onComplete() {
         }
-
         @Override
         public void onStart() {
 
         }
     };
+
     public void checkLocationPermission(Activity activity) {
         int hasLocationPerm = ContextCompat.checkSelfPermission(activity,
                 Manifest.permission.ACCESS_COARSE_LOCATION);
@@ -340,11 +338,6 @@ public class EfuelStationDteail extends AppCompatActivity implements OnItemClick
         }
     };
 
-    @Override
-    public void onItemClick(View view, int position) {
-
-    }
-
 
     @Override
     public void onAddLocation(AddFuelStationRequestModel address) {
@@ -355,34 +348,69 @@ public class EfuelStationDteail extends AppCompatActivity implements OnItemClick
         // addressline1.setText(address.getAddress());
         String str1 = address.getState();
         String str2 = address.getCity();
+        String str3 = "India";
+        String str4;
+        int num = 0;
+        // String str4="pincode";
         String addres = address.getAddress();
         String addresline1 = "";
         String adressline2 = "";
         String[] ss = address.getAddress().split(",");
+        //  isMatchCharacter(ss);
+
         for (int i = 0; i < ss.length; i++) {
-
-
-             Log.e("kkk","str1"+str1+" "+ss[i]);
-             Log.e("uuu","str2"+str2+" "+ss[i]);
-                if (i==0) {
-                    adressline2= adressline2+""+ss[i];
-                 //   adressline1= adressline1+""+ss[i];
-                }else if (i==1) {
-                    adressline2=adressline2+" "+ss[i];
-                  //  adressline1=adressline1+" "+ss[i];
-                }else {
-                    addresline1=addresline1+""+ss[i];
-                 //   addresline2=addresline2+""+ss[i];
-                }
+            Log.e("kkk", "str1" + str1 + " " + ss[i]);
+            Log.e("uuu", "str2" + str2 + " " + ss[i]);
+            if (i == 0) {
+                adressline2 = adressline2 + "" + ss[i];
+                //   adressline1= adressline1+""+ss[i];
+            } else if (i == 1) {
+                adressline2 = adressline2 + " " + ss[i];
+                //  adressline1=adressline1+" "+ss[i];
+            } else {
+                addresline1 = addresline1 + "" + ss[i];
+                //   addresline2=addresline2+""+ss[i];
             }
+        }
         if (!addresline1.isEmpty()) {
-       // if (!addresline2.isEmpty()) {
-            addresline1 = addresline1.replace(str1, " ").replace(str2, " ");
-           // addresline2 = addresline2.replace(str1, " ").replace(str2, " ");
-        }
-            addressline1.setText("" + addresline1);
-            addressline2.setText("" + adressline2);
+            // if (!addresline2.isEmpty()) {
 
+              /*for (int i = 0; i < ss[i].length(); i++) {
+                    Pattern ps = Pattern.compile("[0-9]+");
+                    Matcher ms = ps.matcher(ss[i]);
+                    while (ms.find()) {
+                        Log.e("ttt", "num" + ms);
+                        System.out.println(ms.group());
+                    }
+                }*/
 
+            if(addresline1!=null){
+                addresline1 = addresline1.replace(str1, " ").replace(str2, " ")
+                        .replace(str3,"").trim();
+            }
+            /*addresline1 = addresline1.replace(str1, " ").replace(str2, " ")
+                    .replace(str3,"").trim();*/
+            // addresline2 = addresline2.replace(str1, " ").replace(str2, " ");
         }
+
+      /*for(int i=0;i<ss[i].length();i++){
+          Pattern ps = Pattern.compile("[0-9]+");
+          Matcher ms = ps.matcher(ss[i]);
+          boolean bs = ms.matches();
+         return ;
+      }*/
+        addressline1.setText("" + addresline1);
+        addressline2.setText("" + adressline2);
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+    }
+    /*public boolean isMatchCharacter(String[] name) {
+        Pattern ps = Pattern.compile("[0-9]+");
+        Matcher ms = ps.matcher(name);
+        boolean bs = ms.matches();
+        return bs;
+    }*/
 }

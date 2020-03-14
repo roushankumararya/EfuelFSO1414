@@ -8,25 +8,25 @@
     android:background="@drawable/adapter_fuelprices_back"
     android:layout_height="wrap_content">
 
-    <com.developtech.efuelfo.customs.CustomTextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/TextViewMedium"
-        android:id="@+id/tvTitle"/>
+  <com.developtech.efuelfo.customs.CustomTextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      style="@style/TextViewMedium"
+      android:id="@+id/tvTitle"/>
 
-    <com.developtech.efuelfo.customs.CustomTextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/TextViewNormal"
-        android:layout_marginTop="5dp"
-        android:id="@+id/tvMsg"/>
+  <com.developtech.efuelfo.customs.CustomTextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      style="@style/TextViewNormal"
+      android:layout_marginTop="5dp"
+      android:id="@+id/tvMsg"/>
 
-    <com.developtech.efuelfo.customs.CustomTextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/TextViewSmall"
-        android:gravity="end"
-        android:layout_marginTop="5dp"
-        android:id="@+id/tvTime"/>
+  <com.developtech.efuelfo.customs.CustomTextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      style="@style/TextViewSmall"
+      android:gravity="end"
+      android:layout_marginTop="5dp"
+      android:id="@+id/tvTime"/>
 
 </LinearLayout>

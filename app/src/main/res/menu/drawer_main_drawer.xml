@@ -5,23 +5,28 @@
 
         <item
             android:id="@+id/nav_home"
-            android:title="@string/home_caps" />
+            android:title="@string/home_caps"
+            android:visible="false"/>
         <item
             android:id="@+id/nav_refuel"
             android:title="@string/refuel_caps" />
 
         <item
             android:id="@+id/nav_driver_vehicle"
+            android:visible="false"
             android:title="@string/my_drivers_vehicles" />
         <item
             android:id="@+id/nav_track_driver"
+            android:visible="false"
             android:title="@string/TrackDriver1" />
 
         <item
             android:id="@+id/nav_near_by_fuel_station"
+            android:visible="false"
             android:title="@string/Nearbyfuelpump1" />
         <item
             android:id="@+id/nav_payment_history"
+            android:visible="false"
             android:title="@string/PaymentHistoryandInvoicesCaps" />
 
         <item
@@ -29,17 +34,21 @@
             android:title="@string/MyCalist_txt" />
         <item
             android:id="@+id/nav_pay4pal"
+            android:visible="false"
             android:title="@string/pay4pal_caps" />
 
         <item
             android:id="@+id/nav_favourites"
+            android:visible="false"
             android:title="@string/myfvrts" />
 
         <item
             android:id="@+id/nav_expense"
+            android:visible="false"
             android:title="@string/expense" />
         <item
             android:id="@+id/nav_service"
+            android:visible="false"
             android:title="@string/service" />
     </group>
 

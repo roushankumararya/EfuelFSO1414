@@ -144,9 +144,9 @@ public class StationRegistrationActivity extends MyActionBar {
         @Override
         public void onSuccess(ResultModel<?> responseBody) {
 
-            String token = appComponent.getSpUtils().getUserData().getToken();
+            // String token = appComponent.getSpUtils().getUserData().getToken();
             SignInResponseModel responseModel = (SignInResponseModel) responseBody.getResutData();
-            responseModel.setToken(token);
+          //  responseModel.setToken(token);
             appComponent.getSpUtils().saveUserData(responseModel);
             isProfileDone = true;
             btnContinue.performClick();

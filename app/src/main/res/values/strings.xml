@@ -114,7 +114,7 @@
     <string name="tanktypes">Tank Types</string>
     <string name="totalsales">Total Sales</string>
     <string name="home">Home</string>
-
+    <string name="space">\u0020</string>
     <string name="navigation_drawer_open">Open navigation Drawer</string>
     <string name="navigation_drawer_close">Close navigation Drawer</string>
 

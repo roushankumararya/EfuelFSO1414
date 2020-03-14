@@ -52,10 +52,10 @@ public class NetworkModule {
     @Singleton
     public Interceptor getInterceptor(final SPUtils spUtils) {
         String tokenTmp = "";
-        if(spUtils.getUserData()!=null && spUtils.getUserData().getToken()!=null)
+        /*if(spUtils.getUserData()!=null && spUtils.getUserData().getToken()!=null)
         {
             tokenTmp = spUtils.getUserData().getToken();
-        }
+        }*/
         final String token = tokenTmp;
 
         Interceptor interceptor = new Interceptor() {

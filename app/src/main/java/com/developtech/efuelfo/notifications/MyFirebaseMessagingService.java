@@ -35,13 +35,15 @@ import com.developtech.efuelfo.app.MyApplication;
 import com.developtech.efuelfo.model.requestModel.OperatorsResponseModel;
 import com.developtech.efuelfo.model.responseModel.ExtraNotificationModel;
 import com.developtech.efuelfo.model.responseModel.GetFuelStationResponseModel;
+import com.developtech.efuelfo.ui.activities.common.TransactionDetailsActivity;
 import com.developtech.efuelfo.ui.activities.stationOwner.RequestPendingActivity;
-import com.developtech.efuelfo.ui.activities.stationOwner.TransactionDetailsActivity;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 import com.google.gson.Gson;
 
 import java.util.List;
+
+//import com.developtech.efuelfo.ui.activities.stationOwner.TransactionDetailsActivity;
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
 

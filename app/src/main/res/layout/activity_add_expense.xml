@@ -9,283 +9,283 @@
     android:id="@+id/rootLayout"
     tools:context="com.developtech.efuelfo.ui.activities.vehicleOwner.AddExpenseActivity">
 
-    <LinearLayout
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <include layout="@layout/layout_app_bar" />
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="0dp"
+        android:layout_weight="9">
 
-        <include layout="@layout/layout_app_bar" />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:padding="15dp">
 
-        <ScrollView
+        <com.developtech.efuelfo.customs.CustomTextView
+            style="@style/TextViewNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:gravity="start"
+            android:text="@string/vehicle"
+            app:textAllCaps="true" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sendbuttonheight"
+            android:layout_marginTop="5dp">
+
+          <Spinner
+              android:id="@+id/spinnerVehicle"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/sendbuttonheight"
+              android:background="@drawable/corner_background" />
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentEnd="true"
+              android:layout_centerVertical="true"
+              android:layout_marginEnd="25dp"
+              android:contentDescription="@string/drop_down"
+              android:src="@drawable/dropdown" />
+        </RelativeLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="9">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginRight="10dp"
+              android:layout_weight="1"
+              android:orientation="vertical">
+
+            <com.developtech.efuelfo.customs.CustomTextView
+                style="@style/TextViewNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:gravity="start"
+                android:text="@string/date"
+                app:textAllCaps="true" />
+
+            <com.developtech.efuelfo.customs.CustomTextView
+                android:id="@+id/tvDate"
+                style="@style/TextViewNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/corner_white_background"
+                android:padding="12dp"
+                android:textColor="@android:color/black" />
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_weight="1"
+              android:orientation="vertical">
+
+            <com.developtech.efuelfo.customs.CustomTextView
+                style="@style/TextViewNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:gravity="start"
+                android:text="@string/time"
+                app:textAllCaps="true" />
+
+            <com.developtech.efuelfo.customs.CustomTextView
+                android:id="@+id/tvTime"
+                style="@style/TextViewNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/corner_white_background"
+                android:padding="12dp"
+                android:textColor="@android:color/black" />
+
+          </LinearLayout>
+
+        </LinearLayout>
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            style="@style/TextViewNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:text="@string/odometer" />
+
+        <com.developtech.efuelfo.customs.CustomEditText
+            android:id="@+id/etOdometer"
+            style="@style/TextViewNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/corner_white_background"
+            android:padding="12dp"
+            android:inputType="number"
+            android:textColor="@android:color/black" />
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:id="@+id/tvTypeOfExpenseLabel"
+            style="@style/TextViewNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:text="@string/typeofexpense"
+            app:textAllCaps="true" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/corner_white_background"
+            android:layout_marginTop="5dp"
+            android:padding="10dp">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:id="@+id/lytExpenseList"
+              android:visibility="gone"
+              android:layout_marginBottom="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="15dp">
+                android:layout_marginTop="10dp"
+                android:id="@+id/lytExpenseTypes">
 
-                <com.developtech.efuelfo.customs.CustomTextView
-                    style="@style/TextViewNormal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="5dp"
-                    android:gravity="start"
-                    android:text="@string/vehicle"
-                    app:textAllCaps="true" />
-
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/sendbuttonheight"
-                    android:layout_marginTop="5dp">
-
-                    <Spinner
-                        android:id="@+id/spinnerVehicle"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/sendbuttonheight"
-                        android:background="@drawable/corner_background" />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="25dp"
-                        android:contentDescription="@string/drop_down"
-                        android:src="@drawable/dropdown" />
-                </RelativeLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp">
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="10dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <com.developtech.efuelfo.customs.CustomTextView
-                            style="@style/TextViewNormal"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="15dp"
-                            android:gravity="start"
-                            android:text="@string/date"
-                            app:textAllCaps="true" />
-
-                        <com.developtech.efuelfo.customs.CustomTextView
-                            android:id="@+id/tvDate"
-                            style="@style/TextViewNormal"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:background="@drawable/corner_white_background"
-                            android:padding="12dp"
-                            android:textColor="@android:color/black" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <com.developtech.efuelfo.customs.CustomTextView
-                            style="@style/TextViewNormal"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="15dp"
-                            android:gravity="start"
-                            android:text="@string/time"
-                            app:textAllCaps="true" />
-
-                        <com.developtech.efuelfo.customs.CustomTextView
-                            android:id="@+id/tvTime"
-                            style="@style/TextViewNormal"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:background="@drawable/corner_white_background"
-                            android:padding="12dp"
-                            android:textColor="@android:color/black" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <com.developtech.efuelfo.customs.CustomTextView
-                    style="@style/TextViewNormal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:gravity="start"
-                    android:text="@string/odometer" />
-
-                <com.developtech.efuelfo.customs.CustomEditText
-                    android:id="@+id/etOdometer"
-                    style="@style/TextViewNormal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/corner_white_background"
-                    android:padding="12dp"
-                    android:inputType="number"
-                    android:textColor="@android:color/black" />
-
-                <com.developtech.efuelfo.customs.CustomTextView
-                    android:id="@+id/tvTypeOfExpenseLabel"
-                    style="@style/TextViewNormal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:gravity="start"
-                    android:text="@string/typeofexpense"
-                    app:textAllCaps="true" />
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@drawable/corner_white_background"
-                    android:layout_marginTop="5dp"
-                    android:padding="10dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:id="@+id/lytExpenseList"
-                        android:visibility="gone"
-                        android:layout_marginBottom="10dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_marginTop="10dp"
-                            android:id="@+id/lytExpenseTypes">
-
-
-                        </LinearLayout>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0.3dp"
-                            android:layout_marginTop="10dp"
-                            android:background="@android:color/black"/>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_marginTop="8dp"
-                            android:layout_height="wrap_content">
-
-                            <com.developtech.efuelfo.customs.CustomTextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="5.5"
-                                android:text="@string/total"
-                                android:textAllCaps="true"
-                                style="@style/TextViewSmall"
-                                android:textColor="@android:color/black"/>
-
-                            <com.developtech.efuelfo.customs.CustomTextView
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="4.5"
-                                android:id="@+id/tvExpenseTotal"
-                                android:textAllCaps="true"
-                                style="@style/TextViewSmall"
-                                android:textColor="@android:color/black"/>
-
-                        </LinearLayout>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0.3dp"
-                            android:layout_marginTop="8dp"
-                            android:background="@android:color/black"/>
-
-                    </LinearLayout>
-
-                    <com.developtech.efuelfo.customs.CustomTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/colorAccent"
-                        style="@style/TextViewNormal"
-                        app:fontName="@string/font_semi_bold"
-                        android:text="@string/add_expense_type"
-                        android:textAllCaps="true"
-                        android:id="@+id/tvAddExpenseType"
-                        android:gravity="center"/>
-                </LinearLayout>
-
-                <com.developtech.efuelfo.customs.CustomTextView
-                    android:id="@+id/tvReasonLabel"
-                    style="@style/TextViewNormal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:gravity="start"
-                    android:text="@string/reason"
-                    app:textAllCaps="true" />
-
-                <com.developtech.efuelfo.customs.CustomEditText
-                    android:id="@+id/etReason"
-                    style="@style/TextViewNormal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/corner_white_background"
-                    android:padding="12dp"
-                    android:textColor="@android:color/black" />
-
-                <com.developtech.efuelfo.customs.CustomTextView
-                    style="@style/TextViewNormal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:gravity="start"
-                    android:text="@string/notes"
-                    app:textAllCaps="true" />
-
-                <com.developtech.efuelfo.customs.CustomEditText
-                    android:id="@+id/etNotes"
-                    style="@style/TextViewNormal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/corner_white_background"
-                    android:padding="12dp"
-                    android:textColor="@android:color/black" />
 
             </LinearLayout>
 
-        </ScrollView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/black"/>
 
-        <com.developtech.efuelfo.customs.CustomButton
-            android:id="@+id/btnSave"
-            style="@style/buttonGeenStyle"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content">
+
+              <com.developtech.efuelfo.customs.CustomTextView
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="5.5"
+                  android:text="@string/total"
+                  android:textAllCaps="true"
+                  style="@style/TextViewSmall"
+                  android:textColor="@android:color/black"/>
+
+              <com.developtech.efuelfo.customs.CustomTextView
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="4.5"
+                  android:id="@+id/tvExpenseTotal"
+                  android:textAllCaps="true"
+                  style="@style/TextViewSmall"
+                  android:textColor="@android:color/black"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/black"/>
+
+          </LinearLayout>
+
+          <com.developtech.efuelfo.customs.CustomTextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="@color/colorAccent"
+              style="@style/TextViewNormal"
+              app:fontName="@string/font_semi_bold"
+              android:text="@string/add_expense_type"
+              android:textAllCaps="true"
+              android:id="@+id/tvAddExpenseType"
+              android:gravity="center"/>
+        </LinearLayout>
+
+        <com.developtech.efuelfo.customs.CustomTextView
+            android:id="@+id/tvReasonLabel"
+            style="@style/TextViewNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:text="@string/reason"
+            app:textAllCaps="true" />
+
+        <com.developtech.efuelfo.customs.CustomEditText
+            android:id="@+id/etReason"
+            style="@style/TextViewNormal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:text="@string/save" />
+            android:layout_marginTop="5dp"
+            android:background="@drawable/corner_white_background"
+            android:padding="12dp"
+            android:textColor="@android:color/black" />
 
-    </LinearLayout>
+        <com.developtech.efuelfo.customs.CustomTextView
+            style="@style/TextViewNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:text="@string/notes"
+            app:textAllCaps="true" />
 
-    <include layout="@layout/layout_progress"/>
+        <com.developtech.efuelfo.customs.CustomEditText
+            android:id="@+id/etNotes"
+            style="@style/TextViewNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/corner_white_background"
+            android:padding="12dp"
+            android:textColor="@android:color/black" />
+
+      </LinearLayout>
+
+    </ScrollView>
+
+    <com.developtech.efuelfo.customs.CustomButton
+        android:id="@+id/btnSave"
+        style="@style/buttonGeenStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/save" />
+
+  </LinearLayout>
+
+  <include layout="@layout/layout_progress"/>
 
 </FrameLayout>

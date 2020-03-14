@@ -26,9 +26,25 @@ public class UserAccountDetail extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(UserAccountDetail.this,EfuelStationDteail.class);
-                startActivity(intent);
+                /*Intent intent=new Intent(UserAccountDetail.this,EfuelStationDteail.class);
+                startActivity(intent);*/
                /* finish();*/
+
+
+                try
+                {
+                    //  onBackPressed();
+                    finish();
+
+                }
+                catch (Exception ex)
+                {
+                   /* Toast.makeText(getApplicationContext(), ex.toString(),
+                            Toast.LENGTH_LONG).show();*/
+                }
+
+
+
             }
         });
 
@@ -92,4 +108,18 @@ public class UserAccountDetail extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        // Write your code here
+        super.onBackPressed();
+    }
+
+    public void Back(View v) {
+        onBackPressed();
+
+
+    }
+
+
 }

@@ -5,52 +5,52 @@
     android:orientation="horizontal"
     android:padding="10dp">
 
-    <ImageView
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:src="@drawable/user_profile"
-        android:layout_weight="3"
-        android:id="@+id/ivUser"/>
+  <ImageView
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:src="@drawable/user_profile"
+      android:layout_weight="3"
+      android:id="@+id/ivUser"/>
 
-    <LinearLayout
-        android:layout_width="0dp"
+  <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_marginStart="20dp"
+      android:layout_weight="7">
+
+    <com.developtech.efuelfo.customs.CustomTextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginStart="20dp"
-        android:layout_weight="7">
+        style="@style/TextViewNormal"
+        android:id="@+id/tvName"
+        android:textColor="@android:color/black"/>
 
-        <com.developtech.efuelfo.customs.CustomTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/TextViewNormal"
-            android:id="@+id/tvName"
-            android:textColor="@android:color/black"/>
+    <com.developtech.efuelfo.customs.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        style="@style/TextViewNormal"
+        android:textAllCaps="true"
+        android:id="@+id/tvMobile"
+        android:textColor="@android:color/black"/>
 
-        <com.developtech.efuelfo.customs.CustomTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            style="@style/TextViewNormal"
-            android:textAllCaps="true"
-            android:id="@+id/tvMobile"
-            android:textColor="@android:color/black"/>
+    <com.developtech.efuelfo.customs.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        style="@style/TextViewNormal"
+        android:textAllCaps="true"
+        android:id="@+id/tvVehicleNumber"
+        android:textColor="@android:color/black"/>
 
-        <com.developtech.efuelfo.customs.CustomTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            style="@style/TextViewNormal"
-            android:textAllCaps="true"
-            android:id="@+id/tvVehicleNumber"
-            android:textColor="@android:color/black"/>
-
-        <com.developtech.efuelfo.customs.CustomTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            style="@style/TextViewNormal"
-            android:textAllCaps="true"
-            android:id="@+id/tvDateTime"
-            android:textColor="@android:color/black"/>
-    </LinearLayout>
+    <com.developtech.efuelfo.customs.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        style="@style/TextViewNormal"
+        android:textAllCaps="true"
+        android:id="@+id/tvDateTime"
+        android:textColor="@android:color/black"/>
+  </LinearLayout>
 </LinearLayout>

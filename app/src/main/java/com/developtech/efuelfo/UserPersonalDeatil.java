@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -14,11 +13,17 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.developtech.efuelfo.app.UserPreference;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class UserPersonalDeatil extends AppCompatActivity  implements View.OnClickListener {
+// import android.support.v7.app.AppCompatActivity;
+
+// import android.support.v7.app.AppCompatActivity;
+
+public class UserPersonalDeatil extends AppCompatActivity implements View.OnClickListener {
 
     private int mYear, mMonth, mDay, mHour, mMinute;
     EditText username, userlastname, useremailaddress, dateofbirth;
@@ -106,13 +111,14 @@ public class UserPersonalDeatil extends AppCompatActivity  implements View.OnCli
                 }else{
 
                     Intent intent = new Intent(getApplicationContext(), EfuelStationDteail.class);
+
                     if ( ((RadioButton)findViewById(radioGroup.getCheckedRadioButtonId())).getText()!=null){
                          String value =((RadioButton)findViewById(radioGroup.getCheckedRadioButtonId()))
                                  .getText().toString();
                         intent.putExtra("GetOption",value);
 
                     }
-                    Log.e("kkk","hello"+username);
+                  //  Log.e("kkk","hello"+username);
                       String usename=username.getText().toString();
                       String uselastname=userlastname.getText().toString();
                       String useemai=useremailaddress.getText().toString();
@@ -123,7 +129,15 @@ public class UserPersonalDeatil extends AppCompatActivity  implements View.OnCli
                       intent.putExtra("UserLastNAme",uselastname);
                       intent.putExtra("UserEmail",useemai);
                       intent.putExtra("DateBirth", datebirth);
-                      startActivity(intent);
+                    UserPreference userPreference=new UserPreference(getApplicationContext())
+                            .getInstance(getApplicationContext());
+                    userPreference.setEmailId(useemai);
+                    userPreference.setLastname(uselastname);
+                    userPreference.setFirstname(usename);
+                    //shareprefer save boolean set tru, number
+
+                     startActivity(intent);
+
                      /* finish();*/
                       /*appComponent.getServiceCaller().callService(appComponent.getAllApis().
                               getFuelStations(),intent);*/

@@ -81,11 +81,6 @@ public class OtpVerifyNumber extends MyActionBar implements TextWatcher,View.OnC
         }
     };
 
-
-
-
-
-
     private Bundle bundle;
     private String str;
     private String otp_id /*password*/;
@@ -93,7 +88,7 @@ public class OtpVerifyNumber extends MyActionBar implements TextWatcher,View.OnC
     private SignUpRequestModel signUpRequestModel;
     private String otp = "";
     private boolean isForget;
-  String nuber;
+    String nuber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -114,9 +109,10 @@ public class OtpVerifyNumber extends MyActionBar implements TextWatcher,View.OnC
         etotp4.addTextChangedListener(this);
         etotp5.addTextChangedListener(this);
         etotp6.addTextChangedListener(this);
-   resendotp.setOnClickListener(this);
+
+        resendotp.setOnClickListener(this);
          userPreference=new UserPreference(getApplicationContext()).getInstance(getApplicationContext());
-       // init();
+        init();
         initComponents();
        /* Intent intent1=getIntent();
         String str=intent1.getStringExtra("number");
@@ -134,8 +130,6 @@ public class OtpVerifyNumber extends MyActionBar implements TextWatcher,View.OnC
             public void onClick(View v) {
                 otp=etotp1.getText().toString()+etotp2.getText().toString()+etotp3.getText().toString()+etotp4.getText().toString()+etotp5.getText().toString()+etotp6.getText().toString();
                 verifyOtp(otp);
-
-
                 //tvnumber.setText(getIntent().getExtras().getString("number"));
               /*  Intent intent=new Intent(getApplicationContext(), UserPersonalDeatil.class);
                 startActivity(intent);
@@ -147,13 +141,12 @@ public class OtpVerifyNumber extends MyActionBar implements TextWatcher,View.OnC
     @Override
     public void initComponents() {
         Intent intent=getIntent();
-         bundle=intent.getExtras().getBundle("bundle");
-
+        bundle=intent.getExtras().getBundle("bundle");
         if (bundle != null) {
             //isForget = bundle.getBoolean("is_forget");
             otp_id = bundle.getString("otp_id");
-            /*str=bundle.getString("MobileNo");
-            mobileNo.setText("#"+str+"#");*/
+            str=bundle.getString("MobileNo");
+           // mobileNo.setText("#"+str+"#");
             nuber=bundle.getString("MobileNo");
             mobileNo.setText(""+bundle.getString("MobileNo")+"");
            // bundle.getString()
@@ -259,15 +252,15 @@ public class OtpVerifyNumber extends MyActionBar implements TextWatcher,View.OnC
             }
             case R.id.resendotp: {
                 ResendOtpRequestModel model = new ResendOtpRequestModel();
-              //  Log.e("kkk","succ"+appComponent.getServiceCaller());
+                Log.e("kkk","succ"+appComponent.getServiceCaller());
                 if(otp_id!=null)
                 {
                     model.setOtpId(otp_id);
                     model.setResendCase("SIGNUP");
                     hideKB();
                     Log.e("hhh","success"+ appComponent.getServiceCaller());
-                    appComponent.getServiceCaller().callService(appComponent.getAllApis().resendOtp(model),
-                            resendListener);
+                    appComponent.getServiceCaller().callService(appComponent.getAllApis().resendOtp(model),resendListener);
+
                 }
             }
         }
